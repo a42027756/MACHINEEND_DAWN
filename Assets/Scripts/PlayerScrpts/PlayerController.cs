@@ -16,13 +16,21 @@ public class PlayerController : ControllerBase<PlayerController>
     public Rigidbody2D _rigidbody2D;
     public Transform _transform;
     public Animator _anim;
-    private float input_x = 0;
-    private float input_y = 0;
+    private float input_x = 0f;
+    private float input_y = 0f;
     private const float flipEpsilon = 0.5f;
     
     public override void Update()
     {
         //Debug.Log(input_x + " " +input_y);
+
+        //--------------test-----------------
+        if(Input.GetKeyDown(KeyCode.K))
+        {
+            PlayerProperty.Instance.ChangeValue("health", 10);
+        }
+        //--------------test-----------------
+
         _anim.SetFloat("speed",_rigidbody2D.velocity.magnitude);
         Flip();
     }

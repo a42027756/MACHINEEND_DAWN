@@ -23,5 +23,7 @@ public class Binder : MonoBehaviour
         PlayerController.Instance._transform = myTransform;
         PlayerController.Instance.movespeed = speed;
         PlayerController.Instance._anim = muAnim;
+
+        PlayerProperty.Instance.InitProperties();
     }
 }
