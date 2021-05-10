@@ -1,4 +1,4 @@
 public interface IProperty
 {
-    void ChangeValue(string propertyName, int decrement);
+    void ChangeValue(string propertyName, float increment);
 }
