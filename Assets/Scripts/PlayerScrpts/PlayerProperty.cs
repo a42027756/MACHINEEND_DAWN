@@ -42,7 +42,7 @@ public class PlayerProperty : ControllerBase<PlayerProperty>, IProperty
 
     private void ValueBoxUpdate()
     {
-        waterBar.fillAmount -= 0.00001f;
-        hungerBar.fillAmount -= 0.00001f;
+        waterBar.fillAmount -= 0.0001f;
+        hungerBar.fillAmount -= 0.0001f;
     }
 }
