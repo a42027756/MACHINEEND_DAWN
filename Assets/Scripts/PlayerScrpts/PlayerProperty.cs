@@ -2,14 +2,18 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerProperty : ControllerBase<PlayerProperty>, IProperty
 {
     private Dictionary<string, int> properties = new Dictionary<string, int>();
+    public Image waterBar;
+    public Image hungerBar;
+    public Image invadeBar;
 
     public override void Update()
     {
-
+        ValueBoxUpdate();
     }
 
     public void InitProperties()
@@ -34,5 +38,11 @@ public class PlayerProperty : ControllerBase<PlayerProperty>, IProperty
         properties[propertyName] -= decrement;
         
         Debug.Log(propertyName + properties[propertyName]);
+    }
+
+    private void ValueBoxUpdate()
+    {
+        waterBar.fillAmount -= 0.00001f;
+        hungerBar.fillAmount -= 0.00001f;
     }
 }

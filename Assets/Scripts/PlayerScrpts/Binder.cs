@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Binder : MonoBehaviour
 {
@@ -6,15 +7,20 @@ public class Binder : MonoBehaviour
     public Transform myTransform;
     public Animator muAnim;
     public float speed;
+    public Image water;
+    public Image hunger;
+    public Image invade;
 
     private void Update()
     {
         PlayerController.Instance.Update();
+        
     }
 
     private void FixedUpdate()
     {
         PlayerController.Instance.InputControl();
+        PlayerProperty.Instance.Update();
     }
 
     private void Start()
@@ -23,7 +29,16 @@ public class Binder : MonoBehaviour
         PlayerController.Instance._transform = myTransform;
         PlayerController.Instance.movespeed = speed;
         PlayerController.Instance._anim = muAnim;
-
+        PlayerProperty.Instance.waterBar = water;
+        PlayerProperty.Instance.hungerBar = hunger;
+        PlayerProperty.Instance.invadeBar = invade;
+        
+        
         PlayerProperty.Instance.InitProperties();
+    }
+
+    private void UpdatebyTenSec()
+    {
+        
     }
 }
