@@ -27,7 +27,7 @@ public class PlayerController : ControllerBase<PlayerController>
         //--------------test-----------------
         if(Input.GetKeyDown(KeyCode.K))
         {
-            PlayerProperty.Instance.ChangeValue("health", 10);
+            PlayerProperty.Instance.ChangeValue("health", -10f);
         }
         //--------------test-----------------
 
