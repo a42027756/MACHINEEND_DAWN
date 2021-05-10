@@ -1,19 +1,7 @@
 fileFormatVersion: 2
-guid: ff868be8c43122c4cb734ed36ff3d072
+guid: d9a83dd734fae1d4db12ecfbea81f79f
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 6259641388555480921
-    second: valuebox 1_0
-  - first:
-      213: -1954287078781398726
-    second: valuebox 1_1
-  - first:
-      213: 3177453485185366037
-    second: valuebox 1_2
-  - first:
-      213: -7418367785132308628
-    second: valuebox 1_3
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -53,7 +41,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -137,95 +125,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: valuebox 1_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 350
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 95fae2a8da6bed650800000000000000
-      internalID: 6259641388555480921
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: valuebox 1_1
-      rect:
-        serializedVersion: 2
-        x: 350
-        y: 0
-        width: 350
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a315910914af0e4e0800000000000000
-      internalID: -1954287078781398726
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: valuebox 1_2
-      rect:
-        serializedVersion: 2
-        x: 700
-        y: 0
-        width: 350
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 518fcc22c15981c20800000000000000
-      internalID: 3177453485185366037
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: valuebox 1_3
-      rect:
-        serializedVersion: 2
-        x: 1050
-        y: 0
-        width: 350
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c67ccf9bdc9ac0990800000000000000
-      internalID: -7418367785132308628
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 4d7763059cc6ca5488a30a0033be11e2
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
