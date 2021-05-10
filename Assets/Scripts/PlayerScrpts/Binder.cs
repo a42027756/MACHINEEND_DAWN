@@ -7,9 +7,8 @@ public class Binder : MonoBehaviour
     public Transform myTransform;
     public Animator muAnim;
     public float speed;
-    public Image water;
-    public Image hunger;
-    public Image invade;
+
+    public Image health, water, hunger, invade;
 
     private void Update()
     {
@@ -29,6 +28,8 @@ public class Binder : MonoBehaviour
         PlayerController.Instance._transform = myTransform;
         PlayerController.Instance.movespeed = speed;
         PlayerController.Instance._anim = muAnim;
+
+        PlayerProperty.Instance.healthBar = health;
         PlayerProperty.Instance.waterBar = water;
         PlayerProperty.Instance.hungerBar = hunger;
         PlayerProperty.Instance.invadeBar = invade;
