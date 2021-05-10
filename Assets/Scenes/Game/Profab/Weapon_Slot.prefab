@@ -181,7 +181,7 @@ MonoBehaviour:
   m_text: Weapon_Name
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b965043cc0c0f274fb13467aeed5823c, type: 2}
-  m_sharedMaterial: {fileID: -3509985538864266330, guid: b965043cc0c0f274fb13467aeed5823c,
+  m_sharedMaterial: {fileID: 1923698937469188994, guid: b965043cc0c0f274fb13467aeed5823c,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -206,8 +206,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4
-  m_fontSizeBase: 4
+  m_fontSize: 3
+  m_fontSizeBase: 3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 6082569937219781665}
   - component: {fileID: 656844902699582727}
   m_Layer: 5
-  m_Name: WeaponName (1)
+  m_Name: Comsunme_Item
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -316,7 +316,7 @@ MonoBehaviour:
   m_text: 'Bullets: 25 / 150'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b965043cc0c0f274fb13467aeed5823c, type: 2}
-  m_sharedMaterial: {fileID: -3509985538864266330, guid: b965043cc0c0f274fb13467aeed5823c,
+  m_sharedMaterial: {fileID: 1923698937469188994, guid: b965043cc0c0f274fb13467aeed5823c,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
