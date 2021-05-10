@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 912afc310618b0940ade61eb221fe61f
+guid: 46b99c936b1230f47b0dd9105c758f2e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1263951401916451016
-    second: Hungerbar_Empty_0
+      213: -1836583326626801974
+    second: Invadebar_Empty_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -130,12 +130,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hungerbar_Empty_0
+      name: Invadebar_Empty_0
       rect:
         serializedVersion: 2
-        x: 29
-        y: 39
-        width: 238
+        x: 39
+        y: 44
+        width: 235
         height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -144,8 +144,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c846947a157a8110800000000000000
-      internalID: 1263951401916451016
+      spriteID: ac61100f1352386e0800000000000000
+      internalID: -1836583326626801974
       vertices: []
       indices: 
       edges: []
