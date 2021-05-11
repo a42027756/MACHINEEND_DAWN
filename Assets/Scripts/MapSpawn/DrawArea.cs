@@ -34,7 +34,7 @@ public class DrawArea
         drawTile = _t;
     }
     
-    public void SpawnTile(Tilemap tilemap,int drawTime_x, int drawTime_y)
+    public void SpawnTile(Tilemap tilemap)
     {
         
         if (a_max > a_min && b_max > b_min && c_max > c_min)
@@ -48,7 +48,7 @@ public class DrawArea
             a = Random.Range(0, 100);
             b = Random.Range(0, 100);
         }
-        for (perlin_x = 0; perlin_x < zone.size; perlin_x++)
+        for (perlin_x = 0; perlin_x < zone.size ; perlin_x++)
         {
             for (perlin_y = 0; perlin_y < zone.size; perlin_y++)
             {
@@ -57,13 +57,12 @@ public class DrawArea
                 float o = Mathf.PerlinNoise(m, n) * zone.size;
                 // Debug.Log(o);
                 o = Mathf.Round(o);
-                Vector3Int v = new Vector3Int((int)(perlin_x) + drawTime_x * zone.size, (int)(perlin_y) + drawTime_y *zone.size, 0);
+                Vector3Int v = new Vector3Int((int)(perlin_x), (int)(perlin_y), 0);
                 // Debug.Log((int)(perlin_x) + " " + (int)(perlin_y) + " " + o);
                 if (o < map_amount)
                 {
                     tilemap.SetTile(v ,drawTile);
                     zone.enabledBools[(int)perlin_y * zone.size + (int)perlin_x] = true;
-                    // _zone.enabledBools[(int)(perlin_x * _zone.size), (int)(perlin_y * _zone.size)]
                 }
                 
             }
@@ -93,7 +92,6 @@ public class InspectorAreaDrawer : PropertyDrawer
         //按照行数增加高度
         if (property.isExpanded)
             return EditorGUI.GetPropertyHeight(property);
-    
         return EditorGUI.GetPropertyHeight(property);
     }
 }
