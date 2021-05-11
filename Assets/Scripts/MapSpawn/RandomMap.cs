@@ -8,13 +8,13 @@ public class RandomMap : MonoBehaviour
 {
     public TileBase tilebase;
     public Tilemap tilemap;
-    public List<DrawArea> drawList = new List<DrawArea>();
-    
+    public List<DrawArea> mapBrush = new List<DrawArea>();
+
     void Start()
     {
-        for (int i = 0; i < drawList.Count; i++)
+        for (int i = 0; i < mapBrush.Count; i++)
         {
-            drawList[i].SpawnTile(tilemap, i, 0);
+            mapBrush[0].SpawnTile(tilemap);
         }
     }
 
