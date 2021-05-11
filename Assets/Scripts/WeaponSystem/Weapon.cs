@@ -43,6 +43,8 @@ public class Weapon : MonoBehaviour
 
         GameObject bullet = Instantiate(bulletPre, firePoint, Quaternion.identity);
 
-        bullet.GetComponent<Rigidbody2D>().velocity = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - player.transform.position).normalized * bulletSpeed;
+        difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - player.transform.position;
+
+        bullet.GetComponent<Rigidbody2D>().velocity = difference.normalized * bulletSpeed;
     }
 }
