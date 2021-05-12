@@ -6,11 +6,10 @@ using UnityEditor;
 using UnityEngine.Serialization;
 
 [System.Serializable]
-public class Zone
+public class Zone : Singleton<Zone>
 {
     public int size;
-
-    [HideInInspector]public bool[] enabledBools;
+    // [HideInInspector] public bool[] enabledBools = new bool[1000000];
 }
 
 [CustomPropertyDrawer(typeof(Zone))]

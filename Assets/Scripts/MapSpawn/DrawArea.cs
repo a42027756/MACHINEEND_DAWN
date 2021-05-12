@@ -1,22 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using UnityEditor;
 using UnityEngine.Serialization;
+using UnityEngine.SocialPlatforms;
 
 [System.Serializable]
-public class DrawArea
+public class DrawArea 
 {
-    public float perlin_x;
-    public float perlin_y;
+    private float perlin_x;
+    private float perlin_y;
 
-    [Range(0, 1000)] public int a_min;
-    [Range(0, 1000)] public int a_max;
-    
-    [Range(0, 1000)] public int b_min;
-    [Range(0, 1000)] public int b_max;
+    [SerializeField][Range(0,1000)]private int a_min;
+    [SerializeField][Range(0,1000)]private int a_max;
+
+    [SerializeField][Range(0,1000)]private int b_min;
+    [SerializeField][Range(0,1000)]private int b_max;
     
     [Range(0, 1000)] public int c_min;
     [Range(0, 1000)] public int c_max;
@@ -24,19 +26,20 @@ public class DrawArea
     private int a;
     private int b;
     [FormerlySerializedAs("c")] public int map_amount;
-    
-    [FormerlySerializedAs("_zone")] public Zone zone;
     public TileBase drawTile;
 
-    public DrawArea(Zone _z, TileBase _t)
+    //初始化噪音参数
+    public void InitBrush(int base_a,int base_b,int dec)
     {
-        zone = _z;
-        drawTile = _t;
+        a_min = base_a - dec;
+        a_max = base_a + Random.Range(30, 100) - dec;
+
+        b_min = base_b - dec;
+        b_max = b_min + Random.Range(30, 100) - dec;
     }
     
     public void SpawnTile(Tilemap tilemap)
     {
-        
         if (a_max > a_min && b_max > b_min && c_max > c_min)
         {
             a = Random.Range(a_min, a_max);//随机取值范围a和b值决定地图分布形式
@@ -45,26 +48,41 @@ public class DrawArea
         }
         else
         {
+            Debug.Log("RandomAB");
             a = Random.Range(0, 100);
             b = Random.Range(0, 100);
         }
-        for (perlin_x = 0; perlin_x < zone.size ; perlin_x++)
+        for (perlin_x = 0; perlin_x < Zone.Instance.size ; perlin_x++)
         {
-            for (perlin_y = 0; perlin_y < zone.size; perlin_y++)
+            for (perlin_y = 0; perlin_y < Zone.Instance.size; perlin_y++)
             {
                 float m = perlin_x / a;
                 float n = perlin_y / b;
-                float o = Mathf.PerlinNoise(m, n) * zone.size;
+                float o = Mathf.PerlinNoise(m, n) * Zone.Instance.size;
                 // Debug.Log(o);
                 o = Mathf.Round(o);
                 Vector3Int v = new Vector3Int((int)(perlin_x), (int)(perlin_y), 0);
-                // Debug.Log((int)(perlin_x) + " " + (int)(perlin_y) + " " + o);
+                // Debug.Log(Zone.Instance.enabledBools[v.x * Zone.Instance.size + v.y]);
                 if (o < map_amount)
                 {
                     tilemap.SetTile(v ,drawTile);
-                    zone.enabledBools[(int)perlin_y * zone.size + (int)perlin_x] = true;
                 }
-                
+            }
+        }
+        
+    }
+
+    public void Blank_Fill(Tilemap _tilemap)
+    {
+        for (int i = 0; i < Zone.Instance.size; i++)
+        {
+            for (int j = 0; j < Zone.Instance.size; j++)
+            {
+                Vector3Int v = new Vector3Int(i, j, 0);
+                if (!_tilemap.GetTile(v))
+                {
+                    _tilemap.SetTile(v,drawTile);
+                }
             }
         }
     }

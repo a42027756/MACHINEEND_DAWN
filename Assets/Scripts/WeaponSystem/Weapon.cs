@@ -45,6 +45,6 @@ public class Weapon : MonoBehaviour
 
         difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - player.transform.position;
 
-        bullet.GetComponent<Rigidbody2D>().velocity = difference.normalized * bulletSpeed;
+        bullet.GetComponent<Rigidbody2D>().velocity = difference.normalized * bulletSpeed * 2;
     }
 }
