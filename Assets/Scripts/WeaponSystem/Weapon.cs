@@ -35,11 +35,11 @@ public class Weapon : MonoBehaviour
         difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - player.transform.position;
         float rotateByZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, rotateByZ);
-        
+
         if(transform.eulerAngles.z >= 90f && transform.eulerAngles.z <= 270f)
-            GetComponent<SpriteRenderer>().flipY = true;
+            transform.localScale = new Vector3(-1, 1, 1);
         else
-            GetComponent<SpriteRenderer>().flipY = false;
+            transform.localScale = new Vector3(-1, 1, 1);
 
     }
 
