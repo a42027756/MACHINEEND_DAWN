@@ -249,6 +249,7 @@ GameObject:
   m_Component:
   - component: {fileID: 606717230}
   - component: {fileID: 606717229}
+  - component: {fileID: 606717231}
   m_Layer: 0
   m_Name: MapManager
   m_TagString: Untagged
@@ -320,6 +321,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &606717231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606717228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7cc0fbc618877248b6c3121a55b362d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemap: {fileID: 941552684}
+  roombase: {fileID: 11400000, guid: f58f1f806b95a1842914bd2ad14ce0a2, type: 2}
+  roomSize: 20
+  floor: {fileID: 11400000, guid: 0316de84f7f3ee7479a3e6b208a71f79, type: 2}
+  wall: {fileID: 0}
+  floor_Corner: {fileID: 0}
+  wall_Corner: {fileID: 0}
 --- !u!1 &725888215
 GameObject:
   m_ObjectHideFlags: 0
