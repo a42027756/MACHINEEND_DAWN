@@ -5,26 +5,29 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     [HideInInspector] public GameObject bulletPre;
-    
-    private float lifeTime, maxLife;
-    private float bulletSpeed = 5f;
+
+    private float interval = 0.15f;
+    private float timeCounter;
+    private float bulletSpeed = 8f;
 
     private GameObject player;
     Vector3 firePoint;
     Vector2 difference;
 
+    private SpriteRenderer spriteRenderer;
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
+        timeCounter = interval;
     }
 
     void Update()
     {
         //-----------Test-----------
-        if(Input.GetMouseButtonDown(0))
-        {
-            Fire();
-        }
+        ContinuousShoot();
         //-----------Test-----------
 
         WeaponRotation();
@@ -37,17 +40,14 @@ public class Weapon : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, rotateByZ);
 
         if(transform.eulerAngles.z >= 90f && transform.eulerAngles.z <= 270f)
-            transform.localScale = new Vector3(-1, 1, 1);
+            spriteRenderer.flipY = true;
         else
-            transform.localScale = new Vector3(-1, 1, 1);
-
+            spriteRenderer.flipY = false;
     }
 
     private void Fire()
     {
         firePoint = GetComponentsInChildren<Transform>()[1].position;
-
-        //GameObject bullet = Instantiate(bulletPre, firePoint, Quaternion.identity);
 
         GameObject bullet = ObjectPool.Instance.GetFromPool();
         bullet.transform.position = firePoint;
@@ -55,5 +55,23 @@ public class Weapon : MonoBehaviour
         difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - player.transform.position;
 
         bullet.GetComponent<Rigidbody2D>().velocity = difference.normalized * bulletSpeed;
+    }
+
+    private void ContinuousShoot()
+    {
+        if(Input.GetMouseButtonDown(0))
+        {
+            Fire();
+            timeCounter = interval;
+        }
+        if(Input.GetMouseButton(0))
+        {
+            timeCounter -= Time.deltaTime;
+            if(timeCounter < 0f)
+            {
+                Fire();
+                timeCounter = interval;
+            }
+        }
     }
 }

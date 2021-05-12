@@ -328,7 +328,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559496010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.131, y: -0.095, z: 0}
+  m_LocalPosition: {x: -0.062, y: -0.001, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 704581527}
@@ -424,7 +424,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 704581526}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.9699, y: 0.156, z: 0}
+  m_LocalPosition: {x: 0.925, y: -0.007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 559496011}
@@ -7005,7 +7005,7 @@ MonoBehaviour:
   myriRigidbody2D: {fileID: 1087707688}
   myTransform: {fileID: 1087707687}
   muAnim: {fileID: 1087707685}
-  speed: 5
+  speed: 4
   health: {fileID: 1130510953}
   water: {fileID: 915516055}
   hunger: {fileID: 373413193}
