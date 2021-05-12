@@ -333,10 +333,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7cc0fbc618877248b6c3121a55b362d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnNumber: 10
   tile_floor: {fileID: 941552684}
   tile_wall: {fileID: 1905306421}
   tile_corner: {fileID: 1880024564}
-  roombase: {fileID: 11400000, guid: f58f1f806b95a1842914bd2ad14ce0a2, type: 2}
+  roombase: {fileID: 11400000, guid: 0316de84f7f3ee7479a3e6b208a71f79, type: 2}
   roomSize: 20
   floor: {fileID: 11400000, guid: f58f1f806b95a1842914bd2ad14ce0a2, type: 2}
   wall: {fileID: 11400000, guid: c82ce7b2c636b944ea5d9a6a5d6840fb, type: 2}
