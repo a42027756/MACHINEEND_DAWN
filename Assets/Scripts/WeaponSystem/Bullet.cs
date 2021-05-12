@@ -7,6 +7,6 @@ public class Bullet : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         //触发事件
-        Destroy(gameObject);
+        ObjectPool.Instance.ReturnPool(gameObject);
     }
 }
