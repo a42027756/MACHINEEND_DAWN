@@ -72,12 +72,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 556039b6e87bafa47a5630cceffb1586, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fa3b818b651787845a8b6696420cea71, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.5, y: 1.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -101,8 +101,8 @@ MonoBehaviour:
   bulletSprite: {fileID: 5379323082974078785, guid: 29962dbadd748c845a2b17960667870f,
     type: 3}
   weaponName: BugExecuter
-  weaponImage: {fileID: 21300000, guid: 556039b6e87bafa47a5630cceffb1586, type: 3}
-  interval: 1
-  timeCounter: 0.3
+  weaponImage: {fileID: 21300000, guid: fa3b818b651787845a8b6696420cea71, type: 3}
+  interval: 0.3
+  timeCounter: 0.13188599
   bulletSpeed: 10
   isCounting: 0
