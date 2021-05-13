@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\wuchenglin\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\wuchenglin\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_MACHINEND_DAWN.-963148091.00" t="ExcludeRecursive" />
+    <e p="E:\UnityPorject\MACHINEND_DAWN" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Resources" t="Include">
+          <e p="Pixel Font - Tripfive" t="Include">
+            <e p="_README.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Rule-Tile" t="Include">
+          <e p="Tilemap" t="Include">
+            <e p="Brushes" t="Include">
+              <e p="Coordinate Brush" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="Editor" t="Include">
+                    <e p="CoordinateBrush.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="GameObject Brush" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="Editor" t="Include">
+                    <e p="GameObjectBrush.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="Group Brush" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="Editor" t="Include">
+                    <e p="GroupBrush.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="Line Brush" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="Editor" t="Include">
+                    <e p="LineBrush.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="Prefab Brush" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="Editor" t="Include">
+                    <e p="PrefabBrush.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="Random Brush" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="Editor" t="Include">
+                    <e p="RandomBrush.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="Tint Brush" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="Editor" t="Include">
+                    <e p="TintBrush.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="Tint Brush Smooth" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="Editor" t="Include">
+                    <e p="TintBrushSmooth.cs" t="Include" />
+                  </e>
+                  <e p="TintTextureGenerator.cs" t="Include" />
+                </e>
+                <e p="Shaders" t="Include">
+                  <e p="TintedTilemap.shader" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="GridInformation" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="GridInformation.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Tiles" t="Include">
+              <e p="Animated Tile" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="AnimatedTile.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Hexagonal Rule Tile" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="HexagonalRuleTileEditor.cs" t="Include" />
+                </e>
+                <e p="HexagonalRuleTile.cs" t="Include" />
+              </e>
+              <e p="Isometric Rule Tile" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="IsometricRuleTileEditor.cs" t="Include" />
+                </e>
+                <e p="IsometricRuleTile.cs" t="Include" />
+              </e>
+              <e p="Pipeline Tile" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="PipelineTile.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Random Tile" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="RandomTile.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Rule Override Tile" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="Editor" t="Include">
+                    <e p="RuleOverrideTileEditor.cs" t="Include" />
+                  </e>
+                  <e p="RuleOverrideTile.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Rule Tile" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="Editor" t="Include">
+                    <e p="CustomRuleTileMenu.cs" t="Include" />
+                    <e p="RuleTileEditor.cs" t="Include" />
+                  </e>
+                  <e p="RuleTile.cs" t="Include" />
+                </e>
+                <e p="ScriptTemplates" t="Include">
+                  <e p="NewCustomRuleTile.cs.txt" t="Include" />
+                </e>
+              </e>
+              <e p="Terrain Tile" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="TerrainTile.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Weighted Random Tile" t="Include">
+                <e p="WeightedRandomTile.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Scenes" t="Include">
+          <e p="Logo" t="Include">
+            <e p="script" t="Include">
+              <e p="SwitchtoMenu.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="ControllerBase" t="Include">
+            <e p="ControllerBase.cs" t="Include" />
+          </e>
+          <e p="MapSpawn" t="Include">
+            <e p="DrawArea.cs" t="Include" />
+            <e p="RandomMap.cs" t="Include" />
+            <e p="Room.cs" t="Include" />
+            <e p="RoomSpawn.cs" t="Include" />
+            <e p="Zone.cs" t="Include" />
+          </e>
+          <e p="PlayerScrpts" t="Include">
+            <e p="Binder.cs" t="Include" />
+            <e p="IProperty.cs" t="Include" />
+            <e p="PlayerController.cs" t="Include" />
+            <e p="PlayerProperty.cs" t="Include" />
+          </e>
+          <e p="Prelogue" t="Include">
+            <e p="ShowText.cs" t="Include" />
+          </e>
+          <e p="Singleton" t="Include">
+            <e p="Singleton.cs" t="Include" />
+          </e>
+          <e p="WeaponSystem" t="Include">
+            <e p="Bullet.cs" t="Include" />
+            <e p="BulletPool.cs" t="Include" />
+            <e p="Weapon.cs" t="Include" />
+            <e p="WeaponPool.cs" t="Include" />
+            <e p="WeaponSlot.cs" t="Include" />
+          </e>
+        </e>
+        <e p="TextMeshPro" t="Include">
+          <e p="Examples &amp; Extras" t="Include">
+            <e p="Fonts" t="Include">
+              <e p="Anton OFL.txt" t="Include" />
+              <e p="Bangers - OFL.txt" t="Include" />
+              <e p="Oswald-Bold - OFL.txt" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="Benchmark01.cs" t="Include" />
+              <e p="Benchmark01_UGUI.cs" t="Include" />
+              <e p="Benchmark02.cs" t="Include" />
+              <e p="Benchmark03.cs" t="Include" />
+              <e p="Benchmark04.cs" t="Include" />
+              <e p="CameraController.cs" t="Include" />
+              <e p="ChatController.cs" t="Include" />
+              <e p="DropdownSample.cs" t="Include" />
+              <e p="EnvMapAnimator.cs" t="Include" />
+              <e p="ObjectSpin.cs" t="Include" />
+              <e p="ShaderPropAnimator.cs" t="Include" />
+              <e p="SimpleScript.cs" t="Include" />
+              <e p="SkewTextExample.cs" t="Include" />
+              <e p="TeleType.cs" t="Include" />
+              <e p="TextConsoleSimulator.cs" t="Include" />
+              <e p="TextMeshProFloatingText.cs" t="Include" />
+              <e p="TextMeshSpawner.cs" t="Include" />
+              <e p="TMP_DigitValidator.cs" t="Include" />
+              <e p="TMP_ExampleScript_01.cs" t="Include" />
+              <e p="TMP_FrameRateCounter.cs" t="Include" />
+              <e p="TMP_PhoneNumberValidator.cs" t="Include" />
+              <e p="TMP_TextEventCheck.cs" t="Include" />
+              <e p="TMP_TextEventHandler.cs" t="Include" />
+              <e p="TMP_TextInfoDebugTool.cs" t="Include" />
+              <e p="TMP_TextSelector_A.cs" t="Include" />
+              <e p="TMP_TextSelector_B.cs" t="Include" />
+              <e p="TMP_UiFrameRateCounter.cs" t="Include" />
+              <e p="TMPro_InstructionOverlay.cs" t="Include" />
+              <e p="VertexColorCycler.cs" t="Include" />
+              <e p="VertexJitter.cs" t="Include" />
+              <e p="VertexShakeA.cs" t="Include" />
+              <e p="VertexShakeB.cs" t="Include" />
+              <e p="VertexZoom.cs" t="Include" />
+              <e p="WarpTextExample.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+            <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+            <e p="TMP_Bitmap.shader" t="Include" />
+            <e p="TMP_SDF Overlay.shader" t="Include" />
+            <e p="TMP_SDF SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+            <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface.shader" t="Include" />
+            <e p="TMP_SDF.shader" t="Include" />
+            <e p="TMP_Sprite.shader" t="Include" />
+            <e p="TMPro.cginc" t="Include" />
+            <e p="TMPro_Mobile.cginc" t="Include" />
+            <e p="TMPro_Properties.cginc" t="Include" />
+            <e p="TMPro_Surface.cginc" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="MACHINEND_DAWN.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
