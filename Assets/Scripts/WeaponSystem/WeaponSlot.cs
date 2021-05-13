@@ -24,7 +24,7 @@ public class WeaponSlot : MonoBehaviour
     {
         WeaponRotation();
 
-        Shooting();
+        weapon.Shooting();
 
         //---------------test----------------
         if(Input.GetMouseButtonDown(1))
@@ -43,22 +43,6 @@ public class WeaponSlot : MonoBehaviour
 
         if(transform.eulerAngles.z >= 90f && transform.eulerAngles.z <= 270f) spriteRenderer.flipY = true;    
         else spriteRenderer.flipY = false;
-    }
-
-    private void Shooting()
-    {
-        if(Input.GetMouseButtonDown(0))
-        {
-            weapon.ShootButtonDown();
-        }
-        if(Input.GetMouseButton(0))
-        {
-            weapon.ShootButtonPressed();
-        }
-        if(Input.GetMouseButtonUp(0))
-        {
-            weapon.ShootButtonUp();
-        }
     }
 
     private void Configure()

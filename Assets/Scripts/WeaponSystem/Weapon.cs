@@ -15,9 +15,10 @@ public class Weapon : MonoBehaviour
     private GameObject player;
     private SpriteRenderer spriteRenderer;
 
-    [SerializeField] private float interval = 0.15f;
-    private float timeCounter;
-    [SerializeField] private float bulletSpeed = 8f;
+    [SerializeField] private float interval;
+    [SerializeField] private float timeCounter;
+    [SerializeField] private float bulletSpeed;
+    [SerializeField] private bool isCounting;
 
     private Vector3 firePoint;
     private Vector2 difference;
@@ -42,24 +43,27 @@ public class Weapon : MonoBehaviour
         bullet.GetComponent<Rigidbody2D>().velocity = difference.normalized * bulletSpeed;
     }
 
-    public void ShootButtonDown()
+    public void Shooting()
     {
-        Fire();
-        timeCounter = interval;
-    }
-
-    public void ShootButtonPressed()
-    {
-        timeCounter -= Time.deltaTime;
-        if(timeCounter < 0f)
+        if(Input.GetMouseButtonDown(0))
         {
-            Fire();
-            timeCounter = interval;
-        }        
-    }
-
-    public void ShootButtonUp()
-    {
-        
+            if(timeCounter == interval)
+            {
+                Fire();
+            }
+        }
+        if(Input.GetMouseButton(0))
+        {
+            timeCounter -= Time.deltaTime;
+            if(timeCounter < 0f)
+            {
+                Fire();
+                timeCounter = interval;
+            }  
+        }
+        if(Input.GetMouseButtonUp(0))
+        {
+            
+        }
     }
 }
