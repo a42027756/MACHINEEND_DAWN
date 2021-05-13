@@ -104,7 +104,8 @@ MonoBehaviour:
   weaponImage: {fileID: 21300000, guid: 9d252771242f5a149ad16a8ffc1a084e, type: 3}
   currentBullet: 50
   bulletClip: 50
-  maxBullet: 200
+  maxBullet: 150
+  maxHeldBullet: 150
   damageValue: 3
-  interval: 0.2
+  interval: 0.15
   bulletSpeed: 14

@@ -756,13 +756,17 @@ MonoBehaviour:
   - {fileID: 545075836136728491}
   - {fileID: 545075836076235169}
   weaponIcon:
-  - {fileID: 325033703409461799}
-  - {fileID: 2724144910965997879}
-  - {fileID: 2724144910897528637}
+  - {fileID: 2309550364505361340}
+  - {fileID: 90618323966255276}
+  - {fileID: 90618324035788454}
   weaponName:
-  - {fileID: 8841687381235865567}
-  - {fileID: 6629053325852490959}
-  - {fileID: 6629053325790806725}
+  - {fileID: 2393099619541935456}
+  - {fileID: 34098466514423408}
+  - {fileID: 34098466440835194}
+  weaponBullet:
+  - {fileID: 2905190947916069999}
+  - {fileID: 656844900891268991}
+  - {fileID: 656844900826589557}
 --- !u!4 &745103884
 Transform:
   m_ObjectHideFlags: 0
@@ -7351,9 +7355,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eac57241b4baefa43885159201d71181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myriRigidbody2D: {fileID: 1087707688}
+  myRigidbody2D: {fileID: 0}
   myTransform: {fileID: 1087707687}
-  muAnim: {fileID: 1087707685}
+  myAnim: {fileID: 0}
+  myBag: {fileID: 489780139}
   speed: 4
   health: {fileID: 1130510953}
   water: {fileID: 915516055}

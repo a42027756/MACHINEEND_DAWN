@@ -85,10 +85,19 @@ public class WeaponPool : MonoSingleton<WeaponPool>
                 weapon.currentBullet = weapon.bulletClip;
             }else
             {
-                weapon.maxBullet = 0;
                 weapon.currentBullet += weapon.maxBullet;
+                weapon.maxBullet = 0;
             }
             UpdateMessage();
+        }
+    }
+
+    public void LoadAll()
+    {
+        for(int i = 0;i < poolAmount;++i)
+        {
+            Weapon weapon = weapons[i].GetComponent<Weapon>();
+            weapon.maxBullet = weapon.maxHeldBullet;
         }
     }
 }

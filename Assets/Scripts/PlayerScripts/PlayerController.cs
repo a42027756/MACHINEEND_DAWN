@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 
 public class PlayerController : ControllerBase<PlayerController>
 {
@@ -16,6 +15,7 @@ public class PlayerController : ControllerBase<PlayerController>
     public Rigidbody2D _rigidbody2D;
     public Transform _transform;
     public Animator _anim;
+    public GameObject _bag;
     private float input_x = 0f;
     private float input_y = 0f;
     private const float flipEpsilon = 0.5f;
@@ -33,6 +33,17 @@ public class PlayerController : ControllerBase<PlayerController>
         if(Input.GetKeyDown(KeyCode.R))
         {
             WeaponPool.Instance.LoadBullets();
+        }
+
+        if(Input.GetKeyDown(KeyCode.Tab))
+        {
+            WeaponPool.Instance.LoadAll();
+        }
+
+        if(Input.GetKeyDown(KeyCode.B))
+        {
+            bool isOpen = _bag.activeSelf;
+            _bag.SetActive(!isOpen);
         }
         //--------------test-----------------
 

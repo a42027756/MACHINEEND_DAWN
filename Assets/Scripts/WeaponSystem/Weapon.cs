@@ -15,6 +15,7 @@ public class Weapon : MonoBehaviour
     public int currentBullet;
     public int bulletClip;
     public int maxBullet;
+    public int maxHeldBullet;
     public int damageValue;
 
     private GameObject player;
