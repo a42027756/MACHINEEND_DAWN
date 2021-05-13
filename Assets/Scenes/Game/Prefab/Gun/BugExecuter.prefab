@@ -102,5 +102,7 @@ MonoBehaviour:
     type: 3}
   weaponName: BugExecuter
   weaponImage: {fileID: 21300000, guid: 556039b6e87bafa47a5630cceffb1586, type: 3}
-  interval: 0.3
+  interval: 1
+  timeCounter: 0.3
   bulletSpeed: 10
+  isCounting: 0

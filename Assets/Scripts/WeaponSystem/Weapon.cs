@@ -18,7 +18,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] private float interval;
     [SerializeField] private float timeCounter;
     [SerializeField] private float bulletSpeed;
-    [SerializeField] private bool isCounting;
+    [SerializeField] private bool isFired;
 
     private Vector3 firePoint;
     private Vector2 difference;
@@ -29,8 +29,29 @@ public class Weapon : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    private void Fire()
+    private void FireDecision()
     {
+        if(!isFired)
+        {
+            Fire();
+            timeCounter = interval;
+            isFired = true;
+        }
+        else ResetFlag();
+    }
+    
+    private void ResetFlag()
+    {
+        timeCounter -= Time.deltaTime;
+        if(timeCounter < 0f)
+        {
+            isFired = false;
+            timeCounter = interval;
+        }
+    }
+
+    private void Fire()
+    {   
         firePoint = weaponSlot.GetComponentsInChildren<Transform>()[1].position;
 
         GameObject bullet = BulletPool.Instance.GetFromPool();
@@ -46,34 +67,14 @@ public class Weapon : MonoBehaviour
     public void Shooting()
     {
         if(Input.GetMouseButtonDown(0))
-        {
-            if(timeCounter == interval)
-            {
-                Fire();
-                isCounting = true;
-            }
-        }
-        if(Input.GetMouseButton(0))
-        {
-            timeCounter -= Time.deltaTime;
-            if(timeCounter < 0f)
-            {
-                Fire();
-                isCounting = false;
-                timeCounter = interval;
-            }  
-        }else if(isCounting)
-        {
-            timeCounter -= Time.deltaTime;
-            if(timeCounter < 0f)
-            {
-                isCounting = false;
-                timeCounter = interval;
-            }
-        }
+            FireDecision();
+
+        if(Input.GetMouseButton(0)) FireDecision();
+        else if(isFired) ResetFlag();
+        
         if(Input.GetMouseButtonUp(0))
         {
-            
+
         }
         
     }
