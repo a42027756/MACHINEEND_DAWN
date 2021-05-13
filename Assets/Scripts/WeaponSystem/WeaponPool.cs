@@ -99,5 +99,6 @@ public class WeaponPool : MonoSingleton<WeaponPool>
             Weapon weapon = weapons[i].GetComponent<Weapon>();
             weapon.maxBullet = weapon.maxHeldBullet;
         }
+        UpdateMessage();
     }
 }
