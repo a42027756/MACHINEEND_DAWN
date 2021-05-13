@@ -21,12 +21,12 @@ public class RoomSpawn : MonoBehaviour
     
     private Vector3Int FindRandomPoint()
     {
-        Debug.Log("BeginFind");
+        // Debug.Log("BeginFind");
         Vector3Int randomPos = TileExpand.Instance.GetRandomPointInTilemap(tile_floor, roombase);
         int size_min = roomList[0].size - 5,size_max = roomList[0].size + 5;
         actualSize = Random.Range(size_min, size_max);
-        Debug.Log(actualSize);
-        Debug.Log("FindFinish");
+        // Debug.Log(actualSize);
+        // Debug.Log("FindFinish");
         return randomPos;
     }
     

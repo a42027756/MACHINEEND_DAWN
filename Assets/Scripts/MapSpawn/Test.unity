@@ -452,7 +452,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &606717231
 MonoBehaviour:
@@ -981,7 +981,7 @@ Transform:
   m_Children:
   - {fileID: 1941098074}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1384434108
 GameObject:
@@ -1569,7 +1569,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &382893878452647763
 GameObject:
@@ -2187,7 +2187,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1917362739825744918
 MonoBehaviour:
@@ -2213,10 +2213,16 @@ MonoBehaviour:
   - {fileID: 514098518427845140}
   - {fileID: 2769338646969673988}
   - {fileID: 2769338647031207694}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   weaponName:
   - {fileID: 439845735285812424}
   - {fileID: 2834592030661756888}
   - {fileID: 2834592030595906002}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   weaponBullet:
   - {fileID: 1116353909551707591}
   - {fileID: 3328950416181534423}
@@ -2446,7 +2452,7 @@ RectTransform:
   - {fileID: 2823574659202066143}
   - {fileID: 99543252}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3566,7 +3572,7 @@ MonoBehaviour:
   myRigidbody2D: {fileID: 0}
   myTransform: {fileID: 1400755158339405254}
   myAnim: {fileID: 0}
-  myBag: {fileID: 99543251}
+  myBag: {fileID: 0}
   speed: 4
   health: {fileID: 2823574659397006273}
   water: {fileID: 2823574658686952255}
@@ -3583,7 +3589,7 @@ GameObject:
   - component: {fileID: 5872933064002432684}
   - component: {fileID: 5872933064002432685}
   m_Layer: 0
-  m_Name: ---PlayerControl---
+  m_Name: '---PlayerControl---'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
