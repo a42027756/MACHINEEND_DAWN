@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectPool : MonoSingleton<ObjectPool>
+public class BulletPool : MonoSingleton<BulletPool>
 {
     public GameObject bulletObj;
     public int poolAmount = 10;
 
-    private Queue<GameObject> poolObjects;
+    private Queue<GameObject> poolObjects = new Queue<GameObject>();
 
     void Start()
     {
-        poolObjects = new Queue<GameObject>();
-        
         FillPool();
     }
 
