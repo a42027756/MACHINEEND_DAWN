@@ -50,6 +50,7 @@ public class Weapon : MonoBehaviour
             if(timeCounter == interval)
             {
                 Fire();
+                isCounting = true;
             }
         }
         if(Input.GetMouseButton(0))
@@ -65,5 +66,6 @@ public class Weapon : MonoBehaviour
         {
             
         }
+        
     }
 }
