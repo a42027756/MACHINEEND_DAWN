@@ -72,12 +72,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a43616575f8de4043aa1d1fad9b8759d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4d67eadd4e0b6c84f8d6a7defb77edb5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 6.25, y: 6.25}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -103,4 +103,6 @@ MonoBehaviour:
   weaponName: SubmachineGun
   weaponImage: {fileID: 21300000, guid: a43616575f8de4043aa1d1fad9b8759d, type: 3}
   interval: 0.1
+  timeCounter: 0
   bulletSpeed: 15
+  isCounting: 0
