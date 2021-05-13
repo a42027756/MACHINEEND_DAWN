@@ -33,6 +33,8 @@ public class Weapon : MonoBehaviour
 
         difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - player.transform.position;
 
+        float rotateByZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
+        bullet.GetComponent<Transform>().rotation = Quaternion.Euler(0, 0, rotateByZ);
         bullet.GetComponent<Rigidbody2D>().velocity = difference.normalized * bulletSpeed;
     }
 
