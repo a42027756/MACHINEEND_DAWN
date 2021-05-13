@@ -11,7 +11,7 @@ public class Zone : Singleton<Zone>
     public int size;
     // [HideInInspector] public bool[] enabledBools = new bool[1000000];
 }
-
+#if UNITY_EDITOR
 [CustomPropertyDrawer(typeof(Zone))]
 public class InspectorGridDrawer : PropertyDrawer
 {
@@ -78,3 +78,4 @@ public class InspectorGridDrawer : PropertyDrawer
     }
 
 }
+#endif
