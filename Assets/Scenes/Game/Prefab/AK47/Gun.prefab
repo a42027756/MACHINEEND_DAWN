@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4526118887664363879
 Transform:
   m_ObjectHideFlags: 0
@@ -98,5 +98,6 @@ MonoBehaviour:
   bulletPre: {fileID: 2582956030558841365, guid: 7a56c20038afad04b86d05f9f04925a9,
     type: 3}
   weaponSlot: {fileID: 0}
+  bulletSprite: {fileID: 21300000, guid: efccbac7b49ad784495ff32e4f18a742, type: 3}
   interval: 0.15
   bulletSpeed: 8

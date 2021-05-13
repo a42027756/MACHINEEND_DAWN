@@ -28,6 +28,7 @@ public class WeaponPool : MonoSingleton<WeaponPool>
     public GameObject FirstWeapon()
     {
         weapons[0].SetActive(true);
+        BulletPool.Instance.currentWeapon = weapons[0];
         return weapons[0];
     }
 
@@ -37,8 +38,10 @@ public class WeaponPool : MonoSingleton<WeaponPool>
 
         index = (index + 1) % weapons.Count;
         GameObject obj = weapons[index];
+        BulletPool.Instance.currentWeapon = obj;
+        BulletPool.Instance.ChangeSprite();
 
-        weapons[index].SetActive(true);
+        obj.SetActive(true);
 
         return obj;
     }

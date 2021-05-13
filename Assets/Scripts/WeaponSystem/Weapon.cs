@@ -6,6 +6,7 @@ public class Weapon : MonoBehaviour
 {
     public GameObject bulletPre;
     public GameObject weaponSlot;
+    public Sprite bulletSprite;
 
     private GameObject player;
     private SpriteRenderer spriteRenderer;

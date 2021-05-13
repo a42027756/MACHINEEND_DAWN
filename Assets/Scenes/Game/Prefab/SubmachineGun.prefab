@@ -98,5 +98,6 @@ MonoBehaviour:
   bulletPre: {fileID: 2582956030558841365, guid: 7a56c20038afad04b86d05f9f04925a9,
     type: 3}
   weaponSlot: {fileID: 0}
+  bulletSprite: {fileID: 21300000, guid: a43616575f8de4043aa1d1fad9b8759d, type: 3}
   interval: 0.1
   bulletSpeed: 15
