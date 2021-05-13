@@ -30,6 +30,8 @@ public class WeaponPool : MonoSingleton<WeaponPool>
         {
             GameObject obj = Instantiate(weapons[i]);
             obj.transform.SetParent(transform);
+
+            obj.SetActive(false);
         }
 
         for(int i = 0;i < poolAmount;++i)
