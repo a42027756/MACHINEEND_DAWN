@@ -9,8 +9,9 @@ public class WeaponPool : MonoSingleton<WeaponPool>
     public List<GameObject> weapons = new List<GameObject>();
 
     public List<Animator> animators = new List<Animator>();
-    public List<GameObject> weaponIcon = new List<GameObject>();
-    public List<GameObject> weaponName = new List<GameObject>();
+    public List<Image> weaponIcon = new List<Image>();
+    public List<TMP_Text> weaponName = new List<TMP_Text>();
+    public List<TMP_Text> weaponBullet = new List<TMP_Text>();
 
     private int poolAmount;
     private int maxNum = 3;
@@ -34,11 +35,7 @@ public class WeaponPool : MonoSingleton<WeaponPool>
             obj.SetActive(false);
         }
 
-        for(int i = 0;i < poolAmount;++i)
-        {
-            weaponIcon[i].GetComponent<Image>().sprite = weapons[i].GetComponent<Weapon>().weaponImage;
-            weaponName[i].GetComponent<TMP_Text>().text = weapons[i].GetComponent<Weapon>().weaponName;
-        }
+        UpdateMessage();
     }
 
     public GameObject FirstWeapon()
@@ -60,5 +57,38 @@ public class WeaponPool : MonoSingleton<WeaponPool>
         animators[index].SetBool("isChosen", true);
 
         return obj;
+    }
+
+    public void UpdateMessage()
+    {
+        for(int i = 0;i < poolAmount;++i)
+        {
+            Weapon weapon = weapons[i].GetComponent<Weapon>();
+
+            weaponIcon[i].sprite = weapon.weaponImage;
+            weaponName[i].text = weapon.weaponName;
+            weaponBullet[i].text = "Bullets: " + weapon.currentBullet.ToString() + " / " + weapon.maxBullet.ToString();
+        }
+    }
+
+    public void LoadBullets()
+    {
+        Weapon weapon = weapons[index].GetComponent<Weapon>();
+
+        int bulletNeeded = weapon.bulletClip - weapon.currentBullet;
+
+        if(bulletNeeded != 0)
+        {
+            if(weapon.maxBullet >= bulletNeeded)
+            {
+                weapon.maxBullet -= bulletNeeded;
+                weapon.currentBullet = weapon.bulletClip;
+            }else
+            {
+                weapon.maxBullet = 0;
+                weapon.currentBullet += weapon.maxBullet;
+            }
+            UpdateMessage();
+        }
     }
 }

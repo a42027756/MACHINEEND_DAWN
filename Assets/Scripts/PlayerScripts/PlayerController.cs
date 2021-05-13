@@ -29,6 +29,11 @@ public class PlayerController : ControllerBase<PlayerController>
         {
             PlayerProperty.Instance.ChangeValue("health", -10f);
         }
+
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            WeaponPool.Instance.LoadBullets();
+        }
         //--------------test-----------------
 
         _anim.SetFloat("speed",_rigidbody2D.velocity.magnitude);

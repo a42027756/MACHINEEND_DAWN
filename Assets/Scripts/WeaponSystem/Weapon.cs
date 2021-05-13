@@ -12,13 +12,18 @@ public class Weapon : MonoBehaviour
     public string weaponName;
     public Sprite weaponImage;
 
+    public int currentBullet;
+    public int bulletClip;
+    public int maxBullet;
+    public int damageValue;
+
     private GameObject player;
     private SpriteRenderer spriteRenderer;
 
     [SerializeField] private float interval;
-    [SerializeField] private float timeCounter;
+    private float timeCounter;
     [SerializeField] private float bulletSpeed;
-    [SerializeField] private bool isFired;
+    private bool isFired;
 
     private Vector3 firePoint;
     private Vector2 difference;
@@ -52,16 +57,22 @@ public class Weapon : MonoBehaviour
 
     private void Fire()
     {   
-        firePoint = weaponSlot.GetComponentsInChildren<Transform>()[1].position;
+        if(currentBullet != 0)
+        {
+            firePoint = weaponSlot.GetComponentsInChildren<Transform>()[1].position;
 
-        GameObject bullet = BulletPool.Instance.GetFromPool();
-        bullet.transform.position = firePoint;
+            GameObject bullet = BulletPool.Instance.GetFromPool();
+            bullet.transform.position = firePoint;
 
-        difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - player.transform.position;
+            difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - player.transform.position;
 
-        float rotateByZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-        bullet.GetComponent<Transform>().rotation = Quaternion.Euler(0, 0, rotateByZ);
-        bullet.GetComponent<Rigidbody2D>().velocity = difference.normalized * bulletSpeed;
+            float rotateByZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
+            bullet.GetComponent<Transform>().rotation = Quaternion.Euler(0, 0, rotateByZ);
+            bullet.GetComponent<Rigidbody2D>().velocity = difference.normalized * bulletSpeed;
+            currentBullet--;
+        }
+        
+        WeaponPool.Instance.UpdateMessage();
     }
 
     public void Shooting()
