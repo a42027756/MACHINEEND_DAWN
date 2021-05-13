@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Bugexecuter" />
+    <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="NewGun" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +66,7 @@
       <workItem from="1620885514550" duration="45000" />
       <workItem from="1620885585372" duration="1445000" />
       <workItem from="1620888011463" duration="6000" />
-       <workItem from="1620888098163" duration="1785000" />
+      <workItem from="1620888098163" duration="3166000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1620888470403</created>
@@ -96,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620890783461</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="NewGun">
+      <created>1620893020365</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1620893020366</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +128,7 @@
     <MESSAGE value="Init" />
     <MESSAGE value="Room" />
     <MESSAGE value="Bugexecuter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bugexecuter" />
+    <MESSAGE value="NewGun" />
+    <option name="LAST_COMMIT_MESSAGE" value="NewGun" />
   </component>
 </project>
