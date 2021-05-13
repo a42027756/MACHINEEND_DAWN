@@ -21,8 +21,10 @@ public class BulletPool : MonoSingleton<BulletPool>
         {
             GameObject obj = Instantiate(bulletObj);
             obj.transform.SetParent(transform);
-            obj.GetComponent<SpriteRenderer>().sprite = currentWeapon.GetComponent<Weapon>().bulletSprite;
-            
+            if (currentWeapon.GetComponent<Weapon>() != null)
+            {
+                obj.GetComponent<SpriteRenderer>().sprite = currentWeapon.GetComponent<Weapon>().bulletSprite;
+            }
             ReturnPool(obj);
         }
     }
@@ -30,9 +32,11 @@ public class BulletPool : MonoSingleton<BulletPool>
     public void ReturnPool(GameObject go)
     {
         go.SetActive(false);
-
-        go.GetComponent<SpriteRenderer>().sprite = currentWeapon.GetComponent<Weapon>().bulletSprite;
-
+        if (currentWeapon.GetComponent<Weapon>() != null)
+        {
+            go.GetComponent<SpriteRenderer>().sprite = currentWeapon.GetComponent<Weapon>().bulletSprite;
+        }
+        
         poolObjects.Enqueue(go);
     }
 

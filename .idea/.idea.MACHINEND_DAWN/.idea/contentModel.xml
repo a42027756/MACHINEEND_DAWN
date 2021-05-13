@@ -152,11 +152,17 @@
             <e p="ControllerBase.cs" t="Include" />
           </e>
           <e p="MapSpawn" t="Include">
-            <e p="DrawArea.cs" t="Include" />
-            <e p="RandomMap.cs" t="Include" />
-            <e p="Room.cs" t="Include" />
-            <e p="RoomSpawn.cs" t="Include" />
-            <e p="Zone.cs" t="Include" />
+            <e p="MapScript" t="Include">
+              <e p="DrawArea.cs" t="Include" />
+              <e p="RandomMap.cs" t="Include" />
+              <e p="Room.cs" t="Include" />
+              <e p="RoomSpawn.cs" t="Include" />
+              <e p="Zone.cs" t="Include" />
+            </e>
+            <e p="TileExpand.cs" t="Include" />
+            <e p="TownScript" t="Include">
+              <e p="DrawRoad.cs" t="Include" />
+            </e>
           </e>
           <e p="PlayerScripts" t="Include">
             <e p="Binder.cs" t="Include" />

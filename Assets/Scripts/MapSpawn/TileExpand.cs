@@ -5,6 +5,7 @@ using UnityEngine.Tilemaps;
 
 public class TileExpand : Singleton<TileExpand>
 {
+    public long randSeed;
     //在Tilemap中的特定Tile种类上获取一个随机点
     public Vector3Int GetRandomPointInTilemap(Tilemap tilemap, TileBase basetile)
     {
@@ -89,6 +90,17 @@ public class TileExpand : Singleton<TileExpand>
                 baseMap.SetTile(new Vector3Int(originPosition.x + i,originPosition.y + j,0),null);
             }
         }
+    }
+
+    public long GetSeed()
+    {
+        randSeed = (long)(Random.Range(100000000000000000, 922337203685477579));
+        return randSeed;
+    }
+
+    public void SetSeed(long s)
+    {
+        randSeed = s;
     }
     
     

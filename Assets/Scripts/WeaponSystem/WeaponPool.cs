@@ -40,7 +40,10 @@ public class WeaponPool : MonoSingleton<WeaponPool>
 
     public GameObject FirstWeapon()
     {
-        BulletPool.Instance.currentWeapon = weapons[index];
+        if (BulletPool.Instance.currentWeapon != null)
+        {
+            BulletPool.Instance.currentWeapon = weapons[index];
+        }
         animators[index].SetBool("isChosen", true);
         return weapons[index];
     }

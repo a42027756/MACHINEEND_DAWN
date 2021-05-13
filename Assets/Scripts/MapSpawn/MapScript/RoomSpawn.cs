@@ -34,7 +34,7 @@ public class RoomSpawn : MonoBehaviour
     //随机生成墙壁快
     Vector3Int SpawnWall()
     {
-        Debug.Log("SpawnFloor");
+        // Debug.Log("SpawnFloor");
         Vector3Int originPos = FindRandomPoint();
         while(!TileExpand.Instance.CanFit(originPos, actualSize,tile_floor,roombase))
         {
