@@ -88,6 +88,7 @@ public class DrawArea
     }
 }
 
+#if UNITY_EDITOR
 [CustomPropertyDrawer(typeof(DrawArea))]
 public class InspectorAreaDrawer : PropertyDrawer
 {
@@ -113,4 +114,4 @@ public class InspectorAreaDrawer : PropertyDrawer
         return EditorGUI.GetPropertyHeight(property);
     }
 }
-
+#endif
