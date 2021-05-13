@@ -66,7 +66,10 @@ public class Weapon : MonoBehaviour
         {
             timeCounter -= Time.deltaTime;
             if(timeCounter < 0f)
+            {
+                isCounting = false;
                 timeCounter = interval;
+            }
         }
         if(Input.GetMouseButtonUp(0))
         {
