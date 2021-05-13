@@ -1,0 +1,430 @@
+Index: Assets/Scripts/MapSpawn/MapScript.meta
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/MapSpawn/MapScript.meta b/Assets/Scripts/MapSpawn/MapScript.meta
+new file mode 100644
+--- /dev/null	(date 1620907301083)
++++ b/Assets/Scripts/MapSpawn/MapScript.meta	(date 1620907301083)
+@@ -0,0 +1,8 @@
++fileFormatVersion: 2
++guid: 00dcaff2c36a6c84a977635d1a466b55
++folderAsset: yes
++DefaultImporter:
++  externalObjects: {}
++  userData: 
++  assetBundleName: 
++  assetBundleVariant: 
+Index: Assets/Scripts/MapSpawn/TownScript/DrawRoad.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/MapSpawn/TownScript/DrawRoad.cs b/Assets/Scripts/MapSpawn/TownScript/DrawRoad.cs
+new file mode 100644
+--- /dev/null	(date 1620911650877)
++++ b/Assets/Scripts/MapSpawn/TownScript/DrawRoad.cs	(date 1620911650877)
+@@ -0,0 +1,34 @@
++using System.Collections;
++using System.Collections.Generic;
++using UnityEngine;
++using UnityEngine.Tilemaps;
++
++public class DrawRoad : MonoBehaviour
++{
++    public Tilemap road_tilemap;
++    public TileBase road_tilebase;
++    public TileBase roadOn_tilebase;
++    public int unit_length;
++    public int mainNode;
++
++    private Vector3Int originPos;
++    
++    //找到主干道起点
++    private void FindOriginPos()
++    {
++        originPos = TileExpand.Instance.GetRandomPointInTilemap(road_tilemap, roadOn_tilebase);
++    }
++    
++    //绘制单元长度道路：宽度二格,第二行在startPos下方
++    private void DrawUnit(Vector3Int startPos)
++    {
++        Vector3Int secLine = new Vector3Int(startPos.x, startPos.y + 1, 0);
++        TileExpand.Instance.SpawnLineInTilemap_x_toRight(road_tilemap,road_tilebase,startPos,unit_length);
++        TileExpand.Instance.SpawnLineInTilemap_x_toRight(road_tilemap,road_tilebase,secLine,unit_length);
++    }
++    
++    void Start()
++    {
++        
++    }
++}
+Index: Assets/Scripts/MapSpawn/Zone.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/MapSpawn/Zone.cs b/Assets/Scripts/MapSpawn/MapScript/Zone.cs
+rename from Assets/Scripts/MapSpawn/Zone.cs
+rename to Assets/Scripts/MapSpawn/MapScript/Zone.cs
+--- a/Assets/Scripts/MapSpawn/Zone.cs	(revision 737b45d06a01fe80de61cfac0cf10aa449def3e7)
++++ b/Assets/Scripts/MapSpawn/MapScript/Zone.cs	(date 1620907920509)
+@@ -1,4 +1,4 @@
+-using System.Collections;
++ using System.Collections;
+ using System.Collections.Generic;
+ using UnityEngine;
+ using UnityEngine.Tilemaps;
+Index: UserSettings/EditorUserSettings.asset
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>%YAML 1.1\r\n%TAG !u! tag:unity3d.com,2011:\r\n--- !u!162 &1\r\nEditorUserSettings:\r\n  m_ObjectHideFlags: 0\r\n  serializedVersion: 4\r\n  m_ConfigSettings:\r\n    RecentlyUsedScenePath-0:\r\n      value: 22424703114646680e0b0227036c6c111b07142f1f2b233e2867083debf42d\r\n      flags: 0\r\n    RecentlyUsedScenePath-1:\r\n      value: 22424703114646680e0b0227036c78111b12563f22213229\r\n      flags: 0\r\n    RecentlyUsedScenePath-2:\r\n      value: 22424703114646680e0b0227036c6f02131b172d392d68252320092a\r\n      flags: 0\r\n    RecentlyUsedScenePath-3:\r\n      value: 2242470311464669081d033702205a0359350a2b2f2323293e664f17a2cd313fe3a706e8e43170183c0fe07c373d0431f7441c05ff1f13\r\n      flags: 0\r\n    RecentlyUsedScenePath-4:\r\n      value: 22424703114646680e0b0227036c6f02131b172d392d69003f2c113ce5f53176f7e93ffdfe\r\n      flags: 0\r\n    RecentlyUsedScenePath-5:\r\n      value: 22424703114646680e0b0227036c731f11185706232f297e38271427fb\r\n      flags: 0\r\n    RecentlyUsedScenePath-6:\r\n      value: 22424703114646680e1c05320430103d17072b3a2d3f287f192c0e27acf53a31f6fe\r\n      flags: 0\r\n    RecentlyUsedScenePath-7:\r\n      value: 22424703114646680e0b0227036c78111b12570d2d25237e38271427fb\r\n      flags: 0\r\n    vcSharedLogLevel:\r\n      value: 0d5e400f0650\r\n      flags: 0\r\n  m_VCAutomaticAdd: 1\r\n  m_VCDebugCom: 0\r\n  m_VCDebugCmd: 0\r\n  m_VCDebugOut: 0\r\n  m_SemanticMergeMode: 2\r\n  m_VCShowFailedCheckout: 1\r\n  m_VCOverwriteFailedCheckoutAssets: 1\r\n  m_VCProjectOverlayIcons: 1\r\n  m_VCHierarchyOverlayIcons: 1\r\n  m_VCOtherOverlayIcons: 1\r\n  m_VCAllowAsyncUpdate: 0\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/UserSettings/EditorUserSettings.asset b/UserSettings/EditorUserSettings.asset
+--- a/UserSettings/EditorUserSettings.asset	(revision 737b45d06a01fe80de61cfac0cf10aa449def3e7)
++++ b/UserSettings/EditorUserSettings.asset	(date 1620907300939)
+@@ -24,10 +24,10 @@
+       value: 22424703114646680e0b0227036c731f11185706232f297e38271427fb
+       flags: 0
+     RecentlyUsedScenePath-6:
+-      value: 22424703114646680e1c05320430103d17072b3a2d3f287f192c0e27acf53a31f6fe
++      value: 22424703114646680e0b0227036c78111b12570d2d25237e38271427fb
+       flags: 0
+     RecentlyUsedScenePath-7:
+-      value: 22424703114646680e0b0227036c78111b12570d2d25237e38271427fb
++      value: 22424703114646680e1c05320430103d17072b3a2d3f287f192c0e27acf53a31f6fe
+       flags: 0
+     vcSharedLogLevel:
+       value: 0d5e400f0650
+Index: Assets/Scenes/Game/sprite/UIsprites/Animate/WeaponSlotUI.controller
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>%YAML 1.1\r\n%TAG !u! tag:unity3d.com,2011:\r\n--- !u!1101 &-6214955944623081694\r\nAnimatorStateTransition:\r\n  m_ObjectHideFlags: 1\r\n  m_CorrespondingSourceObject: {fileID: 0}\r\n  m_PrefabInstance: {fileID: 0}\r\n  m_PrefabAsset: {fileID: 0}\r\n  m_Name: \r\n  m_Conditions:\r\n  - m_ConditionMode: 1\r\n    m_ConditionEvent: isChosen\r\n    m_EventTreshold: 0\r\n  m_DstStateMachine: {fileID: 0}\r\n  m_DstState: {fileID: 36817424767739332}\r\n  m_Solo: 0\r\n  m_Mute: 0\r\n  m_IsExit: 0\r\n  serializedVersion: 3\r\n  m_TransitionDuration: 0.25\r\n  m_TransitionOffset: 0\r\n  m_ExitTime: 0.75\r\n  m_HasExitTime: 0\r\n  m_HasFixedDuration: 1\r\n  m_InterruptionSource: 0\r\n  m_OrderedInterruption: 1\r\n  m_CanTransitionToSelf: 1\r\n--- !u!1101 &-732931048423056813\r\nAnimatorStateTransition:\r\n  m_ObjectHideFlags: 1\r\n  m_CorrespondingSourceObject: {fileID: 0}\r\n  m_PrefabInstance: {fileID: 0}\r\n  m_PrefabAsset: {fileID: 0}\r\n  m_Name: \r\n  m_Conditions:\r\n  - m_ConditionMode: 2\r\n    m_ConditionEvent: isChosen\r\n    m_EventTreshold: 0\r\n  m_DstStateMachine: {fileID: 0}\r\n  m_DstState: {fileID: -695254866862672446}\r\n  m_Solo: 0\r\n  m_Mute: 0\r\n  m_IsExit: 0\r\n  serializedVersion: 3\r\n  m_TransitionDuration: 0.25\r\n  m_TransitionOffset: 0\r\n  m_ExitTime: 0\r\n  m_HasExitTime: 0\r\n  m_HasFixedDuration: 1\r\n  m_InterruptionSource: 0\r\n  m_OrderedInterruption: 1\r\n  m_CanTransitionToSelf: 1\r\n--- !u!1102 &-695254866862672446\r\nAnimatorState:\r\n  serializedVersion: 6\r\n  m_ObjectHideFlags: 1\r\n  m_CorrespondingSourceObject: {fileID: 0}\r\n  m_PrefabInstance: {fileID: 0}\r\n  m_PrefabAsset: {fileID: 0}\r\n  m_Name: idle\r\n  m_Speed: 1\r\n  m_CycleOffset: 0\r\n  m_Transitions:\r\n  - {fileID: -6214955944623081694}\r\n  m_StateMachineBehaviours: []\r\n  m_Position: {x: 50, y: 50, z: 0}\r\n  m_IKOnFeet: 0\r\n  m_WriteDefaultValues: 1\r\n  m_Mirror: 0\r\n  m_SpeedParameterActive: 0\r\n  m_MirrorParameterActive: 0\r\n  m_CycleOffsetParameterActive: 0\r\n  m_TimeParameterActive: 0\r\n  m_Motion: {fileID: 0}\r\n  m_Tag: \r\n  m_SpeedParameter: \r\n  m_MirrorParameter: \r\n  m_CycleOffsetParameter: \r\n  m_TimeParameter: \r\n--- !u!91 &9100000\r\nAnimatorController:\r\n  m_ObjectHideFlags: 0\r\n  m_CorrespondingSourceObject: {fileID: 0}\r\n  m_PrefabInstance: {fileID: 0}\r\n  m_PrefabAsset: {fileID: 0}\r\n  m_Name: WeaponSlotUI\r\n  serializedVersion: 5\r\n  m_AnimatorParameters:\r\n  - m_Name: isChosen\r\n    m_Type: 4\r\n    m_DefaultFloat: 0\r\n    m_DefaultInt: 0\r\n    m_DefaultBool: 0\r\n    m_Controller: {fileID: 0}\r\n  m_AnimatorLayers:\r\n  - serializedVersion: 5\r\n    m_Name: Base Layer\r\n    m_StateMachine: {fileID: 2203328253565367428}\r\n    m_Mask: {fileID: 0}\r\n    m_Motions: []\r\n    m_Behaviours: []\r\n    m_BlendingMode: 0\r\n    m_SyncedLayerIndex: -1\r\n    m_DefaultWeight: 0\r\n    m_IKPass: 0\r\n    m_SyncedLayerAffectsTiming: 0\r\n    m_Controller: {fileID: 9100000}\r\n--- !u!1102 &36817424767739332\r\nAnimatorState:\r\n  serializedVersion: 6\r\n  m_ObjectHideFlags: 1\r\n  m_CorrespondingSourceObject: {fileID: 0}\r\n  m_PrefabInstance: {fileID: 0}\r\n  m_PrefabAsset: {fileID: 0}\r\n  m_Name: Chosen\r\n  m_Speed: 1\r\n  m_CycleOffset: 0\r\n  m_Transitions:\r\n  - {fileID: -732931048423056813}\r\n  m_StateMachineBehaviours: []\r\n  m_Position: {x: 50, y: 50, z: 0}\r\n  m_IKOnFeet: 0\r\n  m_WriteDefaultValues: 1\r\n  m_Mirror: 0\r\n  m_SpeedParameterActive: 0\r\n  m_MirrorParameterActive: 0\r\n  m_CycleOffsetParameterActive: 0\r\n  m_TimeParameterActive: 0\r\n  m_Motion: {fileID: 7400000, guid: e858212a9f68db343b4684ff81e1eb11, type: 2}\r\n  m_Tag: \r\n  m_SpeedParameter: \r\n  m_MirrorParameter: \r\n  m_CycleOffsetParameter: \r\n  m_TimeParameter: \r\n--- !u!1107 &2203328253565367428\r\nAnimatorStateMachine:\r\n  serializedVersion: 6\r\n  m_ObjectHideFlags: 1\r\n  m_CorrespondingSourceObject: {fileID: 0}\r\n  m_PrefabInstance: {fileID: 0}\r\n  m_PrefabAsset: {fileID: 0}\r\n  m_Name: Base Layer\r\n  m_ChildStates:\r\n  - serializedVersion: 1\r\n    m_State: {fileID: 36817424767739332}\r\n    m_Position: {x: 510, y: 110, z: 0}\r\n  - serializedVersion: 1\r\n    m_State: {fileID: -695254866862672446}\r\n    m_Position: {x: 250, y: 110, z: 0}\r\n  m_ChildStateMachines: []\r\n  m_AnyStateTransitions: []\r\n  m_EntryTransitions: []\r\n  m_StateMachineTransitions: {}\r\n  m_StateMachineBehaviours: []\r\n  m_AnyStatePosition: {x: 50, y: 20, z: 0}\r\n  m_EntryPosition: {x: 50, y: 120, z: 0}\r\n  m_ExitPosition: {x: 800, y: 120, z: 0}\r\n  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}\r\n  m_DefaultState: {fileID: -695254866862672446}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scenes/Game/sprite/UIsprites/Animate/WeaponSlotUI.controller b/Assets/Scenes/Game/sprite/UIsprites/Animate/WeaponSlotUI.controller
+--- a/Assets/Scenes/Game/sprite/UIsprites/Animate/WeaponSlotUI.controller	(revision 737b45d06a01fe80de61cfac0cf10aa449def3e7)
++++ b/Assets/Scenes/Game/sprite/UIsprites/Animate/WeaponSlotUI.controller	(date 1620907300948)
+@@ -17,7 +17,7 @@
+   m_Mute: 0
+   m_IsExit: 0
+   serializedVersion: 3
+-  m_TransitionDuration: 0.25
++  m_TransitionDuration: 0
+   m_TransitionOffset: 0
+   m_ExitTime: 0.75
+   m_HasExitTime: 0
+@@ -42,7 +42,7 @@
+   m_Mute: 0
+   m_IsExit: 0
+   serializedVersion: 3
+-  m_TransitionDuration: 0.25
++  m_TransitionDuration: 0
+   m_TransitionOffset: 0
+   m_ExitTime: 0
+   m_HasExitTime: 0
+@@ -91,7 +91,7 @@
+     m_DefaultFloat: 0
+     m_DefaultInt: 0
+     m_DefaultBool: 0
+-    m_Controller: {fileID: 0}
++    m_Controller: {fileID: 9100000}
+   m_AnimatorLayers:
+   - serializedVersion: 5
+     m_Name: Base Layer
+Index: Assets/Scripts/MapSpawn/RoomSpawn.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/MapSpawn/RoomSpawn.cs b/Assets/Scripts/MapSpawn/MapScript/RoomSpawn.cs
+rename from Assets/Scripts/MapSpawn/RoomSpawn.cs
+rename to Assets/Scripts/MapSpawn/MapScript/RoomSpawn.cs
+--- a/Assets/Scripts/MapSpawn/RoomSpawn.cs	(revision 737b45d06a01fe80de61cfac0cf10aa449def3e7)
++++ b/Assets/Scripts/MapSpawn/MapScript/RoomSpawn.cs	(date 1620911756586)
+@@ -22,40 +22,21 @@
+     private Vector3Int FindRandomPoint()
+     {
+         Debug.Log("BeginFind");
+-        Vector3Int randomPos = new Vector3Int(Random.Range(0, Zone.Instance.size),Random.Range(0, Zone.Instance.size),0);
++        Vector3Int randomPos = TileExpand.Instance.GetRandomPointInTilemap(tile_floor, roombase);
+         int size_min = roomList[0].size - 5,size_max = roomList[0].size + 5;
+         actualSize = Random.Range(size_min, size_max);
+         Debug.Log(actualSize);
+-        while (tile_floor.GetTile(randomPos) != roombase)
+-        {
+-            randomPos.x = Random.Range(0, Zone.Instance.size);
+-            randomPos.y = Random.Range(0,Zone.Instance.size);    
+-        }
+         Debug.Log("FindFinish");
+         return randomPos;
+     }
+     
+-    //生成墙壁块前先判断大小是否足够
+-    private bool isSizeable(Vector3Int originPos,int size)
+-    {
+-        Vector3Int left_up = new Vector3Int(originPos.x, originPos.y + size, 0);
+-        Vector3Int right_up = new Vector3Int(originPos.x + size, originPos.y + size, 0);
+-        Vector3Int right_down = new Vector3Int(originPos.x + size, originPos.y, 0);
+-        if (tile_floor.GetTile(right_up) != roombase || tile_floor.GetTile(right_down) != roombase
+-            || tile_floor.GetTile(left_up) != roombase)
+-        {
+-            return false;
+-        }
+-
+-        return true;
+-    }
+     
+     //随机生成墙壁快
+     Vector3Int SpawnWall()
+     {
+         Debug.Log("SpawnFloor");
+         Vector3Int originPos = FindRandomPoint();
+-        while(!isSizeable(originPos, actualSize))
++        while(!TileExpand.Instance.CanFit(originPos, actualSize,tile_floor,roombase))
+         {
+             originPos = FindRandomPoint();
+         }
+@@ -75,15 +56,8 @@
+     {
+         Vector3Int wallPos = SpawnWall();
+         Vector3Int originPos = new Vector3Int(wallPos.x+1,wallPos.y+1,0);
+-        for (int i = 0; i < actualSize - 2; i++)
+-        {
+-            for (int j = 0; j < actualSize - 2; j++)
+-            {
+-                tile_floor.SetTile(new Vector3Int(originPos.x + i,originPos.y + j,0),roomList[0].floor);
+-                tile_wall.SetTile(new Vector3Int(originPos.x + i,originPos.y + j,0),null);
+-            }
+-        }
+-
++        TileExpand.Instance.SpawnBlockInTilemap(tile_floor,roomList[0].floor,originPos,actualSize - 2);
++        TileExpand.Instance.ClearBlockInTilemap(tile_wall,originPos,actualSize - 2);
+         return originPos;
+     }
+     
+Index: Assets/Scenes/Game/sprite/UIsprites/Animate/Chosen.anim
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>%YAML 1.1\r\n%TAG !u! tag:unity3d.com,2011:\r\n--- !u!74 &7400000\r\nAnimationClip:\r\n  m_ObjectHideFlags: 0\r\n  m_CorrespondingSourceObject: {fileID: 0}\r\n  m_PrefabInstance: {fileID: 0}\r\n  m_PrefabAsset: {fileID: 0}\r\n  m_Name: Chosen\r\n  serializedVersion: 6\r\n  m_Legacy: 0\r\n  m_Compressed: 0\r\n  m_UseHighQualityCurve: 1\r\n  m_RotationCurves: []\r\n  m_CompressedRotationCurves: []\r\n  m_EulerCurves: []\r\n  m_PositionCurves: []\r\n  m_ScaleCurves:\r\n  - curve:\r\n      serializedVersion: 2\r\n      m_Curve:\r\n      - serializedVersion: 3\r\n        time: 0\r\n        value: {x: 1, y: 1, z: 1}\r\n        inSlope: {x: 0, y: 0, z: 0}\r\n        outSlope: {x: 0, y: 0, z: 0}\r\n        tangentMode: 0\r\n        weightedMode: 0\r\n        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}\r\n        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}\r\n      - serializedVersion: 3\r\n        time: 0.083333336\r\n        value: {x: 1.05, y: 1.05, z: 1}\r\n        inSlope: {x: 0, y: 0, z: 0}\r\n        outSlope: {x: 0, y: 0, z: 0}\r\n        tangentMode: 0\r\n        weightedMode: 0\r\n        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}\r\n        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}\r\n      m_PreInfinity: 2\r\n      m_PostInfinity: 2\r\n      m_RotationOrder: 4\r\n    path: \r\n  m_FloatCurves:\r\n  - curve:\r\n      serializedVersion: 2\r\n      m_Curve:\r\n      - serializedVersion: 3\r\n        time: 0\r\n        value: 9.234022\r\n        inSlope: 0\r\n        outSlope: 0\r\n        tangentMode: 136\r\n        weightedMode: 0\r\n        inWeight: 0.33333334\r\n        outWeight: 0.33333334\r\n      - serializedVersion: 3\r\n        time: 0.083333336\r\n        value: 9\r\n        inSlope: 0\r\n        outSlope: 0\r\n        tangentMode: 136\r\n        weightedMode: 0\r\n        inWeight: 0.33333334\r\n        outWeight: 0.33333334\r\n      m_PreInfinity: 2\r\n      m_PostInfinity: 2\r\n      m_RotationOrder: 4\r\n    attribute: m_AnchoredPosition.y\r\n    path: BoxBackground\r\n    classID: 224\r\n    script: {fileID: 0}\r\n  m_PPtrCurves: []\r\n  m_SampleRate: 60\r\n  m_WrapMode: 0\r\n  m_Bounds:\r\n    m_Center: {x: 0, y: 0, z: 0}\r\n    m_Extent: {x: 0, y: 0, z: 0}\r\n  m_ClipBindingConstant:\r\n    genericBindings:\r\n    - serializedVersion: 2\r\n      path: 0\r\n      attribute: 3\r\n      script: {fileID: 0}\r\n      typeID: 4\r\n      customType: 0\r\n      isPPtrCurve: 0\r\n    - serializedVersion: 2\r\n      path: 3695050075\r\n      attribute: 538195251\r\n      script: {fileID: 0}\r\n      typeID: 224\r\n      customType: 28\r\n      isPPtrCurve: 0\r\n    pptrCurveMapping: []\r\n  m_AnimationClipSettings:\r\n    serializedVersion: 2\r\n    m_AdditiveReferencePoseClip: {fileID: 0}\r\n    m_AdditiveReferencePoseTime: 0\r\n    m_StartTime: 0\r\n    m_StopTime: 0.083333336\r\n    m_OrientationOffsetY: 0\r\n    m_Level: 0\r\n    m_CycleOffset: 0\r\n    m_HasAdditiveReferencePose: 0\r\n    m_LoopTime: 0\r\n    m_LoopBlend: 0\r\n    m_LoopBlendOrientation: 0\r\n    m_LoopBlendPositionY: 0\r\n    m_LoopBlendPositionXZ: 0\r\n    m_KeepOriginalOrientation: 0\r\n    m_KeepOriginalPositionY: 1\r\n    m_KeepOriginalPositionXZ: 0\r\n    m_HeightFromFeet: 0\r\n    m_Mirror: 0\r\n  m_EditorCurves:\r\n  - curve:\r\n      serializedVersion: 2\r\n      m_Curve:\r\n      - serializedVersion: 3\r\n        time: 0\r\n        value: 1\r\n        inSlope: 0\r\n        outSlope: 0\r\n        tangentMode: 136\r\n        weightedMode: 0\r\n        inWeight: 0.33333334\r\n        outWeight: 0.33333334\r\n      - serializedVersion: 3\r\n        time: 0.083333336\r\n        value: 1.05\r\n        inSlope: 0\r\n        outSlope: 0\r\n        tangentMode: 136\r\n        weightedMode: 0\r\n        inWeight: 0.33333334\r\n        outWeight: 0.33333334\r\n      m_PreInfinity: 2\r\n      m_PostInfinity: 2\r\n      m_RotationOrder: 4\r\n    attribute: m_LocalScale.x\r\n    path: \r\n    classID: 224\r\n    script: {fileID: 0}\r\n  - curve:\r\n      serializedVersion: 2\r\n      m_Curve:\r\n      - serializedVersion: 3\r\n        time: 0\r\n        value: 1\r\n        inSlope: 0\r\n        outSlope: 0\r\n        tangentMode: 136\r\n        weightedMode: 0\r\n        inWeight: 0.33333334\r\n        outWeight: 0.33333334\r\n      - serializedVersion: 3\r\n        time: 0.083333336\r\n        value: 1.05\r\n        inSlope: 0\r\n        outSlope: 0\r\n        tangentMode: 136\r\n        weightedMode: 0\r\n        inWeight: 0.33333334\r\n        outWeight: 0.33333334\r\n      m_PreInfinity: 2\r\n      m_PostInfinity: 2\r\n      m_RotationOrder: 4\r\n    attribute: m_LocalScale.y\r\n    path: \r\n    classID: 224\r\n    script: {fileID: 0}\r\n  - curve:\r\n      serializedVersion: 2\r\n      m_Curve:\r\n      - serializedVersion: 3\r\n        time: 0\r\n        value: 1\r\n        inSlope: 0\r\n        outSlope: 0\r\n        tangentMode: 136\r\n        weightedMode: 0\r\n        inWeight: 0.33333334\r\n        outWeight: 0.33333334\r\n      - serializedVersion: 3\r\n        time: 0.083333336\r\n        value: 1\r\n        inSlope: 0\r\n        outSlope: 0\r\n        tangentMode: 136\r\n        weightedMode: 0\r\n        inWeight: 0.33333334\r\n        outWeight: 0.33333334\r\n      m_PreInfinity: 2\r\n      m_PostInfinity: 2\r\n      m_RotationOrder: 4\r\n    attribute: m_LocalScale.z\r\n    path: \r\n    classID: 224\r\n    script: {fileID: 0}\r\n  - curve:\r\n      serializedVersion: 2\r\n      m_Curve:\r\n      - serializedVersion: 3\r\n        time: 0\r\n        value: 9.234022\r\n        inSlope: 0\r\n        outSlope: 0\r\n        tangentMode: 136\r\n        weightedMode: 0\r\n        inWeight: 0.33333334\r\n        outWeight: 0.33333334\r\n      - serializedVersion: 3\r\n        time: 0.083333336\r\n        value: 9\r\n        inSlope: 0\r\n        outSlope: 0\r\n        tangentMode: 136\r\n        weightedMode: 0\r\n        inWeight: 0.33333334\r\n        outWeight: 0.33333334\r\n      m_PreInfinity: 2\r\n      m_PostInfinity: 2\r\n      m_RotationOrder: 4\r\n    attribute: m_AnchoredPosition.y\r\n    path: BoxBackground\r\n    classID: 224\r\n    script: {fileID: 0}\r\n  m_EulerEditorCurves: []\r\n  m_HasGenericRootTransform: 0\r\n  m_HasMotionFloatCurves: 0\r\n  m_Events: []\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scenes/Game/sprite/UIsprites/Animate/Chosen.anim b/Assets/Scenes/Game/sprite/UIsprites/Animate/Chosen.anim
+--- a/Assets/Scenes/Game/sprite/UIsprites/Animate/Chosen.anim	(revision 737b45d06a01fe80de61cfac0cf10aa449def3e7)
++++ b/Assets/Scenes/Game/sprite/UIsprites/Animate/Chosen.anim	(date 1620907301088)
+@@ -29,7 +29,7 @@
+         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+       - serializedVersion: 3
+-        time: 0.083333336
++        time: 0.05
+         value: {x: 1.05, y: 1.05, z: 1}
+         inSlope: {x: 0, y: 0, z: 0}
+         outSlope: {x: 0, y: 0, z: 0}
+@@ -55,7 +55,7 @@
+         inWeight: 0.33333334
+         outWeight: 0.33333334
+       - serializedVersion: 3
+-        time: 0.083333336
++        time: 0.05
+         value: 9
+         inSlope: 0
+         outSlope: 0
+@@ -98,7 +98,7 @@
+     m_AdditiveReferencePoseClip: {fileID: 0}
+     m_AdditiveReferencePoseTime: 0
+     m_StartTime: 0
+-    m_StopTime: 0.083333336
++    m_StopTime: 0.05
+     m_OrientationOffsetY: 0
+     m_Level: 0
+     m_CycleOffset: 0
+@@ -127,7 +127,7 @@
+         inWeight: 0.33333334
+         outWeight: 0.33333334
+       - serializedVersion: 3
+-        time: 0.083333336
++        time: 0.05
+         value: 1.05
+         inSlope: 0
+         outSlope: 0
+@@ -155,7 +155,7 @@
+         inWeight: 0.33333334
+         outWeight: 0.33333334
+       - serializedVersion: 3
+-        time: 0.083333336
++        time: 0.05
+         value: 1.05
+         inSlope: 0
+         outSlope: 0
+@@ -183,7 +183,7 @@
+         inWeight: 0.33333334
+         outWeight: 0.33333334
+       - serializedVersion: 3
+-        time: 0.083333336
++        time: 0.05
+         value: 1
+         inSlope: 0
+         outSlope: 0
+@@ -211,7 +211,7 @@
+         inWeight: 0.33333334
+         outWeight: 0.33333334
+       - serializedVersion: 3
+-        time: 0.083333336
++        time: 0.05
+         value: 9
+         inSlope: 0
+         outSlope: 0
+Index: Assets/Scripts/MapSpawn/TileExpand.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/MapSpawn/TileExpand.cs b/Assets/Scripts/MapSpawn/TileExpand.cs
+new file mode 100644
+--- /dev/null	(date 1620911411279)
++++ b/Assets/Scripts/MapSpawn/TileExpand.cs	(date 1620911411279)
+@@ -0,0 +1,95 @@
++using System.Collections;
++using System.Collections.Generic;
++using UnityEngine;
++using UnityEngine.Tilemaps;
++
++public class TileExpand : Singleton<TileExpand>
++{
++    //在Tilemap中的特定Tile种类上获取一个随机点
++    public Vector3Int GetRandomPointInTilemap(Tilemap tilemap, TileBase basetile)
++    {
++        Vector3Int randomPos = new Vector3Int(Random.Range(0, Zone.Instance.size),Random.Range(0, Zone.Instance.size),0);
++        while (tilemap.GetTile(randomPos) != basetile)
++        {
++            randomPos.x = Random.Range(0, Zone.Instance.size);
++            randomPos.y = Random.Range(0,Zone.Instance.size);    
++        }
++        return randomPos;
++    }
++    
++    //特定tile片区上是否可以容纳size大小的正方形，可修改为非正方形
++    public bool CanFit(Vector3Int originPos,int size,Tilemap baseMap, TileBase tileBase)
++    {
++        Vector3Int left_up = new Vector3Int(originPos.x, originPos.y + size, 0);
++        Vector3Int right_up = new Vector3Int(originPos.x + size, originPos.y + size, 0);
++        Vector3Int right_down = new Vector3Int(originPos.x + size, originPos.y, 0);
++        if (baseMap.GetTile(right_up) != tileBase || baseMap.GetTile(right_down) != tileBase
++                                                     || baseMap.GetTile(left_up) != tileBase)
++        {
++            return false;
++        }
++        return true;
++    }
++    
++    //在baseMap生成spawnSize * spawnSize大小的baseTile，起点为originPosition
++    public void  SpawnBlockInTilemap(Tilemap baseMap, TileBase baseTile , Vector3Int originPosition,int spawnSize)
++    {
++        for (int i = 0; i < spawnSize; i++)
++        {
++            for (int j = 0; j < spawnSize; j++)
++            {
++                baseMap.SetTile(new Vector3Int(originPosition.x + i,originPosition.y + j,0),baseTile);
++            }
++        }
++    }
++
++    //在basemap上延x轴向右绘制tile，绘制笔刷为basetile，起点为originPosition，线段长度为spawnLength
++    public void SpawnLineInTilemap_x_toRight(Tilemap baseMap, TileBase baseTile, Vector3Int originPosition, int spawnLength)
++    {
++        for (int i = 0; i < spawnLength; i++)
++        {
++            baseMap.SetTile(new Vector3Int(originPosition.x + i, originPosition.y, 0), baseTile);
++        }
++    }
++    
++    //在basemap上延x轴向左绘制tile，绘制笔刷为basetile，起点为originPosition，线段长度为spawnLength
++    public void SpawnLineInTilemap_x_toLeft(Tilemap baseMap, TileBase baseTile, Vector3Int originPosition, int spawnLength)
++    {
++        for (int i = 0; i < spawnLength; i++)
++        {
++            baseMap.SetTile(new Vector3Int(originPosition.x - i, originPosition.y, 0), baseTile);
++        }
++    }
++
++    //在basemap上向上延y轴绘制tile，绘制笔刷为basetile，起点为originPosition，线段长度为spawnLength
++    public void SpawnLineInTilemap_y_ToUp(Tilemap baseMap, TileBase baseTile, Vector3Int originPosition, int spawnLength)
++    {
++        for (int i = 0; i < spawnLength; i++)
++        {
++            baseMap.SetTile(new Vector3Int(originPosition.x, originPosition.y + i, 0), baseTile);
++        }
++    }
++    
++    //在basemap上向下延y轴绘制tile，绘制笔刷为basetile，起点为originPosition，线段长度为spawnLength
++    public void SpawnLineInTilemap_y_ToDown(Tilemap baseMap, TileBase baseTile, Vector3Int originPosition, int spawnLength)
++    {
++        for (int i = 0; i < spawnLength; i++)
++        {
++            baseMap.SetTile(new Vector3Int(originPosition.x, originPosition.y - i, 0), baseTile);
++        }
++    }
++
++    //在baseMap清空spawnSize * spawnSize大小的区块，起点为originPosition
++    public void ClearBlockInTilemap(Tilemap baseMap, Vector3Int originPosition, int spawnSize)
++    {
++        for (int i = 0; i < spawnSize; i++)
++        {
++            for (int j = 0; j < spawnSize; j++)
++            {
++                baseMap.SetTile(new Vector3Int(originPosition.x + i,originPosition.y + j,0),null);
++            }
++        }
++    }
++    
++    
++}
+Index: Assets/Scenes/Game/sprite/Weapon/bullet.png.meta
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>fileFormatVersion: 2\r\nguid: 29962dbadd748c845a2b17960667870f\r\nTextureImporter:\r\n  internalIDToNameTable:\r\n  - first:\r\n      213: -2346302928887187388\r\n    second: bullet_0\r\n  - first:\r\n      213: 5379323082974078785\r\n    second: bullet_1\r\n  externalObjects: {}\r\n  serializedVersion: 11\r\n  mipmaps:\r\n    mipMapMode: 0\r\n    enableMipMap: 0\r\n    sRGBTexture: 1\r\n    linearTexture: 0\r\n    fadeOut: 0\r\n    borderMipMap: 0\r\n    mipMapsPreserveCoverage: 0\r\n    alphaTestReferenceValue: 0.5\r\n    mipMapFadeDistanceStart: 1\r\n    mipMapFadeDistanceEnd: 3\r\n  bumpmap:\r\n    convertToNormalMap: 0\r\n    externalNormalMap: 0\r\n    heightScale: 0.25\r\n    normalMapFilter: 0\r\n  isReadable: 0\r\n  streamingMipmaps: 0\r\n  streamingMipmapsPriority: 0\r\n  vTOnly: 0\r\n  grayScaleToAlpha: 0\r\n  generateCubemap: 6\r\n  cubemapConvolution: 0\r\n  seamlessCubemap: 0\r\n  textureFormat: 1\r\n  maxTextureSize: 2048\r\n  textureSettings:\r\n    serializedVersion: 2\r\n    filterMode: 0\r\n    aniso: -1\r\n    mipBias: -100\r\n    wrapU: 1\r\n    wrapV: 1\r\n    wrapW: 1\r\n  nPOTScale: 0\r\n  lightmap: 0\r\n  compressionQuality: 50\r\n  spriteMode: 2\r\n  spriteExtrude: 1\r\n  spriteMeshType: 1\r\n  alignment: 0\r\n  spritePivot: {x: 0.5, y: 0.5}\r\n  spritePixelsToUnits: 8\r\n  spriteBorder: {x: 0, y: 0, z: 0, w: 0}\r\n  spriteGenerateFallbackPhysicsShape: 1\r\n  alphaUsage: 1\r\n  alphaIsTransparency: 1\r\n  spriteTessellationDetail: -1\r\n  textureType: 8\r\n  textureShape: 1\r\n  singleChannelComponent: 0\r\n  flipbookRows: 1\r\n  flipbookColumns: 1\r\n  maxTextureSizeSet: 0\r\n  compressionQualitySet: 0\r\n  textureFormatSet: 0\r\n  ignorePngGamma: 0\r\n  applyGammaDecoding: 0\r\n  platformSettings:\r\n  - serializedVersion: 3\r\n    buildTarget: DefaultTexturePlatform\r\n    maxTextureSize: 2048\r\n    resizeAlgorithm: 1\r\n    textureFormat: -1\r\n    textureCompression: 1\r\n    compressionQuality: 50\r\n    crunchedCompression: 0\r\n    allowsAlphaSplitting: 0\r\n    overridden: 0\r\n    androidETC2FallbackOverride: 0\r\n    forceMaximumCompressionQuality_BC6H_BC7: 0\r\n  - serializedVersion: 3\r\n    buildTarget: Standalone\r\n    maxTextureSize: 2048\r\n    resizeAlgorithm: 1\r\n    textureFormat: -1\r\n    textureCompression: 1\r\n    compressionQuality: 50\r\n    crunchedCompression: 0\r\n    allowsAlphaSplitting: 0\r\n    overridden: 0\r\n    androidETC2FallbackOverride: 0\r\n    forceMaximumCompressionQuality_BC6H_BC7: 0\r\n  spriteSheet:\r\n    serializedVersion: 2\r\n    sprites:\r\n    - serializedVersion: 2\r\n      name: bullet_0\r\n      rect:\r\n        serializedVersion: 2\r\n        x: 12\r\n        y: 14\r\n        width: 9\r\n        height: 4\r\n      alignment: 0\r\n      pivot: {x: 0, y: 0}\r\n      border: {x: 0, y: 0, z: 0, w: 0}\r\n      outline: []\r\n      physicsShape: []\r\n      tessellationDetail: 0\r\n      bones: []\r\n      spriteID: 448783cdae1407fd0800000000000000\r\n      internalID: -2346302928887187388\r\n      vertices: []\r\n      indices: \r\n      edges: []\r\n      weights: []\r\n    - serializedVersion: 2\r\n      name: bullet_1\r\n      rect:\r\n        serializedVersion: 2\r\n        x: 44\r\n        y: 14\r\n        width: 8\r\n        height: 4\r\n      alignment: 0\r\n      pivot: {x: 0, y: 0}\r\n      border: {x: 0, y: 0, z: 0, w: 0}\r\n      outline: []\r\n      physicsShape: []\r\n      tessellationDetail: 0\r\n      bones: []\r\n      spriteID: 147aab4d7d137aa40800000000000000\r\n      internalID: 5379323082974078785\r\n      vertices: []\r\n      indices: \r\n      edges: []\r\n      weights: []\r\n    outline: []\r\n    physicsShape: []\r\n    bones: []\r\n    spriteID: 5e97eb03825dee720800000000000000\r\n    internalID: 0\r\n    vertices: []\r\n    indices: \r\n    edges: []\r\n    weights: []\r\n    secondaryTextures: []\r\n  spritePackingTag: \r\n  pSDRemoveMatte: 0\r\n  pSDShowRemoveMatteOption: 0\r\n  userData: \r\n  assetBundleName: \r\n  assetBundleVariant: \r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scenes/Game/sprite/Weapon/bullet.png.meta b/Assets/Scenes/Game/sprite/Weapon/bullet.png.meta
+--- a/Assets/Scenes/Game/sprite/Weapon/bullet.png.meta	(revision 737b45d06a01fe80de61cfac0cf10aa449def3e7)
++++ b/Assets/Scenes/Game/sprite/Weapon/bullet.png.meta	(date 1620907301093)
+@@ -52,7 +52,7 @@
+   spriteMeshType: 1
+   alignment: 0
+   spritePivot: {x: 0.5, y: 0.5}
+-  spritePixelsToUnits: 8
++  spritePixelsToUnits: 16
+   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+   spriteGenerateFallbackPhysicsShape: 1
+   alphaUsage: 1
+diff --git a/Assets/Scripts/MapSpawn/Zone.cs.meta b/Assets/Scripts/MapSpawn/MapScript/Zone.cs.meta
+rename from Assets/Scripts/MapSpawn/Zone.cs.meta
+rename to Assets/Scripts/MapSpawn/MapScript/Zone.cs.meta
+diff --git a/Assets/Scripts/MapSpawn/DrawArea.cs.meta b/Assets/Scripts/MapSpawn/MapScript/DrawArea.cs.meta
+rename from Assets/Scripts/MapSpawn/DrawArea.cs.meta
+rename to Assets/Scripts/MapSpawn/MapScript/DrawArea.cs.meta
+diff --git a/Assets/Scripts/MapSpawn/DrawArea.cs b/Assets/Scripts/MapSpawn/MapScript/DrawArea.cs
+rename from Assets/Scripts/MapSpawn/DrawArea.cs
+rename to Assets/Scripts/MapSpawn/MapScript/DrawArea.cs
+diff --git a/Assets/Scripts/MapSpawn/Room.cs b/Assets/Scripts/MapSpawn/MapScript/Room.cs
+rename from Assets/Scripts/MapSpawn/Room.cs
+rename to Assets/Scripts/MapSpawn/MapScript/Room.cs
+diff --git a/Assets/Scripts/MapSpawn/Room.cs.meta b/Assets/Scripts/MapSpawn/MapScript/Room.cs.meta
+rename from Assets/Scripts/MapSpawn/Room.cs.meta
+rename to Assets/Scripts/MapSpawn/MapScript/Room.cs.meta
+diff --git a/Assets/Scripts/MapSpawn/RandomMap.cs.meta b/Assets/Scripts/MapSpawn/MapScript/RandomMap.cs.meta
+rename from Assets/Scripts/MapSpawn/RandomMap.cs.meta
+rename to Assets/Scripts/MapSpawn/MapScript/RandomMap.cs.meta
+diff --git a/Assets/Scripts/MapSpawn/RoomSpawn.cs.meta b/Assets/Scripts/MapSpawn/MapScript/RoomSpawn.cs.meta
+rename from Assets/Scripts/MapSpawn/RoomSpawn.cs.meta
+rename to Assets/Scripts/MapSpawn/MapScript/RoomSpawn.cs.meta
+diff --git a/Assets/Scripts/MapSpawn/RandomMap.cs b/Assets/Scripts/MapSpawn/MapScript/RandomMap.cs
+rename from Assets/Scripts/MapSpawn/RandomMap.cs
+rename to Assets/Scripts/MapSpawn/MapScript/RandomMap.cs

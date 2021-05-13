@@ -22,40 +22,21 @@ public class RoomSpawn : MonoBehaviour
     private Vector3Int FindRandomPoint()
     {
         Debug.Log("BeginFind");
-        Vector3Int randomPos = new Vector3Int(Random.Range(0, Zone.Instance.size),Random.Range(0, Zone.Instance.size),0);
+        Vector3Int randomPos = TileExpand.Instance.GetRandomPointInTilemap(tile_floor, roombase);
         int size_min = roomList[0].size - 5,size_max = roomList[0].size + 5;
         actualSize = Random.Range(size_min, size_max);
         Debug.Log(actualSize);
-        while (tile_floor.GetTile(randomPos) != roombase)
-        {
-            randomPos.x = Random.Range(0, Zone.Instance.size);
-            randomPos.y = Random.Range(0,Zone.Instance.size);    
-        }
         Debug.Log("FindFinish");
         return randomPos;
     }
     
-    //生成墙壁块前先判断大小是否足够
-    private bool isSizeable(Vector3Int originPos,int size)
-    {
-        Vector3Int left_up = new Vector3Int(originPos.x, originPos.y + size, 0);
-        Vector3Int right_up = new Vector3Int(originPos.x + size, originPos.y + size, 0);
-        Vector3Int right_down = new Vector3Int(originPos.x + size, originPos.y, 0);
-        if (tile_floor.GetTile(right_up) != roombase || tile_floor.GetTile(right_down) != roombase
-            || tile_floor.GetTile(left_up) != roombase)
-        {
-            return false;
-        }
-
-        return true;
-    }
     
     //随机生成墙壁快
     Vector3Int SpawnWall()
     {
         Debug.Log("SpawnFloor");
         Vector3Int originPos = FindRandomPoint();
-        while(!isSizeable(originPos, actualSize))
+        while(!TileExpand.Instance.CanFit(originPos, actualSize,tile_floor,roombase))
         {
             originPos = FindRandomPoint();
         }
@@ -75,15 +56,8 @@ public class RoomSpawn : MonoBehaviour
     {
         Vector3Int wallPos = SpawnWall();
         Vector3Int originPos = new Vector3Int(wallPos.x+1,wallPos.y+1,0);
-        for (int i = 0; i < actualSize - 2; i++)
-        {
-            for (int j = 0; j < actualSize - 2; j++)
-            {
-                tile_floor.SetTile(new Vector3Int(originPos.x + i,originPos.y + j,0),roomList[0].floor);
-                tile_wall.SetTile(new Vector3Int(originPos.x + i,originPos.y + j,0),null);
-            }
-        }
-
+        TileExpand.Instance.SpawnBlockInTilemap(tile_floor,roomList[0].floor,originPos,actualSize - 2);
+        TileExpand.Instance.ClearBlockInTilemap(tile_wall,originPos,actualSize - 2);
         return originPos;
     }
     
