@@ -17,10 +17,7 @@ public class WeaponSlot : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
 
         currentWeapon = WeaponPool.Instance.FirstWeapon();
-        spriteRenderer.sprite = currentWeapon.GetComponent<SpriteRenderer>().sprite;
-        weapon = currentWeapon.GetComponent<Weapon>();
-        weapon.weaponSlot = gameObject;
-        weapon.Initialize();
+        Configure();
     }
 
     void Update()
@@ -31,7 +28,10 @@ public class WeaponSlot : MonoBehaviour
 
         //---------------test----------------
         if(Input.GetMouseButtonDown(1))
-            SwichToNextWeapon();
+        {
+            currentWeapon = WeaponPool.Instance.GetNextWeapon();
+            Configure();
+        }
         //---------------test----------------
     }
 
@@ -61,9 +61,8 @@ public class WeaponSlot : MonoBehaviour
         }
     }
 
-    private void SwichToNextWeapon()
+    private void Configure()
     {
-        currentWeapon = WeaponPool.Instance.GetNextWeapon();
         spriteRenderer.sprite = currentWeapon.GetComponent<SpriteRenderer>().sprite;
         weapon = currentWeapon.GetComponent<Weapon>();
         weapon.weaponSlot = gameObject;

@@ -20,7 +20,7 @@ public class WeaponPool : MonoSingleton<WeaponPool>
         {
             GameObject obj = Instantiate(weapons[i]);
             obj.transform.SetParent(transform);
-            
+
             obj.SetActive(false);
         }
     }
@@ -28,7 +28,6 @@ public class WeaponPool : MonoSingleton<WeaponPool>
     public GameObject FirstWeapon()
     {
         weapons[0].SetActive(true);
-
         return weapons[0];
     }
 
@@ -37,9 +36,9 @@ public class WeaponPool : MonoSingleton<WeaponPool>
         weapons[index].SetActive(false);
 
         index = (index + 1) % weapons.Count;
-
         GameObject obj = weapons[index];
-        obj.SetActive(true);
+
+        weapons[index].SetActive(true);
 
         return obj;
     }
