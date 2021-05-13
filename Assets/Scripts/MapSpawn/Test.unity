@@ -3572,7 +3572,7 @@ MonoBehaviour:
   myRigidbody2D: {fileID: 0}
   myTransform: {fileID: 1400755158339405254}
   myAnim: {fileID: 0}
-  myBag: {fileID: 0}
+  myBag: {fileID: 99543251}
   speed: 4
   health: {fileID: 2823574659397006273}
   water: {fileID: 2823574658686952255}
@@ -3589,7 +3589,7 @@ GameObject:
   - component: {fileID: 5872933064002432684}
   - component: {fileID: 5872933064002432685}
   m_Layer: 0
-  m_Name: '---PlayerControl---'
+  m_Name: ---PlayerControl---
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
