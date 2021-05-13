@@ -41,7 +41,6 @@ public class PlayerProperty : ControllerBase<PlayerProperty>, IProperty
 
     private void ValueBoxUpdate()
     {
-        properties["health"] -= 0.15f;
         properties["thirsty"] -= 0.2f;
         properties["hunger"] -= 0.1f;
 

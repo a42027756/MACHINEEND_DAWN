@@ -100,5 +100,7 @@ MonoBehaviour:
   weaponSlot: {fileID: 0}
   bulletSprite: {fileID: -2346302928887187388, guid: 29962dbadd748c845a2b17960667870f,
     type: 3}
+  weaponName: AK47
+  weaponImage: {fileID: 21300000, guid: 9d252771242f5a149ad16a8ffc1a084e, type: 3}
   interval: 0.15
   bulletSpeed: 8

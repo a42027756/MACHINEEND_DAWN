@@ -100,5 +100,7 @@ MonoBehaviour:
   weaponSlot: {fileID: 0}
   bulletSprite: {fileID: 5379323082974078785, guid: 29962dbadd748c845a2b17960667870f,
     type: 3}
+  weaponName: SubmachineGun
+  weaponImage: {fileID: 21300000, guid: a43616575f8de4043aa1d1fad9b8759d, type: 3}
   interval: 0.1
   bulletSpeed: 15
