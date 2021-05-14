@@ -7,6 +7,7 @@ public class Weapon : MonoBehaviour
     public GameObject bulletPre;
     public GameObject weaponSlot;
     public Sprite bulletSprite;
+    public Transform muzzle;
     
     [Header("weapon properties")]
     public string weaponName;
@@ -60,7 +61,7 @@ public class Weapon : MonoBehaviour
     {   
         if(currentBullet != 0)
         {
-            firePoint = weaponSlot.GetComponentsInChildren<Transform>()[1].position;
+            firePoint = weaponSlot.GetComponentsInChildren<Weapon>()[0].muzzle.position;
 
             GameObject bullet = BulletPool.Instance.GetFromPool();
             bullet.transform.position = firePoint;

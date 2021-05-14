@@ -29,7 +29,7 @@ public class WeaponPool : MonoSingleton<WeaponPool>
     {
         for(int i = 0;i < weapons.Count;++i)
         {
-            GameObject obj = Instantiate(weapons[i]);
+            GameObject obj = Instantiate(weapons[i], transform.position, Quaternion.identity);
             obj.transform.SetParent(transform);
 
             obj.SetActive(false);
@@ -40,10 +40,12 @@ public class WeaponPool : MonoSingleton<WeaponPool>
 
     public GameObject FirstWeapon()
     {
-        if (BulletPool.Instance.currentWeapon != null)
+        if(BulletPool.Instance.currentWeapon != null)
         {
             BulletPool.Instance.currentWeapon = weapons[index];
         }
+
+        weapons[index].SetActive(true);
         animators[index].SetBool("isChosen", true);
         return weapons[index];
     }
@@ -51,12 +53,14 @@ public class WeaponPool : MonoSingleton<WeaponPool>
     public GameObject GetNextWeapon()
     {
         animators[index].SetBool("isChosen", false);
+        weapons[index].SetActive(false);
 
         index = (index + 1) % poolAmount;
         GameObject obj = weapons[index];
         BulletPool.Instance.currentWeapon = obj;
         BulletPool.Instance.ChangeSprite();
 
+        weapons[index].SetActive(true);
         animators[index].SetBool("isChosen", true);
 
         return obj;

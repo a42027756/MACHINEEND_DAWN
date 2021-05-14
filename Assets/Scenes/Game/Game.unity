@@ -520,8 +520,9 @@ GameObject:
   - component: {fileID: 559496011}
   - component: {fileID: 559496012}
   - component: {fileID: 559496013}
+  - component: {fileID: 559496014}
   m_Layer: 0
-  m_Name: Weapon
+  m_Name: WeaponPool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -535,10 +536,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559496010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.062, y: -0.207, z: 0}
+  m_LocalPosition: {x: -0.033, y: -0.109, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
-  m_Children:
-  - {fileID: 704581527}
+  m_Children: []
   m_Father: {fileID: 1087707687}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -605,6 +605,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3423a0f97e34cf64aa99f7f8518fcee3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &559496014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559496010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd072b7dd153e134faa98ae4f908e406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapons:
+  - {fileID: 4526118887664363873, guid: 270bce10dbdfb754c858dddf1f6a8fae, type: 3}
+  - {fileID: 7935496132211875191, guid: 73afda39cf4a6224ca6ae6a860ed4d24, type: 3}
+  - {fileID: 2509823889630909515, guid: 157b5c7c3b9bec44ba02da24c83e4cfc, type: 3}
+  animators:
+  - {fileID: 2800294103831874747}
+  - {fileID: 545075836136728491}
+  - {fileID: 545075836076235169}
+  weaponIcon:
+  - {fileID: 2309550364505361340}
+  - {fileID: 90618323966255276}
+  - {fileID: 90618324035788454}
+  weaponName:
+  - {fileID: 2393099619541935456}
+  - {fileID: 34098466514423408}
+  - {fileID: 34098466440835194}
+  weaponBullet:
+  - {fileID: 2905190947916069999}
+  - {fileID: 656844900891268991}
+  - {fileID: 656844900826589557}
 --- !u!1 &571435894
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,99 +733,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 571435894}
   m_CullTransparentMesh: 1
---- !u!1 &704581526
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 704581527}
-  m_Layer: 0
-  m_Name: Muzzle
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &704581527
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 704581526}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.852, y: 0.124, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 559496011}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &745103882
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 745103884}
-  - component: {fileID: 745103883}
-  m_Layer: 0
-  m_Name: WeaponPool
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &745103883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 745103882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd072b7dd153e134faa98ae4f908e406, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weapons:
-  - {fileID: 4526118887664363873, guid: 270bce10dbdfb754c858dddf1f6a8fae, type: 3}
-  - {fileID: 7935496132211875191, guid: 73afda39cf4a6224ca6ae6a860ed4d24, type: 3}
-  - {fileID: 2509823889630909515, guid: 157b5c7c3b9bec44ba02da24c83e4cfc, type: 3}
-  animators:
-  - {fileID: 2800294103831874747}
-  - {fileID: 545075836136728491}
-  - {fileID: 545075836076235169}
-  weaponIcon:
-  - {fileID: 2309550364505361340}
-  - {fileID: 90618323966255276}
-  - {fileID: 90618324035788454}
-  weaponName:
-  - {fileID: 2393099619541935456}
-  - {fileID: 34098466514423408}
-  - {fileID: 34098466440835194}
-  weaponBullet:
-  - {fileID: 2905190947916069999}
-  - {fileID: 656844900891268991}
-  - {fileID: 656844900826589557}
---- !u!4 &745103884
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 745103882}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &886152285
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,7 +980,7 @@ RectTransform:
   - {fileID: 1473097591}
   - {fileID: 489780140}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7706,7 +7645,7 @@ Transform:
   m_Children:
   - {fileID: 2104025433}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1847616613
 GameObject:
