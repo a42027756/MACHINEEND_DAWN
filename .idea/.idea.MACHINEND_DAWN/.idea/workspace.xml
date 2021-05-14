@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="FixBug">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/Direction.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/Town.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/RandomMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/RandomMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/Test.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/TileExpand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/TileExpand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/DrawRoad.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/DrawRoad.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +93,7 @@
       <workItem from="1620885585372" duration="1445000" />
       <workItem from="1620888011463" duration="6000" />
       <workItem from="1620888098163" duration="7008000" />
-      <workItem from="1620913894652" duration="25883000" />
+      <workItem from="1620913894652" duration="27525000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1620888470403</created>
@@ -161,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620919398437</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="FixBug">
+      <created>1620976120822</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1620976120822</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

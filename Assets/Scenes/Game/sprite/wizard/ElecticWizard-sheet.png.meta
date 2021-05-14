@@ -1,40 +1,43 @@
 fileFormatVersion: 2
-guid: a7522d240746fad42993c8c37c13d200
+guid: 10a17732f657ca141816888b87bad061
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3050450955240153659
-    second: ElecticWizard_0
+      213: -2463514413936004428
+    second: ElecticWizard-sheet_0
   - first:
-      213: -8578616374184249446
-    second: ElecticWizard_1
+      213: 8601264674278306381
+    second: ElecticWizard-sheet_1
   - first:
-      213: -2817161058466598070
-    second: ElecticWizard_2
+      213: -663564135904708067
+    second: ElecticWizard-sheet_2
   - first:
-      213: -3059331209035020811
-    second: ElecticWizard_3
+      213: 8271555060867538053
+    second: ElecticWizard-sheet_3
   - first:
-      213: 8261473492766465432
-    second: ElecticWizard_4
+      213: 1890336544883546764
+    second: ElecticWizard-sheet_4
   - first:
-      213: -7856756059874100926
-    second: ElecticWizard_5
+      213: 2662451451506552129
+    second: ElecticWizard-sheet_5
   - first:
-      213: -6084628931202099190
-    second: ElecticWizard_6
+      213: -2863461362217297259
+    second: ElecticWizard-sheet_6
   - first:
-      213: -2093330990334660754
-    second: ElecticWizard_7
+      213: -6221649193713572997
+    second: ElecticWizard-sheet_7
   - first:
-      213: 2612205264257073070
-    second: ElecticWizard_8
+      213: 3846328883534946114
+    second: ElecticWizard-sheet_8
   - first:
-      213: -6128092690685547411
-    second: ElecticWizard_9
+      213: -3703959029695287473
+    second: ElecticWizard-sheet_9
   - first:
-      213: -1870333380717841698
-    second: ElecticWizard_10
+      213: 163799234037519781
+    second: ElecticWizard-sheet_10
+  - first:
+      213: 2834382600660945213
+    second: ElecticWizard-sheet_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -66,11 +69,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: 2
+    aniso: -1
     mipBias: -100
     wrapU: 1
     wrapV: 1
-    wrapW: 0
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -98,10 +101,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 1
-    textureFormat: -1
-    textureCompression: 0
+    textureFormat: 4
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,45 +113,9 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 1
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 8192
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 8192
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 8192
-    resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -160,13 +127,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ElecticWizard_0
+      name: ElecticWizard-sheet_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 31
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +141,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cdd828a40f9aa5d0800000000000000
-      internalID: -3050450955240153659
+      spriteID: 4b23a4a51b6dfcdd0800000000000000
+      internalID: -2463514413936004428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ElecticWizard_1
+      name: ElecticWizard-sheet_1
       rect:
         serializedVersion: 2
-        x: 33
+        x: 32
         y: 0
-        width: 31
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a97f560fbd1a2f880800000000000000
-      internalID: -8578616374184249446
+      spriteID: d42797956a4dd5770800000000000000
+      internalID: 8601264674278306381
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ElecticWizard_2
+      name: ElecticWizard-sheet_2
       rect:
         serializedVersion: 2
-        x: 65
+        x: 64
         y: 0
-        width: 31
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a43f80b71fe67e8d0800000000000000
-      internalID: -2817161058466598070
+      spriteID: d1af5b12feb8ac6f0800000000000000
+      internalID: -663564135904708067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ElecticWizard_3
+      name: ElecticWizard-sheet_3
       rect:
         serializedVersion: 2
-        x: 97
+        x: 96
         y: 0
-        width: 31
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,20 +204,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f5833379721b85d0800000000000000
-      internalID: -3059331209035020811
+      spriteID: 58c1817d0877ac270800000000000000
+      internalID: 8271555060867538053
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ElecticWizard_4
+      name: ElecticWizard-sheet_4
       rect:
         serializedVersion: 2
-        x: 129
+        x: 128
         y: 0
-        width: 31
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,20 +225,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89d96a9de56a6a270800000000000000
-      internalID: 8261473492766465432
+      spriteID: c8a19b77213db3a10800000000000000
+      internalID: 1890336544883546764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ElecticWizard_5
+      name: ElecticWizard-sheet_5
       rect:
         serializedVersion: 2
-        x: 161
+        x: 160
         y: 0
-        width: 31
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,20 +246,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2497e4c8df137f290800000000000000
-      internalID: -7856756059874100926
+      spriteID: 14d65c62d7de2f420800000000000000
+      internalID: 2662451451506552129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ElecticWizard_6
+      name: ElecticWizard-sheet_6
       rect:
         serializedVersion: 2
-        x: 193
+        x: 192
         y: 0
-        width: 31
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,20 +267,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0852ad893e0f8ba0800000000000000
-      internalID: -6084628931202099190
+      spriteID: 59a5bf4ff01f248d0800000000000000
+      internalID: -2863461362217297259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ElecticWizard_7
+      name: ElecticWizard-sheet_7
       rect:
         serializedVersion: 2
-        x: 225
+        x: 224
         y: 0
-        width: 31
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -321,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6f29c32e8ef2f2e0800000000000000
-      internalID: -2093330990334660754
+      spriteID: b736b93a50348a9a0800000000000000
+      internalID: -6221649193713572997
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ElecticWizard_8
+      name: ElecticWizard-sheet_8
       rect:
         serializedVersion: 2
-        x: 257
+        x: 256
         y: 0
-        width: 31
-        height: 30
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -342,20 +309,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eafb27809da604420800000000000000
-      internalID: 2612205264257073070
+      spriteID: 24fdc68adb7e06530800000000000000
+      internalID: 3846328883534946114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ElecticWizard_9
+      name: ElecticWizard-sheet_9
       rect:
         serializedVersion: 2
-        x: 289
+        x: 288
         y: 0
-        width: 31
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -363,20 +330,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6c25057a24a4faa0800000000000000
-      internalID: -6128092690685547411
+      spriteID: f4f696c03e4e89cc0800000000000000
+      internalID: -3703959029695287473
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ElecticWizard_10
+      name: ElecticWizard-sheet_10
       rect:
         serializedVersion: 2
-        x: 321
+        x: 320
         y: 0
-        width: 31
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -384,8 +351,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed2f1ce13bd3b06e0800000000000000
-      internalID: -1870333380717841698
+      spriteID: 5a59947198ee54200800000000000000
+      internalID: 163799234037519781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElecticWizard-sheet_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3981f545ffb55720800000000000000
+      internalID: 2834382600660945213
       vertices: []
       indices: 
       edges: []
@@ -393,7 +381,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8aed92a749f993041a20f221c5e8619b
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
