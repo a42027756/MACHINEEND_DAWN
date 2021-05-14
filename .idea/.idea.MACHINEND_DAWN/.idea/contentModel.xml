@@ -152,7 +152,6 @@
             <e p="ControllerBase.cs" t="Include" />
           </e>
           <e p="MapSpawn" t="Include">
-            <e p="Direction.cs" t="Include" />
             <e p="MapScript" t="Include">
               <e p="DrawArea.cs" t="Include" />
               <e p="RandomMap.cs" t="Include" />

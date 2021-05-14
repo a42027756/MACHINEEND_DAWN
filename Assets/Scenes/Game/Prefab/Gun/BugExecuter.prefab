@@ -69,8 +69,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1584293499
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fa3b818b651787845a8b6696420cea71, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -104,7 +104,7 @@ MonoBehaviour:
   weaponImage: {fileID: 21300000, guid: fa3b818b651787845a8b6696420cea71, type: 3}
   currentBullet: 0
   bulletClip: 8
-  maxBullet: 40
+  maxBullet: 38
   maxHeldBullet: 40
   damageValue: 5
   interval: 0.3
