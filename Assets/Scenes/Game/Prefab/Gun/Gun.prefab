@@ -70,9 +70,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1009641547
-  m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingLayerID: 1584293499
+  m_SortingLayer: 3
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9d252771242f5a149ad16a8ffc1a084e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -104,9 +104,9 @@ MonoBehaviour:
   muzzle: {fileID: 82181773314297000}
   weaponName: AK47
   weaponImage: {fileID: 21300000, guid: 9d252771242f5a149ad16a8ffc1a084e, type: 3}
-  currentBullet: 50
+  currentBullet: 21
   bulletClip: 50
-  maxBullet: 50
+  maxBullet: 100
   maxHeldBullet: 150
   damageValue: 3
   interval: 0.15

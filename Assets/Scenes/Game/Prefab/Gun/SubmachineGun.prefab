@@ -100,9 +100,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1009641547
-  m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingLayerID: 1850995993
+  m_SortingLayer: 4
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4d67eadd4e0b6c84f8d6a7defb77edb5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -134,7 +134,7 @@ MonoBehaviour:
   muzzle: {fileID: 5809926006857475482}
   weaponName: SubmachineGun
   weaponImage: {fileID: 21300000, guid: 4d67eadd4e0b6c84f8d6a7defb77edb5, type: 3}
-  currentBullet: 40
+  currentBullet: 0
   bulletClip: 80
   maxBullet: 0
   maxHeldBullet: 200

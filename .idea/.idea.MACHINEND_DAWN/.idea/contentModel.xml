@@ -162,6 +162,7 @@
             <e p="TileExpand.cs" t="Include" />
             <e p="TownScript" t="Include">
               <e p="DrawRoad.cs" t="Include" />
+              <e p="Town.cs" t="Include" />
             </e>
           </e>
           <e p="PlayerScripts" t="Include">
@@ -169,6 +170,7 @@
             <e p="IProperty.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
             <e p="PlayerProperty.cs" t="Include" />
+            <e p="SwitchBagPanel.cs" t="Include" />
           </e>
           <e p="Prelogue" t="Include">
             <e p="ShowText.cs" t="Include" />
