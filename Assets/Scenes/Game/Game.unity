@@ -410,6 +410,7 @@ GameObject:
   - component: {fileID: 489780143}
   - component: {fileID: 489780142}
   - component: {fileID: 489780141}
+  - component: {fileID: 489780144}
   m_Layer: 5
   m_Name: BagPanel
   m_TagString: Untagged
@@ -496,6 +497,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 489780139}
   m_CullTransparentMesh: 1
+--- !u!114 &489780144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489780139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad4e4e0b4b3a69846a9816a2923e45d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &559496010
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,7 +725,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 704581526}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.925, y: -0.007, z: 0}
+  m_LocalPosition: {x: 0.852, y: 0.124, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 559496011}
@@ -6864,7 +6877,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletObj: {fileID: 2582956030558841365, guid: 7a56c20038afad04b86d05f9f04925a9,
     type: 3}
-  currentWeapon: {fileID: 0}
+  currentWeapon: {fileID: 4526118887664363873, guid: 270bce10dbdfb754c858dddf1f6a8fae,
+    type: 3}
   poolAmount: 10
 --- !u!4 &1037243027
 Transform:
