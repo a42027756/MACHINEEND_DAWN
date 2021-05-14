@@ -383,6 +383,7 @@ GameObject:
   - component: {fileID: 606717230}
   - component: {fileID: 606717229}
   - component: {fileID: 606717231}
+  - component: {fileID: 606717232}
   m_Layer: 0
   m_Name: MapManager
   m_TagString: Untagged
@@ -402,6 +403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a26c0026a1a0a8a4890777002e4249f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  seed: 0
   zone_size: 1000
   tilemap: {fileID: 941552684}
   base_A: 0
@@ -477,6 +479,23 @@ MonoBehaviour:
     Edge: {fileID: 11400000, guid: f2c62ff9227a94e4f893e5fadfbdfb41, type: 2}
     size: 15
     spawnNumber: 30
+--- !u!114 &606717232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606717228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d079373c445c2df49bb7882270cc7c1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  road_tilemap: {fileID: 941552684}
+  road_tilebase: {fileID: 11400000, guid: 954138f8462e6b24cb2dedbb3caaaf4c, type: 2}
+  roadOn_tilebase: {fileID: 11400000, guid: 0316de84f7f3ee7479a3e6b208a71f79, type: 2}
+  unit_length: 30
+  mainNode: 3
 --- !u!1 &725888215
 GameObject:
   m_ObjectHideFlags: 0

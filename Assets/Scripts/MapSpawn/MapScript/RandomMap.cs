@@ -7,6 +7,7 @@ using UnityEngine.SocialPlatforms;
 
 public class RandomMap : MonoBehaviour
 {
+    public long seed = 0;
     public int zone_size;
     public Tilemap tilemap;
 
@@ -34,8 +35,17 @@ public class RandomMap : MonoBehaviour
     //随机生成噪音参数
     void InitBase()
     {
-        base_A = Random.Range(300, 800);
-        base_B = Random.Range(300, 800);
+        if (seed == 0)
+        {
+            seed = TileExpand.Instance.GetSeed();
+        }
+        else
+        {
+            TileExpand.Instance.SetSeed(seed);
+        }
+        
+        base_A = (int)(seed % 500 + 300);
+        base_B = (int)((seed / 2) % 500 + 300);
     }
     
 }
