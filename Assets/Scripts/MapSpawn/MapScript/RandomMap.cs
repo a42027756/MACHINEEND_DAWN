@@ -19,6 +19,7 @@ public class RandomMap : MonoBehaviour
 
     void Start()
     {
+        TileExpand.Instance.GetSeed(seed);
         InitBase();
         Zone.Instance.size = zone_size;
         for (int i = 0; i < mapBrush.Count-1; i++)
@@ -35,15 +36,6 @@ public class RandomMap : MonoBehaviour
     //随机生成噪音参数
     void InitBase()
     {
-        if (seed == 0)
-        {
-            seed = TileExpand.Instance.GetSeed();
-        }
-        else
-        {
-            TileExpand.Instance.SetSeed(seed);
-        }
-        
         base_A = (int)(seed % 500 + 300);
         base_B = (int)((seed / 2) % 500 + 300);
     }

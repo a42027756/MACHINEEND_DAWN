@@ -152,6 +152,7 @@
             <e p="ControllerBase.cs" t="Include" />
           </e>
           <e p="MapSpawn" t="Include">
+            <e p="Direction.cs" t="Include" />
             <e p="MapScript" t="Include">
               <e p="DrawArea.cs" t="Include" />
               <e p="RandomMap.cs" t="Include" />
@@ -162,6 +163,7 @@
             <e p="TileExpand.cs" t="Include" />
             <e p="TownScript" t="Include">
               <e p="DrawRoad.cs" t="Include" />
+              <e p="Town.cs" t="Include" />
             </e>
           </e>
           <e p="PlayerScripts" t="Include">

@@ -18,14 +18,35 @@ public class TileExpand : Singleton<TileExpand>
         return randomPos;
     }
     
-    //特定tile片区上是否可以容纳size大小的正方形，可修改为非正方形
+    
+    //在basemap上判断tileBase片区上是否可以容纳长length，高height的矩形,
+    public bool CanFit(Vector3Int originPos,int length, bool isHorizontal,Tilemap baseMap, TileBase tileBase)
+    {
+        Vector3Int up = originPos;
+        Vector3Int right = originPos;
+        if (isHorizontal)
+        {
+            up = new Vector3Int(x: originPos.x, y: originPos.y + length, z: 0);
+        }
+        else
+        {
+            right = new Vector3Int(x: originPos.x + length, y: originPos.y, z: 0);
+        }
+        if (baseMap.GetTile(position: up) != tileBase || baseMap.GetTile(position: right) != tileBase)
+        {
+            return false;
+        }
+        return true;
+    }
+    
+    //特定tile片区上是否可以容纳size大小的正方形
     public bool CanFit(Vector3Int originPos,int size,Tilemap baseMap, TileBase tileBase)
     {
-        Vector3Int left_up = new Vector3Int(originPos.x, originPos.y + size, 0);
-        Vector3Int right_up = new Vector3Int(originPos.x + size, originPos.y + size, 0);
-        Vector3Int right_down = new Vector3Int(originPos.x + size, originPos.y, 0);
-        if (baseMap.GetTile(right_up) != tileBase || baseMap.GetTile(right_down) != tileBase
-                                                     || baseMap.GetTile(left_up) != tileBase)
+        Vector3Int leftUp = new Vector3Int(originPos.x, originPos.y + size, 0);
+        Vector3Int rightUp = new Vector3Int(originPos.x + size, originPos.y + size, 0);
+        Vector3Int rightDown = new Vector3Int(originPos.x + size, originPos.y, 0);
+        if (baseMap.GetTile(rightUp) != tileBase || baseMap.GetTile(rightDown) != tileBase
+                                                  || baseMap.GetTile(leftUp) != tileBase)
         {
             return false;
         }
@@ -92,15 +113,16 @@ public class TileExpand : Singleton<TileExpand>
         }
     }
 
-    public long GetSeed()
+    public void GetSeed(long s)
     {
-        randSeed = (long)(Random.Range(100000000000000000, 922337203685477579));
-        return randSeed;
-    }
-
-    public void SetSeed(long s)
-    {
-        randSeed = s;
+        if (randSeed == 0)
+        {
+            randSeed = (long)(Random.Range(100000000000000000, 922337203685477579));
+        }
+        else
+        {
+            randSeed = s;
+        }
     }
     
     
