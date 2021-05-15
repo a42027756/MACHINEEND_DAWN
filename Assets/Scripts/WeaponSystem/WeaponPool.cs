@@ -7,7 +7,7 @@ using TMPro;
 public class WeaponPool : MonoSingleton<WeaponPool>
 {
     public List<GameObject> weapons = new List<GameObject>();       //所有武器预置体
-    public List<GameObject> poolWeapons = new List<GameObject>();   //武器池中物体
+    public List<GameObject> poolWeapons = new List<GameObject>();   //武器池中物体(待定使用何种数据结构)
 
     [Header("Weapon UI")]
     public List<Animator> animators = new List<Animator>();     //切换武器UI动画
@@ -15,7 +15,7 @@ public class WeaponPool : MonoSingleton<WeaponPool>
     public List<TMP_Text> weaponName = new List<TMP_Text>();    //武器名称
     public List<TMP_Text> weaponBullet = new List<TMP_Text>();  //武器子弹数量信息
 
-    private int poolAmount;
+    private int poolAmount;                                     //池中子弹数量
     private int maxNum = 3;
     private int index;
 
