@@ -17,25 +17,26 @@ public class RandomMap : MonoSingleton<RandomMap>
 
     public int base_A; //噪音参数a
     public int base_B; //噪音参数b
-    [Range(30, 100)] public int decrement; //噪音参数衰减值
+    // [Range(30, 100)] public int decrement; //噪音参数衰减值
 
     public List<DrawArea> mapBrush = new List<DrawArea>();
 
     private void Awake()
     {
+        Debug.Log("Awake");
         Mapping();
     }
 
     private void Mapping()
     {
-        player.position = new Vector3(Random.Range(0, 1000), Random.Range(0, 1000), 0);
+        player.position = new Vector3(Random.Range(0, 100), Random.Range(0, 100), 0);
         seed = TileExpand.Instance.GetSeed();
-        decrement = TileExpand.Instance.GetSeed() % 25 + 25;
+        // decrement = TileExpand.Instance.GetSeed() % 25 + 25;
         InitBase();
         Zone.Instance.size = zone_size;
-        for (int i = mapBrush.Count - 2; i >= 0; i--)
+        for (int i = mapBrush.Count - 1; i >= 0; i--)
         {
-            mapBrush[i].InitBrush(base_A, base_B, decrement);
+            mapBrush[i].InitBrush(base_A, base_B/*decrement*/);
             mapBrush[i].SpawnTile(tilemap);
         }
 
@@ -45,8 +46,8 @@ public class RandomMap : MonoSingleton<RandomMap>
     //随机生成噪音参数
     void InitBase()
     {
-        base_A = seed % 150 + 150;
-        base_B = (seed / 2) % 150 + 150;
+        base_A = seed % 45 + 100;
+        base_B = (seed / 2) % 45 + 100;
     }
 
     public IEnumerator SpawnMap()

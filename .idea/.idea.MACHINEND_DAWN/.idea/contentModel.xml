@@ -160,6 +160,8 @@
           <e p="MapSpawn" t="Include">
             <e p="MapScript" t="Include">
               <e p="DrawArea.cs" t="Include" />
+              <e p="ObjectInTile.cs" t="Include" />
+              <e p="ObjectSpawn.cs" t="Include" />
               <e p="RandomMap.cs" t="Include" />
               <e p="Room.cs" t="Include" />
               <e p="RoomSpawn.cs" t="Include" />

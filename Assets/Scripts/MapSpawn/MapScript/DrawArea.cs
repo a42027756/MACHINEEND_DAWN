@@ -14,22 +14,24 @@ public class DrawArea
     private float perlin_x;
     private float perlin_y;
 
-    [SerializeField][Range(0,1000)]private int a_min;
-    [SerializeField][Range(0,1000)]private int a_max;
+    [Range(0,100)]private int a_min;
+    [Range(0,100)]private int a_max;
 
-    [SerializeField][Range(0,1000)]private int b_min;
-    [SerializeField][Range(0,1000)]private int b_max;
+    [Range(0,100)]private int b_min;
+    [Range(0,100)]private int b_max;
     
-    [Range(0, 1000)] public int c_min;
-    [Range(0, 1000)] public int c_max;
+    [Range(0, 100)] public int c_min;
+    [Range(0, 100)] public int c_max;
+
+    public int blockSize;
     
     private int a;
     private int b;
-    [FormerlySerializedAs("c")] public int map_amount;
+    private int map_amount;
     public TileBase drawTile;
 
     //初始化噪音参数
-    public void InitBrush(int base_a,int base_b,int dec)
+    public void InitBrush(int base_a,int base_b)
     {
         a_min = base_a + Random.Range(0,3);
         a_max = base_a + Random.Range(4, 6);
@@ -37,9 +39,10 @@ public class DrawArea
         b_min = base_b  + Random.Range(0,3);
         b_max = b_min + Random.Range(4, 6);
 
-        c_min = c_max - Random.Range(20,dec);
+        c_min = c_max - Random.Range(5,10);
     }
     
+    //生成Tile
     public void SpawnTile(Tilemap tilemap)
     {
         if (a_max > a_min && b_max > b_min && c_max > c_min)
@@ -55,8 +58,8 @@ public class DrawArea
             b = Random.Range(0, 100);
         }
 
-        int x_start = TileExpand.Instance.GetSeed()%2000;
-        int y_start = (x_start + 520)%1000;
+        int x_start = TileExpand.Instance.GetSeed()%150;
+        int y_start = (x_start + 520)%100;
         Debug.Log(x_start + " " + y_start);
 
         for (perlin_x = x_start; perlin_x < Zone.Instance.size + x_start ; perlin_x++)
@@ -68,7 +71,7 @@ public class DrawArea
                 {
                     float m = (perlin_x)/ a;
                     float n = (perlin_y)/ b;
-                    float o = Mathf.PerlinNoise(m, n) * 1000;
+                    float o = Mathf.PerlinNoise(m, n) * blockSize;
                     // Debug.Log(o);
                     o = Mathf.Round(o);
                     // Debug.Log(Zone.Instance.enabledBools[v.x * Zone.Instance.size + v.y]);

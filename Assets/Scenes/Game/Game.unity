@@ -605,6 +605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3423a0f97e34cf64aa99f7f8518fcee3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentWeapon: {fileID: 0}
 --- !u!114 &559496014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -621,6 +622,7 @@ MonoBehaviour:
   - {fileID: 4526118887664363873, guid: 270bce10dbdfb754c858dddf1f6a8fae, type: 3}
   - {fileID: 7935496132211875191, guid: 73afda39cf4a6224ca6ae6a860ed4d24, type: 3}
   - {fileID: 2509823889630909515, guid: 157b5c7c3b9bec44ba02da24c83e4cfc, type: 3}
+  poolWeapons: []
   animators:
   - {fileID: 2800294103831874747}
   - {fileID: 545075836136728491}
@@ -637,7 +639,6 @@ MonoBehaviour:
   - {fileID: 2905190947916069999}
   - {fileID: 656844900891268991}
   - {fileID: 656844900826589557}
-  holdWeapons: []
 --- !u!1 &571435894
 GameObject:
   m_ObjectHideFlags: 0
@@ -981,7 +982,7 @@ RectTransform:
   - {fileID: 1473097591}
   - {fileID: 489780140}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3956,7 +3957,7 @@ Transform:
   - {fileID: 2079558834}
   - {fileID: 1030057494}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1030057493
 GameObject:
@@ -6832,7 +6833,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1087707684
 GameObject:
@@ -7148,7 +7149,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1473097590
 GameObject:
@@ -7718,7 +7719,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2079558833
 GameObject:

@@ -26,12 +26,13 @@ public class LoadManager : MonoBehaviour
         {
             slider.value = operation.progress;
 
-            text.text = operation.progress * 100 + " %";
+            text.text = slider.value * 100 + " %";
 
             if (operation.progress >= 0.9f)
             {
                 // StartCoroutine(RandomMap.Instance.SpawnMap());
                 slider.value = 1;
+                text.text = "Finish";
                 loadScreen.SetActive(true);
                 if (Input.GetKeyDown(KeyCode.Space))
                 {

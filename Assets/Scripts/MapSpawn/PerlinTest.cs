@@ -21,20 +21,18 @@ public class PerlinTest : MonoBehaviour
         c = Random.Range(40, 50);//随机取值范围决定生成地图数量
         a = Random.Range(15, 30);//随机取值范围a和b值决定地图分布形式
         b = Random.Range(15, 30);
-        for (x = 0; x < 1000; x = x + 1)
+        for (x = 0; x < 100; x = x + 1)
         {
-            for (y = 0; y < 1000; y = y + 1)
+            for (y = 0; y < 100; y = y + 1)
             {
                 float m = x / a;
                 float n = y / b;
                 float o = Mathf.PerlinNoise(m, n) * 100;
-                o = Mathf.Round(o);//取整数
-                Vector3 v3 = new Vector3(x, y, 9);
-                if (o < c)
-                {
-                    GameObject gam = Instantiate(gam1, v3, Quaternion.identity);//实例化（名字+位置+旋转）
-                    gam.transform.parent = Par.transform;
-                }
+                o = Mathf.Round(o); //取整数
+                Vector3 v3 = new Vector3(x, y, o);
+
+                GameObject gam = Instantiate(gam1, v3, Quaternion.identity); //实例化（名字+位置+旋转）
+                gam.transform.parent = Par.transform;
             }
         }
     }

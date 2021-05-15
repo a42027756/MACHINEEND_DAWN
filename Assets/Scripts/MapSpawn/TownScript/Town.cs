@@ -237,7 +237,7 @@ public class Town
         Debug.Log("Draw Branch");
         for (int i = 0; i < mainNode; i++)
         {
-            DrawRandomRoad(firstNode[i], 1, branch_base);
+            DrawRandomRoad(firstNode[i], 2, branch_base);
             
         }
     }
