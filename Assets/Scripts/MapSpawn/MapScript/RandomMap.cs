@@ -23,19 +23,7 @@ public class RandomMap : MonoSingleton<RandomMap>
 
     private void Awake()
     {
-        player.position = new Vector3(Random.Range(0, 1000), Random.Range(0, 1000), 0);
-        seed = TileExpand.Instance.GetSeed();
-        decrement = TileExpand.Instance.GetSeed() % 25 + 25;
-        InitBase();
-        Zone.Instance.size = zone_size;
-        for (int i = mapBrush.Count - 2; i >= 0; i--)
-        {
-            mapBrush[i].InitBrush(base_A, base_B, decrement);
-            mapBrush[i].SpawnTile(tilemap);
-        }
-
-        mapBrush[mapBrush.Count - 1].Blank_Fill(tilemap);
-
+        Mapping();
     }
 
     private void Mapping()
