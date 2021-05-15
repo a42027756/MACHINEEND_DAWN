@@ -637,6 +637,7 @@ MonoBehaviour:
   - {fileID: 2905190947916069999}
   - {fileID: 656844900891268991}
   - {fileID: 656844900826589557}
+  holdWeapons: []
 --- !u!1 &571435894
 GameObject:
   m_ObjectHideFlags: 0

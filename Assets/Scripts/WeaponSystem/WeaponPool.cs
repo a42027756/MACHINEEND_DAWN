@@ -6,32 +6,35 @@ using TMPro;
 
 public class WeaponPool : MonoSingleton<WeaponPool>
 {
-    public List<GameObject> weapons = new List<GameObject>();
+    public List<GameObject> weapons = new List<GameObject>();       //所有武器预置体
+    public List<GameObject> poolWeapons = new List<GameObject>();   //武器池中物体
 
-    public List<Animator> animators = new List<Animator>();
-    public List<Image> weaponIcon = new List<Image>();
-    public List<TMP_Text> weaponName = new List<TMP_Text>();
-    public List<TMP_Text> weaponBullet = new List<TMP_Text>();
+    [Header("Weapon UI")]
+    public List<Animator> animators = new List<Animator>();     //切换武器UI动画
+    public List<Image> weaponIcon = new List<Image>();          //武器图标
+    public List<TMP_Text> weaponName = new List<TMP_Text>();    //武器名称
+    public List<TMP_Text> weaponBullet = new List<TMP_Text>();  //武器子弹数量信息
 
     private int poolAmount;
     private int maxNum = 3;
     private int index;
 
-    void Start()
+    void Awake()
     {
-        poolAmount = weapons.Count < maxNum ? weapons.Count : maxNum;
         index = 0;
+        poolAmount = weapons.Count < maxNum ? weapons.Count : maxNum;
 
         InitializePool();
     }
 
-    private void InitializePool()
+    public void InitializePool()
     {
         for(int i = 0;i < weapons.Count;++i)
         {
             GameObject obj = Instantiate(weapons[i], transform.position, Quaternion.identity);
             obj.transform.SetParent(transform);
 
+            poolWeapons.Add(obj);
             obj.SetActive(false);
         }
 
@@ -45,22 +48,22 @@ public class WeaponPool : MonoSingleton<WeaponPool>
             BulletPool.Instance.currentWeapon = weapons[index];
         }
 
-        weapons[index].SetActive(true);
+        poolWeapons[index].SetActive(true);
         animators[index].SetBool("isChosen", true);
-        return weapons[index];
+        return poolWeapons[index];
     }
 
     public GameObject GetNextWeapon()
     {
         animators[index].SetBool("isChosen", false);
-        weapons[index].SetActive(false);
+        poolWeapons[index].SetActive(false);
 
         index = (index + 1) % poolAmount;
-        GameObject obj = weapons[index];
+        GameObject obj = poolWeapons[index];
         BulletPool.Instance.currentWeapon = obj;
         BulletPool.Instance.ChangeSprite();
 
-        weapons[index].SetActive(true);
+        poolWeapons[index].SetActive(true);
         animators[index].SetBool("isChosen", true);
 
         return obj;
@@ -70,7 +73,7 @@ public class WeaponPool : MonoSingleton<WeaponPool>
     {
         for(int i = 0;i < poolAmount;++i)
         {
-            Weapon weapon = weapons[i].GetComponent<Weapon>();
+            Weapon weapon = poolWeapons[i].GetComponent<Weapon>();
 
             weaponIcon[i].sprite = weapon.weaponImage;
             weaponName[i].text = weapon.weaponName;
@@ -80,7 +83,7 @@ public class WeaponPool : MonoSingleton<WeaponPool>
 
     public void LoadBullets()
     {
-        Weapon weapon = weapons[index].GetComponent<Weapon>();
+        Weapon weapon = poolWeapons[index].GetComponent<Weapon>();
 
         int bulletNeeded = weapon.bulletClip - weapon.currentBullet;
 
@@ -103,7 +106,7 @@ public class WeaponPool : MonoSingleton<WeaponPool>
     {
         for(int i = 0;i < poolAmount;++i)
         {
-            Weapon weapon = weapons[i].GetComponent<Weapon>();
+            Weapon weapon = poolWeapons[i].GetComponent<Weapon>();
             weapon.maxBullet = weapon.maxHeldBullet;
         }
         UpdateMessage();

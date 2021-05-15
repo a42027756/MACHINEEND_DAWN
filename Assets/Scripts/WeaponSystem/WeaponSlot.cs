@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WeaponSlot : MonoBehaviour
 {
-    private GameObject currentWeapon;
+    [SerializeField] private GameObject currentWeapon;
     private GameObject player;
     private Weapon weapon;
     private SpriteRenderer spriteRenderer;
@@ -47,7 +47,7 @@ public class WeaponSlot : MonoBehaviour
 
     private void Configure()
     {
-        spriteRenderer.sprite = currentWeapon.GetComponent<SpriteRenderer>().sprite;
+        spriteRenderer.sprite = currentWeapon.GetComponent<Weapon>().weaponImage;
         weapon = currentWeapon.GetComponent<Weapon>();
         weapon.weaponSlot = gameObject;
         weapon.Initialize();

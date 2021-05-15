@@ -4,23 +4,21 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+    [Header("Components")]
     public GameObject bulletPre;
     public GameObject weaponSlot;
     public Sprite bulletSprite;
     public Transform muzzle;
+    private GameObject player;
     
     [Header("weapon properties")]
     public string weaponName;
     public Sprite weaponImage;
-
     public int currentBullet;
     public int bulletClip;
     public int maxBullet;
     public int maxHeldBullet;
     public int damageValue;
-
-    private GameObject player;
-    private SpriteRenderer spriteRenderer;
 
     [SerializeField] private float interval;
     private float timeCounter;
@@ -61,7 +59,7 @@ public class Weapon : MonoBehaviour
     {   
         if(currentBullet != 0)
         {
-            firePoint = weaponSlot.GetComponentsInChildren<Weapon>()[0].muzzle.position;
+            firePoint = weaponSlot.GetComponentInChildren<Weapon>().muzzle.position;
 
             GameObject bullet = BulletPool.Instance.GetFromPool();
             bullet.transform.position = firePoint;
@@ -89,6 +87,5 @@ public class Weapon : MonoBehaviour
         {
 
         }
-        
     }
 }
