@@ -2,310 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="FixBug">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/grass 1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/grass 1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/grass 2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/grass 2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/grass 3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/grass 3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/rule_grass.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/rule_grass.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadScene.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadScene.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Menu/Menu.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Menu/Menu.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Menu/Menu.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Menu/Menu.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Menu/sprites.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Menu/sprites/Anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Menu/sprites/Anim/button.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Menu/sprites/Anim/button.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Menu/sprites/Anim/idle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Menu/sprites/Anim/idle.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Menu/sprites/Button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Menu/sprites/Button.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Menu/sprites/adso游戏工作室logo_xiangsu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Menu/sprites/adso游戏工作室logo_xiangsu.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/PerlinTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/road.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/road.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/bush-tall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/bush-tall.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/bush.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/bush.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/rock-monument.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/rock-monument.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/rock.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/rock.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/sign.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/sign.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/tree-dried.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/tree-dried.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/tree-orange.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/tree-orange.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/tree-pink.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/tree-pink.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/trunk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/trunk.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/tileset-sliced.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/tileset-sliced.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/tileset-sliced_274.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/tileset-sliced_274.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/tileset-sliced_275.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/tileset-sliced_275.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/tileset-sliced_317.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/tileset-sliced_317.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/tileset-sliced_382.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/tileset-sliced_382.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/tileset-sliced_383.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/tileset-sliced_383.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/tileset.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/tileset.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/waterfall animation.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/waterfall animation/waterfall-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/waterfall animation/waterfall-1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/waterfall animation/waterfall-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/waterfall animation/waterfall-2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/waterfall animation/waterfall-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/waterfall animation/waterfall-3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack-weapon.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack-weapon/hero-attack-back.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack-weapon/hero-attack-back/hero-attack-back-weapon-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack-weapon/hero-attack-back/hero-attack-back-weapon-1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack-weapon/hero-attack-back/hero-attack-back-weapon-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack-weapon/hero-attack-back/hero-attack-back-weapon-2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack-weapon/hero-attack-back/hero-attack-back-weapon-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack-weapon/hero-attack-back/hero-attack-back-weapon-3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack-weapon/hero-attack-front.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack-weapon/hero-attack-front/hero-attack-front-weapon-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack-weapon/hero-attack-front/hero-attack-front-weapon-1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack-weapon/hero-attack-front/hero-attack-front-weapon-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack-weapon/hero-attack-front/hero-attack-front-weapon-2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack-weapon/hero-attack-front/hero-attack-front-weapon-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack-weapon/hero-attack-front/hero-attack-front-weapon-3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack-weapon/hero-attack-side.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack-weapon/hero-attack-side/hero-attack-side-weapon-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack-weapon/hero-attack-side/hero-attack-side-weapon-1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack-weapon/hero-attack-side/hero-attack-side-weapon-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack-weapon/hero-attack-side/hero-attack-side-weapon-2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack-weapon/hero-attack-side/hero-attack-side-weapon-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack-weapon/hero-attack-side/hero-attack-side-weapon-3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack/hero-attack-back.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack/hero-attack-back/hero-attack-back-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack/hero-attack-back/hero-attack-back-1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack/hero-attack-back/hero-attack-back-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack/hero-attack-back/hero-attack-back-2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack/hero-attack-back/hero-attack-back-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack/hero-attack-back/hero-attack-back-3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack/hero-attack-front.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack/hero-attack-front/hero-attack-front-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack/hero-attack-front/hero-attack-front-1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack/hero-attack-front/hero-attack-front-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack/hero-attack-front/hero-attack-front-2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack/hero-attack-front/hero-attack-front-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack/hero-attack-front/hero-attack-front-3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack/hero-attack-side.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack/hero-attack-side/hero-attack-side-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack/hero-attack-side/hero-attack-side-1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack/hero-attack-side/hero-attack-side-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack/hero-attack-side/hero-attack-side-2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack/hero-attack-side/hero-attack-side-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/attack/hero-attack-side/hero-attack-side-3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/idle.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/idle/hero-idle-back.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/idle/hero-idle-back/hero-idle-back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/idle/hero-idle-back/hero-idle-back.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/idle/hero-idle-front.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/idle/hero-idle-front/hero-idle-front.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/idle/hero-idle-front/hero-idle-front.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/idle/hero-idle-side.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/idle/hero-idle-side/hero-idle-side.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/idle/hero-idle-side/hero-idle-side.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-back.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-back/hero-walk-back-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-back/hero-walk-back-1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-back/hero-walk-back-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-back/hero-walk-back-2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-back/hero-walk-back-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-back/hero-walk-back-3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-back/hero-walk-back-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-back/hero-walk-back-4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-back/hero-walk-back-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-back/hero-walk-back-5.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-back/hero-walk-back-6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-back/hero-walk-back-6.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-front.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-front/hero-walk-front-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-front/hero-walk-front-1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-front/hero-walk-front-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-front/hero-walk-front-2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-front/hero-walk-front-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-front/hero-walk-front-3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-front/hero-walk-front-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-front/hero-walk-front-4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-front/hero-walk-front-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-front/hero-walk-front-5.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-front/hero-walk-front-6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-front/hero-walk-front-6.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-side.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-side/hero-walk-side-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-side/hero-walk-side-1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-side/hero-walk-side-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-side/hero-walk-side-2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-side/hero-walk-side-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-side/hero-walk-side-3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-side/hero-walk-side-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-side/hero-walk-side-4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-side/hero-walk-side-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-side/hero-walk-side-5.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-side/hero-walk-side-6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-side/hero-walk-side-6.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/arrow.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/coin.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/coin/coin-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/coin/coin-1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/coin/coin-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/coin/coin-2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/coin/coin-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/coin/coin-3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/coin/coin-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/coin/coin-4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/enemy-death.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/enemy-death/enemy-death-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/enemy-death/enemy-death-1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/enemy-death/enemy-death-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/enemy-death/enemy-death-2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/enemy-death/enemy-death-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/enemy-death/enemy-death-3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/enemy-death/enemy-death-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/enemy-death/enemy-death-4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/enemy-death/enemy-death-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/enemy-death/enemy-death-5.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/enemy-death/enemy-death-6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/enemy-death/enemy-death-6.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/gem.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/gem/gem-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/gem/gem-1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/gem/gem-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/gem/gem-2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/gem/gem-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/gem/gem-3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/gem/gem-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/gem/gem-4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/hearts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/hearts/hearts-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/hearts/hearts-1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/hearts/hearts-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/misc/hearts/hearts-2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/idle.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/idle/mole-idle-back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/idle/mole-idle-back.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/idle/mole-idle-front.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/idle/mole-idle-front.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/idle/mole-idle-side.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/idle/mole-idle-side.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-back.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-back/mole-walk-back-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-back/mole-walk-back-1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-back/mole-walk-back-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-back/mole-walk-back-2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-back/mole-walk-back-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-back/mole-walk-back-3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-back/mole-walk-back-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-back/mole-walk-back-4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-front.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-front/mole-walk-front-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-front/mole-walk-front-1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-front/mole-walk-front-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-front/mole-walk-front-2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-front/mole-walk-front-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-front/mole-walk-front-3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-front/mole-walk-front-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-front/mole-walk-front-4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-side.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-side/mole-walk-side-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-side/mole-walk-side-1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-side/mole-walk-side-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-side/mole-walk-side-2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-side/mole-walk-side-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-side/mole-walk-side-3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-side/mole-walk-side-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-side/mole-walk-side-4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/idle.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/idle/treant-idle-back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/idle/treant-idle-back.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/idle/treant-idle-front.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/idle/treant-idle-front.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/idle/treant-idle-side.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/idle/treant-idle-side.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-back.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-back/treant-walk-back-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-back/treant-walk-back-1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-back/treant-walk-back-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-back/treant-walk-back-2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-back/treant-walk-back-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-back/treant-walk-back-3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-back/treant-walk-back-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-back/treant-walk-back-4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-front.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-front/treant-walk-front-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-front/treant-walk-front-1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-front/treant-walk-front-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-front/treant-walk-front-2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-front/treant-walk-front-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-front/treant-walk-front-3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-front/treant-walk-front-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-front/treant-walk-front-4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-side.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-side/treant-walk-side-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-side/treant-walk-side-1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-side/treant-walk-side-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-side/treant-walk-side-2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-side/treant-walk-side-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-side/treant-walk-side-3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-side/treant-walk-side-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-side/treant-walk-side-4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/test.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Gun/BugExecuter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Gun/BugExecuter.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Gun/Gun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Gun/Gun.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Gun/SubmachineGun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Gun/SubmachineGun.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/tile/TestPalette.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/TestPalette.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/tile/grass.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/tile/grass.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/tile/grass.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/grass.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/tile/mud.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/mud.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Logo/Logo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Logo/Logo.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Logo/script/SwitchtoMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Logo/script/SwitchtoMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Logo/sprites/Logo.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Logo/sprites/Logo.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/DrawArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/DrawArea.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/RandomMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/RandomMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/RoomSpawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/RoomSpawn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/tile/test.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/test.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/Test.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/TileExpand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/TileExpand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/DrawRoad.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/DrawRoad.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/Town.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/Town.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMeshPro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMeshPro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMeshPro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMeshPro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMeshPro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMeshPro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/test.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -403,7 +109,7 @@
       <workItem from="1620913894652" duration="27525000" />
       <workItem from="1620982019800" duration="2130000" />
       <workItem from="1621002236393" duration="654000" />
-      <workItem from="1621004776189" duration="21253000" />
+      <workItem from="1621004776189" duration="23204000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1620888470403</created>
@@ -489,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620986907614</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="LoadScene">
+      <created>1621068720098</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1621068720098</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -531,6 +244,7 @@
     <MESSAGE value="FixBug" />
     <MESSAGE value="UpdateWizard" />
     <MESSAGE value="Merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge" />
+    <MESSAGE value="LoadScene" />
+    <option name="LAST_COMMIT_MESSAGE" value="LoadScene" />
   </component>
 </project>

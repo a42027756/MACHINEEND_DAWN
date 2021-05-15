@@ -432,7 +432,7 @@ MonoBehaviour:
     b_min: 0
     b_max: 0
     c_min: 350
-    c_max: 530
+    c_max: 520
     map_amount: 0
     drawTile: {fileID: 11400000, guid: 0316de84f7f3ee7479a3e6b208a71f79, type: 2}
   - a_min: 0
@@ -498,7 +498,7 @@ MonoBehaviour:
     branch_base: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
     roadOn_tilebase: {fileID: 11400000, guid: 0316de84f7f3ee7479a3e6b208a71f79, type: 2}
     unit_length: 25
-    mainNode: 4
+    mainNode: 7
     node_tile: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
     firstNode: []
   - road_tilemap: {fileID: 941552684}
