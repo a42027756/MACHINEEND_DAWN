@@ -384,10 +384,22 @@ MonoBehaviour:
   - {fileID: 7935496132211875191, guid: 73afda39cf4a6224ca6ae6a860ed4d24, type: 3}
   - {fileID: 2509823889630909515, guid: 157b5c7c3b9bec44ba02da24c83e4cfc, type: 3}
   poolWeapons: []
-  animators: []
-  weaponIcon: []
-  weaponName: []
-  weaponBullet: []
+  animators:
+  - {fileID: 1023802753}
+  - {fileID: 1732005630}
+  - {fileID: 214188289}
+  weaponIcon:
+  - {fileID: 1010283453}
+  - {fileID: 1628055618}
+  - {fileID: 1141180142}
+  weaponName:
+  - {fileID: 1189363902}
+  - {fileID: 532952201}
+  - {fileID: 766141355}
+  weaponBullet:
+  - {fileID: 721098546}
+  - {fileID: 1063091407}
+  - {fileID: 1020080888}
 --- !u!114 &464319082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -873,7 +885,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &606717231
 MonoBehaviour:
@@ -2828,7 +2840,7 @@ Transform:
   m_Children:
   - {fileID: 1941098074}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1384434108
 GameObject:
@@ -4200,7 +4212,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletObj: {fileID: 2582956030558841365, guid: 7a56c20038afad04b86d05f9f04925a9,
     type: 3}
-  currentWeapon: {fileID: 0}
+  currentWeapon: {fileID: 4526118887664363873, guid: 270bce10dbdfb754c858dddf1f6a8fae,
+    type: 3}
   poolAmount: 10
 --- !u!4 &382893878452647761
 Transform:
@@ -4228,70 +4241,6 @@ GameObject:
   - component: {fileID: 382893878452647760}
   m_Layer: 0
   m_Name: BulletPool
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1917362739825744913
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1917362739825744919}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1917362739825744918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1917362739825744919}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd072b7dd153e134faa98ae4f908e406, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weapons:
-  - {fileID: 4526118887664363873, guid: 270bce10dbdfb754c858dddf1f6a8fae, type: 3}
-  - {fileID: 7935496132211875191, guid: 73afda39cf4a6224ca6ae6a860ed4d24, type: 3}
-  - {fileID: 2509823889630909515, guid: 157b5c7c3b9bec44ba02da24c83e4cfc, type: 3}
-  poolWeapons: []
-  animators:
-  - {fileID: 1023802753}
-  - {fileID: 1732005630}
-  - {fileID: 214188289}
-  weaponIcon:
-  - {fileID: 1010283453}
-  - {fileID: 1628055618}
-  - {fileID: 1141180142}
-  weaponName:
-  - {fileID: 1189363902}
-  - {fileID: 532952201}
-  - {fileID: 766141355}
-  weaponBullet:
-  - {fileID: 721098546}
-  - {fileID: 1063091407}
-  - {fileID: 1020080888}
---- !u!1 &1917362739825744919
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1917362739825744913}
-  - component: {fileID: 1917362739825744918}
-  m_Layer: 0
-  m_Name: WeaponPool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
