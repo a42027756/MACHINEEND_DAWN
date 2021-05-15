@@ -7,6 +7,6 @@ public class SwitchtoMenu : MonoBehaviour
 {
     public void Switch()
     {
-        SceneManager.LoadScene("Prelogue");
+        SceneManager.LoadScene("Menu");
     }
 }

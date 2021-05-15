@@ -403,19 +403,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a26c0026a1a0a8a4890777002e4249f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seed: 3456789876
+  player: {fileID: 1400755158339405254}
+  seed: 0
   zone_size: 1000
   tilemap: {fileID: 941552684}
   base_A: 0
   base_B: 0
-  decrement: 0
+  decrement: 51
   mapBrush:
   - a_min: 0
     a_max: 0
     b_min: 0
     b_max: 0
     c_min: 550
-    c_max: 650
+    c_max: 700
     map_amount: 0
     drawTile: {fileID: 11400000, guid: 5ebc22a94e3de3344a5b9c9b7297f3ad, type: 2}
   - a_min: 0
@@ -423,15 +424,15 @@ MonoBehaviour:
     b_min: 0
     b_max: 0
     c_min: 500
-    c_max: 530
+    c_max: 650
     map_amount: 0
-    drawTile: {fileID: 11400000, guid: 83533da50faa4284e86558f3b2d1ac8e, type: 2}
+    drawTile: {fileID: 11400000, guid: 4c74b63cad4592e48a24aa113dd1ca4e, type: 2}
   - a_min: 0
     a_max: 0
     b_min: 0
     b_max: 0
     c_min: 350
-    c_max: 400
+    c_max: 530
     map_amount: 0
     drawTile: {fileID: 11400000, guid: 0316de84f7f3ee7479a3e6b208a71f79, type: 2}
   - a_min: 0
@@ -477,8 +478,8 @@ MonoBehaviour:
     wall: {fileID: 11400000, guid: c82ce7b2c636b944ea5d9a6a5d6840fb, type: 2}
     wallCorner: {fileID: 11400000, guid: 280aa93c342179541b5e74a441352092, type: 2}
     Edge: {fileID: 11400000, guid: f2c62ff9227a94e4f893e5fadfbdfb41, type: 2}
-    size: 15
-    spawnNumber: 30
+    size: 12
+    spawnNumber: 20
 --- !u!114 &606717232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,28 +494,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   townList:
   - road_tilemap: {fileID: 941552684}
-    road_base: {fileID: 11400000, guid: 5ebc22a94e3de3344a5b9c9b7297f3ad, type: 2}
-    branch_base: {fileID: 11400000, guid: 954138f8462e6b24cb2dedbb3caaaf4c, type: 2}
+    road_base: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
+    branch_base: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
     roadOn_tilebase: {fileID: 11400000, guid: 0316de84f7f3ee7479a3e6b208a71f79, type: 2}
-    unit_length: 30
-    mainNode: 6
-    node_tile: {fileID: 11400000, guid: 83533da50faa4284e86558f3b2d1ac8e, type: 2}
+    unit_length: 25
+    mainNode: 4
+    node_tile: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
     firstNode: []
   - road_tilemap: {fileID: 941552684}
-    road_base: {fileID: 11400000, guid: 5ebc22a94e3de3344a5b9c9b7297f3ad, type: 2}
-    branch_base: {fileID: 11400000, guid: 954138f8462e6b24cb2dedbb3caaaf4c, type: 2}
-    roadOn_tilebase: {fileID: 11400000, guid: 0316de84f7f3ee7479a3e6b208a71f79, type: 2}
-    unit_length: 40
-    mainNode: 5
-    node_tile: {fileID: 11400000, guid: 83533da50faa4284e86558f3b2d1ac8e, type: 2}
-    firstNode: []
-  - road_tilemap: {fileID: 941552684}
-    road_base: {fileID: 11400000, guid: c82ce7b2c636b944ea5d9a6a5d6840fb, type: 2}
-    branch_base: {fileID: 11400000, guid: 954138f8462e6b24cb2dedbb3caaaf4c, type: 2}
+    road_base: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
+    branch_base: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
     roadOn_tilebase: {fileID: 11400000, guid: 0316de84f7f3ee7479a3e6b208a71f79, type: 2}
     unit_length: 20
-    mainNode: 8
-    node_tile: {fileID: 11400000, guid: f58f1f806b95a1842914bd2ad14ce0a2, type: 2}
+    mainNode: 5
+    node_tile: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
+    firstNode: []
+  - road_tilemap: {fileID: 941552684}
+    road_base: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
+    branch_base: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
+    roadOn_tilebase: {fileID: 11400000, guid: 0316de84f7f3ee7479a3e6b208a71f79, type: 2}
+    unit_length: 20
+    mainNode: 6
+    node_tile: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
+    firstNode: []
+  - road_tilemap: {fileID: 941552684}
+    road_base: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
+    branch_base: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
+    roadOn_tilebase: {fileID: 11400000, guid: 0316de84f7f3ee7479a3e6b208a71f79, type: 2}
+    unit_length: 20
+    mainNode: 5
+    node_tile: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
+    firstNode: []
+  - road_tilemap: {fileID: 941552684}
+    road_base: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
+    branch_base: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
+    roadOn_tilebase: {fileID: 11400000, guid: 0316de84f7f3ee7479a3e6b208a71f79, type: 2}
+    unit_length: 20
+    mainNode: 5
+    node_tile: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
+    firstNode: []
+  - road_tilemap: {fileID: 941552684}
+    road_base: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
+    branch_base: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
+    roadOn_tilebase: {fileID: 11400000, guid: 0316de84f7f3ee7479a3e6b208a71f79, type: 2}
+    unit_length: 20
+    mainNode: 5
+    node_tile: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
     firstNode: []
 --- !u!1 &725888215
 GameObject:
@@ -655,33 +680,43 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 0
     m_Data:
-      e00: 0
-      e01: 1.7176098e+37
-      e02: 1.7174982e+37
-      e03: 1.7174982e+37
-      e10: 0
-      e11: 1.81e-43
-      e12: 1.81e-43
-      e13: 1.81e-43
-      e20: -0.00012981961
-      e21: -2.037449
-      e22: 0.0000000013353487
-      e23: -2.037449
+      e00: -1.084227e-19
+      e01: -0.9324999
+      e02: -0.93244743
+      e03: -0.93244743
+      e10: 9.73e-43
+      e11: 2.68e-43
+      e12: 2.68e-43
+      e13: 2.68e-43
+      e20: -0.0000000020245459
+      e21: -2.0088463
+      e22: 3212.205
+      e23: -2.0088463
       e30: 4.5904e-41
-      e31: 8.48e-43
-      e32: 8.46e-43
-      e33: 8.48e-43
+      e31: 9.74e-43
+      e32: 9.73e-43
+      e33: 9.74e-43
   m_TileColorArray:
   - m_RefCount: 0
-    m_Data: {r: -2.0382614, g: -2.0382614, b: -2.0382614, a: -2.0382614}
+    m_Data: {r: -2.1138306, g: -2.1138306, b: -2.1138306, a: -2.1138306}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: 0, y: 0, z: 0}
-  m_Size: {x: 654, y: 252, z: 1}
+  m_Origin: {x: 0, y: -4, z: 0}
+  m_Size: {x: 654, y: 256, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -1015,7 +1050,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1322353916}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.16, y: 0.73, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1941098074}
@@ -1902,7 +1937,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400755158339405253}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.16, y: 0.73, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1400755159974405290}
@@ -1959,7 +1994,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!70 &1400755158339405256
@@ -2133,7 +2168,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1400755159974405292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2516,7 +2551,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2823574658651326653
 MonoBehaviour:
   m_ObjectHideFlags: 0
