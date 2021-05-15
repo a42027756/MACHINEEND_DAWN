@@ -77,8 +77,9 @@ public class RoomSpawn : MonoBehaviour
             tile_corner.SetTile(new Vector3Int(originPos.x + i,originPos.y + actualSize - 3,0),roomList[0].wallCorner);
         }
     }
+    
 
-    private void Start()
+    private void Awake()
     {
         for (int i = 0; i < roomList[0].spawnNumber; i++)
         {

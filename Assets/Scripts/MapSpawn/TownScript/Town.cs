@@ -216,12 +216,14 @@ public class Town
     //找到主干道起点
     private Vector3Int FindOriginPos()
     {
+        Debug.Log("FindOrigin");
         return TileExpand.Instance.GetRandomPointInTilemap(road_tilemap, roadOn_tilebase);
     }
     
     //绘制主干道
     public void DrawMainRoad()
     {
+        Debug.Log("DrawMain");
         originPos = FindOriginPos();
         while (!DrawRandomRoad(originPos,mainNode,road_base))
         {
@@ -232,10 +234,11 @@ public class Town
     //绘制第一分支
     public void DrawFirstBranch()
     {
+        Debug.Log("Draw Branch");
         for (int i = 0; i < mainNode; i++)
         {
-            DrawRandomRoad(firstNode[i], 1,branch_base);
-            Debug.Log("Draw Branch:" + firstNode[i]);
+            DrawRandomRoad(firstNode[i], 1, branch_base);
+            
         }
     }
 }

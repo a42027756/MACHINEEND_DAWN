@@ -8,7 +8,7 @@ public class DrawRoad : MonoBehaviour
 {
     public List<Town> townList = new List<Town>();
 
-    void Start()
+    void Awake()
     {
         for (int i = 0; i < townList.Count; i++)
         {

@@ -141,10 +141,16 @@
           </e>
         </e>
         <e p="Scenes" t="Include">
+          <e p="LoadScene" t="Include">
+            <e p="LoadManager.cs" t="Include" />
+          </e>
           <e p="Logo" t="Include">
             <e p="script" t="Include">
               <e p="SwitchtoMenu.cs" t="Include" />
             </e>
+          </e>
+          <e p="Menu" t="Include">
+            <e p="Menu.cs" t="Include" />
           </e>
         </e>
         <e p="Scripts" t="Include">
@@ -159,6 +165,7 @@
               <e p="RoomSpawn.cs" t="Include" />
               <e p="Zone.cs" t="Include" />
             </e>
+            <e p="PerlinTest.cs" t="Include" />
             <e p="TileExpand.cs" t="Include" />
             <e p="TownScript" t="Include">
               <e p="DrawRoad.cs" t="Include" />

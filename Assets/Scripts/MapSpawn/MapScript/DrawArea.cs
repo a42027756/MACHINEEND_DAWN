@@ -31,11 +31,13 @@ public class DrawArea
     //初始化噪音参数
     public void InitBrush(int base_a,int base_b,int dec)
     {
-        a_min = base_a - dec;
-        a_max = base_a + Random.Range(30, 100) - dec;
+        a_min = base_a + Random.Range(0,3);
+        a_max = base_a + Random.Range(4, 6);
 
-        b_min = base_b - dec;
-        b_max = b_min + Random.Range(30, 100) - dec;
+        b_min = base_b  + Random.Range(0,3);
+        b_max = b_min + Random.Range(4, 6);
+
+        c_min = c_max - Random.Range(20,dec);
     }
     
     public void SpawnTile(Tilemap tilemap)
@@ -52,21 +54,30 @@ public class DrawArea
             a = Random.Range(0, 100);
             b = Random.Range(0, 100);
         }
-        for (perlin_x = 0; perlin_x < Zone.Instance.size ; perlin_x++)
+
+        int x_start = TileExpand.Instance.GetSeed()%2000;
+        int y_start = (x_start + 520)%1000;
+        Debug.Log(x_start + " " + y_start);
+
+        for (perlin_x = x_start; perlin_x < Zone.Instance.size + x_start ; perlin_x++)
         {
-            for (perlin_y = 0; perlin_y < Zone.Instance.size; perlin_y++)
+            for (perlin_y = y_start; perlin_y < Zone.Instance.size + y_start; perlin_y++)
             {
-                float m = perlin_x / a;
-                float n = perlin_y / b;
-                float o = Mathf.PerlinNoise(m, n) * Zone.Instance.size;
-                // Debug.Log(o);
-                o = Mathf.Round(o);
-                Vector3Int v = new Vector3Int((int)(perlin_x), (int)(perlin_y), 0);
-                // Debug.Log(Zone.Instance.enabledBools[v.x * Zone.Instance.size + v.y]);
-                if (o < map_amount)
+                Vector3Int v = new Vector3Int((int)(perlin_x - x_start), (int)(perlin_y - y_start), 0);
+                if (!tilemap.GetTile(v))
                 {
-                    tilemap.SetTile(v ,drawTile);
+                    float m = (perlin_x)/ a;
+                    float n = (perlin_y)/ b;
+                    float o = Mathf.PerlinNoise(m, n) * 1000;
+                    // Debug.Log(o);
+                    o = Mathf.Round(o);
+                    // Debug.Log(Zone.Instance.enabledBools[v.x * Zone.Instance.size + v.y]);
+                    if (o < map_amount)
+                    {
+                        tilemap.SetTile(v ,drawTile); 
+                    }
                 }
+                
             }
         }
         
