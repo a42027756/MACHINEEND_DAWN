@@ -931,6 +931,14 @@ MonoBehaviour:
     mainNode: 5
     node_tile: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
     firstNode: []
+  - road_tilemap: {fileID: 941552684}
+    road_base: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
+    branch_base: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
+    roadOn_tilebase: {fileID: 11400000, guid: 4c74b63cad4592e48a24aa113dd1ca4e, type: 2}
+    unit_length: 15
+    mainNode: 5
+    node_tile: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
+    firstNode: []
 --- !u!114 &606717233
 MonoBehaviour:
   m_ObjectHideFlags: 0
