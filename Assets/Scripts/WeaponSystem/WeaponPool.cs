@@ -29,7 +29,7 @@ public class WeaponPool : MonoSingleton<WeaponPool>
 
     public void InitializePool()
     {
-        for(int i = 0;i < weapons.Count;++i)
+        for(int i = 0;i < poolAmount;++i)
         {
             GameObject obj = Instantiate(weapons[i], transform.position, Quaternion.identity);
             obj.transform.SetParent(transform);
