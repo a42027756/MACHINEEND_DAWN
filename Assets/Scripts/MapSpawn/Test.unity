@@ -352,7 +352,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &464319080
 Transform:
   m_ObjectHideFlags: 0
@@ -384,22 +384,10 @@ MonoBehaviour:
   - {fileID: 7935496132211875191, guid: 73afda39cf4a6224ca6ae6a860ed4d24, type: 3}
   - {fileID: 2509823889630909515, guid: 157b5c7c3b9bec44ba02da24c83e4cfc, type: 3}
   poolWeapons: []
-  animators:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  weaponIcon:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  weaponName:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  weaponBullet:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  animators: []
+  weaponIcon: []
+  weaponName: []
+  weaponBullet: []
 --- !u!114 &464319082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -935,8 +923,8 @@ MonoBehaviour:
     road_base: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
     branch_base: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
     roadOn_tilebase: {fileID: 11400000, guid: 4c74b63cad4592e48a24aa113dd1ca4e, type: 2}
-    unit_length: 15
-    mainNode: 5
+    unit_length: 10
+    mainNode: 4
     node_tile: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
     firstNode: []
 --- !u!114 &606717233
@@ -1963,7 +1951,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1045729272
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4244,7 +4232,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1917362739825744913
 Transform:
   m_ObjectHideFlags: 0
@@ -4308,7 +4296,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5872933064002432684
 Transform:
   m_ObjectHideFlags: 0
