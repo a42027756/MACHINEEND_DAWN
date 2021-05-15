@@ -1,0 +1,14 @@
+<changelist name="Uncommitted_changes_before_Update_at_2021_5_15_18_12_[Default_Changelist]" date="1621073580554" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_15_18_12_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 2021/5/15 18:12 [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="Assets/Scenes/Game/tile/test.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_15_18_12_[Default_Changelist]/test.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Assets/Scripts/MapSpawn/test.png" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+</changelist>
