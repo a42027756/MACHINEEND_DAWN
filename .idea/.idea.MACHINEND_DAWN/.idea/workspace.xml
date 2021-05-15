@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="FixBug">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/test.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/test.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Gun/Gun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Gun/Gun.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Gun/SubmachineGun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Gun/SubmachineGun.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/tile/TestPalette.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/TestPalette.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/tile/test.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/test.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/Test.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/test.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/test.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,8 +33,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/RoomSpawn.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/DrawRoad.cs" />
       <option value="$PROJECT_DIR$/Assets/Scenes/Menu/Menu.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/RandomMap.cs" />
       <option value="$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/RandomMap.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sT92pLE3Aucix7W6jstCeY0cFP" />
@@ -109,7 +97,7 @@
       <workItem from="1620913894652" duration="27525000" />
       <workItem from="1620982019800" duration="2130000" />
       <workItem from="1621002236393" duration="654000" />
-      <workItem from="1621004776189" duration="23204000" />
+      <workItem from="1621004776189" duration="23566000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1620888470403</created>
@@ -202,7 +190,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621068720098</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Merge">
+      <created>1621073622743</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1621073622743</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Merge">
+      <created>1621073820110</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1621073820110</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,8 +245,8 @@
     <MESSAGE value="NewGun" />
     <MESSAGE value="FixBug" />
     <MESSAGE value="UpdateWizard" />
-    <MESSAGE value="Merge" />
     <MESSAGE value="LoadScene" />
-    <option name="LAST_COMMIT_MESSAGE" value="LoadScene" />
+    <MESSAGE value="Merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge" />
   </component>
 </project>
