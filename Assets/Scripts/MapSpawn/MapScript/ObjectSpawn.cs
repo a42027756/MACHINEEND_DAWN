@@ -6,14 +6,12 @@ public class ObjectSpawn : MonoBehaviour
 {
     public int spawnNum;
     public Tilemap find_tilemap;
-    public Tilemap spawn_tilemap;
-    public TileBase spawnBase;
     public List<ObjectInTile> objectList = new List<ObjectInTile>();
     private void SpawnObject(int m)
     {
         for (int i = 0; i < objectList[m].spawnNum; i++)
         {
-            spawn_tilemap.SetTile(TileExpand.Instance.GetRandomPointInTilemap(find_tilemap, spawnBase), objectList[m].tilebase);
+            objectList[m].spawn_map.SetTile(TileExpand.Instance.GetRandomPointInTilemap(find_tilemap, objectList[m].spawn_base), objectList[m].tilebase);
         }
     }
     

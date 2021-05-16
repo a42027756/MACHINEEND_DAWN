@@ -158,6 +158,7 @@
             <e p="ControllerBase.cs" t="Include" />
           </e>
           <e p="MapSpawn" t="Include">
+            <e p="CameraFollow.cs" t="Include" />
             <e p="MapScript" t="Include">
               <e p="DrawArea.cs" t="Include" />
               <e p="ObjectInTile.cs" t="Include" />

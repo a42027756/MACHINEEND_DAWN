@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge" />
+    <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/CameraFollow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectInTile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectInTile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectSpawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectSpawn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/Test.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +19,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectInTile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/tile/tiles/rule_grass.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/Town.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectSpawn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" root0="FORCE_HIGHLIGHTING" />
@@ -36,10 +45,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/DrawRoad.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/DrawArea.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/RoomSpawn.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectInTile.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectSpawn.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/RandomMap.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/Town.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectSpawn.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectInTile.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/CameraFollow.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sT92pLE3Aucix7W6jstCeY0cFP" />
