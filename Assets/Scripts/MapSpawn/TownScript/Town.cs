@@ -227,7 +227,7 @@ public class Town
         originPos = FindOriginPos();
         while (!DrawRandomRoad(originPos,mainNode,road_base))
         {
-            FindOriginPos();
+            originPos = FindOriginPos();
         }
     }
     
