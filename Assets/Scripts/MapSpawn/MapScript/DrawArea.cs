@@ -60,7 +60,7 @@ public class DrawArea
 
         int x_start = TileExpand.Instance.GetSeed()%150;
         int y_start = (x_start + 520)%100;
-        Debug.Log(x_start + " " + y_start);
+        // Debug.Log(x_start + " " + y_start);
 
         for (perlin_x = x_start; perlin_x < Zone.Instance.size + x_start ; perlin_x++)
         {

@@ -979,9 +979,9 @@ MonoBehaviour:
   tile_floor: {fileID: 941552684}
   tile_wall: {fileID: 1905306421}
   tile_corner: {fileID: 1880024564}
-  roombase: {fileID: 11400000, guid: 5ebc22a94e3de3344a5b9c9b7297f3ad, type: 2}
   roomList:
-  - floor: {fileID: 11400000, guid: f58f1f806b95a1842914bd2ad14ce0a2, type: 2}
+  - roombase: {fileID: 11400000, guid: 5ebc22a94e3de3344a5b9c9b7297f3ad, type: 2}
+    floor: {fileID: 11400000, guid: f58f1f806b95a1842914bd2ad14ce0a2, type: 2}
     wall: {fileID: 11400000, guid: c82ce7b2c636b944ea5d9a6a5d6840fb, type: 2}
     wallCorner: {fileID: 11400000, guid: 280aa93c342179541b5e74a441352092, type: 2}
     Edge: {fileID: 11400000, guid: f2c62ff9227a94e4f893e5fadfbdfb41, type: 2}
@@ -1006,30 +1006,6 @@ MonoBehaviour:
     roadOn_tilebase: {fileID: 11400000, guid: 4c74b63cad4592e48a24aa113dd1ca4e, type: 2}
     unit_length: 15
     mainNode: 10
-    node_tile: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
-    firstNode: []
-  - road_tilemap: {fileID: 941552684}
-    road_base: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
-    branch_base: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
-    roadOn_tilebase: {fileID: 11400000, guid: 4c74b63cad4592e48a24aa113dd1ca4e, type: 2}
-    unit_length: 10
-    mainNode: 8
-    node_tile: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
-    firstNode: []
-  - road_tilemap: {fileID: 941552684}
-    road_base: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
-    branch_base: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
-    roadOn_tilebase: {fileID: 11400000, guid: 4c74b63cad4592e48a24aa113dd1ca4e, type: 2}
-    unit_length: 10
-    mainNode: 8
-    node_tile: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
-    firstNode: []
-  - road_tilemap: {fileID: 941552684}
-    road_base: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
-    branch_base: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
-    roadOn_tilebase: {fileID: 11400000, guid: 4c74b63cad4592e48a24aa113dd1ca4e, type: 2}
-    unit_length: 10
-    mainNode: 8
     node_tile: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
     firstNode: []
 --- !u!114 &606717233

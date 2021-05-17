@@ -5,15 +5,15 @@ using UnityEngine.Tilemaps;
 [System.Serializable]
 public class Town
 {
-    public Tilemap road_tilemap;
-    public TileBase road_base;
-    public TileBase branch_base;
-    public TileBase roadOn_tilebase;
-    public int unit_length;
-    public int mainNode;
-    public TileBase node_tile;
-    private Vector3Int originPos;
-    public List<Vector3Int> firstNode = new List<Vector3Int>();
+    public Tilemap road_tilemap;    //道路所在的tilemap
+    public TileBase road_base;      //道路的tile笔刷
+    public TileBase branch_base;    //支路的笔刷
+    public TileBase roadOn_tilebase;//生成道路的随机点tile类型
+    public int unit_length;         //道路的单位长度
+    public int mainNode;            //村庄主节点数量
+    public TileBase node_tile;      //村庄节点tile笔刷
+    private Vector3Int originPos;   //村庄起点
+    public List<Vector3Int> firstNode = new List<Vector3Int>(); //存储村庄节点的list
     
     
     enum Direction
@@ -216,14 +216,14 @@ public class Town
     //找到主干道起点
     private Vector3Int FindOriginPos()
     {
-        Debug.Log("FindOrigin");
+        // Debug.Log("FindOrigin");
         return TileExpand.Instance.GetRandomPointInTilemap(road_tilemap, roadOn_tilebase);
     }
     
     //绘制主干道
     public void DrawMainRoad()
     {
-        Debug.Log("DrawMain");
+        // Debug.Log("DrawMain");
         originPos = FindOriginPos();
         while (!DrawRandomRoad(originPos,mainNode,road_base))
         {
@@ -234,7 +234,7 @@ public class Town
     //绘制第一分支
     public void DrawFirstBranch()
     {
-        Debug.Log("Draw Branch");
+        // Debug.Log("Draw Branch");
         for (int i = 0; i < mainNode; i++)
         {
             DrawRandomRoad(firstNode[i], 2, branch_base);

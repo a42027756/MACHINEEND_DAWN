@@ -44,11 +44,17 @@ TagManager:
   - name: Ground
     uniqueID: 2442614307
     locked: 0
-  - name: Player
-    uniqueID: 1009641547
+  - name: floor
+    uniqueID: 2886309533
     locked: 0
   - name: Wall
     uniqueID: 1584293499
+    locked: 0
+  - name: Player
+    uniqueID: 1009641547
+    locked: 0
+  - name: object
+    uniqueID: 3295173115
     locked: 0
   - name: Bullet
     uniqueID: 1850995993

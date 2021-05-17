@@ -23,7 +23,6 @@ public class RandomMap : MonoSingleton<RandomMap>
 
     private void Awake()
     {
-        Debug.Log("Awake");
         Mapping();
     }
 

@@ -6,12 +6,12 @@ public class Menu : MonoBehaviour
 {
     public void Switch2Game()
     {
-        SceneManager.LoadScene("Prelogue");
+        SceneManager.LoadScene("LoadScene");
     }
 
     public void Switch2Map()
     {
-        SceneManager.LoadScene("LoadScene");
+        SceneManager.LoadScene("Test");
     }
 
     public void QuitGame()

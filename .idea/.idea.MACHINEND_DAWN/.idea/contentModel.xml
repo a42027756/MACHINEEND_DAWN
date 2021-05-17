@@ -141,6 +141,9 @@
           </e>
         </e>
         <e p="Scenes" t="Include">
+          <e p="Game" t="Include">
+            <e p="Rotate.cs" t="Include" />
+          </e>
           <e p="LoadScene" t="Include">
             <e p="LoadManager.cs" t="Include" />
           </e>

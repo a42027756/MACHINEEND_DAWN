@@ -41,10 +41,10 @@ public class PlayerProperty : ControllerBase<PlayerProperty>, IProperty
 
     private void ValueBoxUpdate()
     {
-        properties["thirsty"] -= 0.2f;
-        properties["hunger"] -= 0.1f;
+        properties["thirsty"] -= 0.01f;
+        properties["hunger"] -= 0.01f;
 
-        properties["intrusion"] += 0.08f;
+        properties["intrusion"] += 0.001f;
 
         Transition();
     }

@@ -18,7 +18,7 @@ public class LoadManager : MonoBehaviour
     
     IEnumerator Loadlevel()
     {
-        AsyncOperation operation = SceneManager.LoadSceneAsync("Test");
+        AsyncOperation operation = SceneManager.LoadSceneAsync("Game");
 
         operation.allowSceneActivation = false;
         
