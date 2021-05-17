@@ -50,10 +50,7 @@ public class ShowText : MonoBehaviour
         currentPos = 0;
         _text.text = words;
         _audio.Stop();
-        _spaceAnimator.SetBool("fade",true);
-        _animator.SetBool("switch",true);
         StartCoroutine(WaitSwitch(1.5f));
-
     }
     
     //播放写入
@@ -78,6 +75,9 @@ public class ShowText : MonoBehaviour
     //延迟
     IEnumerator WaitSwitch(float time)
     {
+        yield return new WaitForSeconds(time);
+        _spaceAnimator.SetBool("fade",true);
+        _animator.SetBool("switch",true);
         yield return new WaitForSeconds(time);
         SceneManager.LoadScene("Game");
     }

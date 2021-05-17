@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Rotate.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/tile/TestPalette.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/TestPalette.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu/Menu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/DrawArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/DrawArea.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/RandomMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/RandomMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/Room.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/Room.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/RoomSpawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/RoomSpawn.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/Test.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/Town.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/Town.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerProperty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerProperty.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Prelogue/ShowText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Prelogue/ShowText.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,9 +48,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/RandomMap.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/DrawArea.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/Town.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scenes/Menu/Menu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scenes/Game/Rotate.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Prelogue/ShowText.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sT92pLE3Aucix7W6jstCeY0cFP" />
@@ -130,7 +117,7 @@
       <workItem from="1621004776189" duration="26213000" />
       <workItem from="1621079599750" duration="7629000" />
       <workItem from="1621164887074" duration="2672000" />
-      <workItem from="1621217825904" duration="4481000" />
+      <workItem from="1621217825904" duration="6397000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1620888470403</created>
@@ -286,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621167044402</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Rebuild Room">
+      <created>1621225919205</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1621225919205</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,6 +324,7 @@
     <MESSAGE value="Init" />
     <MESSAGE value="NewGun" />
     <MESSAGE value="Debug_MapSpawn" />
-    <option name="LAST_COMMIT_MESSAGE" value="Debug_MapSpawn" />
+    <MESSAGE value="Rebuild Room" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rebuild Room" />
   </component>
 </project>
