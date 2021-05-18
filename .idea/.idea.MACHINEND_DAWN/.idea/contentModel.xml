@@ -160,6 +160,9 @@
           <e p="ControllerBase" t="Include">
             <e p="ControllerBase.cs" t="Include" />
           </e>
+          <e p="Environment" t="Include">
+            <e p="GTime.cs" t="Include" />
+          </e>
           <e p="MapSpawn" t="Include">
             <e p="CameraFollow.cs" t="Include" />
             <e p="MapScript" t="Include">
