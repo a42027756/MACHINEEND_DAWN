@@ -41,6 +41,9 @@ TextureImporter:
   - first:
       213: -146068366755162516
     second: Watcher_12
+  - first:
+      213: -1324138809205828788
+    second: Watcher_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -398,6 +401,27 @@ TextureImporter:
       bones: []
       spriteID: c6613a6289f09fdf0800000000000000
       internalID: -146068366755162516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Watcher_13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c435af3c4c6bf9de0800000000000000
+      internalID: -1324138809205828788
       vertices: []
       indices: 
       edges: []

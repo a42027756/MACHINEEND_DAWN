@@ -7,6 +7,7 @@ public class Binder : MonoBehaviour
     [HideInInspector] public Transform myTransform;
     [HideInInspector] public Animator myAnim;
     public GameObject myBag;
+    public GameObject pauspanel;
     public float speed;
 
     public Image health, water, hunger, invade;
@@ -30,6 +31,7 @@ public class Binder : MonoBehaviour
         PlayerController.Instance._anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
         PlayerController.Instance.movespeed = speed;
         PlayerController.Instance._bag = myBag;
+        PlayerController.Instance.pausepanel = pauspanel;
         myBag.SetActive(false);
 
         PlayerProperty.Instance.healthBar = health;
