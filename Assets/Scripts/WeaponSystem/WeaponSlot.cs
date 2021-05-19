@@ -11,11 +11,14 @@ public class WeaponSlot : MonoBehaviour
 
     private Vector2 difference;
 
-    void Start()
+    void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         spriteRenderer = GetComponent<SpriteRenderer>();
-
+    }
+    
+    void Start()
+    {
         WeaponPool.Instance.ConfigureWeapon();
         Configure();
     }
