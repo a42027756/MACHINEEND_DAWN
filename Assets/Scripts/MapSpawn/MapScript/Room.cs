@@ -31,7 +31,7 @@ public class Room
     }
     
     
-    //随机生成墙壁快
+    //随机生成墙壁块
     Vector3Int SpawnWall(Vector3Int o, int roomsize)
     {
         // Debug.Log("SpawnFloor");
@@ -64,11 +64,10 @@ public class Room
     private void SpawnCorner(Vector3Int o, int roomsize)
     {
         Vector3Int originPos = SpawnFloor(o,roomsize);
-        
         //下部阴影
         for (int i = 0; i < roomsize; i++)
         {
-            tile_corner.SetTile(new Vector3Int(originPos.x + i - 1,originPos.y - 2,0),Edge);
+            tile_wall.SetTile(new Vector3Int(originPos.x + i - 1,originPos.y - 2,0),Edge);
         }
         //上部阴影
         for (int i = 0; i < roomsize -2; i++)

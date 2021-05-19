@@ -5,12 +5,36 @@ using UnityEngine.Tilemaps;
 using UnityEditor;
 using UnityEngine.Serialization;
 
-[System.Serializable]
-public class Zone : Singleton<Zone>
-{
-    public int size;
-    // [HideInInspector] public bool[] enabledBools = new bool[1000000];
-}
+ [System.Serializable]
+ public class Zone
+ {
+     public int size;
+
+     //很懒，启动时不创建单例对象。
+     private static Zone _instance;
+
+     //私有化构造方法，不能new对象，只能通过Singleton.instance的方法得到对象
+     private Zone()
+     {
+     }
+
+     //得到单例对象
+     public static Zone Instance
+     {
+         get
+         {
+             //判断_instance是否为空，为空时是第一次调动该方法。创建Singleton对象返回，不为空 
+             //说明不是第一次进入。返回上一次创建的对象。当两个线程同时第一次进入这里，会都判断到
+             //_instance为空，而创建两个Singleton对象返回。所以时线程不安全的。
+             if (_instance == null)
+             {
+                 _instance = new Zone();
+             }
+
+             return _instance;
+         }
+     }
+ }
 #if UNITY_EDITOR
 [CustomPropertyDrawer(typeof(Zone))]
 public class InspectorGridDrawer : PropertyDrawer
