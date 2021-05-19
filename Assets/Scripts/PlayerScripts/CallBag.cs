@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SwitchBagPanel : MonoBehaviour
+public class CallBag : MonoBehaviour
 {
     private Animator anim_child_01, anim_child_02;
     private bool opposite = true;
@@ -28,11 +28,5 @@ public class SwitchBagPanel : MonoBehaviour
             anim_child_01.SetBool("push", opposite);
             anim_child_02.SetBool("push", !opposite);
         }
-    }
-
-    void OnDisable()
-    {
-        anim_child_01.SetBool("push", true);
-        anim_child_02.SetBool("push", false);
     }
 }

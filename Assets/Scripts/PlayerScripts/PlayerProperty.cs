@@ -19,10 +19,17 @@ public class PlayerProperty : ControllerBase<PlayerProperty>, IProperty
         //从存档中读取各个属性数值
         
         //将数值填写进各个属性中
-        properties.Add("health", 100f);
-        properties.Add("thirsty", 100f);
-        properties.Add("hunger", 100f);
-        properties.Add("intrusion", 0f);
+        if(!properties.ContainsKey("health"))
+            properties.Add("health", 100f); 
+
+        if(!properties.ContainsKey("thirsty"))
+            properties.Add("thirsty", 100f);
+
+        if(!properties.ContainsKey("hunger"))
+            properties.Add("hunger", 100f);
+
+        if(!properties.ContainsKey("intrusion"))
+            properties.Add("intrusion", 0f);
 
         Transition();
     }
