@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WeaponSlot : MonoBehaviour
 {
-    [SerializeField] private GameObject currentWeapon;
+    public GameObject currentWeapon;
     private GameObject player;
     private Weapon weapon;
     private SpriteRenderer spriteRenderer;
@@ -16,7 +16,7 @@ public class WeaponSlot : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         spriteRenderer = GetComponent<SpriteRenderer>();
 
-        currentWeapon = WeaponPool.Instance.FirstWeapon();
+        WeaponPool.Instance.GetCurrentWeapon();
         Configure();
     }
 
@@ -29,7 +29,13 @@ public class WeaponSlot : MonoBehaviour
         //---------------test----------------
         if(Input.GetMouseButtonDown(1))
         {
-            currentWeapon = WeaponPool.Instance.GetNextWeapon();
+            WeaponPool.Instance.GetNextWeapon();
+            Configure();
+        }
+
+        if(Input.GetMouseButtonDown(2))
+        {
+            WeaponPool.Instance.ChangeWeapon(1, 3);
             Configure();
         }
         //---------------test----------------

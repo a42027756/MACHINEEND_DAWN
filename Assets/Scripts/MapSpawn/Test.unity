@@ -460,6 +460,7 @@ MonoBehaviour:
   - {fileID: 4526118887664363873, guid: 270bce10dbdfb754c858dddf1f6a8fae, type: 3}
   - {fileID: 7935496132211875191, guid: 73afda39cf4a6224ca6ae6a860ed4d24, type: 3}
   - {fileID: 2509823889630909515, guid: 157b5c7c3b9bec44ba02da24c83e4cfc, type: 3}
+  - {fileID: 5964054827019619311, guid: 35f8c34fee585ba46b3d08e743078d7b, type: 3}
   poolWeapons: []
   animators:
   - {fileID: 1023802753}

@@ -8,6 +8,7 @@ public class WeaponPool : MonoSingleton<WeaponPool>
 {
     public List<GameObject> weapons = new List<GameObject>();       //所有武器预置体
     public List<GameObject> poolWeapons = new List<GameObject>();   //武器池中物体(待定使用何种数据结构)
+    private WeaponSlot weaponSlot;
 
     [Header("Weapon UI")]
     public List<Animator> animators = new List<Animator>();     //切换武器UI动画
@@ -27,6 +28,11 @@ public class WeaponPool : MonoSingleton<WeaponPool>
         InitializePool();
     }
 
+    void Start()
+    {
+        weaponSlot = GetComponent<WeaponSlot>();
+    }
+
     public void InitializePool()
     {
         for(int i = 0;i < poolAmount;++i)
@@ -41,7 +47,7 @@ public class WeaponPool : MonoSingleton<WeaponPool>
         UpdateMessage();
     }
 
-    public GameObject FirstWeapon()
+    public void GetCurrentWeapon()
     {
         if(BulletPool.Instance.currentWeapon != null)
         {
@@ -50,10 +56,10 @@ public class WeaponPool : MonoSingleton<WeaponPool>
 
         poolWeapons[index].SetActive(true);
         animators[index].SetBool("isChosen", true);
-        return poolWeapons[index];
+        weaponSlot.currentWeapon =  poolWeapons[index];
     }
 
-    public GameObject GetNextWeapon()
+    public void GetNextWeapon()
     {
         animators[index].SetBool("isChosen", false);
         poolWeapons[index].SetActive(false);
@@ -66,7 +72,7 @@ public class WeaponPool : MonoSingleton<WeaponPool>
         poolWeapons[index].SetActive(true);
         animators[index].SetBool("isChosen", true);
 
-        return obj;
+        weaponSlot.currentWeapon =  obj;
     }
 
     public void UpdateMessage()
@@ -109,6 +115,32 @@ public class WeaponPool : MonoSingleton<WeaponPool>
             Weapon weapon = poolWeapons[i].GetComponent<Weapon>();
             weapon.maxBullet = weapon.maxHeldBullet;
         }
+        UpdateMessage();
+    }
+
+    public void ChangeWeapon(int indexOfPool, int indexOfWeapons)
+    {
+        if(poolWeapons[indexOfPool].GetComponent<Weapon>().weaponName == weapons[indexOfWeapons].GetComponent<Weapon>().weaponName)
+        {
+            Debug.Log("enter");
+            return;
+        }
+        
+        GameObject obj = Instantiate(weapons[indexOfWeapons], transform.position, Quaternion.identity);
+        obj.transform.SetParent(transform);
+
+        Destroy(poolWeapons[indexOfPool]);
+        poolWeapons[indexOfPool] = obj;
+
+        if(indexOfPool == index)
+        {
+            Debug.Log("yep");
+            weaponSlot.currentWeapon =  obj;
+
+            BulletPool.Instance.currentWeapon = obj;
+            BulletPool.Instance.ChangeSprite();
+        }
+
         UpdateMessage();
     }
 }
