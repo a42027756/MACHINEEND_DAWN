@@ -15,9 +15,6 @@ public class WeaponSlot : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         spriteRenderer = GetComponent<SpriteRenderer>();
-
-        WeaponPool.Instance.ConfigureWeapon();
-        Configure();
     }
 
     void Update()
@@ -53,7 +50,7 @@ public class WeaponSlot : MonoBehaviour
     }
 
     //配置武器信息
-    private void Configure()
+    public void Configure()
     {
         spriteRenderer.sprite = currentWeapon.GetComponent<Weapon>().weaponImage;
         weapon = currentWeapon.GetComponent<Weapon>();

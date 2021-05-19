@@ -31,6 +31,8 @@ public class WeaponPool : MonoSingleton<WeaponPool>
     void Start()
     {
         weaponSlot = GetComponent<WeaponSlot>();
+        ConfigureWeapon();
+        weaponSlot.Configure();
     }
 
     public void InitializePool()
