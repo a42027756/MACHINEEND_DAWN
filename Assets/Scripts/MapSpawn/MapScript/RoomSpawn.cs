@@ -21,7 +21,7 @@ public class RoomSpawn : MonoBehaviour
         {
             for (int i = 0; i < roomList[j].spawnNumber; i++)
             {
-                roomList[j].InitRoom(tile_floor,tile_wall,tile_corner);
+                roomList[j].InitRoom(tile_floor,tile_corner,tile_wall);
                 roomList[j].SpawnRandomRoom();
             }
         }

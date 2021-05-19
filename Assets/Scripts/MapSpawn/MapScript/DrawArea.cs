@@ -33,6 +33,7 @@ public class DrawArea
     //初始化噪音参数
     public void InitBrush(int base_a,int base_b)
     {
+        Debug.Log("Init Brush");
         a_min = base_a + Random.Range(0,3);
         a_max = base_a + Random.Range(4, 6);
 
@@ -45,6 +46,7 @@ public class DrawArea
     //生成Tile
     public void SpawnTile(Tilemap tilemap)
     {
+        Debug.Log("Spawn tile");
         if (a_max > a_min && b_max > b_min && c_max > c_min)
         {
             a = Random.Range(a_min, a_max);//随机取值范围a和b值决定地图分布形式
@@ -88,6 +90,7 @@ public class DrawArea
 
     public void Blank_Fill(Tilemap _tilemap)
     {
+        Debug.Log("BlankFill");
         for (int i = 0; i < Zone.Instance.size; i++)
         {
             for (int j = 0; j < Zone.Instance.size; j++)
