@@ -16,7 +16,7 @@ public class WeaponSlot : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         spriteRenderer = GetComponent<SpriteRenderer>();
 
-        WeaponPool.Instance.GetCurrentWeapon();
+        WeaponPool.Instance.ConfigureWeapon();
         Configure();
     }
 
@@ -41,6 +41,7 @@ public class WeaponSlot : MonoBehaviour
         //---------------test----------------
     }
 
+    //武器跟随鼠标旋转
     private void WeaponRotation()
     {
         difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - player.transform.position;
@@ -51,6 +52,7 @@ public class WeaponSlot : MonoBehaviour
         else spriteRenderer.flipY = false;
     }
 
+    //配置武器信息
     private void Configure()
     {
         spriteRenderer.sprite = currentWeapon.GetComponent<Weapon>().weaponImage;

@@ -47,34 +47,31 @@ public class WeaponPool : MonoSingleton<WeaponPool>
         UpdateMessage();
     }
 
-    public void GetCurrentWeapon()
-    {
-        if(BulletPool.Instance.currentWeapon != null)
-        {
-            BulletPool.Instance.currentWeapon = weapons[index];
-        }
-
-        poolWeapons[index].SetActive(true);
-        animators[index].SetBool("isChosen", true);
-        weaponSlot.currentWeapon =  poolWeapons[index];
-    }
-
+    //获取并切换到下一个武器
     public void GetNextWeapon()
     {
         animators[index].SetBool("isChosen", false);
         poolWeapons[index].SetActive(false);
 
         index = (index + 1) % poolAmount;
+        ConfigureWeapon();
+    }
+    
+    //配置武器信息
+    public void ConfigureWeapon()
+    {
         GameObject obj = poolWeapons[index];
+        
         BulletPool.Instance.currentWeapon = obj;
         BulletPool.Instance.ChangeSprite();
 
-        poolWeapons[index].SetActive(true);
+        obj.SetActive(true);
         animators[index].SetBool("isChosen", true);
 
         weaponSlot.currentWeapon =  obj;
     }
 
+    //更新UI装备信息
     public void UpdateMessage()
     {
         for(int i = 0;i < poolAmount;++i)
@@ -87,6 +84,7 @@ public class WeaponPool : MonoSingleton<WeaponPool>
         }
     }
 
+    //装填子弹
     public void LoadBullets()
     {
         Weapon weapon = poolWeapons[index].GetComponent<Weapon>();
@@ -108,6 +106,7 @@ public class WeaponPool : MonoSingleton<WeaponPool>
         }
     }
 
+    //补充所有武器子弹
     public void LoadAll()
     {
         for(int i = 0;i < poolAmount;++i)
@@ -118,6 +117,7 @@ public class WeaponPool : MonoSingleton<WeaponPool>
         UpdateMessage();
     }
 
+    //从背包里面切换武器
     public void ChangeWeapon(int indexOfPool, int indexOfWeapons)
     {
         if(poolWeapons[indexOfPool].GetComponent<Weapon>().weaponName == weapons[indexOfWeapons].GetComponent<Weapon>().weaponName)
@@ -126,7 +126,7 @@ public class WeaponPool : MonoSingleton<WeaponPool>
             return;
         }
         
-        GameObject obj = Instantiate(weapons[indexOfWeapons], transform.position, Quaternion.identity);
+        GameObject obj = Instantiate(weapons[indexOfWeapons], transform.position, weaponSlot.transform.rotation);
         obj.transform.SetParent(transform);
 
         Destroy(poolWeapons[indexOfPool]);
