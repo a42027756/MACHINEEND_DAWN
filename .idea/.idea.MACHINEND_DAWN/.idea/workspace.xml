@@ -3,18 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New 2D Renderer Data.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New 2D Renderer Data.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/tile/wall_001.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/wall_001.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/DrawArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/DrawArea.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/RandomMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/RandomMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/Room.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/Room.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/RoomSpawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/RoomSpawn.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/Zone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/Zone.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/Test.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +119,7 @@
       <workItem from="1621217825904" duration="8560000" />
       <workItem from="1621308241384" duration="4849000" />
       <workItem from="1621313225070" duration="241000" />
-      <workItem from="1621405632851" duration="5072000" />
+      <workItem from="1621405632851" duration="6306000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1620888470403</created>
@@ -308,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621313427079</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="BuildTest 2021/5/19">
+      <created>1621411482852</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1621411482852</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,6 +350,7 @@
     <MESSAGE value="Rebuild Room" />
     <MESSAGE value="Rebuild Prelogue" />
     <MESSAGE value="GTime Manager" />
-    <option name="LAST_COMMIT_MESSAGE" value="GTime Manager" />
+    <MESSAGE value="BuildTest 2021/5/19" />
+    <option name="LAST_COMMIT_MESSAGE" value="BuildTest 2021/5/19" />
   </component>
 </project>
