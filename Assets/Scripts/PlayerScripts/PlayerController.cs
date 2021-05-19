@@ -16,6 +16,7 @@ public class PlayerController : ControllerBase<PlayerController>
     public Transform _transform;
     public Animator _anim;
     public GameObject _bag;
+    public GameObject pausepanel;
     private float input_x = 0f;
     private float input_y = 0f;
     private const float flipEpsilon = 0.5f;
@@ -44,6 +45,11 @@ public class PlayerController : ControllerBase<PlayerController>
         {
             bool isOpen = _bag.activeSelf;
             _bag.SetActive(!isOpen);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            pausepanel.SetActive(!pausepanel.activeSelf);
         }
         //--------------test-----------------
 

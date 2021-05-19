@@ -1,18 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class PausePanel : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject pausepanel;
+    public void Quit2Menu()
     {
-        
+        pausepanel.SetActive(false);
+        SceneManager.LoadScene("Menu");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Quit2Desktop()
     {
-        
+        Application.Quit();
+    }
+
+    public void Back2Game()
+    {
+        pausepanel.SetActive(false);
+    }
+
+    public void Pause()
+    {
+        Time.timeScale = 0;
+        pausepanel.SetActive(true);
     }
 }
