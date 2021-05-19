@@ -2,6 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge">
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/Anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/Anim/Camerator_pausepanel_anim.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/Anim/Camerator_pausepanel_anim.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/Anim/Camerator_pausepanel_animController.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/Anim/Camerator_pausepanel_animController.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/Anim/watcher_pausepanel_anim.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/Anim/watcher_pausepanel_anim.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/Anim/watcher_pausepanel_animController.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/Anim/watcher_pausepanel_animController.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/Camerator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/Camerator.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/Watcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/Watcher.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PausePanel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PausePanel.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +138,7 @@
       <workItem from="1621217825904" duration="8560000" />
       <workItem from="1621308241384" duration="4849000" />
       <workItem from="1621313225070" duration="241000" />
-      <workItem from="1621405632851" duration="6306000" />
+      <workItem from="1621405632851" duration="6916000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1620888470403</created>
@@ -351,6 +370,7 @@
     <MESSAGE value="Rebuild Prelogue" />
     <MESSAGE value="GTime Manager" />
     <MESSAGE value="BuildTest 2021/5/19" />
-    <option name="LAST_COMMIT_MESSAGE" value="BuildTest 2021/5/19" />
+    <MESSAGE value="PausePanel 2021/5/19" />
+    <option name="LAST_COMMIT_MESSAGE" value="PausePanel 2021/5/19" />
   </component>
 </project>
