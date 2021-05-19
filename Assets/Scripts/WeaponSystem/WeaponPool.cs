@@ -26,13 +26,8 @@ public class WeaponPool : MonoSingleton<WeaponPool>
         poolAmount = weapons.Count < maxNum ? weapons.Count : maxNum;
 
         InitializePool();
-    }
 
-    void Start()
-    {
         weaponSlot = GetComponent<WeaponSlot>();
-        ConfigureWeapon();
-        weaponSlot.Configure();
     }
 
     public void InitializePool()
