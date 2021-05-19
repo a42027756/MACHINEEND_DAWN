@@ -15,6 +15,7 @@ public class SwitchBagPanel : MonoBehaviour
 
     void OnEnable()
     {
+        opposite = true;
         anim_child_01.SetBool("push", opposite);
         anim_child_02.SetBool("push", !opposite);
     }
@@ -27,5 +28,11 @@ public class SwitchBagPanel : MonoBehaviour
             anim_child_01.SetBool("push", opposite);
             anim_child_02.SetBool("push", !opposite);
         }
+    }
+
+    void OnDisable()
+    {
+        anim_child_01.SetBool("push", true);
+        anim_child_02.SetBool("push", false);
     }
 }
