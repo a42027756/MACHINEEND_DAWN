@@ -38,7 +38,6 @@ public class GTime : MonoSingleton<GTime>
             // Debug.Log("Set Finish");
             return true;
         }
-
         return false;
     }
     

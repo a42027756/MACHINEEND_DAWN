@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3367226880492226261}
   - component: {fileID: 7973140711623389291}
-  - component: {fileID: 3215089895726248977}
   m_Layer: 0
   m_Name: rock-monument
   m_TagString: Untagged
@@ -83,32 +82,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &3215089895726248977
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6416443112431680696}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.15625, y: 2.8125}
-    newSize: {x: 3.15625, y: 2.8125}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -1.328125, y: -1.28125}
-      - {x: -1.328125, y: 0.40625}
-      - {x: 1.484375, y: 0.40625}
-      - {x: 1.484375, y: -1.28125}

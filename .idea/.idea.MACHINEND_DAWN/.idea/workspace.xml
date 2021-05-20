@@ -2,10 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge">
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/tiles/tree.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/tiles/tree.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/bush-tall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/bush-tall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/bush.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/bush.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/rock-monument.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/rock-monument.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/rock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/rock.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/sign.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/sign.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/tree-dried.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/tree-dried.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/tree-orange.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/tree-orange.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/tree-pink.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/tree-pink.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/trunk.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/trunk.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/wizard/ElecticWizard-sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/wizard/ElecticWizard-sheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/tile/TestPalette.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/TestPalette.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/tree-orange.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/tree-orange.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/tree-pink.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/tree-pink.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,16 +32,17 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectInTile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/Town.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Game/Rotate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectInTile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectSpawn.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CDA0DA9E-454B-4A0D-9B19-813AB03014ED/83/b396fabd/Debug.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Game/Rotate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@10.4.0/Runtime/Textures/TextureXR.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/PerlinTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Menu/Menu.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@10.4.0/Runtime/UniversalRenderPipeline.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -127,7 +143,7 @@
       <workItem from="1621308241384" duration="4849000" />
       <workItem from="1621313225070" duration="241000" />
       <workItem from="1621405632851" duration="12394000" />
-      <workItem from="1621492841762" duration="2778000" />
+      <workItem from="1621492841762" duration="4322000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1620888470403</created>
@@ -339,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621493751420</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="&#10;Init DayLight">
+      <created>1621506453908</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1621506453908</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,6 +413,7 @@
     <MESSAGE value="PausePanel" />
     <MESSAGE value="Merge" />
     <MESSAGE value="Audio Init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Audio Init" />
+    <MESSAGE value="&#10;Init DayLight" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;Init DayLight" />
   </component>
 </project>
