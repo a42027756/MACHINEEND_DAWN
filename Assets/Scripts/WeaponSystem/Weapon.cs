@@ -69,6 +69,7 @@ public class Weapon : MonoBehaviour
             float rotateByZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
             bullet.GetComponent<Transform>().rotation = Quaternion.Euler(0, 0, rotateByZ);
             bullet.GetComponent<Rigidbody2D>().velocity = difference.normalized * bulletSpeed;
+            GetComponent<AudioSource>().Play();
             currentBullet--;
         }
         
@@ -77,11 +78,19 @@ public class Weapon : MonoBehaviour
 
     public void Shooting()
     {
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
+        {
             FireDecision();
+        }
 
-        if(Input.GetMouseButton(0)) FireDecision();
-        else if(isFired) ResetFlag();
+        if (Input.GetMouseButton(0))
+        {
+            FireDecision();
+        }
+        else if (isFired)
+        {
+            ResetFlag();
+        }
         
         if(Input.GetMouseButtonUp(0))
         {
