@@ -7,6 +7,7 @@ using UnityEngine.Serialization;
 
 public class GTime : MonoSingleton<GTime>
 {
+    public GameObject light;
     public float day_length;
     [HideInInspector] public bool isNight;
     [SerializeField][Range(0,24)]private float gameTime;
@@ -23,7 +24,8 @@ public class GTime : MonoSingleton<GTime>
 
     public void SetIntensity(float gt)
     {
-        GetComponent<Light2D>().intensity = Mathf.Sin(gt / (2 * Mathf.PI));
+        Color origincolor =  light.GetComponent<SpriteRenderer>().color;
+        light.GetComponent<SpriteRenderer>().color = new Color(origincolor.r, origincolor.g, origincolor.b, 0.4f + (Mathf.Cos((gt * 2 * Mathf.PI) / 24)) * 0.4f);
     }
 
     public bool SetGTime(float time)

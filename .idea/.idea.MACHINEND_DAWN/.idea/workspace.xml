@@ -2,151 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge">
-      <change afterPath="$PROJECT_DIR$/Assets/Bohn Studios.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Bohn Studios/Audio.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Bohn Studios/Audio/Echoes of Science Fiction.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Bohn Studios/Audio/Echoes of Science Fiction/1-1.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Bohn Studios/Audio/Echoes of Science Fiction/1-1/Ambient Closed For Oscillation.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Bohn Studios/Audio/Echoes of Science Fiction/1-1/Ambient Closed For Oscillation.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Bohn Studios/Audio/Echoes of Science Fiction/1-1/Ambient Conglomerate Star Systems.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Bohn Studios/Audio/Echoes of Science Fiction/1-1/Ambient Conglomerate Star Systems.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Bohn Studios/Audio/Echoes of Science Fiction/AmbientFant_CrossingTolls.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Bohn Studios/Audio/Echoes of Science Fiction/AmbientFant_CrossingTolls.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Bohn Studios/Audio/Echoes of Science Fiction/AncientTechnology_Ambient.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Bohn Studios/Audio/Echoes of Science Fiction/AncientTechnology_Ambient.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Bohn Studios/Audio/Echoes of Science Fiction/_AmbientScFi_VocalDeflectionTerminal_3-5-2020.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Bohn Studios/Audio/Echoes of Science Fiction/_AmbientScFi_VocalDeflectionTerminal_3-5-2020.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Bohn Studios/Audio/Echoes of Science Fiction/_AmbientSciFi_MysteriousSpaceport3-5-2020.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Bohn Studios/Audio/Echoes of Science Fiction/_AmbientSciFi_MysteriousSpaceport3-5-2020.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/bush-tall.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/bush-tall.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/bush.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/bush.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/rock-monument.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/rock-monument.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/rock.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/rock.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/sign.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/sign.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/tree-dried.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/tree-dried.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/tree-orange.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/tree-orange.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/tree-pink.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/tree-pink.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/trunk.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/trunk.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/tiles/grass.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/tiles/grass.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/tiles/rock.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/tiles/rock.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/tiles/tall grass.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/tiles/tall grass.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun1_1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun1_1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun1_2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun1_2.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun1_3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun1_3.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun1_4.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun1_4.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun1_Load.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun1_Load.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun2.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun2_1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun2_1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun2_2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun2_2.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun2_3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun2_3.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun2_4.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun2_4.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun2_load.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun2_load.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun3.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun3_1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun3_1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun3_2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun3_2.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun3_3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun3_3.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun3_4.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun3_4.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun3_load.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun3_load.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun4.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun4.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun4_1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun4_1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun4_2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun4_2.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun4_3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun4_3.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun4_4.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun4_4.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun4_load.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun4_load.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun5.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun5.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun5_1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun5_1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun5_2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun5_2.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun5_3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun5_3.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun5_4.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun5_4.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun5_Load.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/Gun5_Load.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/filelist.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scifi Guns SFX Pack/filelist.pdf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/Materials/bush.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/Materials/bush.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/Materials/tree-pink.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/Materials/tree-pink.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/SceneTemplateSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New 2D Renderer Data.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New 2D Renderer Data.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/tile/TestPalette.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/TestPalette.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/tile/tiles/Grass_prefab.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/tile/tiles/Grass_prefab.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/tile/tiles/Stone.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/tile/tiles/Stone.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/tile/tiles/Tree.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/tile/tiles/Tree.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/Test.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/Weapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Standard.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Standard.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/bush-tall.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/bush-tall.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/bush.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/bush.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/rock-monument.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/rock-monument.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/rock.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/rock.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/sign.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/sign.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/tree-dried.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/tree-dried.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/tree-orange.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/tree-orange.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/tree-pink.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/tree-pink.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/trunk.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/trunk.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset 1_Renderer.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset 1_Renderer.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -189,7 +47,6 @@
       <option value="$PROJECT_DIR$/Assets/Scenes/Menu/Menu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scenes/Game/Rotate.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Prelogue/ShowText.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/RoomSpawn.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/Room.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/DrawArea.cs" />
@@ -198,8 +55,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/PausePanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/Weapon.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sT92pLE3Aucix7W6jstCeY0cFP" />
@@ -269,7 +127,7 @@
       <workItem from="1621308241384" duration="4849000" />
       <workItem from="1621313225070" duration="241000" />
       <workItem from="1621405632851" duration="12394000" />
-      <workItem from="1621492841762" duration="297000" />
+      <workItem from="1621492841762" duration="2778000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1620888470403</created>
@@ -474,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621417639082</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Audio Init">
+      <created>1621493751420</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1621493751420</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -524,6 +389,7 @@
     <MESSAGE value="PausePanel 2021/5/19" />
     <MESSAGE value="PausePanel" />
     <MESSAGE value="Merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge" />
+    <MESSAGE value="Audio Init" />
+    <option name="LAST_COMMIT_MESSAGE" value="Audio Init" />
   </component>
 </project>
