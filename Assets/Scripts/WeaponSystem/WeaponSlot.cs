@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WeaponSlot : MonoBehaviour
+public class WeaponSlot : MonoSingleton<WeaponSlot>
 {
     public GameObject currentWeapon;
     private GameObject player;

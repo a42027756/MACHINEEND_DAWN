@@ -160,8 +160,17 @@
           <e p="ControllerBase" t="Include">
             <e p="ControllerBase.cs" t="Include" />
           </e>
+          <e p="Enemy_AI" t="Include">
+            <e p="Enemy.cs" t="Include" />
+            <e p="FlyingEnemy.cs" t="Include" />
+          </e>
           <e p="Environment" t="Include">
             <e p="GTime.cs" t="Include" />
+          </e>
+          <e p="FSM" t="Include">
+            <e p="FSM.cs" t="Include" />
+            <e p="IState.cs" t="Include" />
+            <e p="State.cs" t="Include" />
           </e>
           <e p="MapSpawn" t="Include">
             <e p="CameraFollow.cs" t="Include" />
