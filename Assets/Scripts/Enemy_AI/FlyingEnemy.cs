@@ -18,9 +18,20 @@ public class FlyingEnemy : Enemy
     private Vector3 moveVelocity;  //移动速度(矢量)
     private float epsilon = 0.1f;
     
+    private List<Collider2D> collider2Ds = new List<Collider2D>();
+    [SerializeField] private bool detected;
+    
     //声明State
     private State idleState;
     private State moveState;
+    private State chaseSate;
+    
+    /*
+    todo:听觉：玩家在听觉范围内开枪，detected设置为true；
+    todo:视觉：玩家在polygoncollider中出现，detected设为true；
+    todo:追击：当detected为true时，怪物追击玩家
+    todo:AttackState:当玩家进入怪物攻击范围（可能要新设置一个Trigger），切换为攻击状态
+    */
 
     private void Start()
     {
@@ -35,18 +46,29 @@ public class FlyingEnemy : Enemy
     {
         idleState = new State("idle");
         moveState = new State("move");
+        chaseSate = new State("chase");
         
         idleState.ONEnterHandler = Idle_Enter;
         idleState.ONActionHandler = Idle_Action;
+        idleState.ONExitHandler = Idle_Exit;
 
         moveState.ONEnterHandler = Move_Enter;
         moveState.ONActionHandler = Move_Action;
         moveState.ONExitHandler = Move_Exit;
+
+        chaseSate.ONEnterHandler = Chase_Enter;
+        chaseSate.ONActionHandler = Chase_Action;
+        chaseSate.ONExitHandler = Chase_Exit;
     }
     
     private void Update()
     {
+        detected = isDetected();
+        var contactFilter2D = new ContactFilter2D();
+        contactFilter2D.useTriggers = true;
+        hearing.OverlapCollider(contactFilter2D,collider2Ds);
         Flip();
+        Chase();
         if (_fsm != null)
         {
             _fsm.Update();
@@ -83,18 +105,24 @@ public class FlyingEnemy : Enemy
     //replace  idle:Enter:
     private void Idle_Enter(State _from, State _to)
     {
-        Debug.Log("Idle_Enter");
+        // Debug.Log("Idle_Enter");
         nowTime = waitTime;
     }
     //replace idle:Action:
     private void Idle_Action(State _curState)
     {
-        Debug.Log("Camerator idle");
+        // Debug.Log("Camerator idle");
         if (Wait(ref nowTime))
         {
-            Debug.Log("Wait Finish");
+            // Debug.Log("Wait Finish");
             _fsm.ChangeState(moveState);
         }
+    }
+
+    private void Idle_Exit(State _from, State _to)
+    {
+        // Debug.Log("Exit idle");
+        nowTime = waitTime;
     }
 
     private bool Wait(ref float time)
@@ -111,13 +139,13 @@ public class FlyingEnemy : Enemy
     //=====================move=====================
     private void Move_Enter(State _from, State _to)
     {
-        Debug.Log("Enter Move");
+        // Debug.Log("Enter Move");
         movePos = FindRandPoint(2f,2f);
     }
 
     private void Move_Action(State _current)
     {
-        Debug.Log("Move Action");
+        // Debug.Log("Move Action");
         if (Move2Point(movePos))
         {
             _fsm.ChangeState(idleState);
@@ -126,14 +154,14 @@ public class FlyingEnemy : Enemy
 
     private void Move_Exit(State _from, State _to)
     {
-        Debug.Log("Exit Move");
+        // Debug.Log("Exit Move");
         _rigidbody2D.velocity = new Vector2(0, 0);
     }
     
     //寻找附近随机点
     Vector3 FindRandPoint(float x,float y)
     {
-        Debug.Log("FindRandomPoint");
+        // Debug.Log("FindRandomPoint");
         return _transform.position + new Vector3(Random.Range(-x, x), Random.Range(-y, y), 0);
         
     }
@@ -141,7 +169,7 @@ public class FlyingEnemy : Enemy
     //移动至固定地点
     private bool Move2Point(Vector3 movePoint)
     {
-        Debug.Log("Move");
+        // Debug.Log("Move");
         moveVelocity = (movePos - _transform.position).normalized;
         if ((movePoint - _transform.position).magnitude > epsilon)
         {
@@ -155,5 +183,52 @@ public class FlyingEnemy : Enemy
         
     }
     //==============================================
+    
+    //=====================chase====================
+    private void Chase_Enter(State _from, State _to)
+    {
+        Debug.Log("Begin chase");
+    }
+
+    private void Chase_Action(State _curState)
+    {
+        Debug.Log("chase");
+        
+        //todo:追击玩家
+        
+        if (!detected)
+        {
+            Debug.Log("Back to idle");
+            _fsm.ChangeState(idleState);
+        }
+    }
+
+    private void Chase_Exit(State _from, State _to)
+    {
+        
+    }
+    //=============================================
+
+    private bool isDetected()
+    {
+        foreach (var collider2D in collider2Ds)
+        {
+            if (collider2D.gameObject.CompareTag("Player"))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private void Chase()
+    {
+        if (detected && _fsm.curState != chaseSate)
+        {
+            // Debug.Log("Detected");
+            _fsm.ChangeState(chaseSate);
+        }
+    }
 }
 

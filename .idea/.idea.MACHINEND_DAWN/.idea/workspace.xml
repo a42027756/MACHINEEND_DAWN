@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/Enemy_Camerator.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/Enemy_Camerator.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +13,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
@@ -69,8 +75,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/FSM/FSM.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FSM/State.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/Bullet.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sT92pLE3Aucix7W6jstCeY0cFP" />
@@ -141,7 +147,8 @@
       <workItem from="1621313225070" duration="241000" />
       <workItem from="1621405632851" duration="12394000" />
       <workItem from="1621492841762" duration="12095000" />
-      <workItem from="1621572914233" duration="10377000" />
+      <workItem from="1621572914233" duration="11707000" />
+      <workItem from="1621651046282" duration="6727000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1620888470403</created>
@@ -374,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621575625308</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="FSM Init">
+      <created>1621604873366</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1621604873366</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
