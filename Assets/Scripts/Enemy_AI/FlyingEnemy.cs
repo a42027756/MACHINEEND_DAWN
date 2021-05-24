@@ -66,7 +66,7 @@ public class FlyingEnemy : Enemy
         detected = isDetected();
         var contactFilter2D = new ContactFilter2D();
         contactFilter2D.useTriggers = true;
-        hearing.OverlapCollider(contactFilter2D,collider2Ds);
+        sight.OverlapCollider(contactFilter2D,collider2Ds);
         Flip();
         Chase();
         if (_fsm != null)
@@ -166,6 +166,34 @@ public class FlyingEnemy : Enemy
         
     }
     
+    
+    //==============================================
+    
+    //=====================chase====================
+    private void Chase_Enter(State _from, State _to)
+    {
+        Debug.Log("Begin chase");
+    }
+
+    private void Chase_Action(State _curState)
+    {
+        Debug.Log("chase");
+        movePos = PlayerController.Instance._transform.position;
+        //todo:追击玩家
+        Move2Point(movePos);
+        
+        if (!detected)
+        {
+            Debug.Log("Back to idle");
+            _fsm.ChangeState(idleState);
+        }
+    }
+
+    private void Chase_Exit(State _from, State _to)
+    {
+        _rigidbody2D.velocity = new Vector2(0, 0);
+    }
+    //=============================================
     //移动至固定地点
     private bool Move2Point(Vector3 movePoint)
     {
@@ -182,38 +210,12 @@ public class FlyingEnemy : Enemy
         }
         
     }
-    //==============================================
-    
-    //=====================chase====================
-    private void Chase_Enter(State _from, State _to)
-    {
-        Debug.Log("Begin chase");
-    }
-
-    private void Chase_Action(State _curState)
-    {
-        Debug.Log("chase");
-        
-        //todo:追击玩家
-        
-        if (!detected)
-        {
-            Debug.Log("Back to idle");
-            _fsm.ChangeState(idleState);
-        }
-    }
-
-    private void Chase_Exit(State _from, State _to)
-    {
-        
-    }
-    //=============================================
 
     private bool isDetected()
     {
         foreach (var collider2D in collider2Ds)
         {
-            if (collider2D.gameObject.CompareTag("Player"))
+            if (collider2D && collider2D.gameObject.CompareTag("Player"))
             {
                 return true;
             }

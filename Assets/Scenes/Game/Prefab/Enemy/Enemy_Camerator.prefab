@@ -176,6 +176,7 @@ MonoBehaviour:
   flyingspeed: 3
   waitTime: 3
   nowTime: 0
+  detected: 0
 --- !u!1 &9165531074037410071
 GameObject:
   m_ObjectHideFlags: 0
@@ -221,9 +222,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.084445, y: -0.07767582}
+  m_Offset: {x: 0.12146902, y: 0.03947878}
   serializedVersion: 2
-  m_Radius: 4.1095076
+  m_Radius: 5.4482217
 --- !u!60 &1647582514483192254
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -250,7 +251,7 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 0.07307577, y: 0.4641075}
-      - {x: -3.8270664, y: -1.1732543}
-      - {x: -3.2096157, y: -2.5179214}
-      - {x: -1.9061639, y: -3.6794949}
+      - {x: -4.8730307, y: -1.3951247}
+      - {x: -3.7484462, y: -2.945816}
+      - {x: -2.4291465, y: -4.34511}
       - {x: 0.47575474, y: -0.13562018}
