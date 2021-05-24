@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     protected Rigidbody2D _rigidbody2D;
     protected Transform _transform;
     private float flipEpsilon = 0.1f;
+    
     public virtual bool TakeDamage(int damage)
     {
         return false;
