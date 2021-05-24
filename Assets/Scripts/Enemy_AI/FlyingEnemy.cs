@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class FlyingEnemy : Enemy
@@ -18,14 +19,21 @@ public class FlyingEnemy : Enemy
     private Vector3 moveVelocity;  //移动速度(矢量)
     private float epsilon = 0.1f;
     
-    private List<Collider2D> collider2Ds = new List<Collider2D>();
-    [SerializeField] private bool detected;
+    private List<Collider2D> sight_collider2Ds = new List<Collider2D>();    //视觉范围内的collider2D
+    private List<Collider2D> hearing_collider2Ds = new List<Collider2D>();  //听觉范围内的collider2D
+    [SerializeField] private sensor det;
     
     //声明State
     private State idleState;
     private State moveState;
     private State chaseSate;
-    
+
+    enum sensor
+    {
+        sight,
+        hearing,
+        none
+    }
     /*
     todo:听觉：玩家在听觉范围内开枪，detected设置为true；
     todo:视觉：玩家在polygoncollider中出现，detected设为true；
@@ -63,10 +71,11 @@ public class FlyingEnemy : Enemy
     
     private void Update()
     {
-        detected = isDetected();
+        det = isDetected();
         var contactFilter2D = new ContactFilter2D();
         contactFilter2D.useTriggers = true;
-        sight.OverlapCollider(contactFilter2D,collider2Ds);
+        sight.OverlapCollider(contactFilter2D,sight_collider2Ds);
+        hearing.OverlapCollider(contactFilter2D, hearing_collider2Ds);
         Flip();
         Chase();
         if (_fsm != null)
@@ -172,19 +181,19 @@ public class FlyingEnemy : Enemy
     //=====================chase====================
     private void Chase_Enter(State _from, State _to)
     {
-        Debug.Log("Begin chase");
+        // Debug.Log("Begin chase");
     }
 
     private void Chase_Action(State _curState)
     {
-        Debug.Log("chase");
+        // Debug.Log("chase");
         movePos = PlayerController.Instance._transform.position;
         //todo:追击玩家
         Move2Point(movePos);
         
-        if (!detected)
+        if (det == sensor.none)
         {
-            Debug.Log("Back to idle");
+            // Debug.Log("Back to idle");
             _fsm.ChangeState(idleState);
         }
     }
@@ -211,22 +220,29 @@ public class FlyingEnemy : Enemy
         
     }
 
-    private bool isDetected()
+    private sensor isDetected()
     {
-        foreach (var collider2D in collider2Ds)
+        foreach (var collider2D in sight_collider2Ds)
         {
             if (collider2D && collider2D.gameObject.CompareTag("Player"))
             {
-                return true;
+                return sensor.sight;
             }
         }
-
-        return false;
+        
+        foreach (var collider2D in hearing_collider2Ds)
+        {
+            if (collider2D && collider2D.gameObject.CompareTag("Player"))
+            {
+                return sensor.hearing;
+            }
+        }
+        return sensor.none;
     }
 
     private void Chase()
     {
-        if (detected && _fsm.curState != chaseSate)
+        if (det == sensor.sight && _fsm.curState != chaseSate)
         {
             // Debug.Log("Detected");
             _fsm.ChangeState(chaseSate);
