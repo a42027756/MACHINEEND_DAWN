@@ -6,6 +6,8 @@ public class BagSlots : MonoBehaviour
 {
     public List<List<GameObject>> itemList2D = new List<List<GameObject>>();
 
+    int raw = 1, column = 1;    
+    
     void Awake()
     {
         foreach(Transform rawChild in transform)
@@ -14,8 +16,14 @@ public class BagSlots : MonoBehaviour
             foreach(Transform child in rawChild.transform)
             {
                 line.Add(child.gameObject);
+                ItemSlot slot = child.GetComponent<ItemSlot>();
+                slot.index_Raw = raw;
+                slot.index_Column = column;
+                slot.vacant = true;
+                column++;
             }
             itemList2D.Add(line);
+            raw++;
         }
     }
 }

@@ -14,10 +14,10 @@ public class Weapon : MonoBehaviour
     [Header("weapon properties")]
     public string weaponName;
     public Sprite weaponImage;
-    public int currentBullet;
-    public int bulletClip;
-    public int maxBullet;
-    public int maxHeldBullet;
+    public int currentBullet;       //当前子弹数目
+    public int bulletClip;          //一个弹夹所含有的子弹数
+    public int maxBullet;           //目前持有最大子弹数
+    public int maxHeldBullet;       //可持有最大子弹数
     public int damageValue;
 
     [SerializeField] private float interval;
