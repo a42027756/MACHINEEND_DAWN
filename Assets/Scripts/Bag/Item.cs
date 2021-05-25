@@ -7,16 +7,18 @@ using UnityEngine.EventSystems;
 public class Item : MonoBehaviour, IPointerClickHandler
 {
     public bool canPlace;
-    public int size_raw, size_column;      //物品的占空间大小
+    public int size;      //物品的占空间大小
     public Transform bag_Trans;
     private Sprite sprite;
     private Vector2 extents;
 
-    private Vector2 initPos;        //拖拽开始前的位置
-    private Vector2 destinationPos;
-    private bool isInitVertical;
-    [SerializeField] private bool isSelected;
-    private bool isVertical;
+    private int scanIndex;                                  //扫描背包单元格中物品即将放入的格子的顺序
+    private Vector2 firstPos, lastPos, destinationPos;      //扫描第一个格子位置和最后一个格子位置取均值的物品目标放置位置
+    
+    private Vector2 initPos;                                //拖拽开始前的位置
+    private bool isInitVertical;                            //记录鼠标点击之前物品方向信息
+    private bool isSelected;                                //物品是否处于选中状态
+    private bool isVertical;                                //记录物体被选中后物品方向信息
     private Vector2 mousePos;
 
     void Awake()
@@ -30,6 +32,8 @@ public class Item : MonoBehaviour, IPointerClickHandler
     
     void Start()
     {
+        scanIndex = 1;
+
         isVertical = false;
         isSelected = false;
     }
@@ -39,7 +43,7 @@ public class Item : MonoBehaviour, IPointerClickHandler
         if(isSelected)
         {
             FollowPointer();
-            ColorSlot();
+            ScanSlot();
         }
     }
 
@@ -87,12 +91,12 @@ public class Item : MonoBehaviour, IPointerClickHandler
         }
     }
 
-    public void ColorSlot()
+    public void ScanSlot()
     {
         canPlace = true;
+        scanIndex = 1;
         foreach(Transform rawChild in bag_Trans)
         {
-            List<GameObject> line = new List<GameObject>();
             foreach(Transform child in rawChild.transform)
             {
                 Vector2 pos = child.transform.position;
@@ -105,8 +109,14 @@ public class Item : MonoBehaviour, IPointerClickHandler
                         canPlace = false;
                         childImage.color = Color.red;
                     }
-                    //利用最后一个遍历的格子的位置信息赋值物品目的位置
-                    destinationPos = child.transform.position + new Vector3(50 * (size_raw-1), 50 * (size_column-1), 0);
+                    if(scanIndex == 1)
+                    {
+                        firstPos = pos;
+                    }else if(scanIndex == size)
+                    {
+                        lastPos = pos;
+                    }
+                    scanIndex++;
                 }
                 else
                 {
@@ -114,17 +124,20 @@ public class Item : MonoBehaviour, IPointerClickHandler
                 }
             }
         }
+        if(scanIndex < size + 1)
+        {
+            canPlace = false;
+        }
     }
 
     public void PlaceHere()
     {
-        ColorSlot();
+        ScanSlot();
 
         if(canPlace)
         {
-            //放置物体至新位置
-            Debug.Log("move to new place");
-            Debug.Log(destinationPos);
+            //放置物体至新位置并标记占位值vacant为false
+            destinationPos = (firstPos + lastPos) / 2;
             transform.position = destinationPos;
             isSelected = false;
         }
@@ -140,7 +153,7 @@ public class Item : MonoBehaviour, IPointerClickHandler
 
     public bool ContainsPos(Vector2 pos)
     {
-        Vector2 lower_left, upper_right;            //物品左上及右下坐标
+        Vector2 lower_left, upper_right;                    //物品左上及右下坐标
         Vector2 thisPosition = transform.position;
         if(isVertical)
         {
