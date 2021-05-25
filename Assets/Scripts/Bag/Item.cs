@@ -6,12 +6,12 @@ using UnityEngine.EventSystems;
 
 public class Item : MonoBehaviour, IPointerClickHandler
 {
-    public bool canPlace;
-    public int size;      //物品的占空间大小
-    public Transform bag_Trans;
-    private Sprite sprite;
-    private Vector2 extents;
+    public bool canPlace;                                   //当前位置是否可放置物品
+    public Transform bag_Trans;                             //背包单元格父物体的transform值，用于遍历所有单元格
+    private Vector2 extents;                                //物品的四种相对于中心的偏移量
 
+    public int size;                                        //物品的占空间大小
+    private Vector2Int[] startCoordinate, destCoordinate;      //记录物品初始位置以及目的位置占据背包单元格坐标信息
     private int scanIndex;                                  //扫描背包单元格中物品即将放入的格子的顺序
     private Vector2 firstPos, lastPos, destinationPos;      //扫描第一个格子位置和最后一个格子位置取均值的物品目标放置位置
     
@@ -21,18 +21,16 @@ public class Item : MonoBehaviour, IPointerClickHandler
     private bool isVertical;                                //记录物体被选中后物品方向信息
     private Vector2 mousePos;
 
-    void Awake()
-    {
-        sprite = GetComponent<Image>().sprite;
+    bool test = true;
 
+    void Awake()
+    {  
         Vector3[] corners = new Vector3[4];
         gameObject.GetComponent<RectTransform>().GetWorldCorners(corners);
         extents = corners[2] - transform.position;
-    }
-    
-    void Start()
-    {
-        scanIndex = 1;
+
+        startCoordinate = new Vector2Int[size];
+        destCoordinate = new Vector2Int[size];
 
         isVertical = false;
         isSelected = false;
@@ -40,9 +38,11 @@ public class Item : MonoBehaviour, IPointerClickHandler
 
     void Update()
     {
+        InitOnlyOnce();
+        
         if(isSelected)
         {
-            FollowPointer();
+            transform.position = Input.mousePosition;
             ScanSlot();
         }
     }
@@ -65,18 +65,9 @@ public class Item : MonoBehaviour, IPointerClickHandler
         }
         else if(eventData.pointerId == -1)
         {
-            //鼠标左键点击选中物品并记录初始方向
-            initPos = transform.position;
-            isInitVertical = isVertical;
-            FollowPointer();
-            isSelected = true;
+            //第一次点击开始移动物品并记录初始信息
+            RecordInitialData();
         }
-    }
-
-    public void FollowPointer()
-    {
-        mousePos = Input.mousePosition;
-        transform.position = mousePos;
     }
 
     public void DecideDirection(bool vertical)
@@ -91,6 +82,7 @@ public class Item : MonoBehaviour, IPointerClickHandler
         }
     }
 
+    //扫描当前鼠标选中物体所在位置在背包单元格上的投影是否可放置物品
     public void ScanSlot()
     {
         canPlace = true;
@@ -107,7 +99,7 @@ public class Item : MonoBehaviour, IPointerClickHandler
                     if(!child.GetComponent<ItemSlot>().vacant)
                     {
                         canPlace = false;
-                        childImage.color = Color.red;
+                        childImage.color = Color.red;           //测试用
                     }
                     if(scanIndex == 1)
                     {
@@ -133,22 +125,28 @@ public class Item : MonoBehaviour, IPointerClickHandler
     public void PlaceHere()
     {
         ScanSlot();
+        RecordCoordinate(destCoordinate);
+
+        //===========================================
+        // for(int index = 0;index < size;index++)
+        // {
+        //     Debug.Log(destCoordinate[index]);
+        // }
+        //===========================================
 
         if(canPlace)
         {
-            //放置物体至新位置并标记占位值vacant为false
+            SetCoordinateTag(destCoordinate, false);
             destinationPos = (firstPos + lastPos) / 2;
             transform.position = destinationPos;
-            isSelected = false;
         }
         else
         {
-            //回归初始位置并回归初始方向
             transform.position = initPos;
-            DecideDirection(isInitVertical);
             isVertical = isInitVertical;
-            isSelected = false;
+            DecideDirection(isInitVertical);
         }
+        isSelected = false;
     }
 
     public bool ContainsPos(Vector2 pos)
@@ -165,6 +163,7 @@ public class Item : MonoBehaviour, IPointerClickHandler
             lower_left = thisPosition - extents;
             upper_right = thisPosition + extents;
         }
+
         if(pos.x > lower_left.x && pos.y > lower_left.y && pos.x < upper_right.x &&　pos.y < upper_right.y)
         {
             return true;
@@ -172,6 +171,87 @@ public class Item : MonoBehaviour, IPointerClickHandler
         else
         {
             return false;
+        }
+    }
+
+    //鼠标左键点击选中物品并记录初始位置及方向信息
+    public void RecordInitialData()
+    {
+        initPos = transform.position;
+        isInitVertical = isVertical;
+
+        //记录初始时物品坐标信息并将坐标设为空
+        RecordCoordinate(startCoordinate);
+        SetCoordinateTag(startCoordinate, true);
+
+        //===========================================
+        // for(int index = 0;index < size;index++)
+        // {
+        //     Debug.Log(startCoordinate[index]);
+        // }
+        //===========================================
+
+        transform.position = Input.mousePosition;
+        isSelected = true;
+    }
+
+    //处理坐标上的标记值
+    public void SetCoordinateTag(Vector2Int[] _coordinate, bool _vacant)
+    {
+        BagSlots bagSlots = bag_Trans.GetComponent<BagSlots>();
+        for(int index = 0;index < size;index++)
+        {
+            bagSlots.itemList2D[_coordinate[index].x-1][_coordinate[index].y-1].GetComponent<ItemSlot>().vacant = _vacant;
+        }
+    }
+
+    public void RecordCoordinate(Vector2Int[] _coordinate)
+    {
+        int index = 0;
+        foreach(Transform rawChild in bag_Trans)
+        {
+            foreach(Transform child in rawChild.transform)
+            {
+                Vector2 pos = child.transform.position;
+                if(ContainsPos(pos))
+                {
+                    ItemSlot slot = child.GetComponent<ItemSlot>();
+                    _coordinate[index].x = slot.index_Raw;
+                    _coordinate[index].y = slot.index_Column;
+                    index++;
+                }
+                child.GetComponent<Image>().color = Color.white;
+            }
+        }
+    }
+
+    public void InitOnlyOnce()
+    {
+        if(test)
+        {
+            scanIndex = 1;
+            foreach(Transform rawChild in bag_Trans)
+            {
+                foreach(Transform child in rawChild.transform)
+                {
+                    Vector2 pos = child.transform.position;
+                    if(ContainsPos(pos))
+                    {
+                        child.GetComponent<ItemSlot>().vacant = false;
+                        if(scanIndex == 1)
+                        {
+                            firstPos = pos;
+                        }else if(scanIndex == size)
+                        {
+                            lastPos = pos;
+                        }
+                        scanIndex++;
+                    }
+                }
+            }
+            destinationPos = (firstPos + lastPos) / 2;
+            transform.position = destinationPos;
+            test = false;
         }
     }
 }

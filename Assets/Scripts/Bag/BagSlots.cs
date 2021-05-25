@@ -23,6 +23,7 @@ public class BagSlots : MonoBehaviour
                 column++;
             }
             itemList2D.Add(line);
+            column = 1;
             raw++;
         }
     }
