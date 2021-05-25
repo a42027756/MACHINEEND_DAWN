@@ -3,8 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Item/NormalItem")]
-public class ItemBase : ScriptableObject
+public class ItemBase 
 {
     public Sprite itemSprite;               //物品图
     public String itemName = "Item";
