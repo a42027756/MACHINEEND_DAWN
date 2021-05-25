@@ -1,0 +1,286 @@
+Index: Assets/Scripts/Item/UsableItem/Clip.asset
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/Item/UsableItem/Clip.asset b/Assets/Scripts/Item/UsableItem/Clip.asset
+new file mode 100644
+--- /dev/null	
++++ b/Assets/Scripts/Item/UsableItem/Clip.asset	
+@@ -0,0 +1,21 @@
++%YAML 1.1
++%TAG !u! tag:unity3d.com,2011:
++--- !u!114 &11400000
++MonoBehaviour:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 0}
++  m_Enabled: 1
++  m_EditorHideFlags: 0
++  m_Script: {fileID: 0}
++  m_Name: Clip
++  m_EditorClassIdentifier: Assembly-CSharp::Clip
++  itemSprite: {fileID: 0}
++  itemName: Clip
++  itemNum: 0
++  size_h: 1
++  size_v: 1
++  usable: 0
++  clip_size: 0
+Index: Assets/Scripts/Item/NormalItem/metal fragment.asset.meta
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/Item/NormalItem/metal fragment.asset.meta b/Assets/Scripts/Item/NormalItem/metal fragment.asset.meta
+new file mode 100644
+--- /dev/null	
++++ b/Assets/Scripts/Item/NormalItem/metal fragment.asset.meta	
+@@ -0,0 +1,8 @@
++fileFormatVersion: 2
++guid: b826ae9f212a91440919d8c607fff8e3
++NativeFormatImporter:
++  externalObjects: {}
++  mainObjectFileID: 11400000
++  userData: 
++  assetBundleName: 
++  assetBundleVariant: 
+Index: .idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ContentModelStore\">\r\n    <e p=\"C:\\Users\\wuchenglin\\AppData\\Local\\JetBrains\\Rider2020.3\\extResources\" t=\"IncludeRecursive\" />\r\n    <e p=\"C:\\Users\\wuchenglin\\AppData\\Local\\JetBrains\\Rider2020.3\\resharper-host\\Local\\Transient\\Rider\\v203\\SolutionCaches\\_MACHINEND_DAWN.-963148091.00\" t=\"ExcludeRecursive\" />\r\n    <e p=\"E:\\UnityPorject\\MACHINEND_DAWN\" t=\"IncludeRecursive\">\r\n      <e p=\"Assembly-CSharp-Editor.csproj\" t=\"IncludeRecursive\" />\r\n      <e p=\"Assembly-CSharp.csproj\" t=\"IncludeRecursive\" />\r\n      <e p=\"Assets\" t=\"Include\">\r\n        <e p=\"Resources\" t=\"Include\">\r\n          <e p=\"Pixel Font - Tripfive\" t=\"Include\">\r\n            <e p=\"_README.txt\" t=\"Include\" />\r\n          </e>\r\n        </e>\r\n        <e p=\"Rule-Tile\" t=\"Include\">\r\n          <e p=\"Tilemap\" t=\"Include\">\r\n            <e p=\"Brushes\" t=\"Include\">\r\n              <e p=\"Coordinate Brush\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"Editor\" t=\"Include\">\r\n                    <e p=\"CoordinateBrush.cs\" t=\"Include\" />\r\n                  </e>\r\n                </e>\r\n              </e>\r\n              <e p=\"GameObject Brush\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"Editor\" t=\"Include\">\r\n                    <e p=\"GameObjectBrush.cs\" t=\"Include\" />\r\n                  </e>\r\n                </e>\r\n              </e>\r\n              <e p=\"Group Brush\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"Editor\" t=\"Include\">\r\n                    <e p=\"GroupBrush.cs\" t=\"Include\" />\r\n                  </e>\r\n                </e>\r\n              </e>\r\n              <e p=\"Line Brush\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"Editor\" t=\"Include\">\r\n                    <e p=\"LineBrush.cs\" t=\"Include\" />\r\n                  </e>\r\n                </e>\r\n              </e>\r\n              <e p=\"Prefab Brush\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"Editor\" t=\"Include\">\r\n                    <e p=\"PrefabBrush.cs\" t=\"Include\" />\r\n                  </e>\r\n                </e>\r\n              </e>\r\n              <e p=\"Random Brush\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"Editor\" t=\"Include\">\r\n                    <e p=\"RandomBrush.cs\" t=\"Include\" />\r\n                  </e>\r\n                </e>\r\n              </e>\r\n              <e p=\"Tint Brush\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"Editor\" t=\"Include\">\r\n                    <e p=\"TintBrush.cs\" t=\"Include\" />\r\n                  </e>\r\n                </e>\r\n              </e>\r\n              <e p=\"Tint Brush Smooth\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"Editor\" t=\"Include\">\r\n                    <e p=\"TintBrushSmooth.cs\" t=\"Include\" />\r\n                  </e>\r\n                  <e p=\"TintTextureGenerator.cs\" t=\"Include\" />\r\n                </e>\r\n                <e p=\"Shaders\" t=\"Include\">\r\n                  <e p=\"TintedTilemap.shader\" t=\"Include\" />\r\n                </e>\r\n              </e>\r\n            </e>\r\n            <e p=\"GridInformation\" t=\"Include\">\r\n              <e p=\"Scripts\" t=\"Include\">\r\n                <e p=\"GridInformation.cs\" t=\"Include\" />\r\n              </e>\r\n            </e>\r\n            <e p=\"Tiles\" t=\"Include\">\r\n              <e p=\"Animated Tile\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"AnimatedTile.cs\" t=\"Include\" />\r\n                </e>\r\n              </e>\r\n              <e p=\"Hexagonal Rule Tile\" t=\"Include\">\r\n                <e p=\"Editor\" t=\"Include\">\r\n                  <e p=\"HexagonalRuleTileEditor.cs\" t=\"Include\" />\r\n                </e>\r\n                <e p=\"HexagonalRuleTile.cs\" t=\"Include\" />\r\n              </e>\r\n              <e p=\"Isometric Rule Tile\" t=\"Include\">\r\n                <e p=\"Editor\" t=\"Include\">\r\n                  <e p=\"IsometricRuleTileEditor.cs\" t=\"Include\" />\r\n                </e>\r\n                <e p=\"IsometricRuleTile.cs\" t=\"Include\" />\r\n              </e>\r\n              <e p=\"Pipeline Tile\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"PipelineTile.cs\" t=\"Include\" />\r\n                </e>\r\n              </e>\r\n              <e p=\"Random Tile\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"RandomTile.cs\" t=\"Include\" />\r\n                </e>\r\n              </e>\r\n              <e p=\"Rule Override Tile\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"Editor\" t=\"Include\">\r\n                    <e p=\"RuleOverrideTileEditor.cs\" t=\"Include\" />\r\n                  </e>\r\n                  <e p=\"RuleOverrideTile.cs\" t=\"Include\" />\r\n                </e>\r\n              </e>\r\n              <e p=\"Rule Tile\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"Editor\" t=\"Include\">\r\n                    <e p=\"CustomRuleTileMenu.cs\" t=\"Include\" />\r\n                    <e p=\"RuleTileEditor.cs\" t=\"Include\" />\r\n                  </e>\r\n                  <e p=\"RuleTile.cs\" t=\"Include\" />\r\n                </e>\r\n                <e p=\"ScriptTemplates\" t=\"Include\">\r\n                  <e p=\"NewCustomRuleTile.cs.txt\" t=\"Include\" />\r\n                </e>\r\n              </e>\r\n              <e p=\"Terrain Tile\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"TerrainTile.cs\" t=\"Include\" />\r\n                </e>\r\n              </e>\r\n              <e p=\"Weighted Random Tile\" t=\"Include\">\r\n                <e p=\"WeightedRandomTile.cs\" t=\"Include\" />\r\n              </e>\r\n            </e>\r\n          </e>\r\n        </e>\r\n        <e p=\"Scenes\" t=\"Include\">\r\n          <e p=\"Game\" t=\"Include\">\r\n            <e p=\"Rotate.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"LoadScene\" t=\"Include\">\r\n            <e p=\"LoadManager.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"Logo\" t=\"Include\">\r\n            <e p=\"script\" t=\"Include\">\r\n              <e p=\"SwitchtoMenu.cs\" t=\"Include\" />\r\n            </e>\r\n          </e>\r\n          <e p=\"Menu\" t=\"Include\">\r\n            <e p=\"Menu.cs\" t=\"Include\" />\r\n          </e>\r\n        </e>\r\n        <e p=\"Scripts\" t=\"Include\">\r\n          <e p=\"ControllerBase\" t=\"Include\">\r\n            <e p=\"ControllerBase.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"Enemy_AI\" t=\"Include\">\r\n            <e p=\"Enemy.cs\" t=\"Include\" />\r\n            <e p=\"FlyingEnemy.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"Environment\" t=\"Include\">\r\n            <e p=\"GTime.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"FSM\" t=\"Include\">\r\n            <e p=\"FSM.cs\" t=\"Include\" />\r\n            <e p=\"IState.cs\" t=\"Include\" />\r\n            <e p=\"State.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"MapSpawn\" t=\"Include\">\r\n            <e p=\"CameraFollow.cs\" t=\"Include\" />\r\n            <e p=\"MapScript\" t=\"Include\">\r\n              <e p=\"DrawArea.cs\" t=\"Include\" />\r\n              <e p=\"ObjectInTile.cs\" t=\"Include\" />\r\n              <e p=\"ObjectSpawn.cs\" t=\"Include\" />\r\n              <e p=\"RandomMap.cs\" t=\"Include\" />\r\n              <e p=\"Room.cs\" t=\"Include\" />\r\n              <e p=\"RoomSpawn.cs\" t=\"Include\" />\r\n              <e p=\"Zone.cs\" t=\"Include\" />\r\n            </e>\r\n            <e p=\"PerlinTest.cs\" t=\"Include\" />\r\n            <e p=\"TileExpand.cs\" t=\"Include\" />\r\n            <e p=\"TownScript\" t=\"Include\">\r\n              <e p=\"DrawRoad.cs\" t=\"Include\" />\r\n              <e p=\"Town.cs\" t=\"Include\" />\r\n            </e>\r\n          </e>\r\n          <e p=\"PlayerScripts\" t=\"Include\">\r\n            <e p=\"Binder.cs\" t=\"Include\" />\r\n            <e p=\"CallBag.cs\" t=\"Include\" />\r\n            <e p=\"IProperty.cs\" t=\"Include\" />\r\n            <e p=\"PlayerController.cs\" t=\"Include\" />\r\n            <e p=\"PlayerProperty.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"Prelogue\" t=\"Include\">\r\n            <e p=\"ShowText.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"Singleton\" t=\"Include\">\r\n            <e p=\"Singleton.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"UI\" t=\"Include\">\r\n            <e p=\"PausePanel.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"WeaponSystem\" t=\"Include\">\r\n            <e p=\"Bullet.cs\" t=\"Include\" />\r\n            <e p=\"BulletPool.cs\" t=\"Include\" />\r\n            <e p=\"Weapon.cs\" t=\"Include\" />\r\n            <e p=\"WeaponPool.cs\" t=\"Include\" />\r\n            <e p=\"WeaponSlot.cs\" t=\"Include\" />\r\n          </e>\r\n        </e>\r\n        <e p=\"TextMeshPro\" t=\"Include\">\r\n          <e p=\"Examples &amp; Extras\" t=\"Include\">\r\n            <e p=\"Fonts\" t=\"Include\">\r\n              <e p=\"Anton OFL.txt\" t=\"Include\" />\r\n              <e p=\"Bangers - OFL.txt\" t=\"Include\" />\r\n              <e p=\"Oswald-Bold - OFL.txt\" t=\"Include\" />\r\n            </e>\r\n            <e p=\"Scripts\" t=\"Include\">\r\n              <e p=\"Benchmark01.cs\" t=\"Include\" />\r\n              <e p=\"Benchmark01_UGUI.cs\" t=\"Include\" />\r\n              <e p=\"Benchmark02.cs\" t=\"Include\" />\r\n              <e p=\"Benchmark03.cs\" t=\"Include\" />\r\n              <e p=\"Benchmark04.cs\" t=\"Include\" />\r\n              <e p=\"CameraController.cs\" t=\"Include\" />\r\n              <e p=\"ChatController.cs\" t=\"Include\" />\r\n              <e p=\"DropdownSample.cs\" t=\"Include\" />\r\n              <e p=\"EnvMapAnimator.cs\" t=\"Include\" />\r\n              <e p=\"ObjectSpin.cs\" t=\"Include\" />\r\n              <e p=\"ShaderPropAnimator.cs\" t=\"Include\" />\r\n              <e p=\"SimpleScript.cs\" t=\"Include\" />\r\n              <e p=\"SkewTextExample.cs\" t=\"Include\" />\r\n              <e p=\"TeleType.cs\" t=\"Include\" />\r\n              <e p=\"TextConsoleSimulator.cs\" t=\"Include\" />\r\n              <e p=\"TextMeshProFloatingText.cs\" t=\"Include\" />\r\n              <e p=\"TextMeshSpawner.cs\" t=\"Include\" />\r\n              <e p=\"TMP_DigitValidator.cs\" t=\"Include\" />\r\n              <e p=\"TMP_ExampleScript_01.cs\" t=\"Include\" />\r\n              <e p=\"TMP_FrameRateCounter.cs\" t=\"Include\" />\r\n              <e p=\"TMP_PhoneNumberValidator.cs\" t=\"Include\" />\r\n              <e p=\"TMP_TextEventCheck.cs\" t=\"Include\" />\r\n              <e p=\"TMP_TextEventHandler.cs\" t=\"Include\" />\r\n              <e p=\"TMP_TextInfoDebugTool.cs\" t=\"Include\" />\r\n              <e p=\"TMP_TextSelector_A.cs\" t=\"Include\" />\r\n              <e p=\"TMP_TextSelector_B.cs\" t=\"Include\" />\r\n              <e p=\"TMP_UiFrameRateCounter.cs\" t=\"Include\" />\r\n              <e p=\"TMPro_InstructionOverlay.cs\" t=\"Include\" />\r\n              <e p=\"VertexColorCycler.cs\" t=\"Include\" />\r\n              <e p=\"VertexJitter.cs\" t=\"Include\" />\r\n              <e p=\"VertexShakeA.cs\" t=\"Include\" />\r\n              <e p=\"VertexShakeB.cs\" t=\"Include\" />\r\n              <e p=\"VertexZoom.cs\" t=\"Include\" />\r\n              <e p=\"WarpTextExample.cs\" t=\"Include\" />\r\n            </e>\r\n          </e>\r\n          <e p=\"Fonts\" t=\"Include\">\r\n            <e p=\"LiberationSans - OFL.txt\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"Resources\" t=\"Include\">\r\n            <e p=\"LineBreaking Following Characters.txt\" t=\"Include\" />\r\n            <e p=\"LineBreaking Leading Characters.txt\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"Shaders\" t=\"Include\">\r\n            <e p=\"TMP_Bitmap-Custom-Atlas.shader\" t=\"Include\" />\r\n            <e p=\"TMP_Bitmap-Mobile.shader\" t=\"Include\" />\r\n            <e p=\"TMP_Bitmap.shader\" t=\"Include\" />\r\n            <e p=\"TMP_SDF Overlay.shader\" t=\"Include\" />\r\n            <e p=\"TMP_SDF SSD.shader\" t=\"Include\" />\r\n            <e p=\"TMP_SDF-Mobile Masking.shader\" t=\"Include\" />\r\n            <e p=\"TMP_SDF-Mobile Overlay.shader\" t=\"Include\" />\r\n            <e p=\"TMP_SDF-Mobile SSD.shader\" t=\"Include\" />\r\n            <e p=\"TMP_SDF-Mobile.shader\" t=\"Include\" />\r\n            <e p=\"TMP_SDF-Surface-Mobile.shader\" t=\"Include\" />\r\n            <e p=\"TMP_SDF-Surface.shader\" t=\"Include\" />\r\n            <e p=\"TMP_SDF.shader\" t=\"Include\" />\r\n            <e p=\"TMP_Sprite.shader\" t=\"Include\" />\r\n            <e p=\"TMPro.cginc\" t=\"Include\" />\r\n            <e p=\"TMPro_Mobile.cginc\" t=\"Include\" />\r\n            <e p=\"TMPro_Properties.cginc\" t=\"Include\" />\r\n            <e p=\"TMPro_Surface.cginc\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"Sprites\" t=\"Include\">\r\n            <e p=\"EmojiOne Attribution.txt\" t=\"Include\" />\r\n          </e>\r\n        </e>\r\n      </e>\r\n      <e p=\"MACHINEND_DAWN.sln\" t=\"IncludeFlat\" />\r\n      <e p=\"obj\" t=\"ExcludeRecursive\" />\r\n      <e p=\"Packages\" t=\"ExcludeRecursive\" />\r\n      <e p=\"Temp\\bin\" t=\"ExcludeRecursive\" />\r\n    </e>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml b/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml
+--- a/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml	
++++ b/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml	
+@@ -172,6 +172,12 @@
+             <e p="IState.cs" t="Include" />
+             <e p="State.cs" t="Include" />
+           </e>
++          <e p="Item" t="Include">
++            <e p="ItemBase.cs" t="Include" />
++            <e p="UsableItem" t="Include">
++              <e p="UsableItemBase.cs" t="Include" />
++            </e>
++          </e>
+           <e p="MapSpawn" t="Include">
+             <e p="CameraFollow.cs" t="Include" />
+             <e p="MapScript" t="Include">
+Index: Assets/Scripts/Item/UsableItem.meta
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/Item/UsableItem.meta b/Assets/Scripts/Item/UsableItem.meta
+new file mode 100644
+--- /dev/null	
++++ b/Assets/Scripts/Item/UsableItem.meta	
+@@ -0,0 +1,8 @@
++fileFormatVersion: 2
++guid: aa1d9f45559abc84698eaacf4a681632
++folderAsset: yes
++DefaultImporter:
++  externalObjects: {}
++  userData: 
++  assetBundleName: 
++  assetBundleVariant: 
+Index: Assets/Scripts/Item/NormalItem/metal fragment.asset
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/Item/NormalItem/metal fragment.asset b/Assets/Scripts/Item/NormalItem/metal fragment.asset
+new file mode 100644
+--- /dev/null	
++++ b/Assets/Scripts/Item/NormalItem/metal fragment.asset	
+@@ -0,0 +1,20 @@
++%YAML 1.1
++%TAG !u! tag:unity3d.com,2011:
++--- !u!114 &11400000
++MonoBehaviour:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 0}
++  m_Enabled: 1
++  m_EditorHideFlags: 0
++  m_Script: {fileID: 11500000, guid: d111cc8f7be102745a26820b67cb75cb, type: 3}
++  m_Name: metal fragment
++  m_EditorClassIdentifier: 
++  itemSprite: {fileID: 0}
++  itemName: metal fragmenet
++  itemNum: 0
++  size_h: 1
++  size_v: 1
++  usable: 0
+Index: Assets/Scripts/Item.meta
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/Item.meta b/Assets/Scripts/Item.meta
+new file mode 100644
+--- /dev/null	
++++ b/Assets/Scripts/Item.meta	
+@@ -0,0 +1,8 @@
++fileFormatVersion: 2
++guid: 8b8521a4707f28444b3e7ad3cf21d4f3
++folderAsset: yes
++DefaultImporter:
++  externalObjects: {}
++  userData: 
++  assetBundleName: 
++  assetBundleVariant: 
+Index: .idea/.idea.MACHINEND_DAWN/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"718e4172-b9e9-4768-9cbd-faf4fb7a4120\" name=\"Default Changelist\" comment=\"Merge\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitSEFilterConfiguration\">\r\n    <file-type-list>\r\n      <filtered-out-file-type name=\"LOCAL_BRANCH\" />\r\n      <filtered-out-file-type name=\"REMOTE_BRANCH\" />\r\n      <filtered-out-file-type name=\"TAG\" />\r\n      <filtered-out-file-type name=\"COMMIT_BY_MESSAGE\" />\r\n    </file-type-list>\r\n  </component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/CameraFollow.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/Town.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scenes/Game/Rotate.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/FSM/State.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectInTile.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectSpawn.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CDA0DA9E-454B-4A0D-9B19-813AB03014ED/83/b396fabd/Debug.cs\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/FSM/IState.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/Prefab/Enemy/Enemy_Camerator.prefab\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@10.4.0/Runtime/Textures/TextureXR.cs\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/PerlinTest.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"mock://E:/UnityPorject/MACHINEND_DAWN/UserSettings/EditorUserSettings.asset\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scenes/Menu/Menu.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/FSM/FSM.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@10.4.0/Runtime/UniversalRenderPipeline.cs\" root0=\"SKIP_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"IdeDocumentHistory\">\r\n    <changedPaths>\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/WeaponSystem/WeaponPool.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/WeaponSystem/BulletPool.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/MapSpawn/enum_test.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/MapSpawn/Direction.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/MapSpawn/TileExpand.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scenes/Logo/script/SwitchtoMenu.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/MapSpawn/PerlinTest.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectSpawn.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectInTile.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/MapSpawn/CameraFollow.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/DrawRoad.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerProperty.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/Town.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scenes/Menu/Menu.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scenes/Game/Rotate.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Prelogue/ShowText.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/RoomSpawn.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/Room.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/DrawArea.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/Zone.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/RandomMap.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerController.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/UI/PausePanel.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/WeaponSystem/Weapon.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/WeaponSystem/WeaponSlot.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/FSM/IState.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/FSM/FSM.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/FSM/State.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/WeaponSystem/Bullet.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs\" />\r\n    </changedPaths>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1sT92pLE3Aucix7W6jstCeY0cFP\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"ASKED_ADD_EXTERNAL_FILES\" value=\"true\" />\r\n    <property name=\"Discover.Launch.Via.Unity\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"editor.preferences.tabs\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Attach to Unity Editor.Attach to Unity Editor\">\r\n    <configuration name=\"Standalone Player\" type=\"RunUnityExe\" factoryName=\"Unity Executable\">\r\n      <option name=\"EXE_PATH\" value=\"D:/build/MACHINEND_DAWN.exe\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"D:\\build\" />\r\n      <option name=\"PASS_PARENT_ENVS\" value=\"1\" />\r\n      <option name=\"USE_EXTERNAL_CONSOLE\" value=\"0\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Attach to Unity Editor &amp; Play\" type=\"UNITY_DEBUG_RUN_CONFIGURATION\" factoryName=\"UNITY_ATTACH_AND_PLAY\" show_console_on_std_err=\"false\" show_console_on_std_out=\"false\" port=\"50000\" address=\"localhost\">\r\n      <option name=\"allowRunningInParallel\" value=\"false\" />\r\n      <option name=\"listenPortForConnections\" value=\"false\" />\r\n      <option name=\"pid\" />\r\n      <option name=\"selectedOptions\">\r\n        <list />\r\n      </option>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Attach to Unity Editor\" type=\"UNITY_DEBUG_RUN_CONFIGURATION\" factoryName=\"Unity Debug\" show_console_on_std_err=\"false\" show_console_on_std_out=\"false\" port=\"50000\" address=\"localhost\">\r\n      <option name=\"allowRunningInParallel\" value=\"false\" />\r\n      <option name=\"listenPortForConnections\" value=\"false\" />\r\n      <option name=\"pid\" />\r\n      <option name=\"selectedOptions\">\r\n        <list />\r\n      </option>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"718e4172-b9e9-4768-9cbd-faf4fb7a4120\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1620885507868</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1620885507868</updated>\r\n      <workItem from=\"1620885514550\" duration=\"45000\" />\r\n      <workItem from=\"1620885585372\" duration=\"1445000\" />\r\n      <workItem from=\"1620888011463\" duration=\"6000\" />\r\n      <workItem from=\"1620888098163\" duration=\"7008000\" />\r\n      <workItem from=\"1620913894652\" duration=\"27525000\" />\r\n      <workItem from=\"1620982019800\" duration=\"2130000\" />\r\n      <workItem from=\"1621002236393\" duration=\"654000\" />\r\n      <workItem from=\"1621004776189\" duration=\"26213000\" />\r\n      <workItem from=\"1621079599750\" duration=\"7629000\" />\r\n      <workItem from=\"1621164887074\" duration=\"2672000\" />\r\n      <workItem from=\"1621217825904\" duration=\"8560000\" />\r\n      <workItem from=\"1621308241384\" duration=\"4849000\" />\r\n      <workItem from=\"1621313225070\" duration=\"241000\" />\r\n      <workItem from=\"1621405632851\" duration=\"12394000\" />\r\n      <workItem from=\"1621492841762\" duration=\"12095000\" />\r\n      <workItem from=\"1621572914233\" duration=\"11707000\" />\r\n      <workItem from=\"1621651046282\" duration=\"7460000\" />\r\n      <workItem from=\"1621769939599\" duration=\"2454000\" />\r\n      <workItem from=\"1621825473888\" duration=\"6601000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Init\">\r\n      <created>1620888470403</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1620888470403</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Room\">\r\n      <created>1620888566061</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1620888566061</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Bugexecuter\">\r\n      <created>1620890560735</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1620890560735</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Bugexecuter\">\r\n      <created>1620890783461</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1620890783461</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"NewGun\">\r\n      <created>1620893020365</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1620893020366</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"NewGun\">\r\n      <created>1620894076375</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1620894076375</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"NewGun\">\r\n      <created>1620894293941</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1620894293941</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"NewGun\">\r\n      <created>1620896355525</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1620896355525</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"FixBug\">\r\n      <created>1620919398437</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1620919398437</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"FixBug\">\r\n      <created>1620976120822</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1620976120822</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"UpdateWizard\">\r\n      <created>1620982057005</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1620982057005</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"Merge\">\r\n      <created>1620986907614</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1620986907614</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"LoadScene\">\r\n      <created>1621068720098</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621068720098</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"Merge\">\r\n      <created>1621073622743</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621073622743</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"Merge\">\r\n      <created>1621073820110</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621073820110</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"Merge\">\r\n      <created>1621073936398</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621073936398</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"Init\">\r\n      <created>1621089644808</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621089644808</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00018\" summary=\"Init\">\r\n      <created>1621089781631</created>\r\n      <option name=\"number\" value=\"00018\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621089781631</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00019\" summary=\"NewGun\">\r\n      <created>1621164897217</created>\r\n      <option name=\"number\" value=\"00019\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621164897217</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00020\" summary=\"NewGun\">\r\n      <created>1621164905761</created>\r\n      <option name=\"number\" value=\"00020\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00020\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621164905761</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00021\" summary=\"NewGun\">\r\n      <created>1621164920533</created>\r\n      <option name=\"number\" value=\"00021\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00021\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621164920533</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00022\" summary=\"Debug_MapSpawn\">\r\n      <created>1621167044402</created>\r\n      <option name=\"number\" value=\"00022\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00022\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621167044402</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00023\" summary=\"Rebuild Room\">\r\n      <created>1621225919205</created>\r\n      <option name=\"number\" value=\"00023\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00023\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621225919205</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00024\" summary=\"Rebuild Prelogue\">\r\n      <created>1621227241587</created>\r\n      <option name=\"number\" value=\"00024\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00024\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621227241587</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00025\" summary=\"GTime Manager\">\r\n      <created>1621313427079</created>\r\n      <option name=\"number\" value=\"00025\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00025\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621313427079</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00026\" summary=\"BuildTest 2021/5/19\">\r\n      <created>1621411482852</created>\r\n      <option name=\"number\" value=\"00026\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00026\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621411482852</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00027\" summary=\"PausePanel 2021/5/19\">\r\n      <created>1621413160319</created>\r\n      <option name=\"number\" value=\"00027\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00027\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621413160319</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00028\" summary=\"PausePanel\">\r\n      <created>1621413182023</created>\r\n      <option name=\"number\" value=\"00028\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00028\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621413182023</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00029\" summary=\"Merge\">\r\n      <created>1621417639082</created>\r\n      <option name=\"number\" value=\"00029\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00029\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621417639082</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00030\" summary=\"Audio Init\">\r\n      <created>1621493751420</created>\r\n      <option name=\"number\" value=\"00030\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00030\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621493751420</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00031\" summary=\"&#10;Init DayLight\">\r\n      <created>1621506453908</created>\r\n      <option name=\"number\" value=\"00031\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00031\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621506453908</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00032\" summary=\"&#10;Init Collider\">\r\n      <created>1621509444496</created>\r\n      <option name=\"number\" value=\"00032\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00032\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621509444496</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00033\" summary=\"FSM Init\">\r\n      <created>1621575625308</created>\r\n      <option name=\"number\" value=\"00033\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00033\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621575625308</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00034\" summary=\"FSM Init\">\r\n      <created>1621604873366</created>\r\n      <option name=\"number\" value=\"00034\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00034\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621604873366</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00035\" summary=\"Init ChaseState\">\r\n      <created>1621658592621</created>\r\n      <option name=\"number\" value=\"00035\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00035\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621658592621</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00036\" summary=\"Init Sight\">\r\n      <created>1621825511026</created>\r\n      <option name=\"number\" value=\"00036\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00036\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621825511027</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00037\" summary=\"Update UI\">\r\n      <created>1621864324122</created>\r\n      <option name=\"number\" value=\"00037\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00037\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621864324122</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00038\" summary=\"Update UI\">\r\n      <created>1621864853309</created>\r\n      <option name=\"number\" value=\"00038\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00038\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621864853309</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"39\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"UnityProjectConfiguration\" hasMinimizedUI=\"true\" />\r\n  <component name=\"UnityUnitTestConfiguration\" currentTestLauncher=\"EditMode\" />\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"develop\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <option name=\"CLEAR_INITIAL_COMMIT_MESSAGE\" value=\"true\" />\r\n    <MESSAGE value=\"Room\" />\r\n    <MESSAGE value=\"Bugexecuter\" />\r\n    <MESSAGE value=\"FixBug\" />\r\n    <MESSAGE value=\"UpdateWizard\" />\r\n    <MESSAGE value=\"LoadScene\" />\r\n    <MESSAGE value=\"Init\" />\r\n    <MESSAGE value=\"NewGun\" />\r\n    <MESSAGE value=\"Debug_MapSpawn\" />\r\n    <MESSAGE value=\"Rebuild Room\" />\r\n    <MESSAGE value=\"Rebuild Prelogue\" />\r\n    <MESSAGE value=\"GTime Manager\" />\r\n    <MESSAGE value=\"BuildTest 2021/5/19\" />\r\n    <MESSAGE value=\"PausePanel 2021/5/19\" />\r\n    <MESSAGE value=\"PausePanel\" />\r\n    <MESSAGE value=\"Merge\" />\r\n    <MESSAGE value=\"Audio Init\" />\r\n    <MESSAGE value=\"&#10;Init DayLight\" />\r\n    <MESSAGE value=\"&#10;Init Collider\" />\r\n    <MESSAGE value=\"FSM Init\" />\r\n    <MESSAGE value=\"Init ChaseState\" />\r\n    <MESSAGE value=\"Init Sight\" />\r\n    <MESSAGE value=\"Update UI\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Update UI\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml b/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml
+--- a/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml	
++++ b/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml	
+@@ -2,7 +2,17 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge">
++      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item.meta" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item/NormalItem.meta" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item/NormalItem/metal fragment.asset" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item/NormalItem/metal fragment.asset.meta" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item/UsableItem.meta" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item/UsableItem/Clip.asset" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item/UsableItem/Clip.asset.meta" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item/UsableItem/UsableItemBase.cs" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -33,10 +43,9 @@
+     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CDA0DA9E-454B-4A0D-9B19-813AB03014ED/83/b396fabd/Debug.cs" root0="SKIP_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/IState.cs" root0="FORCE_HIGHLIGHTING" />
+-    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/Prefab/Enemy/Enemy_Camerator.prefab" root0="SKIP_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@10.4.0/Runtime/Textures/TextureXR.cs" root0="SKIP_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/UsableItem/UsableItemBase.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/PerlinTest.cs" root0="FORCE_HIGHLIGHTING" />
+-    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Menu/Menu.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/FSM.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@10.4.0/Runtime/UniversalRenderPipeline.cs" root0="SKIP_HIGHLIGHTING" />
+@@ -77,6 +86,9 @@
+       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" />
+       <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/Bullet.cs" />
+       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" />
++      <option value="$PROJECT_DIR$/Assets/Scripts/Item/NormalItem/NormalItemBase.cs" />
++      <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemBase.cs" />
++      <option value="$PROJECT_DIR$/Assets/Scripts/Item/UsableItem/UsableItemBase.cs" />
+     </changedPaths>
+   </component>
+   <component name="ProjectId" id="1sT92pLE3Aucix7W6jstCeY0cFP" />
+@@ -151,6 +163,9 @@
+       <workItem from="1621651046282" duration="7460000" />
+       <workItem from="1621769939599" duration="2454000" />
+       <workItem from="1621825473888" duration="6601000" />
++      <workItem from="1621865060605" duration="141000" />
++      <workItem from="1621908560644" duration="2776000" />
++      <workItem from="1621914244359" duration="818000" />
+     </task>
+     <task id="LOCAL-00001" summary="Init">
+       <created>1620888470403</created>
+@@ -418,7 +433,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1621864853309</updated>
+     </task>
+-    <option name="localTasksCounter" value="39" />
++    <task id="LOCAL-00039" summary="Update UI">
++      <created>1621865082455</created>
++      <option name="number" value="00039" />
++      <option name="presentableId" value="LOCAL-00039" />
++      <option name="project" value="LOCAL" />
++      <updated>1621865082456</updated>
++    </task>
++    <option name="localTasksCounter" value="40" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+Index: Assets/Scripts/Item/UsableItem/UsableItemBase.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/Item/UsableItem/UsableItemBase.cs b/Assets/Scripts/Item/UsableItem/UsableItemBase.cs
+new file mode 100644
+--- /dev/null	
++++ b/Assets/Scripts/Item/UsableItem/UsableItemBase.cs	
+@@ -0,0 +1,18 @@
++using System.Collections;
++using System.Collections.Generic;
++using UnityEngine;
++
++[CreateAssetMenu(menuName = "Item/Clip")]
++public class Clip : ItemBase
++{
++    public int clip_size = 0;
++
++    public void UseClip(int num)
++    {
++        if (num < this.itemNum)
++        {
++            //todo:添加弹夹
++        }
++    }
++    
++}
+Index: Assets/Scripts/Item/NormalItem.meta
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/Item/NormalItem.meta b/Assets/Scripts/Item/NormalItem.meta
+new file mode 100644
+--- /dev/null	
++++ b/Assets/Scripts/Item/NormalItem.meta	
+@@ -0,0 +1,8 @@
++fileFormatVersion: 2
++guid: ef12ae91bcf06134895e985ecff76923
++folderAsset: yes
++DefaultImporter:
++  externalObjects: {}
++  userData: 
++  assetBundleName: 
++  assetBundleVariant: 
+Index: Assets/Scenes/Game/Game.unity
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scenes/Game/Game.unity b/Assets/Scenes/Game/Game.unity
+--- a/Assets/Scenes/Game/Game.unity	
++++ b/Assets/Scenes/Game/Game.unity	
+@@ -221441,7 +221441,7 @@
+   m_ShowCameraFrustum: 1
+   m_IgnoreTimeScale: 0
+   m_WorldUpOverride: {fileID: 0}
+-  m_UpdateMethod: 1
++  m_UpdateMethod: 0
+   m_BlendUpdateMethod: 0
+   m_DefaultBlend:
+     m_Style: 1
+@@ -228623,7 +228623,7 @@
+   m_LockStageInInspector: 
+   m_StreamingVersion: 20170927
+   m_Priority: 10
+-  m_StandbyUpdate: 2
++  m_StandbyUpdate: 1
+   m_LookAt: {fileID: 0}
+   m_Follow: {fileID: 1087707687}
+   m_Lens:

@@ -1,0 +1,18 @@
+Index: Assets/Scripts/Item/UsableItem/Clip.asset.meta
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/Item/UsableItem/Clip.asset.meta b/Assets/Scripts/Item/UsableItem/Clip.asset.meta
+new file mode 100644
+--- /dev/null	
++++ b/Assets/Scripts/Item/UsableItem/Clip.asset.meta	
+@@ -0,0 +1,8 @@
++fileFormatVersion: 2
++guid: 86c4710c4ed68fe46b7e83b46aea6554
++NativeFormatImporter:
++  externalObjects: {}
++  mainObjectFileID: 11400000
++  userData: 
++  assetBundleName: 
++  assetBundleVariant: 

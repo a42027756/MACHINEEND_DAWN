@@ -157,6 +157,10 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Bag" t="Include">
+            <e p="BagSlots.cs" t="Include" />
+            <e p="Item.cs" t="Include" />
+          </e>
           <e p="ControllerBase" t="Include">
             <e p="ControllerBase.cs" t="Include" />
           </e>
@@ -171,6 +175,12 @@
             <e p="FSM.cs" t="Include" />
             <e p="IState.cs" t="Include" />
             <e p="State.cs" t="Include" />
+          </e>
+          <e p="Item" t="Include">
+            <e p="ItemBase.cs" t="Include" />
+            <e p="UsableItem" t="Include">
+              <e p="UsableItemBase.cs" t="Include" />
+            </e>
           </e>
           <e p="MapSpawn" t="Include">
             <e p="CameraFollow.cs" t="Include" />
