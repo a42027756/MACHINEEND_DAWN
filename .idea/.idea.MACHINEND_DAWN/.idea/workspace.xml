@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item/NormalItem.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item/NormalItem/metal fragment.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item/NormalItem/metal fragment.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item/UsableItem.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item/UsableItem/UsableItemBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_13_17_38__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_13_17_38__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_19_17_46__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_19_17_46__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_19_19_39__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_19_19_39__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/WeaponSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/WeaponSlot.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,10 +47,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CDA0DA9E-454B-4A0D-9B19-813AB03014ED/83/b396fabd/Debug.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/IState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/Prefab/Enemy/Enemy_Camerator.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@10.4.0/Runtime/Textures/TextureXR.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/PerlinTest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Menu/Menu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/FSM.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@10.4.0/Runtime/UniversalRenderPipeline.cs" root0="SKIP_HIGHLIGHTING" />
@@ -67,15 +79,18 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/PausePanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/Weapon.cs" />
       <option value="$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/WeaponSlot.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FSM/IState.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FSM/FSM.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FSM/State.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/Bullet.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Item/NormalItem/NormalItemBase.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemBase.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Item/UsableItem/UsableItemBase.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/Weapon.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/WeaponSlot.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" />
     </changedPaths>
   </component>
@@ -151,6 +166,9 @@
       <workItem from="1621651046282" duration="7460000" />
       <workItem from="1621769939599" duration="2454000" />
       <workItem from="1621825473888" duration="6601000" />
+      <workItem from="1621865060605" duration="141000" />
+      <workItem from="1621908560644" duration="2776000" />
+      <workItem from="1621914244359" duration="1496000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1620888470403</created>
@@ -418,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621864853309</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Update UI">
+      <created>1621865082455</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1621865082456</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

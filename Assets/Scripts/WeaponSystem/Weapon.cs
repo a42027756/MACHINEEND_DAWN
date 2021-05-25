@@ -23,7 +23,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] private float interval;
     private float timeCounter;
     [SerializeField] private float bulletSpeed;
-    private bool isFired;
+    public bool isFired;
 
     private Vector3 firePoint;
     private Vector2 difference;

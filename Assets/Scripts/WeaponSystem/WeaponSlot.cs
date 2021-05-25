@@ -6,7 +6,7 @@ public class WeaponSlot : MonoSingleton<WeaponSlot>
 {
     public GameObject currentWeapon;
     private GameObject player;
-    private Weapon weapon;
+    public Weapon weapon;
     private SpriteRenderer spriteRenderer;
 
     private Vector2 difference;

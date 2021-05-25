@@ -35,9 +35,6 @@ public class FlyingEnemy : Enemy
         none
     }
     /*
-    todo:听觉：玩家在听觉范围内开枪，detected设置为true；
-    todo:视觉：玩家在polygoncollider中出现，detected设为true；
-    todo:追击：当detected为true时，怪物追击玩家
     todo:AttackState:当玩家进入怪物攻击范围（可能要新设置一个Trigger），切换为攻击状态
     */
 
@@ -242,7 +239,7 @@ public class FlyingEnemy : Enemy
 
     private void Chase()
     {
-        if (det == sensor.sight && _fsm.curState != chaseSate)
+        if ((det == sensor.sight || (WeaponSlot.Instance.weapon.isFired && det == sensor.hearing)) && _fsm.curState != chaseSate)
         {
             // Debug.Log("Detected");
             _fsm.ChangeState(chaseSate);
