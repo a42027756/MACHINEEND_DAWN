@@ -14,6 +14,7 @@ public class FlyingEnemy : Enemy
     public float flyingspeed;               //飞行速度
     public float waitTime;                  //巡逻间隙等待时间
     [SerializeField]private float nowTime;  //现在等待的时间
+    private EnemyWeapon enemyWeapon;
 
     private Vector3 movePos;    //目的地
     private Vector3 moveVelocity;  //移动速度(矢量)
@@ -30,17 +31,6 @@ public class FlyingEnemy : Enemy
     private State chaseSate;
     private State attackState;
 
-    public GameObject bulletPre;
-    public Sprite bulletSprite;
-    private Transform muzzle_01, muzzle_02;
-    private Vector2 firePoint_01, firePoint_02;
-    private GameObject player;
-    public bool isFired;
-    [SerializeField] private float damage;
-    [SerializeField] private float interval;
-    [SerializeField] private float timeCounter;
-    [SerializeField] private float bulletSpeed;
-
     enum sensor
     {
         sight,
@@ -54,9 +44,7 @@ public class FlyingEnemy : Enemy
 
     private void Start()
     {
-        muzzle_01 = GetComponentsInChildren<Transform>()[2];
-        muzzle_02 = GetComponentsInChildren<Transform>()[3];
-        player = GameObject.FindGameObjectWithTag("Player");
+        enemyWeapon = GetComponentInChildren<EnemyWeapon>();
 
         InitializeEnemy();
 
@@ -228,7 +216,6 @@ public class FlyingEnemy : Enemy
     //==================Attack=====================
     private void Attack_Enter(State _from, State _to)
     {
-        timeCounter = interval;
         _rigidbody2D.velocity = new Vector2(0, 0);
         Debug.Log("Enter Attack");
     }
@@ -236,11 +223,12 @@ public class FlyingEnemy : Enemy
     private void Attack_Action(State _curState)
     {
         Debug.Log("Attack");
+        enemyWeapon.WeaponRotation();
         if (det != sensor.attack)
         {
             _fsm.ChangeState(chaseSate);
         }
-        FireDecision();
+        enemyWeapon.FireDecision();
     }
 
     private void Attack_Exit(State _from, State _to)
@@ -310,43 +298,6 @@ public class FlyingEnemy : Enemy
         {
             _fsm.ChangeState(attackState);
         }
-    }
-
-    private void FireDecision()
-    {
-        if(!isFired)
-        {
-            Fire();
-            timeCounter = interval;
-            isFired = true;
-        }
-        else ResetFlag();
-    }
-    
-    private void ResetFlag()
-    {
-        timeCounter -= Time.deltaTime;
-        if(timeCounter < 0f)
-        {
-            isFired = false;
-            timeCounter = interval;
-        }
-    }
-    private void Fire()
-    {
-        firePoint_01 = muzzle_01.position;
-        EnemyBulletPool.Instance.bulletSprite = bulletSprite;
-        EnemyBulletPool.Instance.ChangeSprite();
-        Vector2 playerPos = player.transform.position;
-        Vector2 target = playerPos - firePoint_01;
-
-        GameObject bullet = EnemyBulletPool.Instance.GetFromPool();
-        bullet.transform.position = firePoint_01;
-        bullet.GetComponent<Enemy_Bullet>().bulletEnemyDamage = damage;
-
-        float rotateByZ = Mathf.Atan2(target.y, target.x) * Mathf.Rad2Deg;
-        bullet.GetComponent<Transform>().rotation = Quaternion.Euler(0, 0, rotateByZ);
-        bullet.GetComponent<Rigidbody2D>().velocity = target.normalized * bulletSpeed;
     }
 }
 
