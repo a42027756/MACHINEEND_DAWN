@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/Enemy_Camerator.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/Enemy_Camerator.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FSM/FSM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/FSM.cs" afterDir="false" />
-    </list>
+    <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +23,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/Town.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Game/Rotate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scripts/Enemy_AI/Enemy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/TextMeshPro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/State.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectInTile.cs" root0="FORCE_HIGHLIGHTING" />
@@ -70,8 +67,6 @@
       <option value="$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FSM/IState.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/FSM/State.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/Bullet.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Item/NormalItem/NormalItemBase.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/Weapon.cs" />
@@ -80,8 +75,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Item/UsableItem/UsableItemBase.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Bag/Item.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FSM/FSM.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FSM/State.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sT92pLE3Aucix7W6jstCeY0cFP" />
@@ -160,7 +157,7 @@
       <workItem from="1621908560644" duration="2776000" />
       <workItem from="1621914244359" duration="6176000" />
       <workItem from="1621947735710" duration="1571000" />
-      <workItem from="1622009932746" duration="5507000" />
+      <workItem from="1622009932746" duration="7062000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1620888470403</created>
@@ -456,7 +453,21 @@
       <option name="project" value="LOCAL" />
       <updated>1622013845719</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Init Attack second">
+      <created>1622015825462</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1622015825462</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Init Pause Panel">
+      <created>1622019362803</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1622019362803</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,7 +502,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Room" />
     <MESSAGE value="Bugexecuter" />
     <MESSAGE value="FixBug" />
     <MESSAGE value="UpdateWizard" />
@@ -515,6 +525,8 @@
     <MESSAGE value="Update UI" />
     <MESSAGE value="Init Item" />
     <MESSAGE value="Init Attack" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init Attack" />
+    <MESSAGE value="Init Attack second" />
+    <MESSAGE value="Init Pause Panel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init Pause Panel" />
   </component>
 </project>
