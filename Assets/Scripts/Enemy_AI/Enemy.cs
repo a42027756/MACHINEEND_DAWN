@@ -25,11 +25,11 @@ public class Enemy : MonoBehaviour
     {
         if (_rigidbody2D.velocity.x < -flipEpsilon)
         {
-            _transform.localRotation = Quaternion.Euler(0, 0, 0);
+            _transform.rotation = Quaternion.Euler(0, 0, 0);
         }
         else if (_rigidbody2D.velocity.x > flipEpsilon)
         {
-            _transform.localRotation = Quaternion.Euler(0, 180, 0);
+            _transform.rotation = Quaternion.Euler(0, 180, 0);
         }
     }
 }

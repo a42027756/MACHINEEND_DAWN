@@ -11,8 +11,13 @@ public class EnemyWeapon : MonoBehaviour
     private GameObject player;
     private Transform enemy;
     private SpriteRenderer spriteRenderer;
+    private SpriteRenderer enemySpriteRenderer;
+
     private bool isFired;
     private bool fireSequence;
+    private float enemyRotation_y;
+    private float weaponRotation_y;
+
     [SerializeField] private float angleOffset;
     [SerializeField] private float damage;
     [SerializeField] private float interval;
@@ -25,8 +30,9 @@ public class EnemyWeapon : MonoBehaviour
         muzzle_01 = GetComponentsInChildren<Transform>()[1];
         muzzle_02 = GetComponentsInChildren<Transform>()[2];
         player = GameObject.FindGameObjectWithTag("Player");
+
         enemy = GetComponentsInParent<Transform>()[1];
-        Debug.Log(enemy.name);
+        enemySpriteRenderer = GetComponentsInParent<SpriteRenderer>()[1];
 
         spriteRenderer = GetComponent<SpriteRenderer>();
         fireSequence = false;
@@ -77,13 +83,25 @@ public class EnemyWeapon : MonoBehaviour
         float rotateAngle = angle - angleOffset;
         if(enemy.position.x < player.transform.position.x)
         {
-            enemy.GetComponent<SpriteRenderer>().flipX = true;
+            enemy.rotation = Quaternion.Euler(0, 180, 0);
             transform.rotation = Quaternion.Euler(0, 180, rotateAngle);
         }
         else
         {
-            enemy.GetComponent<SpriteRenderer>().flipX = false;
+            enemy.rotation = Quaternion.Euler(0, 0, 0);
             transform.rotation = Quaternion.Euler(0, 0, rotateAngle);
         }
+    }
+
+    public void RecordDirection()
+    {
+        enemyRotation_y = enemy.rotation.y;
+        weaponRotation_y = transform.rotation.y;
+    }
+
+    public void ResetDirection()
+    {
+        enemy.rotation = Quaternion.Euler(0, enemyRotation_y, 0);
+        transform.rotation = Quaternion.Euler(0, weaponRotation_y, 0);
     }
 }

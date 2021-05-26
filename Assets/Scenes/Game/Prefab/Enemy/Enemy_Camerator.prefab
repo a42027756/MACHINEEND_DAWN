@@ -346,7 +346,7 @@ MonoBehaviour:
   sight: {fileID: 1647582514483192254}
   hearing: {fileID: 7362312786362333271}
   attackRegion: {fileID: 6170257628667876707}
-  flyingspeed: 3
+  flyingspeed: 0.5
   waitTime: 3
   nowTime: 0
   det: 0

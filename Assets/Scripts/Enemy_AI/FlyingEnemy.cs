@@ -15,6 +15,7 @@ public class FlyingEnemy : Enemy
     public float waitTime;                  //巡逻间隙等待时间
     [SerializeField]private float nowTime;  //现在等待的时间
     private EnemyWeapon enemyWeapon;
+    private bool attackFlip;
 
     private Vector3 movePos;    //目的地
     private Vector3 moveVelocity;  //移动速度(矢量)
@@ -216,13 +217,14 @@ public class FlyingEnemy : Enemy
     //==================Attack=====================
     private void Attack_Enter(State _from, State _to)
     {
+        enemyWeapon.RecordDirection();
+
         _rigidbody2D.velocity = new Vector2(0, 0);
         Debug.Log("Enter Attack");
     }
 
     private void Attack_Action(State _curState)
     {
-        Debug.Log("Attack");
         enemyWeapon.WeaponRotation();
         if (det != sensor.attack)
         {
@@ -233,6 +235,9 @@ public class FlyingEnemy : Enemy
 
     private void Attack_Exit(State _from, State _to)
     {
+        enemyWeapon.ResetDirection();
+
+        enemyWeapon.transform.rotation = Quaternion.Euler(0, 0, 0);
         Debug.Log("Exit Attack");
     }
     
