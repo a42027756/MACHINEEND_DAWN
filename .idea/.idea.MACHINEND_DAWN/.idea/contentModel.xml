@@ -169,6 +169,7 @@
             <e p="Enemy.cs" t="Include" />
             <e p="Enemy_Bullet.cs" t="Include" />
             <e p="EnemyBulletPool.cs" t="Include" />
+            <e p="EnemyWeapon.cs" t="Include" />
             <e p="FlyingEnemy.cs" t="Include" />
           </e>
           <e p="Environment" t="Include">
