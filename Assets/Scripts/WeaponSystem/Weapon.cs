@@ -18,6 +18,7 @@ public class Weapon : MonoBehaviour
     public int bulletClip;          //一个弹夹所含有的子弹数
     public int maxBullet;           //目前持有最大子弹数
     public int maxHeldBullet;       //可持有最大子弹数
+    public bool canFire;
     public int damageValue;
 
     [SerializeField] private float interval;
@@ -30,13 +31,14 @@ public class Weapon : MonoBehaviour
     
     public void Initialize()
     {
+        canFire = true;
         timeCounter = interval;
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void FireDecision()
     {
-        if(!isFired)
+        if(!isFired && canFire)
         {
             Fire();
             timeCounter = interval;

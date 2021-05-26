@@ -32,8 +32,12 @@ public class WeaponSlot : MonoSingleton<WeaponSlot>
         //---------------test----------------
         if(Input.GetMouseButtonDown(1))
         {
-            WeaponPool.Instance.GetNextWeapon();
-            Configure();
+            if (WeaponPool.Instance.canSwitch)
+            {
+                WeaponPool.Instance.GetNextWeapon();
+                Configure();
+            }
+            
         }
 
         if(Input.GetMouseButtonDown(2))

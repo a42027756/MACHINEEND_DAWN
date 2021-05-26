@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,9 @@ public class WeaponPool : MonoSingleton<WeaponPool>
 {
     public List<GameObject> weapons = new List<GameObject>();       //所有武器预置体
     public List<GameObject> poolWeapons = new List<GameObject>();   //武器池中物体(待定使用何种数据结构)
+    public float reloadTime;
+    private float _reloatTime;
+    public GameObject reloadBar;                                        //武器换单进度条
     private WeaponSlot weaponSlot;
 
     [Header("Weapon UI")]
@@ -19,15 +23,50 @@ public class WeaponPool : MonoSingleton<WeaponPool>
     private int poolAmount;                                     //池中子弹数量
     private int maxNum = 3;
     private int index;
+    public bool canSwitch = true;
+    [SerializeField]private bool isReloading = false;
 
-    void Awake()
+    private void Awake()
     {
         index = 0;
         poolAmount = weapons.Count < maxNum ? weapons.Count : maxNum;
-
+        reloadBar.SetActive(false);
         InitializePool();
-
+        _reloatTime = reloadTime;
         weaponSlot = GetComponent<WeaponSlot>();
+    }
+
+    private void Update()
+    {
+        if (isReloading)
+        {
+            if (reloadWait())
+            {
+                Weapon weapon = poolWeapons[index].GetComponent<Weapon>();
+                int bulletNeeded = weapon.bulletClip - weapon.currentBullet;
+                if (bulletNeeded != 0)
+                {
+                    if (weapon.maxBullet >= bulletNeeded)
+                    {
+                        weapon.maxBullet -= bulletNeeded;
+                        weapon.currentBullet = weapon.bulletClip;
+                    }
+                    else
+                    {
+                        weapon.currentBullet += weapon.maxBullet;
+                        weapon.maxBullet = 0;
+                    }
+
+                    UpdateMessage();
+                }
+
+                canSwitch = true;
+                weaponSlot.currentWeapon.GetComponent<Weapon>().canFire = true;
+                reloadBar.SetActive(false);
+                _reloatTime = reloadTime;
+                isReloading = false;
+            }
+        }
     }
 
     public void InitializePool()
@@ -48,10 +87,9 @@ public class WeaponPool : MonoSingleton<WeaponPool>
     public void GetNextWeapon()
     {
         animators[index].SetBool("isChosen", false);
-        poolWeapons[index].SetActive(false);
-
-        index = (index + 1) % poolAmount;
-        ConfigureWeapon();
+        poolWeapons[index].SetActive(false);   
+         index = (index + 1) % poolAmount;
+         ConfigureWeapon();
     }
     
     //配置武器信息
@@ -81,26 +119,25 @@ public class WeaponPool : MonoSingleton<WeaponPool>
         }
     }
 
+    private bool reloadWait()
+    {
+        if (_reloatTime > 0.01f)
+        {
+            _reloatTime -= Time.deltaTime;
+            reloadBar.GetComponent<Slider>().value = (reloadTime - _reloatTime) / reloadTime;
+            return false;
+        }
+
+        return true;
+    }
+
     //装填子弹
     public void LoadBullets()
     {
-        Weapon weapon = poolWeapons[index].GetComponent<Weapon>();
-
-        int bulletNeeded = weapon.bulletClip - weapon.currentBullet;
-
-        if(bulletNeeded != 0)
-        {
-            if(weapon.maxBullet >= bulletNeeded)
-            {
-                weapon.maxBullet -= bulletNeeded;
-                weapon.currentBullet = weapon.bulletClip;
-            }else
-            {
-                weapon.currentBullet += weapon.maxBullet;
-                weapon.maxBullet = 0;
-            }
-            UpdateMessage();
-        }
+        weaponSlot.currentWeapon.GetComponent<Weapon>().canFire = false;
+        canSwitch = false;
+        reloadBar.SetActive(true);
+        isReloading = true;
     }
 
     //补充所有武器子弹
