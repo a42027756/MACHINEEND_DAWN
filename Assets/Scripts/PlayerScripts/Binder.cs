@@ -32,7 +32,7 @@ public class Binder : MonoBehaviour
         PlayerController.Instance.movespeed = speed;
         PlayerController.Instance._bag = myBag;
         PlayerController.Instance.pausepanel = pauspanel;
-        myBag.SetActive(false);
+        // myBag.SetActive(false);
 
         PlayerProperty.Instance.healthBar = health;
         PlayerProperty.Instance.waterBar = water;
