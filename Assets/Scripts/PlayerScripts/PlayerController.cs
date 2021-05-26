@@ -49,6 +49,7 @@ public class PlayerController : ControllerBase<PlayerController>
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            Time.timeScale = 0;
             pausepanel.SetActive(!pausepanel.activeSelf);
         }
         //--------------test-----------------

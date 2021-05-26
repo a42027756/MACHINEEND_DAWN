@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6537674940690718609}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Camerator_muzzle1
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5247715266661178989}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Camerator_muzzle0
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 6025545306078288008}
   - component: {fileID: 6025545306078288012}
   - component: {fileID: 6025545306078288014}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy_Camerator
   m_TagString: Enemy
   m_Icon: {fileID: 0}
