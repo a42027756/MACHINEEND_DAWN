@@ -342,7 +342,6 @@ public class FlyingEnemy : Enemy
 
         GameObject bullet = EnemyBulletPool.Instance.GetFromPool();
         bullet.transform.position = firePoint_01;
-        bullet.GetComponent<Enemy_Bullet>().enemySelf = gameObject;
         bullet.GetComponent<Enemy_Bullet>().bulletEnemyDamage = damage;
 
         float rotateByZ = Mathf.Atan2(target.y, target.x) * Mathf.Rad2Deg;

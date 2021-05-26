@@ -245,12 +245,12 @@ MonoBehaviour:
   waitTime: 3
   nowTime: 0
   det: 0
-  bulletPre: {fileID: 2582956030558841365, guid: 7a56c20038afad04b86d05f9f04925a9,
+  bulletPre: {fileID: 351239500669637674, guid: 385935a7eabff2d4785dabb99d61aa3a,
     type: 3}
   bulletSprite: {fileID: 5379323082974078785, guid: 29962dbadd748c845a2b17960667870f,
     type: 3}
   isFired: 0
-  damage: 10
+  damage: -10
   interval: 0.3
   timeCounter: 0
   bulletSpeed: 8
