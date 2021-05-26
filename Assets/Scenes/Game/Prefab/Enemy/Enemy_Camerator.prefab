@@ -233,6 +233,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 15
+  _fsm:
+    curState:
+      name: 
+    lastState:
+      name: 
   sight: {fileID: 1647582514483192254}
   hearing: {fileID: 7362312786362333271}
   attackRegion: {fileID: 6170257628667876707}

@@ -20,6 +20,9 @@ TextureImporter:
   - first:
       213: -22682227399119050
     second: Camerator_5
+  - first:
+      213: 2749075946257803233
+    second: Camerator_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -230,6 +233,27 @@ TextureImporter:
       bones: []
       spriteID: 63f292562aa6faff0800000000000000
       internalID: -22682227399119050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camerator_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e76445020ea62620800000000000000
+      internalID: 2749075946257803233
       vertices: []
       indices: 
       edges: []
