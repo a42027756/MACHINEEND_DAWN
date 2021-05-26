@@ -8,11 +8,12 @@ using Random = UnityEngine.Random;
 
 public class FlyingEnemy : Enemy
 {
-    public PolygonCollider2D sight;     //视觉触发器
-    public CircleCollider2D hearing;    //听觉触发器
-    public float flyingspeed;           //飞行速度
-    public float waitTime;              //巡逻间隙等待时间
-    [SerializeField]private float nowTime;              //现在等待的时间
+    public PolygonCollider2D sight;         //视觉触发器
+    public CircleCollider2D hearing;        //听觉触发器
+    public CapsuleCollider2D attackRegion;   //触发攻击的范围
+    public float flyingspeed;               //飞行速度
+    public float waitTime;                  //巡逻间隙等待时间
+    [SerializeField]private float nowTime;  //现在等待的时间
     
 
     private Vector3 movePos;    //目的地
@@ -21,17 +22,20 @@ public class FlyingEnemy : Enemy
     
     private List<Collider2D> sight_collider2Ds = new List<Collider2D>();    //视觉范围内的collider2D
     private List<Collider2D> hearing_collider2Ds = new List<Collider2D>();  //听觉范围内的collider2D
+    private List<Collider2D> attack_collider2Ds = new List<Collider2D>();
     [SerializeField] private sensor det;
     
     //声明State
     private State idleState;
     private State moveState;
     private State chaseSate;
+    private State attackState;
 
     enum sensor
     {
         sight,
         hearing,
+        attack,
         none
     }
     /*
@@ -52,6 +56,7 @@ public class FlyingEnemy : Enemy
         idleState = new State("idle");
         moveState = new State("move");
         chaseSate = new State("chase");
+        attackState = new State("attack");
         
         idleState.ONEnterHandler = Idle_Enter;
         idleState.ONActionHandler = Idle_Action;
@@ -64,6 +69,10 @@ public class FlyingEnemy : Enemy
         chaseSate.ONEnterHandler = Chase_Enter;
         chaseSate.ONActionHandler = Chase_Action;
         chaseSate.ONExitHandler = Chase_Exit;
+
+        attackState.ONEnterHandler = Attack_Enter;
+        attackState.ONActionHandler = Attack_Action;
+        attackState.ONExitHandler = Attack_Exit;
     }
     
     private void Update()
@@ -73,6 +82,7 @@ public class FlyingEnemy : Enemy
         contactFilter2D.useTriggers = true;
         sight.OverlapCollider(contactFilter2D,sight_collider2Ds);
         hearing.OverlapCollider(contactFilter2D, hearing_collider2Ds);
+        attackRegion.OverlapCollider(contactFilter2D, attack_collider2Ds);
         Flip();
         Chase();
         if (_fsm != null)
@@ -183,7 +193,7 @@ public class FlyingEnemy : Enemy
 
     private void Chase_Action(State _curState)
     {
-        // Debug.Log("chase");
+        change2Attack();
         movePos = PlayerController.Instance._transform.position;
         //todo:追击玩家
         Move2Point(movePos);
@@ -200,6 +210,28 @@ public class FlyingEnemy : Enemy
         _rigidbody2D.velocity = new Vector2(0, 0);
     }
     //=============================================
+    
+    //==================Attack=====================
+    private void Attack_Enter(State _from, State _to)
+    {
+        Debug.Log("Enter Attack");
+    }
+
+    private void Attack_Action(State _curState)
+    {
+        Debug.Log("Attack");
+        if (det != sensor.attack)
+        {
+            _fsm.ChangeState(chaseSate);
+        }
+    }
+
+    private void Attack_Exit(State _from, State _to)
+    {
+        Debug.Log("Exit Attack");
+    }
+    
+    //==============================================
     //移动至固定地点
     private bool Move2Point(Vector3 movePoint)
     {
@@ -219,6 +251,14 @@ public class FlyingEnemy : Enemy
 
     private sensor isDetected()
     {
+        foreach (var collider2D in attack_collider2Ds)
+        {
+            if (collider2D && collider2D.gameObject.CompareTag("Player"))
+            {
+                return sensor.attack;
+            }
+        }
+        
         foreach (var collider2D in sight_collider2Ds)
         {
             if (collider2D && collider2D.gameObject.CompareTag("Player"))
@@ -234,6 +274,7 @@ public class FlyingEnemy : Enemy
                 return sensor.hearing;
             }
         }
+        
         return sensor.none;
     }
 
@@ -243,6 +284,14 @@ public class FlyingEnemy : Enemy
         {
             // Debug.Log("Detected");
             _fsm.ChangeState(chaseSate);
+        }
+    }
+
+    private void change2Attack()
+    {
+        if (det == sensor.attack && _fsm.curState != attackState)
+        {
+            _fsm.ChangeState(attackState);
         }
     }
 }

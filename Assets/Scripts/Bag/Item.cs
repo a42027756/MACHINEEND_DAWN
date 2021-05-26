@@ -49,7 +49,7 @@ public class Item : MonoBehaviour, IPointerClickHandler
 
     void Update()
     {
-        InitOnlyOnce();
+        // InitOnlyOnce();
         
         Vector2 pos = transform.position;
         Debug.DrawLine(pos, pos + extents, Color.red);
@@ -217,6 +217,7 @@ public class Item : MonoBehaviour, IPointerClickHandler
                 Vector2 pos = child.transform.position;
                 if(ContainsPos(pos))
                 {
+                    Debug.Log("Enter");
                     ItemSlot slot = child.GetComponent<ItemSlot>();
                     _coordinate[index].x = slot.index_Raw;
                     _coordinate[index].y = slot.index_Column;
