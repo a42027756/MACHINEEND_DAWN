@@ -40,6 +40,10 @@ public class Item : MonoBehaviour, IPointerClickHandler
     {
         // InitOnlyOnce();
         
+        Vector2 pos = transform.position;
+        Debug.DrawLine(pos, pos + extents, Color.red);
+        Debug.DrawLine(pos, pos - extents, Color.red);
+        
         if(isSelected)
         {
             transform.position = Input.mousePosition;
@@ -127,13 +131,6 @@ public class Item : MonoBehaviour, IPointerClickHandler
         ScanSlot();
         RecordCoordinate(destCoordinate);
 
-        //===========================================
-        // for(int index = 0;index < size;index++)
-        // {
-        //     Debug.Log(destCoordinate[index]);
-        // }
-        //===========================================
-
         if(canPlace)
         {
             SetCoordinateTag(destCoordinate, false);
@@ -183,13 +180,6 @@ public class Item : MonoBehaviour, IPointerClickHandler
         //记录初始时物品坐标信息并将坐标设为空
         RecordCoordinate(startCoordinate);
         SetCoordinateTag(startCoordinate, true);
-
-        //===========================================
-        // for(int index = 0;index < size;index++)
-        // {
-        //     Debug.Log(startCoordinate[index]);
-        // }
-        //===========================================
 
         transform.position = Input.mousePosition;
         isSelected = true;
