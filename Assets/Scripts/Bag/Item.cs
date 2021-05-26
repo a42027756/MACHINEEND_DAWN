@@ -28,23 +28,12 @@ public class Item : MonoBehaviour, IPointerClickHandler
         Vector3[] corners = new Vector3[4];
         gameObject.GetComponent<RectTransform>().GetWorldCorners(corners);
         extents = corners[2] - transform.position;
-        Debug.Log("awake" +extents);
 
         startCoordinate = new Vector2Int[size];
         destCoordinate = new Vector2Int[size];
 
         isVertical = false;
         isSelected = false;
-    }
-
-    void Start()
-    {
-        Debug.Log("start" +extents);
-    }
-
-    void OnEnable()
-    {
-        Debug.Log("enable" +extents);
     }
 
     void Update()
@@ -54,7 +43,7 @@ public class Item : MonoBehaviour, IPointerClickHandler
         Vector2 pos = transform.position;
         Debug.DrawLine(pos, pos + extents, Color.red);
         Debug.DrawLine(pos, pos - extents, Color.red);
-        Debug.Log("update" +extents);
+        // Debug.Log("update" +extents);
 
         if(isSelected)
         {
@@ -215,9 +204,9 @@ public class Item : MonoBehaviour, IPointerClickHandler
             foreach(Transform child in rawChild.transform)
             {
                 Vector2 pos = child.transform.position;
+                Debug.Log(child.name  + "：" + pos);
                 if(ContainsPos(pos))
                 {
-                    Debug.Log("Enter");
                     ItemSlot slot = child.GetComponent<ItemSlot>();
                     _coordinate[index].x = slot.index_Raw;
                     _coordinate[index].y = slot.index_Column;
@@ -238,6 +227,7 @@ public class Item : MonoBehaviour, IPointerClickHandler
                 foreach(Transform child in rawChild.transform)
                 {
                     Vector2 pos = child.transform.position;
+                    Debug.Log(child.name  + "：" + pos);
                     if(ContainsPos(pos))
                     {
                         child.GetComponent<ItemSlot>().vacant = false;

@@ -169,9 +169,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.049863935, y: 0.02216196}
+  m_Offset: {x: -0.016517937, y: 0.091885805}
   serializedVersion: 2
-  m_Radius: 0.19995642
+  m_Radius: 0.14741111
 --- !u!95 &6025545306078288011
 Animator:
   serializedVersion: 3
@@ -233,6 +233,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 15
+  _fsm:
+    curState:
+      name: 
+    lastState:
+      name: 
   sight: {fileID: 1647582514483192254}
   hearing: {fileID: 7362312786362333271}
   attackRegion: {fileID: 6170257628667876707}
@@ -240,6 +245,15 @@ MonoBehaviour:
   waitTime: 3
   nowTime: 0
   det: 0
+  bulletPre: {fileID: 2582956030558841365, guid: 7a56c20038afad04b86d05f9f04925a9,
+    type: 3}
+  bulletSprite: {fileID: 5379323082974078785, guid: 29962dbadd748c845a2b17960667870f,
+    type: 3}
+  isFired: 0
+  damage: 10
+  interval: 0.3
+  timeCounter: 0
+  bulletSpeed: 8
 --- !u!1 &9165531074037410071
 GameObject:
   m_ObjectHideFlags: 0
