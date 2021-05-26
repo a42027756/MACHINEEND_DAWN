@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public int health;
-    protected FSM _fsm;   //创建状态机
+    [SerializeField]protected FSM _fsm;   //创建状态机
     protected Rigidbody2D _rigidbody2D;
     protected Transform _transform;
     private float flipEpsilon = 0.1f;

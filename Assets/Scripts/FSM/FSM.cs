@@ -1,8 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
-
+[System.Serializable]
 public class FSM
 {
     public State curState = null;

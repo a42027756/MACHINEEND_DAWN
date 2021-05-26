@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/Enemy_Camerator.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/Enemy_Camerator.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bag/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bag/Item.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FSM/FSM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/FSM.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +70,6 @@
       <option value="$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FSM/IState.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/FSM/FSM.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FSM/State.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/Bullet.cs" />
@@ -85,6 +81,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Bag/Item.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FSM/FSM.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sT92pLE3Aucix7W6jstCeY0cFP" />
@@ -163,7 +160,7 @@
       <workItem from="1621908560644" duration="2776000" />
       <workItem from="1621914244359" duration="6176000" />
       <workItem from="1621947735710" duration="1571000" />
-      <workItem from="1622009932746" duration="3529000" />
+      <workItem from="1622009932746" duration="5507000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1620888470403</created>
@@ -452,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621917947628</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Init Attack">
+      <created>1622013845719</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1622013845719</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -510,6 +514,7 @@
     <MESSAGE value="Init Sight" />
     <MESSAGE value="Update UI" />
     <MESSAGE value="Init Item" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init Item" />
+    <MESSAGE value="Init Attack" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init Attack" />
   </component>
 </project>

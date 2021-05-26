@@ -193,11 +193,10 @@ public class FlyingEnemy : Enemy
 
     private void Chase_Action(State _curState)
     {
-        change2Attack();
         movePos = PlayerController.Instance._transform.position;
         //todo:追击玩家
         Move2Point(movePos);
-        
+        change2Attack();
         if (det == sensor.none)
         {
             // Debug.Log("Back to idle");
@@ -207,6 +206,7 @@ public class FlyingEnemy : Enemy
 
     private void Chase_Exit(State _from, State _to)
     {
+        Debug.Log("Chase Exit");
         _rigidbody2D.velocity = new Vector2(0, 0);
     }
     //=============================================
@@ -214,6 +214,7 @@ public class FlyingEnemy : Enemy
     //==================Attack=====================
     private void Attack_Enter(State _from, State _to)
     {
+        _rigidbody2D.velocity = new Vector2(0, 0);
         Debug.Log("Enter Attack");
     }
 
