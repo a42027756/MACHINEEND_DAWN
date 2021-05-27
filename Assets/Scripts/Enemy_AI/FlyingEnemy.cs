@@ -267,29 +267,35 @@ public class FlyingEnemy : Enemy
     {
         foreach (var collider2D in attack_collider2Ds)
         {
+            //攻击范围内看见&&正在追击时进入攻击范围&&一直在攻击范围内
             if ((collider2D && collider2D.gameObject.CompareTag("Player") && det == sensor.sight) || 
-                (isDetected == true && collider2D && collider2D.gameObject.CompareTag("Player")))
+                (isDetected == true && collider2D && collider2D.gameObject.CompareTag("Player")) ||
+                (collider2D && collider2D.gameObject.CompareTag("Player") && det == sensor.attack))
             {
                 return sensor.attack;
             }
         }
-        
-        foreach (var collider2D in sight_collider2Ds)
-        {
-            if ((collider2D && collider2D.gameObject.CompareTag("Player")) && det != sensor.attack)
-            {
-                return sensor.sight;
-            }
-        }
 
-        foreach (var collider2D in hearing_collider2Ds)
+        if (det != sensor.attack)
         {
-            if (collider2D && collider2D.gameObject.CompareTag("Player"))
+            foreach (var collider2D in sight_collider2Ds)
             {
-                return sensor.hearing;
+                if (collider2D && collider2D.gameObject.CompareTag("Player"))
+                {
+                    return sensor.sight;
+                }
             }
+
+            foreach (var collider2D in hearing_collider2Ds)
+            {
+                if (collider2D && collider2D.gameObject.CompareTag("Player"))
+                {
+                    return sensor.hearing;
+                }
+            }
+
         }
-        
+       
         return sensor.none;
     }
     
