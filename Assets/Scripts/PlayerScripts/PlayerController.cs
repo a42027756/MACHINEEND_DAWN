@@ -87,5 +87,4 @@ public class PlayerController : ControllerBase<PlayerController>
             return flip.right;
         }
     }
-    
 }

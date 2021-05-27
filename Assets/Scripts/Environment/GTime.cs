@@ -10,11 +10,18 @@ public class GTime : MonoSingleton<GTime>
     public GameObject light;
     public float day_length;
     [HideInInspector] public bool isNight;
-    [SerializeField][Range(0,24)]private float gameTime;
+    [SerializeField][Range(0,24)]private int gameTime;
     [SerializeField]private float dayTIme;
+    public int pass_day = 1;
+
+    public int hungerTimes = 1;
+    public int hydrationTimes = 1;
+    public int invationTimes = 1;
+    public int hurtTimes = 1;
+    
     private void Start()
     {
-        SetGTime(6f);
+        SetGTime(5);
     }
 
     private void Update()
@@ -33,20 +40,29 @@ public class GTime : MonoSingleton<GTime>
         if (time <= 24 && time > 0)
         {
             SetIntensity(time);
-            gameTime = time;
+            gameTime = (int)time;
             dayTIme = (time / 24f) * day_length;
-            // Debug.Log("Set Finish");
             return true;
         }
         return false;
     }
     
-    
     private void TimePass()
     {
         dayTIme += Time.deltaTime;
         dayTIme = dayTIme % day_length;
-        gameTime = dayTIme / day_length * 24f;
-        SetIntensity(gameTime);
+        gameTime = (int)(dayTIme / day_length * 25);
+        if (gameTime == 0)
+        {
+            pass_day++;
+            SetGTime(1);
+        }
+        SetIntensity(dayTIme / day_length * 25);
     }
+    
+    public int GetGtime()
+    {
+        return gameTime;
+    }
+
 }

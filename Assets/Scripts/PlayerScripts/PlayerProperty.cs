@@ -9,6 +9,10 @@ public class PlayerProperty : ControllerBase<PlayerProperty>, IProperty
     private Dictionary<string, float> properties = new Dictionary<string, float>();
     public Image healthBar, waterBar, hungerBar, invadeBar;
 
+    private const float hungerDecreasement = 0.01f;
+    private const float hydrationDecreasement = 0.01f;
+    private const float invationIncreasement = 0.01f;
+
     public override void Update()
     {
         ValueBoxUpdate();
@@ -48,10 +52,9 @@ public class PlayerProperty : ControllerBase<PlayerProperty>, IProperty
 
     private void ValueBoxUpdate()
     {
-        properties["thirsty"] -= 0.01f;
-        properties["hunger"] -= 0.01f;
-
-        properties["intrusion"] += 0.001f;
+        properties["thirsty"] -= hydrationDecreasement * GTime.Instance.hydrationTimes;
+        properties["hunger"] -= hungerDecreasement * GTime.Instance.hungerTimes;
+        properties["intrusion"] += invationIncreasement * GTime.Instance.invationTimes;
 
         Transition();
     }

@@ -25,6 +25,7 @@ public class FlyingEnemy : Enemy
     private List<Collider2D> hearing_collider2Ds = new List<Collider2D>();  //听觉范围内的collider2D
     private List<Collider2D> attack_collider2Ds = new List<Collider2D>();
     [SerializeField] private sensor det;
+    private bool isDetected;
     
     //声明State
     private State idleState;
@@ -80,7 +81,7 @@ public class FlyingEnemy : Enemy
     
     private void Update()
     {
-        det = isDetected();
+        det = DetectType();
         var contactFilter2D = new ContactFilter2D();
         contactFilter2D.useTriggers = true;
         sight.OverlapCollider(contactFilter2D,sight_collider2Ds);
@@ -125,6 +126,7 @@ public class FlyingEnemy : Enemy
     private void Idle_Enter(State _from, State _to)
     {
         // Debug.Log("Idle_Enter");
+        isDetected = false;
         nowTime = waitTime;
     }
     //replace idle:Action:
@@ -192,6 +194,7 @@ public class FlyingEnemy : Enemy
     private void Chase_Enter(State _from, State _to)
     {
         // Debug.Log("Begin chase");
+        isDetected = true;
     }
 
     private void Chase_Action(State _curState)
@@ -210,6 +213,7 @@ public class FlyingEnemy : Enemy
     private void Chase_Exit(State _from, State _to)
     {
         Debug.Log("Chase Exit");
+        isDetected = false;
         _rigidbody2D.velocity = new Vector2(0, 0);
     }
     //=============================================
@@ -259,34 +263,42 @@ public class FlyingEnemy : Enemy
         
     }
 
-    private sensor isDetected()
+    private sensor DetectType()
     {
         foreach (var collider2D in attack_collider2Ds)
         {
-            if (collider2D && collider2D.gameObject.CompareTag("Player"))
+            //攻击范围内看见&&正在追击时进入攻击范围&&一直在攻击范围内
+            if ((collider2D && collider2D.gameObject.CompareTag("Player") && det == sensor.sight) || 
+                (isDetected == true && collider2D && collider2D.gameObject.CompareTag("Player")) ||
+                (collider2D && collider2D.gameObject.CompareTag("Player") && det == sensor.attack))
             {
                 return sensor.attack;
             }
         }
-        
-        foreach (var collider2D in sight_collider2Ds)
+
+        if (det != sensor.attack)
         {
-            if (collider2D && collider2D.gameObject.CompareTag("Player"))
+            foreach (var collider2D in sight_collider2Ds)
             {
-                return sensor.sight;
+                if (collider2D && collider2D.gameObject.CompareTag("Player"))
+                {
+                    return sensor.sight;
+                }
             }
-        }
-        
-        foreach (var collider2D in hearing_collider2Ds)
-        {
-            if (collider2D && collider2D.gameObject.CompareTag("Player"))
+
+            foreach (var collider2D in hearing_collider2Ds)
             {
-                return sensor.hearing;
+                if (collider2D && collider2D.gameObject.CompareTag("Player"))
+                {
+                    return sensor.hearing;
+                }
             }
+
         }
-        
+       
         return sensor.none;
     }
+    
 
     private void Chase()
     {
