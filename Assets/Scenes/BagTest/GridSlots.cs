@@ -6,17 +6,19 @@ using UnityEngine.EventSystems;
 
 public class GridSlots : MonoBehaviour, IPointerClickHandler
 {
-    public Image showImage;
+    [Header("Get Component")]
+    //右侧物品信息组件
+    public Image showImage;                         
     public Text showName;
     public Text showDescription;
-    public int slotID;                      //编号从0开始，与list的下标相匹配
-    public ItemBase currentItem;
 
+    //自身子物体组件
     private Image itemImage;
     private Text itemNum;
-
-    private string itemName;
-    private string itemDescription;
+    
+    [Header("Get Property")]
+    public ItemBase currentItem;                //当前背包格子物品
+    public int slotID;                          //背包格子序号
 
     void Awake()
     {
@@ -52,9 +54,6 @@ public class GridSlots : MonoBehaviour, IPointerClickHandler
     {
         if(currentItem != null)
         {
-            itemName = currentItem.itemName;
-            itemDescription = currentItem.itemDescription;
-
             itemImage.sprite = currentItem.itemSprite;
             itemNum.text = currentItem.itemNum.ToString();
 
@@ -70,12 +69,14 @@ public class GridSlots : MonoBehaviour, IPointerClickHandler
 
     public void UseItem()
     {
-        //============Test=============
         if(currentItem == null)
         {
             return;
         }
-        //============Test=============
+
+        /*
+        todo: UseItem() 根据物品是否可使用，判断是否要调用物品的使用方法
+        */
 
         currentItem.itemNum--;
         itemNum.text = currentItem.itemNum.ToString();
@@ -99,8 +100,8 @@ public class GridSlots : MonoBehaviour, IPointerClickHandler
 
             itemImage.color = new Color(1, 1, 1, 0.8f);
             showImage.sprite = currentItem.itemSprite;
-            showName.text = itemName;
-            showDescription.text = itemDescription;
+            showName.text = currentItem.itemName;
+            showDescription.text = currentItem.itemDescription;
         }
     }
 

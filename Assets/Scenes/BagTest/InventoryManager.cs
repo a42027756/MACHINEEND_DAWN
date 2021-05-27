@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class InventoryManager : MonoSingleton<InventoryManager>
 {
+    [Header("Get Component")]
     public GameObject bagPanel;
     public GameObject grid;
     public Image _showImage;
@@ -12,11 +13,11 @@ public class InventoryManager : MonoSingleton<InventoryManager>
     public Text _showDescription;
     public List<GridSlots> gridSlots = new List<GridSlots>();
 
-    public int selectIndex;
+    public int selectIndex;         //上一个被选中的物品，用于取消被选中动画
     private int index;              //用于遍历背包格子
     private int currrentIndex;      //指示背包最后一个物品的存放位置；用于填补空缺
 
-    private int testIndex;
+    private int testIndex;          //测试用
 
     void Awake()
     {
