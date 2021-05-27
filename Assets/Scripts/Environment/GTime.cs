@@ -12,7 +12,7 @@ public class GTime : MonoSingleton<GTime>
     [HideInInspector] public bool isNight;
     [SerializeField][Range(0,24)]private int gameTime;
     [SerializeField]private float dayTIme;
-    public int pass_day = 0;
+    public int pass_day = 1;
 
     public int hungerTimes = 1;
     public int hydrationTimes = 1;

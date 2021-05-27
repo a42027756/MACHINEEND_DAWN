@@ -35,7 +35,7 @@ public class ShowBuffMessage : MonoBehaviour
 
     private void ChangeMessage()
     {
-        messagePanel.GetComponentsInChildren<Text>()[0].text = "Day " + (GTime.Instance.pass_day+1);
+        messagePanel.GetComponentsInChildren<Text>()[0].text = "Day " + (GTime.Instance.pass_day);
         messagePanel.GetComponentsInChildren<Text>()[1].text = messages[GTime.Instance.pass_day];
     }
 

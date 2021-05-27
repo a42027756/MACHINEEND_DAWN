@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: fc89733bee936e443b214385e8c88691
+guid: 19733da3681ddb94da689ae5e0fe0599
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6860531227394295607
-    second: catcher_walk_0
+      213: 5212892341182022046
+    second: Catcher_red_walk_0
   - first:
-      213: -6303703413860142729
-    second: catcher_walk_1
+      213: 3659930393239089990
+    second: Catcher_red_walk_1
   - first:
-      213: -7502721255374658403
-    second: catcher_walk_2
+      213: -4200191372494880208
+    second: Catcher_red_walk_2
   - first:
-      213: 3486352294553992365
-    second: catcher_walk_3
+      213: 5797336861481311382
+    second: Catcher_red_walk_3
   - first:
-      213: 2516085805378891864
-    second: catcher_walk_4
+      213: -4337684761405257356
+    second: Catcher_red_walk_4
   - first:
-      213: 1549818746995874967
-    second: catcher_walk_5
+      213: 6146007447003652043
+    second: Catcher_red_walk_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,7 +109,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: catcher_walk_0
+      name: Catcher_red_walk_0
       rect:
         serializedVersion: 2
         x: 0
@@ -123,14 +123,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c830b4823f7ac0a0800000000000000
-      internalID: -6860531227394295607
+      spriteID: e91428817f9e75840800000000000000
+      internalID: 5212892341182022046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: catcher_walk_1
+      name: Catcher_red_walk_1
       rect:
         serializedVersion: 2
         x: 83
@@ -144,14 +144,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 771f27fb42fb488a0800000000000000
-      internalID: -6303703413860142729
+      spriteID: 643fbaf2d4faac230800000000000000
+      internalID: 3659930393239089990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: catcher_walk_2
+      name: Catcher_red_walk_2
       rect:
         serializedVersion: 2
         x: 166
@@ -165,14 +165,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d94ee94f4caf0e790800000000000000
-      internalID: -7502721255374658403
+      spriteID: 03248c5433ce5b5c0800000000000000
+      internalID: -4200191372494880208
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: catcher_walk_3
+      name: Catcher_red_walk_3
       rect:
         serializedVersion: 2
         x: 249
@@ -186,14 +186,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dac32ceb0f2026030800000000000000
-      internalID: 3486352294553992365
+      spriteID: 69c1fdfe827447050800000000000000
+      internalID: 5797336861481311382
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: catcher_walk_4
+      name: Catcher_red_walk_4
       rect:
         serializedVersion: 2
         x: 332
@@ -207,14 +207,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 850f20e85beeae220800000000000000
-      internalID: 2516085805378891864
+      spriteID: 47980d801b27dc3c0800000000000000
+      internalID: -4337684761405257356
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: catcher_walk_5
+      name: Catcher_red_walk_5
       rect:
         serializedVersion: 2
         x: 415
@@ -228,8 +228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79c1ee860ff028510800000000000000
-      internalID: 1549818746995874967
+      spriteID: bcfde89c5310b4550800000000000000
+      internalID: 6146007447003652043
       vertices: []
       indices: 
       edges: []

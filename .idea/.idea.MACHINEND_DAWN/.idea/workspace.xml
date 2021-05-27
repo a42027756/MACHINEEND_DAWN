@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/player/bc5f76c8807ec8bd0a43cb81e76b507.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/player/bc5f76c8807ec8bd0a43cb81e76b507.png.meta" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/Catcher_red_idle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/Catcher_red_idle.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/Catcher_red_walk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/Catcher_red_walk.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/catcher_idle.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/catcher_idle.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/catcher_red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/catcher_red.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/catcher_walk.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/catcher_walk.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/InitDatBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/InitDatBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,10 +89,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/Weapon.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/WeaponSlot.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/WeaponPool.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Environment/InitDatBuff.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sT92pLE3Aucix7W6jstCeY0cFP" />
@@ -162,14 +173,7 @@
       <workItem from="1621914244359" duration="6176000" />
       <workItem from="1621947735710" duration="1571000" />
       <workItem from="1622009932746" duration="15111000" />
-      <workItem from="1622092675989" duration="9714000" />
-    </task>
-    <task id="LOCAL-00001" summary="Init">
-      <created>1620888470403</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1620888470403</updated>
+      <workItem from="1622092675989" duration="10814000" />
     </task>
     <task id="LOCAL-00002" summary="Room">
       <created>1620888566061</created>
@@ -507,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622114039855</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Upgrade player">
+      <created>1622114739593</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1622114739593</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -542,7 +553,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Init" />
     <MESSAGE value="NewGun" />
     <MESSAGE value="Debug_MapSpawn" />
     <MESSAGE value="Rebuild Room" />
@@ -567,6 +577,7 @@
     <MESSAGE value="Init Minimap" />
     <MESSAGE value="Reload Upgrade" />
     <MESSAGE value="Debug FlyingEnemy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Debug FlyingEnemy" />
+    <MESSAGE value="Upgrade player" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upgrade player" />
   </component>
 </project>

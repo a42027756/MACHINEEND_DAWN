@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: fc89733bee936e443b214385e8c88691
+guid: 456dc857269630940997224192d3891b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6860531227394295607
-    second: catcher_walk_0
+      213: -7333565054948477210
+    second: Catcher_red_idle_0
   - first:
-      213: -6303703413860142729
-    second: catcher_walk_1
+      213: 7652179176151155537
+    second: Catcher_red_idle_1
   - first:
-      213: -7502721255374658403
-    second: catcher_walk_2
+      213: -7336397474357916512
+    second: Catcher_red_idle_2
   - first:
-      213: 3486352294553992365
-    second: catcher_walk_3
-  - first:
-      213: 2516085805378891864
-    second: catcher_walk_4
-  - first:
-      213: 1549818746995874967
-    second: catcher_walk_5
+      213: -2186942121485962896
+    second: Catcher_red_idle_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: catcher_walk_0
+      name: Catcher_red_idle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 83
-        height: 70
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,20 +117,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c830b4823f7ac0a0800000000000000
-      internalID: -6860531227394295607
+      spriteID: 6e6f39aff61f93a90800000000000000
+      internalID: -7333565054948477210
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: catcher_walk_1
+      name: Catcher_red_idle_1
       rect:
         serializedVersion: 2
-        x: 83
+        x: 64
         y: 0
-        width: 83
-        height: 70
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,20 +138,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 771f27fb42fb488a0800000000000000
-      internalID: -6303703413860142729
+      spriteID: 1538120fa60023a60800000000000000
+      internalID: 7652179176151155537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: catcher_walk_2
+      name: Catcher_red_idle_2
       rect:
         serializedVersion: 2
-        x: 166
+        x: 128
         y: 0
-        width: 83
-        height: 70
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d94ee94f4caf0e790800000000000000
-      internalID: -7502721255374658403
+      spriteID: 0acc2d1fd51ef2a90800000000000000
+      internalID: -7336397474357916512
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: catcher_walk_3
+      name: Catcher_red_idle_3
       rect:
         serializedVersion: 2
-        x: 249
+        x: 192
         y: 0
-        width: 83
-        height: 70
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,50 +180,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dac32ceb0f2026030800000000000000
-      internalID: 3486352294553992365
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: catcher_walk_4
-      rect:
-        serializedVersion: 2
-        x: 332
-        y: 0
-        width: 83
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 850f20e85beeae220800000000000000
-      internalID: 2516085805378891864
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: catcher_walk_5
-      rect:
-        serializedVersion: 2
-        x: 415
-        y: 0
-        width: 83
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 79c1ee860ff028510800000000000000
-      internalID: 1549818746995874967
+      spriteID: 0717d783abb66a1e0800000000000000
+      internalID: -2186942121485962896
       vertices: []
       indices: 
       edges: []
