@@ -2,33 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/catcher_idle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/catcher_idle.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/catcher_walk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/catcher_walk.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/UIsprites/Animate/BuffPanel.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/UIsprites/Animate/BuffPanel.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/UIsprites/Animate/BuffPanel_Idle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/UIsprites/Animate/BuffPanel_Idle.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/player.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/player/bc5f76c8807ec8bd0a43cb81e76b507.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/player/bc5f76c8807ec8bd0a43cb81e76b507.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/InitDatBuff.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_19_17_46_[Default_Changelist]/Watcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_19_17_46_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_19_17_46__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_19_19_39_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_19_19_39__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/Enemy_Camerator.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/Enemy_Camerator.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapSpawn/Test.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/player/bc5f76c8807ec8bd0a43cb81e76b507.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/player/bc5f76c8807ec8bd0a43cb81e76b507.png.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +162,7 @@
       <workItem from="1621914244359" duration="6176000" />
       <workItem from="1621947735710" duration="1571000" />
       <workItem from="1622009932746" duration="15111000" />
-      <workItem from="1622092675989" duration="8915000" />
+      <workItem from="1622092675989" duration="9714000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1620888470403</created>
@@ -525,7 +500,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622032835893</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Debug FlyingEnemy">
+      <created>1622114039855</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1622114039855</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -560,7 +542,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="LoadScene" />
     <MESSAGE value="Init" />
     <MESSAGE value="NewGun" />
     <MESSAGE value="Debug_MapSpawn" />
@@ -585,6 +566,7 @@
     <MESSAGE value="Upgrade Camerator" />
     <MESSAGE value="Init Minimap" />
     <MESSAGE value="Reload Upgrade" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reload Upgrade" />
+    <MESSAGE value="Debug FlyingEnemy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Debug FlyingEnemy" />
   </component>
 </project>
