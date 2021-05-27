@@ -13,7 +13,7 @@ public class Enemy_Bullet : MonoBehaviour
         {
             if(other.CompareTag("Player"))
             {
-                PlayerProperty.Instance.ChangeValue("health", bulletEnemyDamage);
+                PlayerProperty.Instance.ChangeValue("health", bulletEnemyDamage * GTime.Instance.hurtTimes);
             }
             EnemyBulletPool.Instance.ReturnPool(gameObject);
         }  
