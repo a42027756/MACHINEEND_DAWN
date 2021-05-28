@@ -10,9 +10,18 @@ public class Enemy : MonoBehaviour
     protected Transform _transform;
     private float flipEpsilon = 0.1f;
     
-    public virtual bool TakeDamage(int damage)
+    public bool TakeDamage(int damage)
     {
-        return false;
+        int damageHealth = health - damage;
+        if (damageHealth > 0)
+        {
+            health = damageHealth;
+            return false;
+        }
+        else
+        {
+            return true;
+        }
     }
 
     protected void InitializeEnemy()

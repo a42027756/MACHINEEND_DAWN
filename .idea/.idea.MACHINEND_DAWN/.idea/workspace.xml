@@ -2,23 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Effects/destroySelf.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Effects/explosion/explosion.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Effects/explosion/explosion.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/Watcher_0.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/Watcher_0.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/Watcher_idle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/Watcher_idle.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EffectsManager/EffectsManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EffectsManager/EffectsManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Watcher_AI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/watcher_detected.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/watcher_detected.anim.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Anim/Enenmy/Camerator_In_Game.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Anim/Enenmy/Camerator_In_Game.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/Enemy_Camerator.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/Enemy_Camerator.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/Watcher.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/Watcher.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/bush-tall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/bush-tall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/bush.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/bush.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/rock-monument.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/rock-monument.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/rock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/rock.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/sign.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/sign.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/tree-dried.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/tree-dried.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/tree-orange.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/tree-orange.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/tree-pink.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/tree-pink.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/trunk.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/trunk.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Gun/Gun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Gun/Gun.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Weapon/BugExecuter 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Weapon/BugExecuter 1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Weapon/Gun.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Weapon/Gun.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Weapon/Venom.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Weapon/Venom.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Watcher_AI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Watcher_AI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/tree-orange.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/tree-orange.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,8 +109,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy_Bullet.cs" />
       <option value="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Effects/destroySelf.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/EffectsManager/EffectsManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Watcher_AI.cs" />
     </changedPaths>
   </component>
@@ -185,20 +192,7 @@
       <workItem from="1621947735710" duration="1571000" />
       <workItem from="1622009932746" duration="15111000" />
       <workItem from="1622092675989" duration="16152000" />
-    </task>
-    <task id="LOCAL-00005" summary="NewGun">
-      <created>1620893020365</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1620893020366</updated>
-    </task>
-    <task id="LOCAL-00006" summary="NewGun">
-      <created>1620894076375</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1620894076375</updated>
+      <workItem from="1622180961641" duration="2404000" />
     </task>
     <task id="LOCAL-00007" summary="NewGun">
       <created>1620894293941</created>
@@ -529,7 +523,21 @@
       <option name="project" value="LOCAL" />
       <updated>1622119391321</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Merge">
+      <created>1622180987964</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1622180987964</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Merge">
+      <created>1622181004476</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1622181004476</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -570,7 +578,6 @@
     <MESSAGE value="BuildTest 2021/5/19" />
     <MESSAGE value="PausePanel 2021/5/19" />
     <MESSAGE value="PausePanel" />
-    <MESSAGE value="Merge" />
     <MESSAGE value="Audio Init" />
     <MESSAGE value="&#10;Init DayLight" />
     <MESSAGE value="&#10;Init Collider" />
@@ -589,6 +596,7 @@
     <MESSAGE value="Upgrade player" />
     <MESSAGE value="GTimeManager Init" />
     <MESSAGE value="Debug Flying Enemy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Debug Flying Enemy" />
+    <MESSAGE value="Merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge" />
   </component>
 </project>

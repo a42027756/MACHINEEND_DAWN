@@ -94,21 +94,7 @@ public class FlyingEnemy : Enemy
             _fsm.Update();
         }
     }
-
-    public override bool TakeDamage(int damage)
-    {
-        // Debug.Log("TakeDamage");
-        int damageHealth = health - damage;
-        if (damageHealth > 0)
-        {
-            health = damageHealth;
-            return false;
-        }
-        else
-        {
-            return true;
-        }
-    }
+    
     
     //========================idle========================
     //replace  idle:Enter:

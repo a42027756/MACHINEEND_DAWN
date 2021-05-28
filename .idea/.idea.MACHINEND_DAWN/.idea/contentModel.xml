@@ -141,6 +141,10 @@
           </e>
         </e>
         <e p="Scenes" t="Include">
+          <e p="BagTest" t="Include">
+            <e p="GridSlots.cs" t="Include" />
+            <e p="InventoryManager.cs" t="Include" />
+          </e>
           <e p="Game" t="Include">
             <e p="Rotate.cs" t="Include" />
             <e p="sprite" t="Include">
