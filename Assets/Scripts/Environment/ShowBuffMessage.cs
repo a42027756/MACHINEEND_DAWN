@@ -31,6 +31,7 @@ public class ShowBuffMessage : MonoBehaviour
         {
             messagePanel.SetActive(true);
             GTime.Instance.SetGTime(7);
+            StartCoroutine(AutoClosePanel());
         }
     }
 
@@ -44,5 +45,11 @@ public class ShowBuffMessage : MonoBehaviour
     {
         messagePanel.SetActive(false);
         isShowing = false;
+    }
+
+    IEnumerator AutoClosePanel()
+    {
+        yield return new WaitForSeconds(3);
+        messagePanel.SetActive(false);
     }
 }

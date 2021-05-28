@@ -2,24 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Reborn.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Reborn.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/wizard/player.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/wizard/player.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/WizardTips.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_13_17_38__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_13_17_38__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_25_11_57__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_25_11_57__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_25_11_57__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_25_11_57__Default_Changelist_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/Enemy_Camerator.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/Enemy_Camerator.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/Watcher.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/Watcher.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/player/player_Anim/player_Dead.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/player/player_Anim/player_Dead.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/wizard/ElecticWizard_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/wizard/ElecticWizard_0.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prelogue/Prelogue.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prelogue/Prelogue.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Watcher_AI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Watcher_AI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerProperty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerProperty.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Prelogue/ShowText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Prelogue/ShowText.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMeshPro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMeshPro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/wizard/ElecticWizard-sheet_0 1.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/wizard/ElecticWizard-sheet_0 1.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/wizard/ElecticWizard-sheet_0 2.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/wizard/ElecticWizard-sheet_0 2.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/wizard/ElecticWizard-sheet_0.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/wizard/ElecticWizard-sheet_0.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/wizard/ElecticWizard-sheet_5 1.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/wizard/ElecticWizard-sheet_5 1.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/wizard/ElecticWizard-sheet_5.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/wizard/ElecticWizard-sheet_5.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/wizard/ElecticWizard_0.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/wizard/ElecticWizard_0.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +47,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/Town.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EffectsManager/EffectsManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/WizardTips.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Game/Rotate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Game/sprite/Effects/destroySelf.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/State.cs" root0="FORCE_HIGHLIGHTING" />
@@ -101,7 +106,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy_Bullet.cs" />
       <option value="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Effects/destroySelf.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/EffectsManager/EffectsManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Defend_war/Spawn_monster.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameControl/GameManager.cs" />
@@ -112,6 +116,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Reborn.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Prelogue/ShowText.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Environment/WizardTips.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sT92pLE3Aucix7W6jstCeY0cFP" />
@@ -194,14 +200,8 @@
       <workItem from="1622092675989" duration="16152000" />
       <workItem from="1622180961641" duration="13767000" />
       <workItem from="1622202307892" duration="47000" />
-      <workItem from="1622204573111" duration="5816000" />
-    </task>
-    <task id="LOCAL-00009" summary="FixBug">
-      <created>1620919398437</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1620919398437</updated>
+      <workItem from="1622204573111" duration="7164000" />
+      <workItem from="1622214301504" duration="1176000" />
     </task>
     <task id="LOCAL-00010" summary="FixBug">
       <created>1620976120822</created>
@@ -539,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622202331485</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Merge">
+      <created>1622211556733</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1622211556734</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -596,9 +603,9 @@
     <MESSAGE value="Upgrade player" />
     <MESSAGE value="GTimeManager Init" />
     <MESSAGE value="Debug Flying Enemy" />
-    <MESSAGE value="Merge" />
     <MESSAGE value="Upgrade Sprite" />
     <MESSAGE value="Init DeadPanel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init DeadPanel" />
+    <MESSAGE value="Merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge" />
   </component>
 </project>
