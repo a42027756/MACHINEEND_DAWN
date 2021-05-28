@@ -10,22 +10,35 @@ public class SynthesisSlot : MonoBehaviour, IPointerClickHandler
     public ItemBase synthesisItem;
     public Text showItemName;
     public Image showItemImage;
-    public List<Image> neededItems = new List<Image>();
+    public List<RectTransform> needItems = new List<RectTransform>();
 
     private Image itemImage;
-
-    [SerializeField] private Color cantSynthesis;
+    [SerializeField] private Color cantSynthesisColor;
 
     [Header("Get Property")]
     public int slotID;
 
+    private int index;
+    private int needNum;
+    private int heldNum;
+    private Text needNumText;
+    private Text heldNumText;
+
     void Awake()
     {
         itemImage = GetComponentsInChildren<Image>()[1];
+    }
 
+    void Start()
+    {
         if(synthesisItem != null)
         {
             itemImage.sprite = synthesisItem.itemSprite;
+        }
+
+        for(index = 0;index < 3;++index)
+        {
+            needItems[index].GetComponentsInChildren<Image>()[1].color = new Color(1, 1, 1, 0);
         }
     }
 
@@ -39,24 +52,40 @@ public class SynthesisSlot : MonoBehaviour, IPointerClickHandler
 
     public void ShowMessage()
     {
+        SynthesisManager.Instance.ResetLastSlot();
+        SynthesisManager.Instance.selectIndex = slotID;
+        itemImage.color = new Color(1, 1, 1, 0.8f);
+
         showItemName.text = synthesisItem.itemName;
         showItemImage.sprite = synthesisItem.itemSprite;
 
-        int index = 0;
+        UpdateNeedItems();
+    }
+
+    public void UpdateNeedItems()
+    {
+        index = 0;
+        SynthesisManager.Instance.canSynthesis = true;
         foreach(KeyValuePair<ItemBase, int> pair in synthesisItem.needItems)
         {
-            neededItems[index].sprite = pair.Key.itemSprite;
-            int neededNum = pair.Value;
-            int heldNum = pair.Key.itemNum;
-            neededItems[index].GetComponentsInChildren<Text>()[0].text = neededNum.ToString();
-            neededItems[index].GetComponentsInChildren<Text>()[1].text = "(" + heldNum.ToString() + ")";
-            if(heldNum > neededNum)
+            needItems[index].GetComponentsInChildren<Image>()[1].sprite = pair.Key.itemSprite;
+            needItems[index].GetComponentsInChildren<Image>()[1].color = new Color(1, 1, 1, 1);
+
+            needNum = pair.Value;
+            heldNum = pair.Key.itemNum;
+            needNumText = needItems[index].GetComponentsInChildren<Text>()[0];
+            heldNumText = needItems[index].GetComponentsInChildren<Text>()[1];
+            needNumText.text = needNum.ToString();
+            heldNumText.text = "(" + heldNum.ToString() + ")";
+
+            if(heldNum >= needNum)
             {
-                neededItems[index].GetComponentsInChildren<Text>()[1].color = Color.white;
+                heldNumText.color = new Color(1, 1, 1, 1);
             }
             else
             {
-                neededItems[index].GetComponentsInChildren<Text>()[1].color = cantSynthesis;
+                heldNumText.color = cantSynthesisColor;
+                SynthesisManager.Instance.canSynthesis = false;
             }
             index++;
         }

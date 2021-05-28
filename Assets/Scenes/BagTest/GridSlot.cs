@@ -26,12 +26,12 @@ public class GridSlot : MonoBehaviour, IPointerClickHandler
         itemNum = GetComponentInChildren<Text>();
 
         itemImage.color = new Color(1, 1, 1, 0);
-        itemNum.color = new Color(0, 0, 0, 0);
+        itemNum.color = new Color(1, 1, 1, 0);
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if(eventData.pointerId == -2)
+        if(eventData.pointerId == -2 && currentItem != null)
         {
             //右击物品展开使用菜单
 
@@ -39,7 +39,7 @@ public class GridSlot : MonoBehaviour, IPointerClickHandler
             UseItem();
             //============Test=============
         }
-        else if(eventData.pointerId == -1)
+        else if(eventData.pointerId == -1 && currentItem != null)
         {
             //左键点击在左侧显示物品信息
             ShowMessage();
@@ -61,51 +61,38 @@ public class GridSlot : MonoBehaviour, IPointerClickHandler
             itemNum.text = currentItem.itemNum.ToString();
 
             itemImage.color = new Color(1, 1, 1, 1);
-            itemNum.color = new Color(0, 0, 0, 1);
+            itemNum.color = new Color(1, 1, 1, 1);
         }
         else
         {
             itemImage.color = new Color(1, 1, 1, 0);
-            itemNum.color = new Color(0, 0, 0, 0);
+            itemNum.color = new Color(1, 1, 1, 0);
         }
     }
 
     public void UseItem()
     {
-        if(currentItem == null)
-        {
-            return;
-        }
-
         /*
         todo: UseItem() 根据物品是否可使用，判断是否要调用物品的使用方法
         */
 
         currentItem.itemNum--;
-        itemNum.text = currentItem.itemNum.ToString();
+        RefreshSlot();
 
+        InventoryManager.Instance.PackUpBag();
         InventoryManager.Instance.ResetLastSlot();
         InventoryManager.Instance.selectIndex = -1;
-
-        if(currentItem.itemNum == 0)
-        {
-            ResetSlot();
-            InventoryManager.Instance.RefreshBag();
-        }
     }
 
     public void ShowMessage()
     {
-        if(currentItem != null)
-        {
-            InventoryManager.Instance.ResetLastSlot();
-            InventoryManager.Instance.selectIndex = slotID;
+        InventoryManager.Instance.ResetLastSlot();
+        InventoryManager.Instance.selectIndex = slotID;
 
-            itemImage.color = new Color(1, 1, 1, 0.8f);
-            showImage.sprite = currentItem.itemSprite;
-            showName.text = currentItem.itemName;
-            showDescription.text = currentItem.itemDescription;
-        }
+        itemImage.color = new Color(1, 1, 1, 0.8f);
+        showImage.sprite = currentItem.itemSprite;
+        showName.text = currentItem.itemName;
+        showDescription.text = currentItem.itemDescription;
     }
 
     public void ResetSlot()
@@ -114,5 +101,15 @@ public class GridSlot : MonoBehaviour, IPointerClickHandler
 
         itemImage.color = new Color(1, 1, 1, 0);
         itemNum.color = new Color(0, 0, 0, 0);
+    }
+
+    public void RefreshSlot()
+    {
+        itemNum.text = currentItem.itemNum.ToString();
+
+        if(currentItem.itemNum == 0)
+        {
+            ResetSlot();
+        }
     }
 }

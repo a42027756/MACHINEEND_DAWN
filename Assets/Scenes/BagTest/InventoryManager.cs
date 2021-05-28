@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class InventoryManager : MonoSingleton<InventoryManager>
 {
     [Header("Get Component")]
-    public GameObject bagPanel;
     public RectTransform grid;
     public Image _showImage;
     public Text _showName;
@@ -17,12 +16,8 @@ public class InventoryManager : MonoSingleton<InventoryManager>
     private int index;              //用于遍历背包格子
     private int currrentIndex;      //指示背包最后一个物品的存放位置；用于填补空缺
 
-    private int testIndex;          //测试用
-
     void Awake()
     {
-        testIndex = 1;
-
         selectIndex = -1;
         index = 0;
         currrentIndex = -1;
@@ -30,6 +25,7 @@ public class InventoryManager : MonoSingleton<InventoryManager>
         {
             GridSlot slot = child.GetComponent<GridSlot>();
             gridSlots.Add(slot);
+            slot.currentItem = null;
             slot.slotID = index;
             slot.showImage = _showImage;
             slot.showName = _showName;
@@ -38,19 +34,16 @@ public class InventoryManager : MonoSingleton<InventoryManager>
         }
     }
 
-    void Update()
+    void Start()
     {
-        //==========Test==============
-        if(Input.GetKeyDown(KeyCode.K))
+        for(index = 0;index < InitializeItem.Instance.itemBase.Count;++index)
         {
-            int num = Random.Range(1, 4);
-            Cola cola = new Cola(num);
-            cola.itemName = "cola_0" + testIndex.ToString();
-            cola.itemDescription = "This a bottle of cola";
-            testIndex++;
-            AddItem(cola);
+            ItemBase item = InitializeItem.Instance.itemBase[index];
+            if(item.itemNum != 0)
+            {
+                AddItem(InitializeItem.Instance.itemBase[index]);
+            }
         }
-        //==========Test==============
     }
 
     public void AddItem(ItemBase item)
@@ -60,6 +53,15 @@ public class InventoryManager : MonoSingleton<InventoryManager>
     }
 
     public void RefreshBag()
+    {
+        for(index = 0;index <= currrentIndex;++index)
+        {
+            gridSlots[index].RefreshSlot();
+        }
+        PackUpBag();
+    }
+
+    public void PackUpBag()
     {
         for(index = 0;index < currrentIndex;++index)
         {

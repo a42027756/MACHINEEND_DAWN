@@ -164,6 +164,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a90b0382a3d6428adc3cc7393db0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  synthesisItem:
+    itemSprite: {fileID: 0}
+    itemName: Item
+    itemDescription: This is an item
+    itemNum: 0
+    size_h: 1
+    size_v: 1
+    usable: 0
   showItemName: {fileID: 0}
   showItemImage: {fileID: 0}
+  needItems: []
+  cantSynthesisColor: {r: 1, g: 0.29622638, b: 0.29622638, a: 1}
   slotID: 0
