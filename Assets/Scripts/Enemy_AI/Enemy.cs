@@ -32,4 +32,16 @@ public class Enemy : MonoBehaviour
             _transform.rotation = Quaternion.Euler(0, 180, 0);
         }
     }
+    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Bullets"))
+        {
+            if (TakeDamage(WeaponSlot.Instance.currentWeapon.GetComponent<Weapon>().damageValue))
+            {
+                EffectsManager.Instance.PlayExplosion(this.transform.position);
+                Destroy(gameObject);
+            }
+        }
+    }
 }

@@ -95,17 +95,6 @@ public class FlyingEnemy : Enemy
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Bullets"))
-        {
-            if (TakeDamage(WeaponSlot.Instance.currentWeapon.GetComponent<Weapon>().damageValue))
-            {
-                Destroy(gameObject);
-            }
-        }
-    }
-
     public override bool TakeDamage(int damage)
     {
         // Debug.Log("TakeDamage");
