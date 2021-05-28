@@ -1,7 +1,8 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class WizardTips : MonoBehaviour
 {
@@ -10,11 +11,16 @@ public class WizardTips : MonoBehaviour
     public GameObject dialogueBox;
 
     private bool canStartDialogue;
+
+    private string _text;
+
+    [Multiline]public List<string> tips = new List<string>();
     // Start is called before the first frame update
     void Start()
     {
         tipBox.SetActive(false);
         dialogueBox.SetActive(false);
+        _text = dialogueBox.GetComponentInChildren<TMP_Text>().text;
     }
 
     // Update is called once per frame
@@ -31,8 +37,15 @@ public class WizardTips : MonoBehaviour
 
     private void ShowDialogue()
     {
+        ChangeText();
         dialogueBox.SetActive(!dialogueBox.activeSelf);
         tipBox.SetActive(!tipBox.activeSelf);
+    }
+
+    private void ChangeText()
+    {
+        int index = Random.Range(0,10) % tips.Count;
+        dialogueBox.GetComponentInChildren<TMP_Text>().text = tips[index];
     }
     
     private void OnTriggerEnter2D(Collider2D other)
@@ -43,6 +56,7 @@ public class WizardTips : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
+        dialogueBox.SetActive(false);
         tipBox.SetActive(false);
         canStartDialogue = false;
     }
