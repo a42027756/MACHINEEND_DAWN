@@ -10,9 +10,18 @@ public class Enemy : MonoBehaviour
     protected Transform _transform;
     private float flipEpsilon = 0.1f;
     
-    public virtual bool TakeDamage(int damage)
+    public bool TakeDamage(int damage)
     {
-        return false;
+        int damageHealth = health - damage;
+        if (damageHealth > 0)
+        {
+            health = damageHealth;
+            return false;
+        }
+        else
+        {
+            return true;
+        }
     }
 
     protected void InitializeEnemy()
@@ -30,6 +39,18 @@ public class Enemy : MonoBehaviour
         else if (_rigidbody2D.velocity.x > flipEpsilon)
         {
             _transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
+    }
+    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Bullets"))
+        {
+            if (TakeDamage(WeaponSlot.Instance.currentWeapon.GetComponent<Weapon>().damageValue))
+            {
+                EffectsManager.Instance.PlayExplosion(this.transform.position);
+                Destroy(gameObject);
+            }
         }
     }
 }
