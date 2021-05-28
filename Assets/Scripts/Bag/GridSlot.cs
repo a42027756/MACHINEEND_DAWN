@@ -105,6 +105,7 @@ public class GridSlot : MonoBehaviour, IPointerClickHandler
 
     public void RefreshSlot()
     {
+        //有bug
         itemNum.text = currentItem.itemNum.ToString();
 
         if(currentItem.itemNum == 0)
