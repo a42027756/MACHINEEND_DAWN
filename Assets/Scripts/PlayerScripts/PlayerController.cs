@@ -20,38 +20,49 @@ public class PlayerController : ControllerBase<PlayerController>
     private float input_x = 0f;
     private float input_y = 0f;
     private const float flipEpsilon = 0.5f;
-    
+    public bool isAlive = true;
+    public bool canControl = true;
+
     public override void Update()
     {
-        //Debug.Log(input_x + " " +input_y);
-
-        //--------------test-----------------
-        if(Input.GetKeyDown(KeyCode.K))
+        if (!isAlive)
         {
-            PlayerProperty.Instance.ChangeValue("health", -10f);
+            canControl = false;
+            PlayerDead();
         }
-
-        if(Input.GetKeyDown(KeyCode.R))
+        if (canControl)
         {
-            WeaponPool.Instance.LoadBullets();
-        }
+            //Debug.Log(input_x + " " +input_y);
 
-        if(Input.GetKeyDown(KeyCode.Tab))
-        {
-            WeaponPool.Instance.LoadAll();
-        }
+            //--------------test-----------------
+            if(Input.GetKeyDown(KeyCode.K))
+            {
+                PlayerProperty.Instance.ChangeValue("health", -10f);
+            }
 
-        if(Input.GetKeyDown(KeyCode.B))
-        {
-            bool isOpen = _bag.activeSelf;
-            _bag.SetActive(!isOpen);
-        }
+            if(Input.GetKeyDown(KeyCode.R))
+            {
+                WeaponPool.Instance.LoadBullets();
+            }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Time.timeScale = 0;
-            pausepanel.SetActive(!pausepanel.activeSelf);
+            if(Input.GetKeyDown(KeyCode.Tab))
+            {
+                WeaponPool.Instance.LoadAll();
+            }
+
+            if(Input.GetKeyDown(KeyCode.B))
+            {
+                bool isOpen = _bag.activeSelf;
+                _bag.SetActive(!isOpen);
+            }
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                Time.timeScale = 0;
+                pausepanel.SetActive(!pausepanel.activeSelf);
+            }
         }
+        
         //--------------test-----------------
 
         _anim.SetFloat("speed",_rigidbody2D.velocity.magnitude);
@@ -75,6 +86,12 @@ public class PlayerController : ControllerBase<PlayerController>
         {
             _transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
+    }
+
+    public void PlayerDead()
+    {
+        Debug.Log(canControl);
+        _anim.SetBool("isDead",true);
     }
     flip GetFlip()
     {

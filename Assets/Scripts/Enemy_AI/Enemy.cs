@@ -46,11 +46,24 @@ public class Enemy : MonoBehaviour
     {
         if (other.CompareTag("Bullets"))
         {
+            FlashColor();
             if (TakeDamage(WeaponSlot.Instance.currentWeapon.GetComponent<Weapon>().damageValue))
-            {
+            { ;
                 EffectsManager.Instance.PlayExplosion(this.transform.position);
                 Destroy(gameObject);
             }
         }
+    }
+
+    private void FlashColor()
+    {
+        this.GetComponent<SpriteRenderer>().color = Color.red;
+        StartCoroutine(Flash());
+    }
+
+    IEnumerator Flash()
+    {
+        yield return new WaitForSeconds(flipEpsilon);
+        this.GetComponent<SpriteRenderer>().color = Color.white;
     }
 }

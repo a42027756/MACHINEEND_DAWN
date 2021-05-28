@@ -14,6 +14,7 @@ public class Watcher_AI : Enemy
 
     private Vector3 movePos;    //目的地
     private Vector3 moveVelocity;  //移动速度(矢量)
+    public int explosionHurt;
     private float epsilon = 0.1f;
     
     private List<Collider2D> sight_collider2Ds = new List<Collider2D>();    //视觉范围内的collider2D
@@ -186,7 +187,7 @@ public class Watcher_AI : Enemy
 
     private void Chase_Exit(State _from, State _to)
     {
-        Debug.Log("Chase Exit");
+        // Debug.Log("Chase Exit");
         isDetected = false;
         _rigidbody2D.velocity = new Vector2(0, 0);
     }
@@ -195,8 +196,9 @@ public class Watcher_AI : Enemy
     //==================Attack=====================
     private void Attack_Enter(State _from, State _to)
     {
+        EffectsManager.Instance.PlayExplosion(PlayerController.Instance._rigidbody2D.position);
+        PlayerProperty.Instance.ChangeValue("health",explosionHurt);
         _rigidbody2D.velocity = new Vector2(0, 0);
-        Debug.Log("Enter Attack");
         this.GetComponent<Animator>().SetBool("isDetected",true);
     }
 
@@ -210,7 +212,7 @@ public class Watcher_AI : Enemy
 
     private void Attack_Exit(State _from, State _to)
     {
-        Debug.Log("Exit Attack");
+        // Debug.Log("Exit Attack");
     }
     
     //==============================================
