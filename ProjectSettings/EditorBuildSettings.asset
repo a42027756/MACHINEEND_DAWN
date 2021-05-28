@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game/Game.unity
     guid: dad11d9701d953b44b2913eb4afc8dba
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scripts/MapSpawn/Test.unity
     guid: d223461e63ed4ed4987d9e043b3d4832
   - enabled: 1

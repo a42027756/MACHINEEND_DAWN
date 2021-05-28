@@ -79,18 +79,26 @@ public class Watcher_AI : Enemy
     
     private void Update()
     {
-        det = DetectType();
-        var contactFilter2D = new ContactFilter2D();
-        contactFilter2D.useTriggers = true;
-        sight.OverlapCollider(contactFilter2D,sight_collider2Ds);
-        hearing.OverlapCollider(contactFilter2D, hearing_collider2Ds);
-        attackRegion.OverlapCollider(contactFilter2D, attack_collider2Ds);
-        Flip();
-        Chase();
-        if (_fsm != null)
+        if (PlayerController.Instance.isAlive)
         {
-            _fsm.Update();
+            det = DetectType();
+            var contactFilter2D = new ContactFilter2D();
+            contactFilter2D.useTriggers = true;
+            sight.OverlapCollider(contactFilter2D,sight_collider2Ds);
+            hearing.OverlapCollider(contactFilter2D, hearing_collider2Ds);
+            attackRegion.OverlapCollider(contactFilter2D, attack_collider2Ds);
+            Flip();
+            Chase();
+            if (_fsm != null)
+            {
+                _fsm.Update();
+            }   
         }
+        else
+        {
+            _rigidbody2D.velocity = new Vector2(0, 0);
+        }
+        
     }
     
     

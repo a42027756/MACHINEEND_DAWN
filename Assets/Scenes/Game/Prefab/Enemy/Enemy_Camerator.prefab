@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 48345330}
   - component: {fileID: 48345331}
   - component: {fileID: 4857591103007072081}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Camerator_Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8354754502096225875}
   - component: {fileID: 2391854565304574898}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -429,7 +429,7 @@ MonoBehaviour:
   sight: {fileID: 1647582514483192254}
   hearing: {fileID: 7362312786362333271}
   attackRegion: {fileID: 6170257628667876707}
-  flyingspeed: 1.5
+  flyingspeed: 2
   waitTime: 3
   nowTime: 0
   det: 0
@@ -479,9 +479,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.17438316, y: 0.039479256}
+  m_Offset: {x: 0.16164303, y: 0.039479256}
   serializedVersion: 2
-  m_Radius: 8.421825
+  m_Radius: 10.702235
 --- !u!60 &1647582514483192254
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -508,9 +508,9 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 0.07307577, y: 0.4641075}
-      - {x: -6.421409, y: -2.335911}
-      - {x: -4.9959373, y: -5.153181}
-      - {x: -1.9054878, y: -6.819723}
+      - {x: -7.6864715, y: -2.429619}
+      - {x: -6.4015617, y: -6.1839714}
+      - {x: -2.420883, y: -7.7333794}
       - {x: 0.47575474, y: -0.13562018}
 --- !u!70 &6170257628667876707
 CapsuleCollider2D:
@@ -525,6 +525,6 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.11107445, y: 0}
-  m_Size: {x: 8.967915, y: 8.967915}
+  m_Offset: {x: 0.15346193, y: 0}
+  m_Size: {x: 14.054366, y: 14.054366}
   m_Direction: 0

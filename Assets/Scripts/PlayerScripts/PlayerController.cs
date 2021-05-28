@@ -83,8 +83,8 @@ public class PlayerController : ControllerBase<PlayerController>
 
     public void PlayerDead()
     {
-        Debug.Log(canControl);
         _anim.SetBool("isDead",true);
+        _rigidbody2D.velocity = new Vector2(0, 0);
     }
     flip GetFlip()
     {

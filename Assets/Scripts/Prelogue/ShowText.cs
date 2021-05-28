@@ -24,7 +24,7 @@ public class ShowText : MonoBehaviour
         isActive = true;
         characterPerSecond = Mathf.Max(0.2f, characterPerSecond);
         _text = GetComponent<Text>();
-        words = _text.text;
+        words = ">>#2121年....#$%#$..ABSO械智公司已经垄断几乎所有..&*行业^%...，人类社会的贫富差距日渐增大...ABSO作为富可敌国的巨大产业{>:**..几乎不管下层人民的死活...终于...ABSO无法掩埋剥削压榨的&^$真实面目##@$人民和垄断资本展开了正面对抗。ABSO启用:(*纳米智械^&(%..入侵人体义肢以及义脑，城市中的人们变成了受机械操控的>>行尸走肉<<......幸存的人类在末世下艰难的生活............";
         _text.text = "";
     }
 

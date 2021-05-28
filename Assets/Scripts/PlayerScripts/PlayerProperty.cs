@@ -17,7 +17,7 @@ public class PlayerProperty : ControllerBase<PlayerProperty>, IProperty
     {
         if (properties["health"] <= 0)
         {
-            Debug.Log("Player Dead");
+            // Debug.Log("Player Dead");
             PlayerController.Instance.isAlive = false;
         }
         ValueBoxUpdate();
@@ -53,6 +53,14 @@ public class PlayerProperty : ControllerBase<PlayerProperty>, IProperty
         //判断条件
         properties[propertyName] += increment;
         Transition();
+    }
+
+    public void ResetValue()
+    {
+        properties["health"] = 100;
+        properties["thirsty"] = 60;
+        properties["hunger"] = 60;
+        properties["instrusion"] = 0;
     }
 
     private void ValueBoxUpdate()
