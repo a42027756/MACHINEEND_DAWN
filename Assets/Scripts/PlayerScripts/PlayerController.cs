@@ -15,7 +15,6 @@ public class PlayerController : ControllerBase<PlayerController>
     public Rigidbody2D _rigidbody2D;
     public Transform _transform;
     public Animator _anim;
-    public GameObject _bag;
     public GameObject pausepanel;
     private float input_x = 0f;
     private float input_y = 0f;
@@ -48,12 +47,6 @@ public class PlayerController : ControllerBase<PlayerController>
             if(Input.GetKeyDown(KeyCode.Tab))
             {
                 WeaponPool.Instance.LoadAll();
-            }
-
-            if(Input.GetKeyDown(KeyCode.B))
-            {
-                bool isOpen = _bag.activeSelf;
-                _bag.SetActive(!isOpen);
             }
 
             if (Input.GetKeyDown(KeyCode.Escape))

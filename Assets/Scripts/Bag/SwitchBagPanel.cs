@@ -6,6 +6,8 @@ public class SwitchBagPanel : MonoBehaviour
 {
     public GameObject bagPanel;
     public GameObject synthesisPanel;
+    public GameObject long_Btn, circle_Btn;
+    private Animator long_Anim, circle_Anim;
     
     private bool isOpen;
     private bool opposite;
@@ -15,7 +17,12 @@ public class SwitchBagPanel : MonoBehaviour
         isOpen = false;
         opposite = true;
         bagPanel.SetActive(false);
-        synthesisPanel.SetActive(false);      
+        synthesisPanel.SetActive(false);
+        long_Btn.SetActive(false);
+        circle_Btn.SetActive(false);
+
+        long_Anim = long_Btn.GetComponent<Animator>();
+        circle_Anim = circle_Btn.GetComponent<Animator>();
     }
 
     void Update()
@@ -36,12 +43,22 @@ public class SwitchBagPanel : MonoBehaviour
         {
             bagPanel.SetActive(false);
             synthesisPanel.SetActive(false);
+            long_Btn.SetActive(false);
+            circle_Btn.SetActive(false);
+
+            long_Anim.SetBool("push", false);
+            circle_Anim.SetBool("push", false);
         }
         else
         {
             opposite = true;
-            bagPanel.SetActive(true);
-            synthesisPanel.SetActive(false);
+            bagPanel.SetActive(opposite);
+            synthesisPanel.SetActive(!opposite);
+            long_Btn.SetActive(true);
+            circle_Btn.SetActive(true);
+
+            long_Anim.SetBool("push", opposite);
+            circle_Anim.SetBool("push", !opposite);
         }
         isOpen = !isOpen;
     }
@@ -51,5 +68,8 @@ public class SwitchBagPanel : MonoBehaviour
         opposite = !opposite;
         bagPanel.SetActive(opposite);
         synthesisPanel.SetActive(!opposite);
+
+        long_Anim.SetBool("push", opposite);
+        circle_Anim.SetBool("push", !opposite);
     }
 }

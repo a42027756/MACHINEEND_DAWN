@@ -6,7 +6,6 @@ public class Binder : MonoBehaviour
     [HideInInspector] public Rigidbody2D myRigidbody2D;
     [HideInInspector] public Transform myTransform;
     [HideInInspector] public Animator myAnim;
-    public GameObject myBag;
     public GameObject pauspanel;
     public float speed;
 
@@ -30,7 +29,6 @@ public class Binder : MonoBehaviour
         PlayerController.Instance._transform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         PlayerController.Instance._anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
         PlayerController.Instance.movespeed = speed;
-        PlayerController.Instance._bag = myBag;
         PlayerController.Instance.pausepanel = pauspanel;
         // myBag.SetActive(false);
 
