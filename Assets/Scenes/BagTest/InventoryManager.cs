@@ -7,11 +7,11 @@ public class InventoryManager : MonoSingleton<InventoryManager>
 {
     [Header("Get Component")]
     public GameObject bagPanel;
-    public GameObject grid;
+    public RectTransform grid;
     public Image _showImage;
     public Text _showName;
     public Text _showDescription;
-    public List<GridSlots> gridSlots = new List<GridSlots>();
+    public List<GridSlot> gridSlots = new List<GridSlot>();
 
     public int selectIndex;         //上一个被选中的物品，用于取消被选中动画
     private int index;              //用于遍历背包格子
@@ -26,9 +26,9 @@ public class InventoryManager : MonoSingleton<InventoryManager>
         selectIndex = -1;
         index = 0;
         currrentIndex = -1;
-        foreach(Transform child in grid.transform)
+        foreach(RectTransform child in grid)
         {
-            GridSlots slot = child.GetComponent<GridSlots>();
+            GridSlot slot = child.GetComponent<GridSlot>();
             gridSlots.Add(slot);
             slot.slotID = index;
             slot.showImage = _showImage;

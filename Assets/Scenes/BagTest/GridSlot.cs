@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class GridSlots : MonoBehaviour, IPointerClickHandler
+public class GridSlot : MonoBehaviour, IPointerClickHandler
 {
     [Header("Get Component")]
     //右侧物品信息组件
@@ -24,6 +24,9 @@ public class GridSlots : MonoBehaviour, IPointerClickHandler
     {
         itemImage = GetComponentsInChildren<Image>()[1];
         itemNum = GetComponentInChildren<Text>();
+
+        itemImage.color = new Color(1, 1, 1, 0);
+        itemNum.color = new Color(0, 0, 0, 0);
     }
 
     public void OnPointerClick(PointerEventData eventData)
