@@ -174,6 +174,9 @@
           <e p="ControllerBase" t="Include">
             <e p="ControllerBase.cs" t="Include" />
           </e>
+          <e p="Defend_war" t="Include">
+            <e p="Spawn_monster.cs" t="Include" />
+          </e>
           <e p="EffectsManager" t="Include">
             <e p="EffectsManager.cs" t="Include" />
           </e>
@@ -194,6 +197,9 @@
             <e p="FSM.cs" t="Include" />
             <e p="IState.cs" t="Include" />
             <e p="State.cs" t="Include" />
+          </e>
+          <e p="GameControl" t="Include">
+            <e p="GameManager.cs" t="Include" />
           </e>
           <e p="Item" t="Include">
             <e p="ItemBase.cs" t="Include" />

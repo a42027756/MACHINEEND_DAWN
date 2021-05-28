@@ -15,6 +15,11 @@ public class PlayerProperty : ControllerBase<PlayerProperty>, IProperty
 
     public override void Update()
     {
+        if (properties["health"] <= 0)
+        {
+            Debug.Log("Player Dead");
+            PlayerController.Instance.isAlive = false;
+        }
         ValueBoxUpdate();
     }
 

@@ -30,6 +30,7 @@ public class ShowBuffMessage : MonoBehaviour
         if (GTime.Instance.GetGtime() == 6 && !isShowing)
         {
             messagePanel.SetActive(true);
+            GTime.Instance.SetGTime(7);
         }
     }
 

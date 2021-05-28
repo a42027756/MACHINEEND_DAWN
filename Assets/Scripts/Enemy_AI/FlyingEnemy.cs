@@ -187,7 +187,7 @@ public class FlyingEnemy : Enemy
 
     private void Chase_Exit(State _from, State _to)
     {
-        Debug.Log("Chase Exit");
+        // Debug.Log("Chase Exit");
         isDetected = false;
         _rigidbody2D.velocity = new Vector2(0, 0);
     }
@@ -199,7 +199,7 @@ public class FlyingEnemy : Enemy
         enemyWeapon.RecordDirection();
 
         _rigidbody2D.velocity = new Vector2(0, 0);
-        Debug.Log("Enter Attack");
+        // Debug.Log("Enter Attack");
     }
 
     private void Attack_Action(State _curState)
@@ -217,7 +217,7 @@ public class FlyingEnemy : Enemy
         enemyWeapon.ResetDirection();
 
         enemyWeapon.transform.rotation = Quaternion.Euler(0, 0, 0);
-        Debug.Log("Exit Attack");
+        // Debug.Log("Exit Attack");
     }
     
     //==============================================
