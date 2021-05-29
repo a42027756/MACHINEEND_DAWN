@@ -21,13 +21,15 @@ public class Weapon : MonoBehaviour
     public bool canFire;
     public int damageValue;
 
-    [SerializeField] private float interval;
-    private float timeCounter;
-    [SerializeField] private float bulletSpeed;
-    public bool isFired;
+    [SerializeField] private float interval;                    //射速
+    [SerializeField] private float bulletOffset;                //发射偏移量
+    [SerializeField] private float bulletSpeed;                 //发射速度
+    private float timeCounter;                                  //计时器
 
-    private Vector3 firePoint;
-    private Vector2 difference;
+    private Vector3 firePoint;                                  //发射点
+    private Vector2 difference;                                 //发射点与目标点之间向量
+
+    public bool isFired;
     
     public void Initialize()
     {
@@ -66,7 +68,7 @@ public class Weapon : MonoBehaviour
             GameObject bullet = BulletPool.Instance.GetFromPool();
             bullet.transform.position = firePoint;
 
-            difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - player.transform.position;
+            difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - player.transform.position + new Vector3(Random.Range(-bulletOffset, bulletOffset), Random.Range(bulletOffset, bulletOffset), 0);
 
             float rotateByZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
             bullet.GetComponent<Transform>().rotation = Quaternion.Euler(0, 0, rotateByZ);
