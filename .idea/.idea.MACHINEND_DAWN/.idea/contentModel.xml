@@ -171,7 +171,6 @@
         <e p="Scripts" t="Include">
           <e p="Bag" t="Include">
             <e p="GridSlot.cs" t="Include" />
-            <e p="InitializeItem.cs" t="Include" />
             <e p="InventoryManager.cs" t="Include" />
             <e p="SwitchBagPanel.cs" t="Include" />
             <e p="SynthesisManager.cs" t="Include" />
@@ -210,6 +209,7 @@
             <e p="GameManager.cs" t="Include" />
           </e>
           <e p="Item" t="Include">
+            <e p="InitializeItem.cs" t="Include" />
             <e p="ItemBase.cs" t="Include" />
             <e p="UsableItem" t="Include">
               <e p="UsableItemBase.cs" t="Include" />
