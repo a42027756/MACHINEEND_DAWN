@@ -16,13 +16,11 @@ public class SwitchBagPanel : MonoBehaviour
     {
         isOpen = false;
         opposite = true;
-        bagPanel.SetActive(false);
-        synthesisPanel.SetActive(false);
-        long_Btn.SetActive(false);
-        circle_Btn.SetActive(false);
 
         long_Anim = long_Btn.GetComponent<Animator>();
         circle_Anim = circle_Btn.GetComponent<Animator>();
+
+        CloseAll();
     }
 
     void Update()
@@ -31,34 +29,22 @@ public class SwitchBagPanel : MonoBehaviour
         {
             CallBag();
         }
-        if(isOpen && Input.GetButtonDown("Horizontal"))
-        {
-            SwitchPanel();
-        }
     }
 
     private void CallBag()
     {
         if(isOpen)
         {
-            bagPanel.SetActive(false);
-            synthesisPanel.SetActive(false);
-            long_Btn.SetActive(false);
-            circle_Btn.SetActive(false);
-
-            long_Anim.SetBool("push", false);
-            circle_Anim.SetBool("push", false);
+            CloseAll();
         }
         else
         {
             opposite = true;
-            bagPanel.SetActive(opposite);
-            synthesisPanel.SetActive(!opposite);
+
             long_Btn.SetActive(true);
             circle_Btn.SetActive(true);
-
-            long_Anim.SetBool("push", opposite);
-            circle_Anim.SetBool("push", !opposite);
+            
+            SetSwitchState(opposite);
         }
         isOpen = !isOpen;
     }
@@ -66,10 +52,32 @@ public class SwitchBagPanel : MonoBehaviour
     private void SwitchPanel()
     {
         opposite = !opposite;
-        bagPanel.SetActive(opposite);
-        synthesisPanel.SetActive(!opposite);
+        SetSwitchState(opposite);
+    }
 
-        long_Anim.SetBool("push", opposite);
-        circle_Anim.SetBool("push", !opposite);
+    private void CloseAll()
+    {
+        bagPanel.SetActive(false);
+        synthesisPanel.SetActive(false);
+        long_Btn.SetActive(false);
+        circle_Btn.SetActive(false);
+
+        long_Anim.SetBool("push", false);
+        circle_Anim.SetBool("push", false);
+    }
+
+    public void SetSwitchState(bool oppo)
+    {
+        InventoryManager.Instance.ResetLastSlot();
+        InventoryManager.Instance.ResetShowRegion();
+
+        SynthesisManager.Instance.ResetLastSlot();
+        SynthesisManager.Instance.ResetShowRegion();
+        
+        bagPanel.SetActive(oppo);
+        synthesisPanel.SetActive(!oppo);
+
+        long_Anim.SetBool("push", oppo);
+        circle_Anim.SetBool("push", !oppo);
     }
 }

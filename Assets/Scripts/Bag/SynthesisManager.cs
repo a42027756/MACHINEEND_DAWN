@@ -17,14 +17,12 @@ public class SynthesisManager : MonoSingleton<SynthesisManager>
     public int selectIndex;
     private int index;
 
-    private int testIndex;
+    private List<ItemBase> items;
 
     void Awake()
     {
-        selectIndex = -1;
-        testIndex = 0;
-
         Initialize();
+        ResetShowRegion();        
     }
 
     private void Initialize()
@@ -36,7 +34,7 @@ public class SynthesisManager : MonoSingleton<SynthesisManager>
             SynthesisSlot slot = child.GetComponent<SynthesisSlot>();
             gridSlots.Add(slot);
             slot.slotID = index;
-            slot.synthesisItem = InitializeItem.Instance.itemBase[index];
+            slot.synthesisItem = null;
             slot.showItemName = _showItemName;
             slot.showItemImage = _showItemImage;
             foreach(RectTransform synthesisChild in synthesisPanel)
@@ -44,6 +42,16 @@ public class SynthesisManager : MonoSingleton<SynthesisManager>
                 slot.needItems.Add(synthesisChild);
             }
             index++;
+        }
+
+        index = 0;
+        items = InitializeItem.Instance.itemHeld;
+        for(int i = 0;i < items.Count;++i)
+        {
+            if(items[i].synthesizable)
+            {
+                gridSlots[index++].synthesisItem = items[i];
+            }
         }
     }
 
@@ -82,5 +90,13 @@ public class SynthesisManager : MonoSingleton<SynthesisManager>
             gridSlots[selectIndex].UpdateNeedItems();
             InventoryManager.Instance.RefreshBag();
         }
+    }
+
+    public void ResetShowRegion()
+    {
+        selectIndex = -1;
+        
+        _showItemImage.color = new Color(1, 1, 1, 0);
+        _showItemName.text = "";
     }
 }

@@ -18,7 +18,6 @@ public class InventoryManager : MonoSingleton<InventoryManager>
 
     void Awake()
     {
-        selectIndex = -1;
         index = 0;
         currrentIndex = -1;
         foreach(RectTransform child in grid)
@@ -32,16 +31,18 @@ public class InventoryManager : MonoSingleton<InventoryManager>
             slot.showDescription = _showDescription;
             index++;
         }
+
+        ResetShowRegion();
     }
 
     void Start()
     {
-        for(index = 0;index < InitializeItem.Instance.itemBase.Count;++index)
+        for(index = 0;index < InitializeItem.Instance.itemHeld.Count;++index)
         {
-            ItemBase item = InitializeItem.Instance.itemBase[index];
+            ItemBase item = InitializeItem.Instance.itemHeld[index];
             if(item.itemNum != 0)
             {
-                AddItem(InitializeItem.Instance.itemBase[index]);
+                AddItem(InitializeItem.Instance.itemHeld[index]);
             }
         }
     }
@@ -63,7 +64,7 @@ public class InventoryManager : MonoSingleton<InventoryManager>
 
     public void PackUpBag()
     {
-        for(index = 0;index < currrentIndex;++index)
+        for(index = 0;index <= currrentIndex;++index)
         {
             if(gridSlots[index].currentItem == null)
             {
@@ -83,11 +84,44 @@ public class InventoryManager : MonoSingleton<InventoryManager>
 
     public void FillVacancy(int vacantIndex)
     {
-        gridSlots[vacantIndex].currentItem = gridSlots[currrentIndex].currentItem;
-        gridSlots[currrentIndex].currentItem = null;
+        if(vacantIndex != currrentIndex)
+        {
+            gridSlots[vacantIndex].currentItem = gridSlots[currrentIndex].currentItem;
+            gridSlots[currrentIndex].currentItem = null;
 
-        gridSlots[vacantIndex].ConfigureSlot();
-        gridSlots[currrentIndex].ConfigureSlot();
+            gridSlots[vacantIndex].ConfigureSlot();
+            gridSlots[currrentIndex].ConfigureSlot();
+        }
+        else
+        {
+            gridSlots[currrentIndex].currentItem = null;
+            gridSlots[currrentIndex].ConfigureSlot();
+        }
         currrentIndex--;
+    }
+
+    public void ResetShowRegion()
+    {
+        selectIndex = -1;
+
+        _showImage.color = new Color(1, 1, 1, 0);
+        _showName.text = "";
+        _showDescription.text = "";
+    }
+
+    public void Use()
+    {
+        if(selectIndex != -1)
+        {
+            gridSlots[selectIndex].UseItem();
+        }
+    }
+
+    public void Throw()
+    {
+        if(selectIndex != -1)
+        {
+            gridSlots[selectIndex].ThrowItem();
+        }
     }
 }

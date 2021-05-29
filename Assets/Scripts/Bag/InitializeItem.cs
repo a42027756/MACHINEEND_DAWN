@@ -4,30 +4,54 @@ using UnityEngine;
 
 public class InitializeItem : MonoSingleton<InitializeItem>
 {
-    public List<ItemBase> itemBase = new List<ItemBase>();
+    public List<Sprite> sprites = new List<Sprite>();
+    
+    public List<ItemBase> itemHeld = new List<ItemBase>();
 
     void Awake()
     {
-        AddRandomItems();
+        InitializeItems();
     }
 
-    private void AddRandomItems()
+    private void InitializeItems()
     {
-        int randnum_1, randnum_2, randnum_3;
+        Herb herb = new Herb(99);
+        Water_Drop water_Drop = new Water_Drop(99);
+        EmptyBottle bottle = new EmptyBottle(99);
+        Enhancer enhancer = new Enhancer(99);
 
-        for(int i = 0;i < itemBase.Count;i++)
+        BloodBottle bloodBottle = new BloodBottle();
+        bloodBottle.needItems.Add(herb, 1);
+        bloodBottle.needItems.Add(bottle, 1);
+
+        WaterBottle waterBottle = new WaterBottle();
+        waterBottle.needItems.Add(water_Drop, 1);
+        waterBottle.needItems.Add(bottle, 1);
+
+        BigBloodBottle bigBloodBottle = new BigBloodBottle();
+        bigBloodBottle.needItems.Add(enhancer, 1);
+        bigBloodBottle.needItems.Add(bloodBottle, 1);
+
+        BigWaterBottle bigWaterBottle = new BigWaterBottle();
+        bigWaterBottle.needItems.Add(enhancer, 1);
+        bigWaterBottle.needItems.Add(waterBottle, 1);
+
+        Food food = new Food();
+        food.needItems.Add(enhancer, 2);
+
+        itemHeld.Add(herb);
+        itemHeld.Add(water_Drop);
+        itemHeld.Add(bottle);
+        itemHeld.Add(enhancer);
+        itemHeld.Add(bloodBottle);
+        itemHeld.Add(waterBottle);
+        itemHeld.Add(bigBloodBottle);
+        itemHeld.Add(bigWaterBottle);
+        itemHeld.Add(food);
+        
+        for(int index = 0;index < itemHeld.Count;++index)
         {
-            randnum_1 = (i + Random.Range(1, 8)) % 8;
-            randnum_2 = (randnum_1 + Random.Range(1, 8)) % 8;
-            randnum_3 = (randnum_2 + Random.Range(1, 8)) % 8;
-            if(randnum_2 != i)
-            {
-                itemBase[i].needItems.Add(itemBase[randnum_2], Random.Range(1, 5));
-            }
-            if(randnum_3 != i)
-            {
-                itemBase[i].needItems.Add(itemBase[randnum_3], Random.Range(1, 5));
-            }
+            itemHeld[index].itemSprite = sprites[index];
         }
     }
 }

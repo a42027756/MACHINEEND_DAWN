@@ -35,6 +35,10 @@ public class SynthesisSlot : MonoBehaviour, IPointerClickHandler
         {
             itemImage.sprite = synthesisItem.itemSprite;
         }
+        else
+        {
+            itemImage.color = new Color(1, 1, 1, 0);
+        }
 
         for(index = 0;index < 3;++index)
         {
@@ -56,6 +60,7 @@ public class SynthesisSlot : MonoBehaviour, IPointerClickHandler
         SynthesisManager.Instance.selectIndex = slotID;
         itemImage.color = new Color(1, 1, 1, 0.8f);
 
+        showItemImage.color = new Color(1, 1, 1, 1);
         showItemName.text = synthesisItem.itemName;
         showItemImage.sprite = synthesisItem.itemSprite;
 
