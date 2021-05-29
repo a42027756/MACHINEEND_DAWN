@@ -2,23 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/Door_Vertical.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/Door_Vertical.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Anim/Door_Horizontal_open.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Anim/Door_Horizontal_open.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Anim/Door_vertical_0.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Anim/Door_vertical_0.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/DestroyableController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/DestroyableController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Anim/GameUI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Anim/GameUI/DestroyUI.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Anim/GameUI/DestroyUI.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Anim/GameUI/destroyTips.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Anim/GameUI/destroyTips.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Anim/controller.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Anim/controller.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Anim/controller_broken.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Anim/controller_broken.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Anim/controller_idle.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Anim/controller_idle.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Controller.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Controller.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Controller_unuse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Controller_unuse.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/broken_controller.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/broken_controller.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/prefab/controller_0.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/prefab/controller_0.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/Door_Horizonta.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/Door_Horizonta.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Anim/Door_Horizontal_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Anim/Door_Horizontal_0.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Anim/Door_open.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Anim/Door_open.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Door_Horizontal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Door_Horizontal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Door_vertical.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Door_vertical.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameControl/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameControl/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/controller_0.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/controller_0.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/DestroyableController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/DestroyableController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMeshPro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMeshPro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMeshPro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMeshPro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +111,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Watcher_AI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Prelogue/ShowText.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/TileExpand.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/WizardTips.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FSM/State.cs" />
@@ -115,6 +124,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameControl/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/DestroyableController.cs" />
     </changedPaths>
   </component>
@@ -201,14 +211,7 @@
       <workItem from="1622204573111" duration="7164000" />
       <workItem from="1622214301504" duration="4891000" />
       <workItem from="1622248876091" duration="16234000" />
-      <workItem from="1622299084004" duration="300000" />
-    </task>
-    <task id="LOCAL-00019" summary="NewGun">
-      <created>1621164897217</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1621164897217</updated>
+      <workItem from="1622299084004" duration="3165000" />
     </task>
     <task id="LOCAL-00020" summary="NewGun">
       <created>1621164905761</created>
@@ -546,7 +549,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622292844542</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Init Door_Controller">
+      <created>1622299472119</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1622299472119</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -581,7 +591,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Audio Init" />
     <MESSAGE value="&#10;Init DayLight" />
     <MESSAGE value="&#10;Init Collider" />
     <MESSAGE value="FSM Init" />
@@ -606,6 +615,7 @@
     <MESSAGE value="Merge" />
     <MESSAGE value="Init Map" />
     <MESSAGE value="Init Resources" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init Resources" />
+    <MESSAGE value="Init Door_Controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init Door_Controller" />
   </component>
 </project>

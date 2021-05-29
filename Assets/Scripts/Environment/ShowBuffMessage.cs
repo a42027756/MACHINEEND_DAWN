@@ -27,7 +27,7 @@ public class ShowBuffMessage : MonoBehaviour
     private void ShowPanel()
     {
         ChangeMessage();
-        if (GTime.Instance.GetGtime() == 6 && !isShowing)
+        if (GTime.Instance.GetGtime() == 6 && !isShowing && GTime.Instance.pass_day <= 4)
         {
             messagePanel.SetActive(true);
             GTime.Instance.SetGTime(7);

@@ -5,6 +5,8 @@ using UnityEngine;
 public class DestroyableController : MonoBehaviour
 {
     public int health;
+
+    public int controller;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,7 +41,9 @@ public class DestroyableController : MonoBehaviour
             { ;
                 EffectsManager.Instance.PlayExplosion(this.transform.position);
                 //todo:切换到破坏状态
-                GameManager.Instance.OpenDoor(0);
+                this.GetComponent<Animator>().SetBool("broken",true);
+                this.GetComponentInChildren<Canvas>().enabled = false;
+                GameManager.Instance.OpenDoor(controller);
             }
         }
     }
