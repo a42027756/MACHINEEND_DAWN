@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +32,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Defend_war/Spawn_monster.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Menu/Menu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/FSM.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/Game.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/Game.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EffectsManager/EffectsManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -189,21 +188,7 @@
       <workItem from="1622202307892" duration="47000" />
       <workItem from="1622204573111" duration="7164000" />
       <workItem from="1622214301504" duration="4891000" />
-      <workItem from="1622248876091" duration="12128000" />
-    </task>
-    <task id="LOCAL-00015" summary="Merge">
-      <created>1621073820110</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1621073820110</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Merge">
-      <created>1621073936398</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1621073936398</updated>
+      <workItem from="1622248876091" duration="12544000" />
     </task>
     <task id="LOCAL-00017" summary="Init">
       <created>1621089644808</created>
@@ -534,7 +519,21 @@
       <option name="project" value="LOCAL" />
       <updated>1622286952347</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Init Map">
+      <created>1622288717159</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1622288717159</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Init Map">
+      <created>1622289117958</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1622289117958</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,7 +568,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="PausePanel 2021/5/19" />
     <MESSAGE value="PausePanel" />
     <MESSAGE value="Audio Init" />
     <MESSAGE value="&#10;Init DayLight" />
@@ -594,6 +592,7 @@
     <MESSAGE value="Init Wizard" />
     <MESSAGE value="Build Init" />
     <MESSAGE value="Merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge" />
+    <MESSAGE value="Init Map" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init Map" />
   </component>
 </project>

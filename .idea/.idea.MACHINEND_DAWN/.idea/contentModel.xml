@@ -211,9 +211,7 @@
           <e p="Item" t="Include">
             <e p="InitializeItem.cs" t="Include" />
             <e p="ItemBase.cs" t="Include" />
-            <e p="UsableItem" t="Include">
-              <e p="UsableItemBase.cs" t="Include" />
-            </e>
+            <e p="SurvivalItem.cs" t="Include" />
           </e>
           <e p="MapSpawn" t="Include">
             <e p="CameraFollow.cs" t="Include" />
