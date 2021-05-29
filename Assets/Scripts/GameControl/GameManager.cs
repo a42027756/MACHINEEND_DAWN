@@ -5,6 +5,8 @@ using UnityEngine;
 public class GameManager : MonoSingleton<GameManager>
 {
     public GameObject deadPanel;
+
+    public List<GameObject> door = new List<GameObject>();
     void Start()
     {
         deadPanel.SetActive(false);
@@ -19,5 +21,10 @@ public class GameManager : MonoSingleton<GameManager>
     {
         Time.timeScale = 0;
         deadPanel.SetActive(true);
+    }
+
+    public void OpenDoor(int num)
+    {
+        door[num].GetComponent<Animator>().SetBool("open",true);
     }
 }
