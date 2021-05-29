@@ -85,7 +85,10 @@ public class GridSlot : MonoBehaviour, IPointerClickHandler
         /*
         todo: UseItem() 根据物品是否可使用，判断是否要调用物品的使用方法
         */
-        Debug.Log("Use item");
+        if(currentItem.usable)
+        {
+            currentItem.UseItem();
+        }
 
         ThrowItem();
     }

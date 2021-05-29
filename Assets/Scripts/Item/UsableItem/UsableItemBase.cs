@@ -187,12 +187,10 @@ public class BloodBottle : ItemBase
         this.usable = true;
         this.synthesizable = true;
     }
-
-    public BloodBottle(int num)
+    
+    public override void UseItem()
     {
-        this.itemNum = num;
-        this.usable = true;
-        this.synthesizable = true;
+
     }
 }
 
@@ -205,11 +203,9 @@ public class WaterBottle : ItemBase
         this.synthesizable = true;
     }
 
-    public WaterBottle(int num)
+    public override void UseItem()
     {
-        this.itemNum = num;
-        this.usable = true;
-        this.synthesizable = true;
+        
     }
 }
 
@@ -222,11 +218,9 @@ public class BigBloodBottle : ItemBase
         this.synthesizable = true;
     }
 
-    public BigBloodBottle(int num)
+    public override void UseItem()
     {
-        this.itemNum = num;
-        this.usable = true;
-        this.synthesizable = true;
+        
     }
 }
 
@@ -239,11 +233,9 @@ public class BigWaterBottle : ItemBase
         this.synthesizable = true;
     }
 
-    public BigWaterBottle(int num)
+    public override void UseItem()
     {
-        this.itemNum = num;
-        this.usable = true;
-        this.synthesizable = true;
+        
     }
 }
 
@@ -255,11 +247,9 @@ public class Food : ItemBase
         this.synthesizable = true;
     }
 
-    public Food(int num)
+    public override void UseItem()
     {
-        this.itemNum = num;
-        this.usable = true;
-        this.synthesizable = true;
+        
     }
 }
 //=========================================生存物品=======================================

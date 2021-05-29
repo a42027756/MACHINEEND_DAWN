@@ -9,6 +9,7 @@ public class SynthesisManager : MonoSingleton<SynthesisManager>
     public RectTransform grid;
     public Text _showItemName;
     public Image _showItemImage;
+    public Text _showItemDescription;
 
     public RectTransform synthesisPanel;
     public List<SynthesisSlot> gridSlots = new List<SynthesisSlot>();
@@ -37,6 +38,7 @@ public class SynthesisManager : MonoSingleton<SynthesisManager>
             slot.synthesisItem = null;
             slot.showItemName = _showItemName;
             slot.showItemImage = _showItemImage;
+            slot.showItemDescription = _showItemDescription;
             foreach(RectTransform synthesisChild in synthesisPanel)
             {
                 slot.needItems.Add(synthesisChild);
@@ -98,5 +100,6 @@ public class SynthesisManager : MonoSingleton<SynthesisManager>
         
         _showItemImage.color = new Color(1, 1, 1, 0);
         _showItemName.text = "";
+        _showItemDescription.text = "";
     }
 }

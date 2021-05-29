@@ -44,12 +44,7 @@ public class PlayerProperty : ControllerBase<PlayerProperty>, IProperty
     }
 
     public void ChangeValue(string propertyName, float increment)
-    {
-        // foreach(KeyValuePair<string, int> kv in properties)
-        // {
-        //     Debug.Log(kv.Key + kv.Value);
-        // }
-        
+    {  
         //判断条件
         properties[propertyName] += increment;
         Transition();
