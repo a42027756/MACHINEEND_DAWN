@@ -29,7 +29,7 @@ public class PlayerProperty : ControllerBase<PlayerProperty>, IProperty
         
         //将数值填写进各个属性中
         if(!properties.ContainsKey("health"))
-            properties.Add("health", 100f); 
+            properties.Add("health", 100f);
 
         if(!properties.ContainsKey("thirsty"))
             properties.Add("thirsty", 100f);
@@ -47,6 +47,9 @@ public class PlayerProperty : ControllerBase<PlayerProperty>, IProperty
     {  
         //判断条件
         properties[propertyName] += increment;
+
+        properties[propertyName] = properties[propertyName] > 100 ? 100 :　properties[propertyName];
+
         Transition();
     }
 
@@ -56,6 +59,8 @@ public class PlayerProperty : ControllerBase<PlayerProperty>, IProperty
         properties["thirsty"] = 60;
         properties["hunger"] = 60;
         properties["instrusion"] = 0;
+
+        Transition();
     }
 
     private void ValueBoxUpdate()

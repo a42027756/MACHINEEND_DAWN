@@ -33,7 +33,6 @@ public class Binder : MonoBehaviour
         PlayerController.Instance._anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
         PlayerController.Instance.movespeed = speed;
         PlayerController.Instance.pausepanel = pauspanel;
-        // myBag.SetActive(false);
 
         PlayerProperty.Instance.healthBar = health;
         PlayerProperty.Instance.waterBar = water;
