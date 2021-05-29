@@ -19,7 +19,7 @@ public class Binder : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (PlayerController.Instance.canControl)
+        if (PlayerController.Instance.canControl && PlayerController.Instance.canMove)
         {
             PlayerController.Instance.InputControl();
             PlayerProperty.Instance.Update();   

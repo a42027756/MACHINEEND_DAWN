@@ -21,6 +21,7 @@ public class PlayerController : ControllerBase<PlayerController>
     private const float flipEpsilon = 0.5f;
     public bool isAlive = true;
     public bool canControl = true;
+    public bool canMove = true;
 
     public override void Update()
     {
@@ -51,8 +52,16 @@ public class PlayerController : ControllerBase<PlayerController>
 
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                Time.timeScale = 0;
                 pausepanel.SetActive(!pausepanel.activeSelf);
+                if (pausepanel.activeSelf)
+                {
+                    Time.timeScale = 0;
+                }
+                else
+                {
+                    Time.timeScale = 1;
+                }
+
             }
         }
         

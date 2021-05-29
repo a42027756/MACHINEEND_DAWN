@@ -196,6 +196,7 @@
           </e>
           <e p="Environment" t="Include">
             <e p="GTime.cs" t="Include" />
+            <e p="hole.cs" t="Include" />
             <e p="InitDayBuff.cs" t="Include" />
             <e p="ShowBuffMessage.cs" t="Include" />
             <e p="WizardTips.cs" t="Include" />

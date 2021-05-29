@@ -20,6 +20,7 @@ public class PausePanel : MonoBehaviour
 
     public void Back2Game()
     {
+        Time.timeScale = 1;
         pausepanel.SetActive(false);
     }
 

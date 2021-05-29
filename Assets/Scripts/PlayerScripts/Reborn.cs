@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Reborn : MonoBehaviour
 {
+    public GameObject hole;
     public void RebornPlayer()
     {
         SpawnRevenger();
@@ -15,6 +16,7 @@ public class Reborn : MonoBehaviour
     private void SpawnRevenger()
     {
         Debug.Log("SpawnRevenger");
+        GameObject.Instantiate(hole, PlayerController.Instance._transform.position, Quaternion.identity).transform.SetParent(GameObject.Find("Enemy").transform);
     }
 
     private void LoseProperties()

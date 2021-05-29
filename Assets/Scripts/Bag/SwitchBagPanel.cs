@@ -41,6 +41,8 @@ public class SwitchBagPanel : MonoBehaviour
     {
         if(isOpen)
         {
+            PlayerController.Instance.canMove = true;
+            PlayerController.Instance._rigidbody2D.velocity = new Vector2(0, 0);
             bagPanel.SetActive(false);
             synthesisPanel.SetActive(false);
             long_Btn.SetActive(false);
@@ -51,6 +53,8 @@ public class SwitchBagPanel : MonoBehaviour
         }
         else
         {
+            PlayerController.Instance.canMove = false;
+            PlayerController.Instance._rigidbody2D.velocity = new Vector2(0, 0);
             opposite = true;
             bagPanel.SetActive(opposite);
             synthesisPanel.SetActive(!opposite);
