@@ -9,12 +9,16 @@ public class WeaponSlot : MonoSingleton<WeaponSlot>
     public Weapon weapon;
     private SpriteRenderer spriteRenderer;
 
+    public bool ceaseFire;
+
     private Vector2 difference;
 
     void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        ceaseFire = false;
     }
     
     void Start()
@@ -25,27 +29,29 @@ public class WeaponSlot : MonoSingleton<WeaponSlot>
 
     void Update()
     {
-        WeaponRotation();
-
-        weapon.Shooting();
-
-        //---------------test----------------
-        if(Input.GetMouseButtonDown(1))
+        if(!ceaseFire)
         {
-            if (WeaponPool.Instance.canSwitch)
+            WeaponRotation();
+
+            weapon.Shooting();
+
+            //---------------test----------------
+            if(Input.GetMouseButtonDown(1))
             {
-                WeaponPool.Instance.GetNextWeapon();
+                if (WeaponPool.Instance.canSwitch)
+                {
+                    WeaponPool.Instance.GetNextWeapon();
+                    Configure();
+                }
+            }
+
+            if(Input.GetMouseButtonDown(2))
+            {
+                WeaponPool.Instance.ChangeWeapon(1, 3);
                 Configure();
             }
-            
+            //---------------test----------------
         }
-
-        if(Input.GetMouseButtonDown(2))
-        {
-            WeaponPool.Instance.ChangeWeapon(1, 3);
-            Configure();
-        }
-        //---------------test----------------
     }
 
     //武器跟随鼠标旋转

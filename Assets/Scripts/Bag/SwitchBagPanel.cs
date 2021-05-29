@@ -16,13 +16,11 @@ public class SwitchBagPanel : MonoBehaviour
     {
         isOpen = false;
         opposite = true;
-        bagPanel.SetActive(false);
-        synthesisPanel.SetActive(false);
-        long_Btn.SetActive(false);
-        circle_Btn.SetActive(false);
 
         long_Anim = long_Btn.GetComponent<Animator>();
         circle_Anim = circle_Btn.GetComponent<Animator>();
+
+        CloseAll();
     }
 
     void Update()
@@ -30,10 +28,6 @@ public class SwitchBagPanel : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.B))
         {
             CallBag();
-        }
-        if(isOpen && Input.GetButtonDown("Horizontal"))
-        {
-            SwitchPanel();
         }
     }
 
@@ -43,37 +37,49 @@ public class SwitchBagPanel : MonoBehaviour
         {
             PlayerController.Instance.canMove = true;
             PlayerController.Instance._rigidbody2D.velocity = new Vector2(0, 0);
-            bagPanel.SetActive(false);
-            synthesisPanel.SetActive(false);
-            long_Btn.SetActive(false);
-            circle_Btn.SetActive(false);
+            
+            CloseAll();
 
-            long_Anim.SetBool("push", false);
-            circle_Anim.SetBool("push", false);
+            WeaponSlot.Instance.ceaseFire = false;
         }
         else
         {
             PlayerController.Instance.canMove = false;
             PlayerController.Instance._rigidbody2D.velocity = new Vector2(0, 0);
-            opposite = true;
-            bagPanel.SetActive(opposite);
-            synthesisPanel.SetActive(!opposite);
             long_Btn.SetActive(true);
             circle_Btn.SetActive(true);
 
-            long_Anim.SetBool("push", opposite);
-            circle_Anim.SetBool("push", !opposite);
+            opposite = true;
+            SetOppositeState(opposite);
+
+            WeaponSlot.Instance.ceaseFire = true;
         }
         isOpen = !isOpen;
     }
 
-    private void SwitchPanel()
+    private void CloseAll()
     {
-        opposite = !opposite;
-        bagPanel.SetActive(opposite);
-        synthesisPanel.SetActive(!opposite);
+        long_Anim.SetBool("push", false);
+        circle_Anim.SetBool("push", false);
 
-        long_Anim.SetBool("push", opposite);
-        circle_Anim.SetBool("push", !opposite);
+        bagPanel.SetActive(false);
+        synthesisPanel.SetActive(false);
+        long_Btn.SetActive(false);
+        circle_Btn.SetActive(false);
+    }
+
+    public void SetOppositeState(bool oppo)
+    {
+        InventoryManager.Instance.ResetLastSlot();
+        InventoryManager.Instance.ResetShowRegion();
+
+        SynthesisManager.Instance.ResetLastSlot();
+        SynthesisManager.Instance.ResetShowRegion();
+
+        bagPanel.SetActive(oppo);
+        synthesisPanel.SetActive(!oppo);
+
+        long_Anim.SetBool("push", oppo);
+        circle_Anim.SetBool("push", !oppo);
     }
 }
