@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro.Examples;
-using UnityEditor.Compilation;
 using UnityEngine;
 
 public class Reborn : MonoBehaviour
