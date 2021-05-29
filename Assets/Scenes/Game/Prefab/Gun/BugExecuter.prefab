@@ -91,7 +91,7 @@ MonoBehaviour:
   canFire: 0
   damageValue: 5
   interval: 0.3
-  bulletOffset: 0
+  bulletOffset: 0.1
   bulletSpeed: 18
   isFired: 0
 --- !u!82 &7953654098865074030
