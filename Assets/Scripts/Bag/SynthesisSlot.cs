@@ -10,6 +10,7 @@ public class SynthesisSlot : MonoBehaviour, IPointerClickHandler
     public ItemBase synthesisItem;
     public Text showItemName;
     public Image showItemImage;
+    public Text showItemDescription;
     public List<RectTransform> needItems = new List<RectTransform>();
 
     private Image itemImage;
@@ -35,6 +36,10 @@ public class SynthesisSlot : MonoBehaviour, IPointerClickHandler
         {
             itemImage.sprite = synthesisItem.itemSprite;
         }
+        else
+        {
+            itemImage.color = new Color(1, 1, 1, 0);
+        }
 
         for(index = 0;index < 3;++index)
         {
@@ -56,8 +61,10 @@ public class SynthesisSlot : MonoBehaviour, IPointerClickHandler
         SynthesisManager.Instance.selectIndex = slotID;
         itemImage.color = new Color(1, 1, 1, 0.8f);
 
+        showItemImage.color = new Color(1, 1, 1, 1);
         showItemName.text = synthesisItem.itemName;
         showItemImage.sprite = synthesisItem.itemSprite;
+        showItemDescription.text = synthesisItem.itemDescription;
 
         UpdateNeedItems();
     }

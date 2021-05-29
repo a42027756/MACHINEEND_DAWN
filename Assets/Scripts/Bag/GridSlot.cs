@@ -13,6 +13,9 @@ public class GridSlot : MonoBehaviour, IPointerClickHandler
     public Text showDescription;
 
     //自身子物体组件
+    public Sprite backgroundSprite_vacant, backgroundSprite_occupied;
+    private Image backgroundImage;
+
     private Image itemImage;
     private Text itemNum;
     
@@ -22,6 +25,7 @@ public class GridSlot : MonoBehaviour, IPointerClickHandler
 
     void Awake()
     {
+        backgroundImage = GetComponent<Image>();
         itemImage = GetComponentsInChildren<Image>()[1];
         itemNum = GetComponentInChildren<Text>();
 
@@ -31,17 +35,8 @@ public class GridSlot : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if(eventData.pointerId == -2 && currentItem != null)
+        if(eventData.pointerId == -1 && currentItem != null)
         {
-            //右击物品展开使用菜单
-
-            //============Test=============
-            UseItem();
-            //============Test=============
-        }
-        else if(eventData.pointerId == -1 && currentItem != null)
-        {
-            //左键点击在左侧显示物品信息
             ShowMessage();
         }
     }
@@ -50,6 +45,8 @@ public class GridSlot : MonoBehaviour, IPointerClickHandler
     {
         currentItem = item;
         
+        backgroundImage.sprite = backgroundSprite_occupied;
+
         ConfigureSlot();
     }
 
@@ -57,6 +54,7 @@ public class GridSlot : MonoBehaviour, IPointerClickHandler
     {
         if(currentItem != null)
         {
+            backgroundImage.sprite = backgroundSprite_occupied;
             itemImage.sprite = currentItem.itemSprite;
             itemNum.text = currentItem.itemNum.ToString();
 
@@ -65,23 +63,8 @@ public class GridSlot : MonoBehaviour, IPointerClickHandler
         }
         else
         {
-            itemImage.color = new Color(1, 1, 1, 0);
-            itemNum.color = new Color(1, 1, 1, 0);
+            ResetSlot();
         }
-    }
-
-    public void UseItem()
-    {
-        /*
-        todo: UseItem() 根据物品是否可使用，判断是否要调用物品的使用方法
-        */
-
-        currentItem.itemNum--;
-        RefreshSlot();
-
-        InventoryManager.Instance.PackUpBag();
-        InventoryManager.Instance.ResetLastSlot();
-        InventoryManager.Instance.selectIndex = -1;
     }
 
     public void ShowMessage()
@@ -90,27 +73,54 @@ public class GridSlot : MonoBehaviour, IPointerClickHandler
         InventoryManager.Instance.selectIndex = slotID;
 
         itemImage.color = new Color(1, 1, 1, 0.8f);
+
+        showImage.color = new Color(1, 1, 1, 1);
         showImage.sprite = currentItem.itemSprite;
         showName.text = currentItem.itemName;
         showDescription.text = currentItem.itemDescription;
     }
 
-    public void ResetSlot()
+    public void UseItem()
     {
-        currentItem = null;
+        /*
+        todo: UseItem() 根据物品是否可使用，判断是否要调用物品的使用方法
+        */
+        if(currentItem.usable)
+        {
+            currentItem.UseItem();
+        }
 
-        itemImage.color = new Color(1, 1, 1, 0);
-        itemNum.color = new Color(0, 0, 0, 0);
+        ThrowItem();
+    }
+
+    public void ThrowItem()
+    {
+        currentItem.itemNum--;
+        RefreshSlot();
+
+        InventoryManager.Instance.PackUpBag();
     }
 
     public void RefreshSlot()
     {
-        //有bug
-        itemNum.text = currentItem.itemNum.ToString();
+        if(currentItem != null)
+        {
+            itemNum.text = currentItem.itemNum.ToString();
+        }
 
         if(currentItem.itemNum == 0)
         {
+            currentItem = null;
             ResetSlot();
         }
+    }
+
+    public void ResetSlot()
+    {
+        InventoryManager.Instance.ResetShowRegion();
+
+        backgroundImage.sprite = backgroundSprite_vacant;
+        itemImage.color = new Color(1, 1, 1, 0);
+        itemNum.color = new Color(0, 0, 0, 0);
     }
 }
