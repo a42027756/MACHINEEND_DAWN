@@ -61,8 +61,14 @@ public class WeaponSlot : MonoSingleton<WeaponSlot>
         float rotateByZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, rotateByZ);
 
-        if(transform.eulerAngles.z >= 90f && transform.eulerAngles.z <= 270f) spriteRenderer.flipY = true;    
-        else spriteRenderer.flipY = false;
+        if(transform.eulerAngles.z >= 90f && transform.eulerAngles.z <= 270f) 
+        {
+            spriteRenderer.flipY = true;
+        }
+        else
+        {
+            spriteRenderer.flipY = false;
+        }
     }
 
     //配置武器信息
