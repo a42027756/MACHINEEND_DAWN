@@ -2,134 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/hole.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/hole.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/5e4afd7528de72bb9e64a1eceb3700b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/5e4afd7528de72bb9e64a1eceb3700b.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/player/hole.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/player/hole.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/player/尸体变械奴隶.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/player/尸体变械奴隶.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/player/静止状态下血奴（生产怪物）.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/player/静止状态下血奴（生产怪物）.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/player/静止状态下血奴（生产怪物）_0.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/player/静止状态下血奴（生产怪物）_0.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Anim/Ash01.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Anim/Ash01.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Anim/Ash02.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Anim/Ash02.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Anim/Ash02.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Anim/Ash02.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Anim/Ash03.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Anim/Ash03.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Anim/Ash04.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Anim/Ash04.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Anim/Ash05.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Anim/Ash05.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Anim/ash01.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Anim/ash01.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Anim/ash03.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Anim/ash03.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Anim/ash04.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Anim/ash04.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Anim/ash05.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Anim/ash05.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Ash01.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Ash01.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Ash02.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Ash02.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Ash03.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Ash03.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Ash04.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Ash04.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Ash05.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Ash05.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Prefab/Ash01.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Prefab/Ash01.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Prefab/Ash02.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Prefab/Ash02.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Prefab/Ash03.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Prefab/Ash03.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Prefab/Ash04.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Prefab/Ash04.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Prefab/Ash05.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/Prefab/Ash05.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/入侵者残骸.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/入侵者残骸.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/地面 00.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/地面 00.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/地面 00.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/地面 00.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/地面 01.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/地面 01.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/地面 01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/地面 01.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/地面.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/地面.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/地面.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/地面.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/废墟元素.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/废墟元素.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/废墟元素22.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/废墟元素22.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/废墟元素3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/废墟元素3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/废墟元素4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/废墟元素4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/废墟元素5png.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/室外瓦片/废墟元素5png.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/墙壁侧面-export.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/墙壁侧面-export.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/墙壁侧面-export.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/墙壁侧面-export.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/墙壁顶面-export.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/墙壁顶面-export.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/墙壁顶面-export.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/墙壁顶面-export.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/室内地板1-export.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/室内地板1-export.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/室内地板1-export.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/室内地板1-export.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/室内地板2png-export.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/室内地板2png-export.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/室内地板2png-export.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/室内地板2png-export.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/室内地板3png-export.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/室内地板3png-export.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/室内地板3png-export.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/室内地板3png-export.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/室内地板4png-export.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/室内地板4png-export.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/室内地板4png-export.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/室内地板4png-export.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/室内地板5png-export.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/室内地板5png-export.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/室内地板5png-export.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/屋内瓦片/室内地板5png-export.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/hole.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/增强剂-export.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/增强剂-export.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/大蓝瓶-export.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/大蓝瓶-export.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/大血瓶-export.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/大血瓶-export.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/水滴-export.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/水滴-export.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/空瓶子-export.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/空瓶子-export.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/药草-export.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/药草-export.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/蓝瓶-export.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/蓝瓶-export.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/血瓶-export.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/血瓶-export.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/食物-export.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/食物-export.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/player/player_Anim/player_Dead.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/player/player_Anim/player_Dead.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/tile/TestPalette.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/tile/TestPalette.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bag/SwitchBagPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bag/SwitchBagPanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Reborn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Reborn.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/PausePanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PausePanel.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,13 +25,16 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/Town.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/WizardTips.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Game/Rotate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/Game.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/hole.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameControl/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/Game.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Watcher_AI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Defend_war/Spawn_monster.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Menu/Menu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/FSM.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/Game.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EffectsManager/EffectsManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scripts/PlayerScripts/Binder.cs" root0="SKIP_HIGHLIGHTING" />
@@ -168,6 +44,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectSpawn.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/Game.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CDA0DA9E-454B-4A0D-9B19-813AB03014ED/83/b396fabd/Debug.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/IState.cs" root0="FORCE_HIGHLIGHTING" />
@@ -177,7 +54,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/BulletPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/enum_test.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/Direction.cs" />
       <option value="$PROJECT_DIR$/Assets/Scenes/Logo/script/SwitchtoMenu.cs" />
@@ -228,6 +104,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/hole.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/PausePanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sT92pLE3Aucix7W6jstCeY0cFP" />
@@ -312,21 +189,7 @@
       <workItem from="1622202307892" duration="47000" />
       <workItem from="1622204573111" duration="7164000" />
       <workItem from="1622214301504" duration="4891000" />
-      <workItem from="1622248876091" duration="9620000" />
-    </task>
-    <task id="LOCAL-00013" summary="LoadScene">
-      <created>1621068720098</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1621068720098</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Merge">
-      <created>1621073622743</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1621073622743</updated>
+      <workItem from="1622248876091" duration="12128000" />
     </task>
     <task id="LOCAL-00015" summary="Merge">
       <created>1621073820110</created>
@@ -657,7 +520,21 @@
       <option name="project" value="LOCAL" />
       <updated>1622249242786</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Build Init">
+      <created>1622285059008</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1622285059008</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Merge">
+      <created>1622286952347</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1622286952347</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -714,9 +591,9 @@
     <MESSAGE value="Debug Flying Enemy" />
     <MESSAGE value="Upgrade Sprite" />
     <MESSAGE value="Init DeadPanel" />
-    <MESSAGE value="Merge" />
     <MESSAGE value="Init Wizard" />
     <MESSAGE value="Build Init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Build Init" />
+    <MESSAGE value="Merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge" />
   </component>
 </project>
