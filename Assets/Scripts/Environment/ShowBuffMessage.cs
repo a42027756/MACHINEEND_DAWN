@@ -26,13 +26,17 @@ public class ShowBuffMessage : MonoBehaviour
 
     private void ShowPanel()
     {
-        ChangeMessage();
-        if (GTime.Instance.GetGtime() == 6 && !isShowing && GTime.Instance.pass_day <= 4)
+        if (GTime.Instance.pass_day <= 4)
         {
-            messagePanel.SetActive(true);
-            GTime.Instance.SetGTime(7);
-            StartCoroutine(AutoClosePanel());
+            ChangeMessage();
+            if (GTime.Instance.GetGtime() == 6 && !isShowing)
+            {
+                messagePanel.SetActive(true);
+                GTime.Instance.SetGTime(7);
+                StartCoroutine(AutoClosePanel());
+            }
         }
+        
     }
 
     private void ChangeMessage()

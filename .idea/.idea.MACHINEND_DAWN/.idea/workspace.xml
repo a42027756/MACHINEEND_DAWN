@@ -2,33 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Anim/GameUI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Anim/GameUI/DestroyUI.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Anim/GameUI/DestroyUI.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Anim/GameUI/destroyTips.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Anim/GameUI/destroyTips.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Anim/controller.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Anim/controller.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Anim/controller_broken.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Anim/controller_broken.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Anim/controller_idle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Anim/controller_idle.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Controller.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Controller.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Controller_unuse.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Controller_unuse.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/broken_controller.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/broken_controller.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/prefab/controller_0.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/prefab/controller_0.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Anim/GameUI/EscapeUI.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Anim/GameUI/EscapeUI.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Anim/GameUI/escape_anim.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Anim/GameUI/escape_anim.anim.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/controller_0.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Environment/controller_0.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/DestroyableController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/DestroyableController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMeshPro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMeshPro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMeshPro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMeshPro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Defend_war/Spawn_monster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Defend_war/Spawn_monster.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +84,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy_Bullet.cs" />
       <option value="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Effects/destroySelf.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/EffectsManager/EffectsManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Defend_war/Spawn_monster.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerProperty.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Watcher_AI.cs" />
@@ -126,6 +104,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/GameControl/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/DestroyableController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Defend_war/Spawn_monster.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sT92pLE3Aucix7W6jstCeY0cFP" />
@@ -211,21 +190,7 @@
       <workItem from="1622204573111" duration="7164000" />
       <workItem from="1622214301504" duration="4891000" />
       <workItem from="1622248876091" duration="16234000" />
-      <workItem from="1622299084004" duration="3165000" />
-    </task>
-    <task id="LOCAL-00020" summary="NewGun">
-      <created>1621164905761</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1621164905761</updated>
-    </task>
-    <task id="LOCAL-00021" summary="NewGun">
-      <created>1621164920533</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1621164920533</updated>
+      <workItem from="1622299084004" duration="5566000" />
     </task>
     <task id="LOCAL-00022" summary="Debug_MapSpawn">
       <created>1621167044402</created>
@@ -556,7 +521,21 @@
       <option name="project" value="LOCAL" />
       <updated>1622299472119</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Init Decorates">
+      <created>1622304228456</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1622304228456</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Init Decorates">
+      <created>1622304235308</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1622304235308</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -591,7 +570,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="&#10;Init DayLight" />
     <MESSAGE value="&#10;Init Collider" />
     <MESSAGE value="FSM Init" />
     <MESSAGE value="Init ChaseState" />
@@ -616,6 +594,7 @@
     <MESSAGE value="Init Map" />
     <MESSAGE value="Init Resources" />
     <MESSAGE value="Init Door_Controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init Door_Controller" />
+    <MESSAGE value="Init Decorates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init Decorates" />
   </component>
 </project>

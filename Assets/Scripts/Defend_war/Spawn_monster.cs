@@ -8,9 +8,7 @@ public class Spawn_monster : MonoBehaviour
     public GameObject parent;
     
     [SerializeField] private bool isBegin;
-
-    public GameObject door;
-
+    
     public Transform spawn_01,spawn_02,spawn_03,spawn_04;
 
     private Vector3 spawnPlace_01,spawnPlace_02,spawnPlace_03,spawnPlace_04;
@@ -31,11 +29,16 @@ public class Spawn_monster : MonoBehaviour
 
     public BoxCollider2D box;
 
+    public PolygonCollider2D enterBox;
+
     public List<Collider2D> colliderList = new List<Collider2D>();
+
+    private int totalSpawn = 0;
+
+    private bool isWin;
     // Start is called before the first frame update
     void Start()
     {
-        door.SetActive(false);
         interval = spawnInterval;
         spawnPlace_01 = spawn_01.position;
         spawnPlace_02 = spawn_02.position;
@@ -48,19 +51,26 @@ public class Spawn_monster : MonoBehaviour
     void Update()
     {
         totalSpawnNum = CountCreatures();
-        SpawnMonster(spawnPlace_01,monsterList[0]);
-        SpawnMonster(spawnPlace_02,monsterList[0]);
-        SpawnMonster(spawnPlace_03,monsterList[0]);
-        SpawnMonster(spawnPlace_04,monsterList[0]);
+        isWin = Win();
+        if (!isWin)
+        {
+            SpawnMonster(spawnPlace_01,monsterList[0]);
+            SpawnMonster(spawnPlace_02,monsterList[0]);
+            SpawnMonster(spawnPlace_03,monsterList[0]);
+            SpawnMonster(spawnPlace_04,monsterList[0]);
+
+        }
+        
     }
 
     private void SpawnMonster(Vector3 spawnPos,GameObject monster)
     {
-        if (!isSpawning && totalSpawnNum < spawnLimit && isBegin && GTime.Instance.pass_day == 3)
+        if (!isSpawning && totalSpawnNum < spawnLimit && isBegin)
         {
             if (canSpawn())
             {
                 GameObject.Instantiate(monster, spawnPos, Quaternion.identity).transform.SetParent(parent.transform);
+                totalSpawn++;
                 interval = spawnInterval;
             }  
         }
@@ -78,6 +88,11 @@ public class Spawn_monster : MonoBehaviour
             {
                 spawnNum++;
             }
+
+            if (collider2D.transform.CompareTag("Player") && GTime.Instance.pass_day == 2)
+            {
+                isBegin = true;
+            }
         }
 
         return spawnNum;
@@ -85,7 +100,7 @@ public class Spawn_monster : MonoBehaviour
 
     private bool canSpawn()
     {
-        if (interval > Epsilon)
+        if (interval > Epsilon && isWin)
         {
             interval -= Time.deltaTime;
             return false;
@@ -94,12 +109,9 @@ public class Spawn_monster : MonoBehaviour
         return true;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private bool Win()
     {
-        if (other.CompareTag("Player") && GTime.Instance.pass_day == 3)
-        {
-            isBegin = true;
-            door.SetActive(true);   
-        }
+        return (totalSpawn >= 60 || GTime.Instance.pass_day >= 3);
     }
+    
 }
