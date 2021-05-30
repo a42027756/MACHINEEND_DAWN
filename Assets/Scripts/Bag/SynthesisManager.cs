@@ -81,7 +81,7 @@ public class SynthesisManager : MonoSingleton<SynthesisManager>
             ItemBase item = gridSlots[selectIndex].synthesisItem;
             if(item.itemNum == 0)
             {
-                InventoryManager.Instance.AddItem(item);
+                InventoryManager.Instance.AddItem(item, item.itemNum);
             }
             item.itemNum++;
             foreach(KeyValuePair<ItemBase, int> pair in item.needItems)

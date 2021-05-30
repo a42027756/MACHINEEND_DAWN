@@ -11,6 +11,7 @@ public class InventoryManager : MonoSingleton<InventoryManager>
     public Text _showName;
     public Text _showDescription;
     public List<GridSlot> gridSlots = new List<GridSlot>();
+    public List<ItemBase> items;
 
     public int selectIndex;         //上一个被选中的物品，用于取消被选中动画
     private int index;              //用于遍历背包格子
@@ -37,20 +38,32 @@ public class InventoryManager : MonoSingleton<InventoryManager>
 
     void Start()
     {
-        for(index = 0;index < InitializeItem.Instance.itemHeld.Count;++index)
+        items = InitializeItem.Instance.itemHeld;
+        for(index = 0;index < items.Count;++index)
         {
-            ItemBase item = InitializeItem.Instance.itemHeld[index];
+            ItemBase item = items[index];
             if(item.itemNum != 0)
             {
-                AddItem(InitializeItem.Instance.itemHeld[index]);
+                AddItem(items[index], items[index].itemNum);
             }
         }
     }
 
-    public void AddItem(ItemBase item)
+    public void AddItem(ItemBase item, int num)
     {
+        for(index = 0;index <= currrentIndex;++index)
+        {
+            if(gridSlots[index].currentItem.itemName == item.itemName)
+            {
+                gridSlots[index].currentItem.itemNum += num;
+                gridSlots[index].RefreshSlot();
+                return;
+            }
+        }
+        
+        items[item.itemID].itemNum = num;
         currrentIndex++;
-        gridSlots[currrentIndex].AddItem(item);
+        gridSlots[currrentIndex].AddItem(items[item.itemID], num);
     }
 
     public void RefreshBag()
