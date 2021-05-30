@@ -41,7 +41,7 @@ public class GridSlot : MonoBehaviour, IPointerClickHandler
         }
     }
 
-    public void AddItem(ItemBase item)
+    public void AddItem(ItemBase item, int num)
     {
         currentItem = item;
         
