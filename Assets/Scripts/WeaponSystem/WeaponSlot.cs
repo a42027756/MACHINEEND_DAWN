@@ -9,7 +9,6 @@ public class WeaponSlot : MonoSingleton<WeaponSlot>
     public Weapon weapon;
     private SpriteRenderer spriteRenderer;
 
-    public float angleOffset;
     public bool ceaseFire;
 
     private Vector2 difference;
@@ -58,18 +57,17 @@ public class WeaponSlot : MonoSingleton<WeaponSlot>
     //武器跟随鼠标旋转
     private void WeaponRotation()
     {
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        difference = mousePos - player.transform.position;
-        float angle = Vector2.Angle(Vector2.up, difference);
-        float rotateAngle = angleOffset - angle;
+        difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - player.transform.position;
+        float rotateByZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0, 0, rotateByZ);
 
-        if(mousePos.x < player.transform.position.x)
+        if(transform.eulerAngles.z >= 90f && transform.eulerAngles.z <= 270f) 
         {
-            transform.rotation = Quaternion.Euler(0, 180, rotateAngle);
+            spriteRenderer.flipY = true;
         }
         else
         {
-            transform.rotation = Quaternion.Euler(0, 0, rotateAngle);
+            spriteRenderer.flipY = false;
         }
     }
 

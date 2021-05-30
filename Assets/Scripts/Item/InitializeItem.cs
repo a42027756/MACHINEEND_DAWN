@@ -15,22 +15,22 @@ public class InitializeItem : MonoSingleton<InitializeItem>
     private void InitializeItems()
     {
         //药草
-        Herb herb = new Herb(90);
+        Herb herb = new Herb(99);
         herb.itemName = "药草";
         herb.itemDescription = "合成材料，可用于合成血瓶";
         
         //水滴
-        Water_Drop water_Drop = new Water_Drop(90);
+        Water_Drop water_Drop = new Water_Drop(99);
         water_Drop.itemName = "水滴";
         water_Drop.itemDescription = "合成材料，可用于合成水瓶";
         
         //空瓶
-        EmptyBottle bottle = new EmptyBottle(90);
+        EmptyBottle bottle = new EmptyBottle(99);
         bottle.itemName = "空瓶";
         bottle.itemDescription = "合成血瓶和水瓶的必备材料";
         
         //增强剂
-        Enhancer enhancer = new Enhancer(90);
+        Enhancer enhancer = new Enhancer(99);
         enhancer.itemName = "增强剂";
         enhancer.itemDescription = "可用于合成大血瓶、大水瓶和食物";
 
@@ -81,7 +81,6 @@ public class InitializeItem : MonoSingleton<InitializeItem>
         for(int index = 0;index < itemHeld.Count;++index)
         {
             itemHeld[index].itemSprite = sprites[index];
-            itemHeld[index].itemID = index;
         }
     }
 }
