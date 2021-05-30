@@ -100,8 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPre: {fileID: 351239500669637674, guid: 385935a7eabff2d4785dabb99d61aa3a,
     type: 3}
-  bulletSprite: {fileID: -3535019206590370605, guid: ca288e7a6e7b8e040902d9f9235349dd,
-    type: 3}
+  bulletSprite: {fileID: 21300000, guid: 67271c07cacfc7343ac3e25c6879a576, type: 3}
   angleOffset: 125
   damage: -5
   interval: 0.3
