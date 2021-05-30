@@ -22,6 +22,7 @@ public class PlayerController : ControllerBase<PlayerController>
     public bool isAlive = true;
     public bool canControl = true;
     public bool canMove = true;
+    public bool isUnderAttack = false;
 
     public override void Update()
     {
@@ -106,4 +107,5 @@ public class PlayerController : ControllerBase<PlayerController>
             return flip.right;
         }
     }
+    
 }
