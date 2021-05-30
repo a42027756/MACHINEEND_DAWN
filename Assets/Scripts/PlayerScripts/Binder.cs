@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,12 +9,14 @@ public class Binder : MonoBehaviour
     [HideInInspector] public Animator myAnim;
     public GameObject pauspanel;
     public float speed;
+    public GameObject bleeding;
 
     public Image health, water, hunger, invade;
 
     private void Update()
     {
         PlayerController.Instance.Update();
+        FlashColor();
         
     }
 
@@ -42,7 +45,24 @@ public class Binder : MonoBehaviour
         
         PlayerProperty.Instance.InitProperties();
     }
+    
+    private void FlashColor()
+    {
+        if (PlayerController.Instance.isUnderAttack == true)
+        {
+            PlayerController.Instance._transform.GetComponent<SpriteRenderer>().color = Color.black;
+            bleeding.GetComponentInChildren<ParticleSystem>().Play();
+            StartCoroutine(Flash());
+        }
+    }
 
+    IEnumerator Flash()
+    {
+        yield return new WaitForSeconds(0.1f);
+        PlayerController.Instance.isUnderAttack = false;
+        PlayerController.Instance._transform.GetComponent<SpriteRenderer>().color = Color.white;
+    }
+    
     private void UpdatebyTenSec()
     {
         

@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/invade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/invade.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy_Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy_Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectInTile.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/DrawRoad.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/Town.cs" />
       <option value="$PROJECT_DIR$/Assets/Scenes/Menu/Menu.cs" />
@@ -72,9 +72,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/FSM/FSM.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/Weapon.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/WeaponSlot.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/WeaponPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/InitDatBuff.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy_Bullet.cs" />
       <option value="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Effects/destroySelf.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/EffectsManager/EffectsManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" />
@@ -83,13 +81,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Prelogue/ShowText.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/TileExpand.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FSM/State.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/CallBag.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Bag/SwitchBagPanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Reborn.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/hole.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/PausePanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/DestroyableController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/CameraFollow.cs" />
@@ -103,6 +99,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Clock.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/invade.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/WeaponPool.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/FlashColor.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy_Bullet.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sT92pLE3Aucix7W6jstCeY0cFP" />
@@ -191,21 +192,7 @@
       <workItem from="1622299084004" duration="5913000" />
       <workItem from="1622343911216" duration="2751000" />
       <workItem from="1622354971971" duration="1804000" />
-      <workItem from="1622357725587" duration="5249000" />
-    </task>
-    <task id="LOCAL-00025" summary="GTime Manager">
-      <created>1621313427079</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1621313427079</updated>
-    </task>
-    <task id="LOCAL-00026" summary="BuildTest 2021/5/19">
-      <created>1621411482852</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1621411482852</updated>
+      <workItem from="1622357725587" duration="10590000" />
     </task>
     <task id="LOCAL-00027" summary="PausePanel 2021/5/19">
       <created>1621413160319</created>
@@ -536,7 +523,21 @@
       <option name="project" value="LOCAL" />
       <updated>1622360341573</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="Init Clock">
+      <created>1622363977081</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1622363977081</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Init particles">
+      <created>1622365764836</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1622365764836</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -571,8 +572,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Init ChaseState" />
-    <MESSAGE value="Init Sight" />
     <MESSAGE value="Update UI" />
     <MESSAGE value="Init Item" />
     <MESSAGE value="Init Attack" />
@@ -596,6 +595,8 @@
     <MESSAGE value="Init Decorates" />
     <MESSAGE value="Init DefendWar" />
     <MESSAGE value="Debug Map" />
-    <option name="LAST_COMMIT_MESSAGE" value="Debug Map" />
+    <MESSAGE value="Init Clock" />
+    <MESSAGE value="Init particles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init particles" />
   </component>
 </project>

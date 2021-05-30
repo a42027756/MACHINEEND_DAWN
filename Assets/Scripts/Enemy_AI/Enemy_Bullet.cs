@@ -14,8 +14,10 @@ public class Enemy_Bullet : MonoBehaviour
             if(other.CompareTag("Player"))
             {
                 PlayerProperty.Instance.ChangeValue("health", bulletEnemyDamage * GTime.Instance.hurtTimes);
+                PlayerController.Instance.isUnderAttack = true;
             }
             EnemyBulletPool.Instance.ReturnPool(gameObject);
         }  
     }
+    
 }
