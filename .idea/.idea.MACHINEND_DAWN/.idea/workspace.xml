@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge" />
+    <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/invade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/invade.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,27 +27,22 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/Town.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/WizardTips.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Game/Rotate.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/Game.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/hole.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameControl/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/Game.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Watcher_AI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Defend_war/Spawn_monster.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Menu/Menu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/FSM.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/Game.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/Game.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EffectsManager/EffectsManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scripts/PlayerScripts/Binder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Game/sprite/Effects/destroySelf.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/State.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectInTile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/invade.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectSpawn.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/Game.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CDA0DA9E-454B-4A0D-9B19-813AB03014ED/83/b396fabd/Debug.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/IState.cs" root0="FORCE_HIGHLIGHTING" />
@@ -53,11 +52,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/enum_test.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/Direction.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scenes/Logo/script/SwitchtoMenu.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/PerlinTest.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectSpawn.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectInTile.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/DrawRoad.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/Town.cs" />
@@ -76,7 +70,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Item/UsableItem/UsableItemBase.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Bag/Item.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FSM/FSM.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/CameraFollow.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/Weapon.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/WeaponSlot.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/WeaponPool.cs" />
@@ -84,18 +77,12 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy_Bullet.cs" />
       <option value="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Effects/destroySelf.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/EffectsManager/EffectsManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Defend_war/Spawn_monster.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameControl/GameManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerProperty.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Watcher_AI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Prelogue/ShowText.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/TileExpand.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Environment/WizardTips.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FSM/State.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/CallBag.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Bag/SwitchBagPanel.cs" />
@@ -104,6 +91,18 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/PausePanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Environment/DestroyableController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/CameraFollow.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Defend_war/Spawn_monster.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Environment/InitDayBuff.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerProperty.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameControl/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Environment/WizardTips.cs" />
+      <option value="$PROJECT_DIR$/Assets/Resources/Font/汉字.txt" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Clock.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Environment/invade.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sT92pLE3Aucix7W6jstCeY0cFP" />
@@ -188,56 +187,11 @@
       <workItem from="1622202307892" duration="47000" />
       <workItem from="1622204573111" duration="7164000" />
       <workItem from="1622214301504" duration="4891000" />
-      <workItem from="1622248876091" duration="13162000" />
-    </task>
-    <task id="LOCAL-00018" summary="Init">
-      <created>1621089781631</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1621089781631</updated>
-    </task>
-    <task id="LOCAL-00019" summary="NewGun">
-      <created>1621164897217</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1621164897217</updated>
-    </task>
-    <task id="LOCAL-00020" summary="NewGun">
-      <created>1621164905761</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1621164905761</updated>
-    </task>
-    <task id="LOCAL-00021" summary="NewGun">
-      <created>1621164920533</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1621164920533</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Debug_MapSpawn">
-      <created>1621167044402</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1621167044402</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Rebuild Room">
-      <created>1621225919205</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1621225919205</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Rebuild Prelogue">
-      <created>1621227241587</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1621227241587</updated>
+      <workItem from="1622248876091" duration="16234000" />
+      <workItem from="1622299084004" duration="5913000" />
+      <workItem from="1622343911216" duration="2751000" />
+      <workItem from="1622354971971" duration="1804000" />
+      <workItem from="1622357725587" duration="5249000" />
     </task>
     <task id="LOCAL-00025" summary="GTime Manager">
       <created>1621313427079</created>
@@ -533,7 +487,56 @@
       <option name="project" value="LOCAL" />
       <updated>1622291200904</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Init Resources">
+      <created>1622292844542</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1622292844542</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Init Door_Controller">
+      <created>1622299472119</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1622299472119</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Init Decorates">
+      <created>1622304228456</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1622304228456</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Init Decorates">
+      <created>1622304235308</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1622304235308</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Init DefendWar">
+      <created>1622306321917</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1622306321917</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Init DefendWar">
+      <created>1622306494761</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1622306494761</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Debug Map">
+      <created>1622360341573</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1622360341573</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,11 +571,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="PausePanel" />
-    <MESSAGE value="Audio Init" />
-    <MESSAGE value="&#10;Init DayLight" />
-    <MESSAGE value="&#10;Init Collider" />
-    <MESSAGE value="FSM Init" />
     <MESSAGE value="Init ChaseState" />
     <MESSAGE value="Init Sight" />
     <MESSAGE value="Update UI" />
@@ -593,6 +591,11 @@
     <MESSAGE value="Build Init" />
     <MESSAGE value="Merge" />
     <MESSAGE value="Init Map" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init Map" />
+    <MESSAGE value="Init Resources" />
+    <MESSAGE value="Init Door_Controller" />
+    <MESSAGE value="Init Decorates" />
+    <MESSAGE value="Init DefendWar" />
+    <MESSAGE value="Debug Map" />
+    <option name="LAST_COMMIT_MESSAGE" value="Debug Map" />
   </component>
 </project>

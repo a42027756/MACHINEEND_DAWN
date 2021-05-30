@@ -2,22 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InitDayBuff : MonoBehaviour
+public class InitDayBuff : MonoSingleton<InitDayBuff>
 {
     private int date;
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        SwtichDayBuff();
-    }
-
-    private void SwtichDayBuff()
+    public void SwtichDayBuff()
     {
         switch (GTime.Instance.pass_day)
         {

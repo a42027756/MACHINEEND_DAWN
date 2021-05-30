@@ -9,7 +9,7 @@ public class ShowBuffMessage : MonoBehaviour
     public GameObject messagePanel;
     
 
-    public List<string> messages = new List<string>();
+    [Multiline]public List<string> messages = new List<string>();
 
     private bool isShowing;
     // Start is called before the first frame update
@@ -26,13 +26,18 @@ public class ShowBuffMessage : MonoBehaviour
 
     private void ShowPanel()
     {
-        ChangeMessage();
-        if (GTime.Instance.GetGtime() == 6 && !isShowing)
+        if (GTime.Instance.pass_day <= 4)
         {
-            messagePanel.SetActive(true);
-            GTime.Instance.SetGTime(7);
-            StartCoroutine(AutoClosePanel());
+            ChangeMessage();
+            if (GTime.Instance.GetGtime() == 6 && !isShowing)
+            {
+                messagePanel.SetActive(true);
+                InitDayBuff.Instance.SwtichDayBuff();
+                GTime.Instance.SetGTime(7);
+                StartCoroutine(AutoClosePanel());
+            }
         }
+        
     }
 
     private void ChangeMessage()
