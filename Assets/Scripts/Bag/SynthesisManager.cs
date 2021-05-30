@@ -10,20 +10,35 @@ public class SynthesisManager : MonoSingleton<SynthesisManager>
     public Text _showItemName;
     public Image _showItemImage;
     public Text _showItemDescription;
+    public GameObject craftBar;
 
-    public RectTransform synthesisPanel;
+    public RectTransform synthesisRegion;                   //合成区域，用于遍历子物体
     public List<SynthesisSlot> gridSlots = new List<SynthesisSlot>();
 
-    public bool canSynthesis;
-    public int selectIndex;
+    public bool canSynthesis;                   //是否可合成判定
+    public int selectIndex;                     //当前被选中物品序号
+    private float craftTime;                     //物品合成所需时间
+    [SerializeField] private float craftCounter;
+    private bool isCrafting;                     //是否正在合成
     private int index;
 
     private List<ItemBase> items;
 
     void Awake()
     {
+        isCrafting = false;
+        craftBar.SetActive(false);
+
         Initialize();
         ResetShowRegion();        
+    }
+
+    void Update()
+    {
+        if(isCrafting)
+        {
+            Crafting(); 
+        }
     }
 
     private void Initialize()
@@ -39,7 +54,7 @@ public class SynthesisManager : MonoSingleton<SynthesisManager>
             slot.showItemName = _showItemName;
             slot.showItemImage = _showItemImage;
             slot.showItemDescription = _showItemDescription;
-            foreach(RectTransform synthesisChild in synthesisPanel)
+            foreach(RectTransform synthesisChild in synthesisRegion)
             {
                 slot.needItems.Add(synthesisChild);
             }
@@ -76,9 +91,15 @@ public class SynthesisManager : MonoSingleton<SynthesisManager>
 
     public void Synthesis()
     {
-        if(canSynthesis)
+        if(canSynthesis && !isCrafting)
         {
             ItemBase item = gridSlots[selectIndex].synthesisItem;
+
+            isCrafting = true;
+            craftBar.SetActive(true);
+            craftTime = item.synthesisTime;
+            craftCounter = craftTime;
+
             if(item.itemNum == 0)
             {
                 InventoryManager.Instance.AddItem(item, item.itemNum);
@@ -101,5 +122,16 @@ public class SynthesisManager : MonoSingleton<SynthesisManager>
         _showItemImage.color = new Color(1, 1, 1, 0);
         _showItemName.text = "";
         _showItemDescription.text = "";
+    }
+
+    public void Crafting()
+    {
+        craftCounter -= Time.deltaTime;
+        craftBar.GetComponent<Slider>().value = (craftTime - craftCounter) / craftTime;
+        if(craftCounter < 0f)
+        {
+            isCrafting = false;
+            craftBar.SetActive(false);
+        }
     }
 }
