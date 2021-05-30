@@ -514,23 +514,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   press_E: {fileID: 1335813205}
   ItemPanel: {fileID: 0}
-  chestItems:
-  - itemSprite: {fileID: 21300000, guid: 31b42ec17c3966345ab7848bffe1da95, type: 3}
-    itemName: "\u836F\u8349"
-    itemDescription: 
-    itemID: 0
-    itemNum: 3
-    size: 0
-    usable: 0
-    synthesizable: 0
-  - itemSprite: {fileID: 21300000, guid: ce7b12c2282dc1b49b3e96a33760768c, type: 3}
-    itemName: "\u8840\u74F6"
-    itemDescription: 
-    itemID: 4
-    itemNum: 3
-    size: 0
-    usable: 0
-    synthesizable: 0
+  chestItems: []
   chestSlots: []
   chestSlot_01: {fileID: 0}
   chestSlot_02: {fileID: 0}
