@@ -50,16 +50,17 @@ public class Binder : MonoBehaviour
     {
         if (PlayerController.Instance.isUnderAttack == true)
         {
+            Debug.Log("play");
             PlayerController.Instance._transform.GetComponent<SpriteRenderer>().color = Color.black;
             bleeding.GetComponentInChildren<ParticleSystem>().Play();
             StartCoroutine(Flash());
+            PlayerController.Instance.isUnderAttack = false;
         }
     }
 
     IEnumerator Flash()
     {
         yield return new WaitForSeconds(0.1f);
-        PlayerController.Instance.isUnderAttack = false;
         PlayerController.Instance._transform.GetComponent<SpriteRenderer>().color = Color.white;
     }
     
