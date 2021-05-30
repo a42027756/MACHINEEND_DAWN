@@ -9,7 +9,7 @@ public class ChestSlot : MonoBehaviour, IPointerClickHandler
     public Sprite background_Vacant, background_Occupied;
     public ChestManager chestManager;
     public ItemBase currentItem;
-    public Image showImage;
+    // public Image showImage;
     public int slotID;
 
     private Image background;
@@ -77,8 +77,5 @@ public class ChestSlot : MonoBehaviour, IPointerClickHandler
         chestManager.selectIndex = slotID;
 
         itemImage.color = new Color(1, 1, 1, 0.8f);
-
-        showImage.sprite = currentItem.itemSprite;
-        showImage.color = new Color(1, 1, 1, 1);
     }
 }

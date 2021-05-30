@@ -9,8 +9,7 @@ public class ChestManager : MonoBehaviour
     public GameObject ItemPanel;
     public List<ItemBase> chestItems = new List<ItemBase>();
     public List<ChestSlot> chestSlots = new List<ChestSlot>();
-    public RectTransform chestSlot_01, chestSlot_02;
-    public Image _showImage;
+    public RectTransform chestSlot;
     public TakeOut takeOutBtn;
     public int selectIndex;
 
@@ -30,15 +29,7 @@ public class ChestManager : MonoBehaviour
         isOpen = false;
 
         index = 0;        
-        foreach(RectTransform child in chestSlot_01)
-        {
-            ChestSlot slot = child.GetComponent<ChestSlot>();
-            slot.slotID = index;
-            slot.showImage = _showImage;
-            chestSlots.Add(slot);
-            index++;
-        }
-        foreach(RectTransform child in chestSlot_02)
+        foreach(RectTransform child in chestSlot)
         {
             ChestSlot slot = child.GetComponent<ChestSlot>();
             slot.slotID = index;
@@ -94,7 +85,6 @@ public class ChestManager : MonoBehaviour
 
     public void ShowChest()
     {
-        _showImage.color = new Color(1, 1, 1, 0);
         selectIndex = -1;
         takeOutBtn.chestManager = this;
         
