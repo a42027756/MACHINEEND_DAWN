@@ -174,6 +174,11 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Bag" t="Include">
+            <e p="Chest" t="Include">
+              <e p="ChestManager.cs" t="Include" />
+              <e p="ChestSlot.cs" t="Include" />
+              <e p="TakeOut.cs" t="Include" />
+            </e>
             <e p="GridSlot.cs" t="Include" />
             <e p="InventoryManager.cs" t="Include" />
             <e p="SwitchBagPanel.cs" t="Include" />
