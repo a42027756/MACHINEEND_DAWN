@@ -11,7 +11,7 @@ public class PlayerProperty : ControllerBase<PlayerProperty>, IProperty
 
     private const float hungerDecreasement = 0.01f;
     private const float hydrationDecreasement = 0.01f;
-    private const float invationIncreasement = 0.01f;
+    private const float invationIncreasement = 0.001f;
 
     public override void Update()
     {

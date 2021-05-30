@@ -93,7 +93,7 @@ public class Spawn_monster : MonoBehaviour
                 spawnNum++;
             }
 
-            if (collider2D.transform.CompareTag("Player") && GTime.Instance.pass_day == 2)
+            if (collider2D.transform.CompareTag("Player") && GTime.Instance.pass_day == 2 && GTime.Instance.GetGtime() >= 6)
             {
                 isBegin = true;
             }
@@ -104,7 +104,7 @@ public class Spawn_monster : MonoBehaviour
 
     private bool canSpawn()
     {
-        if (interval > Epsilon && isWin)
+        if (interval > Epsilon)
         {
             interval -= Time.deltaTime;
             return false;

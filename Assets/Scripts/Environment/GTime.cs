@@ -14,7 +14,7 @@ public class GTime : MonoSingleton<GTime>
 
     public int hungerTimes = 1;
     public int hydrationTimes = 1;
-    public int invationTimes = 1;
+    public float invationTimes;
     public int hurtTimes = 1;
     
     private void Start()
