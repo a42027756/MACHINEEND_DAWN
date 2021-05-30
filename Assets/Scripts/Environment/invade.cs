@@ -20,20 +20,26 @@ public class invade : MonoBehaviour
     void Update()
     {
         
+        if (!enter && GTime.Instance.pass_day == 3)
+        {
+            GTime.Instance.invationTimes = 2;
+        }
+        else if (!enter && GTime.Instance.pass_day != 3)
+        {
+            GTime.Instance.invationTimes = 1;
+        }
+        
+        else
+        {
+            GTime.Instance.invationTimes = 100; 
+        }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && other.isTrigger)
         {
-            if (!enter)
-            {
-                GTime.Instance.invationTimes = invation;
-            }
-            else
-            {
-                GTime.Instance.invationTimes = 0.5f; 
-            }
             enter = !enter;
         }
         

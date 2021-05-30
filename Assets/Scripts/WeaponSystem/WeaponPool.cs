@@ -121,7 +121,7 @@ public class WeaponPool : MonoSingleton<WeaponPool>
 
     private bool reloadWait()
     {
-        if (_reloatTime > 0.01f)
+        if (_reloatTime > 0)
         {
             _reloatTime -= Time.deltaTime;
             reloadBar.GetComponent<Slider>().value = (reloadTime - _reloatTime) / reloadTime;

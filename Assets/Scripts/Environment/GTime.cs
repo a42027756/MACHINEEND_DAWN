@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
+using TMPro;
 
 public class GTime : MonoSingleton<GTime>
 {
+    public GameObject clock;
     public GameObject light;
     public float day_length;
     [HideInInspector] public bool isNight;
@@ -56,6 +57,7 @@ public class GTime : MonoSingleton<GTime>
             SetGTime(1);
         }
         SetIntensity(dayTIme / day_length * 25);
+        clock.GetComponentInChildren<TMP_Text>().text = "Day:" + pass_day + " Time:" + gameTime + ":00";
     }
     
     public int GetGtime()
