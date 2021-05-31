@@ -42,7 +42,7 @@ public class hole : Enemy
 
     private GameObject GetCreatures()
     {
-        int creanturesNum = Random.Range(0,1) ; 
+        int creanturesNum = Random.Range(0,3) ; 
         return creatures[creanturesNum];
     }
 }

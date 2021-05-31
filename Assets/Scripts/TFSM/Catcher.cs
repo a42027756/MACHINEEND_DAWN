@@ -8,14 +8,19 @@ public class Catcher : Enemy
 {
     private TFSM tfsm;
 
+    private Animator _animator;
+
     [SerializeField] 
     private float speed;
 
     private void Start()
     {
+        InitializeEnemy();
         InitializeState();
         
         tfsm = new TFSM(idleState);
+
+        _animator = GetComponent<Animator>();
         
         CatcherBoid.Instance.AddSelfToList(this);
     }
@@ -26,6 +31,9 @@ public class Catcher : Enemy
         Flip();
         
         AdjustVelocityByBoidDivision();
+
+        float animationSpeed = _rigidbody2D.velocity.magnitude;
+        _animator.SetFloat("speed",animationSpeed);
     }
 
     private void OnDestroy()
@@ -285,6 +293,7 @@ public class Catcher : Enemy
         isRushing = true;
         rushTimeCounter = .0f;
         isDamageable = true;
+        _animator.SetBool("isRushing",true);
 
         Vector2 selfPos = transform.position;
         Vector2 playerPos = PlayerController.Instance._transform.position;
@@ -342,8 +351,19 @@ public class Catcher : Enemy
             if(other.CompareTag("Player") && isDamageable)
             {
                 PlayerProperty.Instance.ChangeValue("health", rushDamage * GTime.Instance.hurtTimes);
+                PlayerController.Instance.isUnderAttack = true;
                 isDamageable = false;
             }
         }  
     }
+
+
+    #region animation
+
+    public void SetAnimatorIsRushingFalse()
+    {
+        _animator.SetBool("isRushing",false);
+    }
+
+    #endregion
 }

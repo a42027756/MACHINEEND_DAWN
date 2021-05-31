@@ -38,12 +38,17 @@ public class DestroyableController : MonoBehaviour
         if (other.CompareTag("Bullets"))
         {
             if (TakeDamage(WeaponSlot.Instance.currentWeapon.GetComponent<Weapon>().damageValue))
-            { ;
-                EffectsManager.Instance.PlayExplosion(this.transform.position);
-                //todo:切换到破坏状态
-                this.GetComponent<Animator>().SetBool("broken",true);
-                this.GetComponentInChildren<Canvas>().enabled = false;
-                GameManager.Instance.OpenDoor(controller);
+            {
+                if (!this.GetComponent<Animator>().GetBool("broken"))
+                {
+                    EffectsManager.Instance.PlayExplosion(this.transform.position);
+                    this.GetComponent<Animator>().SetBool("broken",true);
+                    if (this.GetComponentInChildren<Canvas>().enabled)
+                    {
+                        this.GetComponentInChildren<Canvas>().enabled = false;   
+                    }   
+                    GameManager.Instance.OpenDoor(controller);
+                }
             }
         }
     }

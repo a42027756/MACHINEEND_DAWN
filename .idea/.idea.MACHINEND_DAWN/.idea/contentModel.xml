@@ -256,6 +256,12 @@
           <e p="Singleton" t="Include">
             <e p="Singleton.cs" t="Include" />
           </e>
+          <e p="TFSM" t="Include">
+            <e p="Catcher.cs" t="Include" />
+            <e p="CatcherBoid.cs" t="Include" />
+            <e p="TFSM.cs" t="Include" />
+            <e p="TState.cs" t="Include" />
+          </e>
           <e p="UI" t="Include">
             <e p="PausePanel.cs" t="Include" />
           </e>
