@@ -185,6 +185,10 @@
             <e p="SynthesisManager.cs" t="Include" />
             <e p="SynthesisSlot.cs" t="Include" />
           </e>
+          <e p="BossBattle" t="Include">
+            <e p="InitBossBattle.cs" t="Include" />
+            <e p="ReleasePeople.cs" t="Include" />
+          </e>
           <e p="ControllerBase" t="Include">
             <e p="ControllerBase.cs" t="Include" />
           </e>

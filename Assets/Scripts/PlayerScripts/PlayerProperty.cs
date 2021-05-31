@@ -20,7 +20,7 @@ public class PlayerProperty : ControllerBase<PlayerProperty>, IProperty
             // Debug.Log("Player Dead");
             PlayerController.Instance.isAlive = false;
         }
-        InvationDebuff();
+        Debuff();
         ValueBoxUpdate();
     }
 
@@ -54,10 +54,11 @@ public class PlayerProperty : ControllerBase<PlayerProperty>, IProperty
 
     public void ResetValue()
     {
+        Debug.Log("Reset");
         properties["health"] = 100;
         properties["thirsty"] = 60;
         properties["hunger"] = 60;
-        properties["instrusion"] = 0;
+        properties["intrusion"] = 0;
 
         Transition();
     }
@@ -85,9 +86,15 @@ public class PlayerProperty : ControllerBase<PlayerProperty>, IProperty
         invadeBar.fillAmount = properties["intrusion"] / 100;
     }
 
-    private void InvationDebuff()
+    private void Debuff()
     {
-        if (invadeBar.fillAmount > 0.33 && invadeBar.fillAmount < 0.66)
+        if (invadeBar.fillAmount < 0.33)
+        {
+            SpeedDeBuff(5f);
+            BleedDebuff(0f);
+        }
+
+        if ((invadeBar.fillAmount > 0.33 && invadeBar.fillAmount < 0.66) || waterBar.fillAmount >= 0.99 || hungerBar.fillAmount >= 0.99f) 
         {
             SpeedDeBuff(3f);
         }

@@ -38,8 +38,7 @@ public class GameManager : MonoSingleton<GameManager>
     public void Remake()
     {
         //第二天到来还没有打开房间
-        if (GTime.Instance.pass_day == 2 && !door[3].GetComponent<Animator>().GetBool("open") && !door[2].GetComponent<Animator>().GetBool("open")
-        && !door[1].GetComponent<Animator>().GetBool("open"))
+        if (GTime.Instance.pass_day == 2 && (!door[3].GetComponent<Animator>().GetBool("open") || !door[2].GetComponent<Animator>().GetBool("open") || !door[1].GetComponent<Animator>().GetBool("open")))
         {
             PlayerProperty.Instance.ChangeValue("health",-100);
             GTime.Instance.SetGTime(6);

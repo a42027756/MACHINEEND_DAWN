@@ -1,0 +1,1947 @@
+Index: Assets/Scripts/BossBattle/ReleasePeople.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/BossBattle/ReleasePeople.cs b/Assets/Scripts/BossBattle/ReleasePeople.cs
+new file mode 100644
+--- /dev/null	(date 1622447058006)
++++ b/Assets/Scripts/BossBattle/ReleasePeople.cs	(date 1622447058006)
+@@ -0,0 +1,30 @@
++using System;
++using System.Collections;
++using System.Collections.Generic;
++using UnityEngine;
++
++public class ReleasePeople : MonoBehaviour
++{
++    // Start is called before the first frame update
++    void Start()
++    {
++        
++    }
++
++    // Update is called once per frame
++    void Update()
++    {
++        
++    }
++
++    private void OnTriggerEnter2D(Collider2D other)
++    {
++        if (other.CompareTag("Player"))
++        {
++            GameObject.Find("WWhiteVillager").GetComponent<Villager>().target = null;
++            GameObject.Find("GreenVillager").GetComponent<Villager>().target = null;
++            GameObject.Find("PurpleVillager").GetComponent<Villager>().target = null;
++            GameManager.Instance.OpenDoor();
++        }
++    }
++}
+Index: .idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ContentModelStore\">\r\n    <e p=\"C:\\Users\\wuchenglin\\AppData\\Local\\JetBrains\\Rider2020.3\\extResources\" t=\"IncludeRecursive\" />\r\n    <e p=\"C:\\Users\\wuchenglin\\AppData\\Local\\JetBrains\\Rider2020.3\\resharper-host\\Local\\Transient\\Rider\\v203\\SolutionCaches\\_MACHINEND_DAWN.-963148091.00\" t=\"ExcludeRecursive\" />\r\n    <e p=\"E:\\UnityPorject\\MACHINEND_DAWN\" t=\"IncludeRecursive\">\r\n      <e p=\"Assembly-CSharp-Editor.csproj\" t=\"IncludeRecursive\" />\r\n      <e p=\"Assembly-CSharp.csproj\" t=\"IncludeRecursive\" />\r\n      <e p=\"Assets\" t=\"Include\">\r\n        <e p=\"Resources\" t=\"Include\">\r\n          <e p=\"Font\" t=\"Include\">\r\n            <e p=\"3500常用汉字.txt\" t=\"Include\" />\r\n            <e p=\"汉字.txt\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"Pixel Font - Tripfive\" t=\"Include\">\r\n            <e p=\"_README.txt\" t=\"Include\" />\r\n          </e>\r\n        </e>\r\n        <e p=\"Rule-Tile\" t=\"Include\">\r\n          <e p=\"Tilemap\" t=\"Include\">\r\n            <e p=\"Brushes\" t=\"Include\">\r\n              <e p=\"Coordinate Brush\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"Editor\" t=\"Include\">\r\n                    <e p=\"CoordinateBrush.cs\" t=\"Include\" />\r\n                  </e>\r\n                </e>\r\n              </e>\r\n              <e p=\"GameObject Brush\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"Editor\" t=\"Include\">\r\n                    <e p=\"GameObjectBrush.cs\" t=\"Include\" />\r\n                  </e>\r\n                </e>\r\n              </e>\r\n              <e p=\"Group Brush\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"Editor\" t=\"Include\">\r\n                    <e p=\"GroupBrush.cs\" t=\"Include\" />\r\n                  </e>\r\n                </e>\r\n              </e>\r\n              <e p=\"Line Brush\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"Editor\" t=\"Include\">\r\n                    <e p=\"LineBrush.cs\" t=\"Include\" />\r\n                  </e>\r\n                </e>\r\n              </e>\r\n              <e p=\"Prefab Brush\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"Editor\" t=\"Include\">\r\n                    <e p=\"PrefabBrush.cs\" t=\"Include\" />\r\n                  </e>\r\n                </e>\r\n              </e>\r\n              <e p=\"Random Brush\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"Editor\" t=\"Include\">\r\n                    <e p=\"RandomBrush.cs\" t=\"Include\" />\r\n                  </e>\r\n                </e>\r\n              </e>\r\n              <e p=\"Tint Brush\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"Editor\" t=\"Include\">\r\n                    <e p=\"TintBrush.cs\" t=\"Include\" />\r\n                  </e>\r\n                </e>\r\n              </e>\r\n              <e p=\"Tint Brush Smooth\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"Editor\" t=\"Include\">\r\n                    <e p=\"TintBrushSmooth.cs\" t=\"Include\" />\r\n                  </e>\r\n                  <e p=\"TintTextureGenerator.cs\" t=\"Include\" />\r\n                </e>\r\n                <e p=\"Shaders\" t=\"Include\">\r\n                  <e p=\"TintedTilemap.shader\" t=\"Include\" />\r\n                </e>\r\n              </e>\r\n            </e>\r\n            <e p=\"GridInformation\" t=\"Include\">\r\n              <e p=\"Scripts\" t=\"Include\">\r\n                <e p=\"GridInformation.cs\" t=\"Include\" />\r\n              </e>\r\n            </e>\r\n            <e p=\"Tiles\" t=\"Include\">\r\n              <e p=\"Animated Tile\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"AnimatedTile.cs\" t=\"Include\" />\r\n                </e>\r\n              </e>\r\n              <e p=\"Hexagonal Rule Tile\" t=\"Include\">\r\n                <e p=\"Editor\" t=\"Include\">\r\n                  <e p=\"HexagonalRuleTileEditor.cs\" t=\"Include\" />\r\n                </e>\r\n                <e p=\"HexagonalRuleTile.cs\" t=\"Include\" />\r\n              </e>\r\n              <e p=\"Isometric Rule Tile\" t=\"Include\">\r\n                <e p=\"Editor\" t=\"Include\">\r\n                  <e p=\"IsometricRuleTileEditor.cs\" t=\"Include\" />\r\n                </e>\r\n                <e p=\"IsometricRuleTile.cs\" t=\"Include\" />\r\n              </e>\r\n              <e p=\"Pipeline Tile\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"PipelineTile.cs\" t=\"Include\" />\r\n                </e>\r\n              </e>\r\n              <e p=\"Random Tile\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"RandomTile.cs\" t=\"Include\" />\r\n                </e>\r\n              </e>\r\n              <e p=\"Rule Override Tile\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"Editor\" t=\"Include\">\r\n                    <e p=\"RuleOverrideTileEditor.cs\" t=\"Include\" />\r\n                  </e>\r\n                  <e p=\"RuleOverrideTile.cs\" t=\"Include\" />\r\n                </e>\r\n              </e>\r\n              <e p=\"Rule Tile\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"Editor\" t=\"Include\">\r\n                    <e p=\"CustomRuleTileMenu.cs\" t=\"Include\" />\r\n                    <e p=\"RuleTileEditor.cs\" t=\"Include\" />\r\n                  </e>\r\n                  <e p=\"RuleTile.cs\" t=\"Include\" />\r\n                </e>\r\n                <e p=\"ScriptTemplates\" t=\"Include\">\r\n                  <e p=\"NewCustomRuleTile.cs.txt\" t=\"Include\" />\r\n                </e>\r\n              </e>\r\n              <e p=\"Terrain Tile\" t=\"Include\">\r\n                <e p=\"Scripts\" t=\"Include\">\r\n                  <e p=\"TerrainTile.cs\" t=\"Include\" />\r\n                </e>\r\n              </e>\r\n              <e p=\"Weighted Random Tile\" t=\"Include\">\r\n                <e p=\"WeightedRandomTile.cs\" t=\"Include\" />\r\n              </e>\r\n            </e>\r\n          </e>\r\n        </e>\r\n        <e p=\"Scenes\" t=\"Include\">\r\n          <e p=\"BagTest\" t=\"Include\">\r\n            <e p=\"Bag\" t=\"Include\">\r\n              <e p=\"BagSlots.cs\" t=\"Include\" />\r\n              <e p=\"Item.cs\" t=\"Include\" />\r\n              <e p=\"ItemSlot.cs\" t=\"Include\" />\r\n            </e>\r\n          </e>\r\n          <e p=\"Game\" t=\"Include\">\r\n            <e p=\"Rotate.cs\" t=\"Include\" />\r\n            <e p=\"sprite\" t=\"Include\">\r\n              <e p=\"Effects\" t=\"Include\">\r\n                <e p=\"destroySelf.cs\" t=\"Include\" />\r\n              </e>\r\n            </e>\r\n          </e>\r\n          <e p=\"LoadScene\" t=\"Include\">\r\n            <e p=\"LoadManager.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"Logo\" t=\"Include\">\r\n            <e p=\"script\" t=\"Include\">\r\n              <e p=\"SwitchtoMenu.cs\" t=\"Include\" />\r\n            </e>\r\n          </e>\r\n          <e p=\"Menu\" t=\"Include\">\r\n            <e p=\"Menu.cs\" t=\"Include\" />\r\n          </e>\r\n        </e>\r\n        <e p=\"Scripts\" t=\"Include\">\r\n          <e p=\"Bag\" t=\"Include\">\r\n            <e p=\"Chest\" t=\"Include\">\r\n              <e p=\"ChestManager.cs\" t=\"Include\" />\r\n              <e p=\"ChestSlot.cs\" t=\"Include\" />\r\n              <e p=\"TakeOut.cs\" t=\"Include\" />\r\n            </e>\r\n            <e p=\"GridSlot.cs\" t=\"Include\" />\r\n            <e p=\"InventoryManager.cs\" t=\"Include\" />\r\n            <e p=\"SwitchBagPanel.cs\" t=\"Include\" />\r\n            <e p=\"SynthesisManager.cs\" t=\"Include\" />\r\n            <e p=\"SynthesisSlot.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"ControllerBase\" t=\"Include\">\r\n            <e p=\"ControllerBase.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"Defend_war\" t=\"Include\">\r\n            <e p=\"Spawn_monster.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"EffectsManager\" t=\"Include\">\r\n            <e p=\"EffectsManager.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"Enemy_AI\" t=\"Include\">\r\n            <e p=\"Enemy.cs\" t=\"Include\" />\r\n            <e p=\"Enemy_Bullet.cs\" t=\"Include\" />\r\n            <e p=\"EnemyBulletPool.cs\" t=\"Include\" />\r\n            <e p=\"EnemyWeapon.cs\" t=\"Include\" />\r\n            <e p=\"FlyingEnemy.cs\" t=\"Include\" />\r\n            <e p=\"Watcher_AI.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"Environment\" t=\"Include\">\r\n            <e p=\"DestroyableController.cs\" t=\"Include\" />\r\n            <e p=\"GTime.cs\" t=\"Include\" />\r\n            <e p=\"hole.cs\" t=\"Include\" />\r\n            <e p=\"InitDayBuff.cs\" t=\"Include\" />\r\n            <e p=\"invade.cs\" t=\"Include\" />\r\n            <e p=\"ShowBuffMessage.cs\" t=\"Include\" />\r\n            <e p=\"WizardTips.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"FSM\" t=\"Include\">\r\n            <e p=\"FSM.cs\" t=\"Include\" />\r\n            <e p=\"IState.cs\" t=\"Include\" />\r\n            <e p=\"State.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"GameControl\" t=\"Include\">\r\n            <e p=\"GameManager.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"HealthyNPC\" t=\"Include\">\r\n            <e p=\"Villager.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"Item\" t=\"Include\">\r\n            <e p=\"InitializeItem.cs\" t=\"Include\" />\r\n            <e p=\"ItemBase.cs\" t=\"Include\" />\r\n            <e p=\"SurvivalItem.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"MapSpawn\" t=\"Include\">\r\n            <e p=\"CameraFollow.cs\" t=\"Include\" />\r\n            <e p=\"MapScript\" t=\"Include\">\r\n              <e p=\"DrawArea.cs\" t=\"Include\" />\r\n              <e p=\"ObjectInTile.cs\" t=\"Include\" />\r\n              <e p=\"ObjectSpawn.cs\" t=\"Include\" />\r\n              <e p=\"RandomMap.cs\" t=\"Include\" />\r\n              <e p=\"Room.cs\" t=\"Include\" />\r\n              <e p=\"RoomSpawn.cs\" t=\"Include\" />\r\n              <e p=\"Zone.cs\" t=\"Include\" />\r\n            </e>\r\n            <e p=\"PerlinTest.cs\" t=\"Include\" />\r\n            <e p=\"TileExpand.cs\" t=\"Include\" />\r\n            <e p=\"TownScript\" t=\"Include\">\r\n              <e p=\"DrawRoad.cs\" t=\"Include\" />\r\n              <e p=\"Town.cs\" t=\"Include\" />\r\n            </e>\r\n          </e>\r\n          <e p=\"PlayerScripts\" t=\"Include\">\r\n            <e p=\"Binder.cs\" t=\"Include\" />\r\n            <e p=\"CallBag.cs\" t=\"Include\" />\r\n            <e p=\"IProperty.cs\" t=\"Include\" />\r\n            <e p=\"PlayerController.cs\" t=\"Include\" />\r\n            <e p=\"PlayerProperty.cs\" t=\"Include\" />\r\n            <e p=\"Reborn.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"Prelogue\" t=\"Include\">\r\n            <e p=\"ShowText.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"Singleton\" t=\"Include\">\r\n            <e p=\"Singleton.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"TFSM\" t=\"Include\">\r\n            <e p=\"Boss.cs\" t=\"Include\" />\r\n            <e p=\"Catcher.cs\" t=\"Include\" />\r\n            <e p=\"CatcherBoid.cs\" t=\"Include\" />\r\n            <e p=\"TFSM.cs\" t=\"Include\" />\r\n            <e p=\"TState.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"UI\" t=\"Include\">\r\n            <e p=\"PausePanel.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"WeaponSystem\" t=\"Include\">\r\n            <e p=\"Bullet.cs\" t=\"Include\" />\r\n            <e p=\"BulletPool.cs\" t=\"Include\" />\r\n            <e p=\"Weapon.cs\" t=\"Include\" />\r\n            <e p=\"WeaponPool.cs\" t=\"Include\" />\r\n            <e p=\"WeaponSlot.cs\" t=\"Include\" />\r\n          </e>\r\n        </e>\r\n        <e p=\"TextMeshPro\" t=\"Include\">\r\n          <e p=\"Examples &amp; Extras\" t=\"Include\">\r\n            <e p=\"Fonts\" t=\"Include\">\r\n              <e p=\"Anton OFL.txt\" t=\"Include\" />\r\n              <e p=\"Bangers - OFL.txt\" t=\"Include\" />\r\n              <e p=\"Oswald-Bold - OFL.txt\" t=\"Include\" />\r\n            </e>\r\n            <e p=\"Scripts\" t=\"Include\">\r\n              <e p=\"Benchmark01.cs\" t=\"Include\" />\r\n              <e p=\"Benchmark01_UGUI.cs\" t=\"Include\" />\r\n              <e p=\"Benchmark02.cs\" t=\"Include\" />\r\n              <e p=\"Benchmark03.cs\" t=\"Include\" />\r\n              <e p=\"Benchmark04.cs\" t=\"Include\" />\r\n              <e p=\"CameraController.cs\" t=\"Include\" />\r\n              <e p=\"ChatController.cs\" t=\"Include\" />\r\n              <e p=\"DropdownSample.cs\" t=\"Include\" />\r\n              <e p=\"EnvMapAnimator.cs\" t=\"Include\" />\r\n              <e p=\"ObjectSpin.cs\" t=\"Include\" />\r\n              <e p=\"ShaderPropAnimator.cs\" t=\"Include\" />\r\n              <e p=\"SimpleScript.cs\" t=\"Include\" />\r\n              <e p=\"SkewTextExample.cs\" t=\"Include\" />\r\n              <e p=\"TeleType.cs\" t=\"Include\" />\r\n              <e p=\"TextConsoleSimulator.cs\" t=\"Include\" />\r\n              <e p=\"TextMeshProFloatingText.cs\" t=\"Include\" />\r\n              <e p=\"TextMeshSpawner.cs\" t=\"Include\" />\r\n              <e p=\"TMP_DigitValidator.cs\" t=\"Include\" />\r\n              <e p=\"TMP_ExampleScript_01.cs\" t=\"Include\" />\r\n              <e p=\"TMP_FrameRateCounter.cs\" t=\"Include\" />\r\n              <e p=\"TMP_PhoneNumberValidator.cs\" t=\"Include\" />\r\n              <e p=\"TMP_TextEventCheck.cs\" t=\"Include\" />\r\n              <e p=\"TMP_TextEventHandler.cs\" t=\"Include\" />\r\n              <e p=\"TMP_TextInfoDebugTool.cs\" t=\"Include\" />\r\n              <e p=\"TMP_TextSelector_A.cs\" t=\"Include\" />\r\n              <e p=\"TMP_TextSelector_B.cs\" t=\"Include\" />\r\n              <e p=\"TMP_UiFrameRateCounter.cs\" t=\"Include\" />\r\n              <e p=\"TMPro_InstructionOverlay.cs\" t=\"Include\" />\r\n              <e p=\"VertexColorCycler.cs\" t=\"Include\" />\r\n              <e p=\"VertexJitter.cs\" t=\"Include\" />\r\n              <e p=\"VertexShakeA.cs\" t=\"Include\" />\r\n              <e p=\"VertexShakeB.cs\" t=\"Include\" />\r\n              <e p=\"VertexZoom.cs\" t=\"Include\" />\r\n              <e p=\"WarpTextExample.cs\" t=\"Include\" />\r\n            </e>\r\n          </e>\r\n          <e p=\"Fonts\" t=\"Include\">\r\n            <e p=\"LiberationSans - OFL.txt\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"Resources\" t=\"Include\">\r\n            <e p=\"LineBreaking Following Characters.txt\" t=\"Include\" />\r\n            <e p=\"LineBreaking Leading Characters.txt\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"Shaders\" t=\"Include\">\r\n            <e p=\"TMP_Bitmap-Custom-Atlas.shader\" t=\"Include\" />\r\n            <e p=\"TMP_Bitmap-Mobile.shader\" t=\"Include\" />\r\n            <e p=\"TMP_Bitmap.shader\" t=\"Include\" />\r\n            <e p=\"TMP_SDF Overlay.shader\" t=\"Include\" />\r\n            <e p=\"TMP_SDF SSD.shader\" t=\"Include\" />\r\n            <e p=\"TMP_SDF-Mobile Masking.shader\" t=\"Include\" />\r\n            <e p=\"TMP_SDF-Mobile Overlay.shader\" t=\"Include\" />\r\n            <e p=\"TMP_SDF-Mobile SSD.shader\" t=\"Include\" />\r\n            <e p=\"TMP_SDF-Mobile.shader\" t=\"Include\" />\r\n            <e p=\"TMP_SDF-Surface-Mobile.shader\" t=\"Include\" />\r\n            <e p=\"TMP_SDF-Surface.shader\" t=\"Include\" />\r\n            <e p=\"TMP_SDF.shader\" t=\"Include\" />\r\n            <e p=\"TMP_Sprite.shader\" t=\"Include\" />\r\n            <e p=\"TMPro.cginc\" t=\"Include\" />\r\n            <e p=\"TMPro_Mobile.cginc\" t=\"Include\" />\r\n            <e p=\"TMPro_Properties.cginc\" t=\"Include\" />\r\n            <e p=\"TMPro_Surface.cginc\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"Sprites\" t=\"Include\">\r\n            <e p=\"EmojiOne Attribution.txt\" t=\"Include\" />\r\n          </e>\r\n        </e>\r\n      </e>\r\n      <e p=\"MACHINEND_DAWN.sln\" t=\"IncludeFlat\" />\r\n      <e p=\"obj\" t=\"ExcludeRecursive\" />\r\n      <e p=\"Packages\" t=\"ExcludeRecursive\" />\r\n      <e p=\"Temp\\bin\" t=\"ExcludeRecursive\" />\r\n    </e>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml b/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml
+--- a/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml	(revision 862b699f22871247d9faa7f9af21dd841ea5b6c7)
++++ b/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml	(date 1622446941825)
+@@ -185,6 +185,10 @@
+             <e p="SynthesisManager.cs" t="Include" />
+             <e p="SynthesisSlot.cs" t="Include" />
+           </e>
++          <e p="BossBattle" t="Include">
++            <e p="InitBossBattle.cs" t="Include" />
++            <e p="ReleasePeople.cs" t="Include" />
++          </e>
+           <e p="ControllerBase" t="Include">
+             <e p="ControllerBase.cs" t="Include" />
+           </e>
+Index: Assets/Scripts/BossBattle/InitBossBattle.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/BossBattle/InitBossBattle.cs b/Assets/Scripts/BossBattle/InitBossBattle.cs
+new file mode 100644
+--- /dev/null	(date 1622446550067)
++++ b/Assets/Scripts/BossBattle/InitBossBattle.cs	(date 1622446550067)
+@@ -0,0 +1,18 @@
++using System.Collections;
++using System.Collections.Generic;
++using UnityEngine;
++
++public class InitBossBattle : MonoBehaviour
++{
++    // Start is called before the first frame update
++    void Start()
++    {
++        
++    }
++
++    // Update is called once per frame
++    void Update()
++    {
++        
++    }
++}
+Index: Assets/Scripts/BossBattle/InitBossBattle.cs.meta
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/BossBattle/InitBossBattle.cs.meta b/Assets/Scripts/BossBattle/InitBossBattle.cs.meta
+new file mode 100644
+--- /dev/null	(date 1622446550084)
++++ b/Assets/Scripts/BossBattle/InitBossBattle.cs.meta	(date 1622446550084)
+@@ -0,0 +1,11 @@
++fileFormatVersion: 2
++guid: f8ea6dcd97a267b45a9e745b237c72c7
++MonoImporter:
++  externalObjects: {}
++  serializedVersion: 2
++  defaultReferences: []
++  executionOrder: 0
++  icon: {instanceID: 0}
++  userData: 
++  assetBundleName: 
++  assetBundleVariant: 
+Index: .idea/.idea.MACHINEND_DAWN/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"718e4172-b9e9-4768-9cbd-faf4fb7a4120\" name=\"Default Changelist\" comment=\"Merge\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitSEFilterConfiguration\">\r\n    <file-type-list>\r\n      <filtered-out-file-type name=\"LOCAL_BRANCH\" />\r\n      <filtered-out-file-type name=\"REMOTE_BRANCH\" />\r\n      <filtered-out-file-type name=\"TAG\" />\r\n      <filtered-out-file-type name=\"COMMIT_BY_MESSAGE\" />\r\n    </file-type-list>\r\n  </component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/CameraFollow.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/Town.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/Environment/WizardTips.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scenes/Game/Rotate.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/Environment/hole.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/GameControl/GameManager.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Watcher_AI.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/Defend_war/Spawn_monster.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scenes/Menu/Menu.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/FSM/FSM.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/EffectsManager/EffectsManager.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/sprite/Enemy/5e4afd7528de72bb9e64a1eceb3700b.png.meta\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/Prefab/Enemy/catcher.prefab\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scenes/Game/sprite/Effects/destroySelf.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/Prefab/Bag/Chest/Chest.prefab\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/FSM/State.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectInTile.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/Environment/invade.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectSpawn.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CDA0DA9E-454B-4A0D-9B19-813AB03014ED/83/b396fabd/Debug.cs\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/FSM/IState.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@10.4.0/Runtime/Textures/TextureXR.cs\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/sprite/Enemy/BOSS  悬浮静止.png.meta\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/PerlinTest.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scripts/TFSM/Boss.cs\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@10.4.0/Runtime/UniversalRenderPipeline.cs\" root0=\"SKIP_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"IdeDocumentHistory\">\r\n    <changedPaths>\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/RoomSpawn.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/Room.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/DrawArea.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/Zone.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/RandomMap.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/FSM/IState.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/WeaponSystem/Bullet.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Item/NormalItem/NormalItemBase.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Item/ItemBase.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Item/UsableItem/UsableItemBase.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Bag/Item.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/FSM/FSM.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/WeaponSystem/Weapon.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/WeaponSystem/WeaponSlot.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Environment/InitDatBuff.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scenes/Game/sprite/Effects/destroySelf.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/EffectsManager/EffectsManager.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Watcher_AI.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Prelogue/ShowText.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/MapSpawn/TileExpand.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/FSM/State.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/PlayerScripts/CallBag.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Bag/SwitchBagPanel.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/UI/PausePanel.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scenes/Game/Game.unity\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/MapSpawn/CameraFollow.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Environment/InitDayBuff.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Environment/WizardTips.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Resources/Font/汉字.txt\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/UI/Clock.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/WeaponSystem/WeaponPool.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/PlayerScripts/FlashColor.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy_Bullet.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Defend_war/Spawn_monster.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Environment/hole.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Environment/DestroyableController.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Bag/Chest/ChestManager.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Item/InitializeItem.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerProperty.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Environment/invade.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/TFSM/Catcher.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/GameControl/GameManager.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerController.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Reborn.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/TFSM/Boss.cs\" />\r\n    </changedPaths>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1sT92pLE3Aucix7W6jstCeY0cFP\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"ASKED_ADD_EXTERNAL_FILES\" value=\"true\" />\r\n    <property name=\"Discover.Launch.Via.Unity\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"editor.preferences.tabs\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Attach to Unity Editor.Attach to Unity Editor\">\r\n    <configuration name=\"Standalone Player\" type=\"RunUnityExe\" factoryName=\"Unity Executable\">\r\n      <option name=\"EXE_PATH\" value=\"D:/build/MACHINEND_DAWN.exe\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"D:\\build\" />\r\n      <option name=\"PASS_PARENT_ENVS\" value=\"1\" />\r\n      <option name=\"USE_EXTERNAL_CONSOLE\" value=\"0\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Attach to Unity Editor &amp; Play\" type=\"UNITY_DEBUG_RUN_CONFIGURATION\" factoryName=\"UNITY_ATTACH_AND_PLAY\" show_console_on_std_err=\"false\" show_console_on_std_out=\"false\" port=\"50000\" address=\"localhost\">\r\n      <option name=\"allowRunningInParallel\" value=\"false\" />\r\n      <option name=\"listenPortForConnections\" value=\"false\" />\r\n      <option name=\"pid\" />\r\n      <option name=\"selectedOptions\">\r\n        <list />\r\n      </option>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Attach to Unity Editor\" type=\"UNITY_DEBUG_RUN_CONFIGURATION\" factoryName=\"Unity Debug\" show_console_on_std_err=\"false\" show_console_on_std_out=\"false\" port=\"50000\" address=\"localhost\">\r\n      <option name=\"allowRunningInParallel\" value=\"false\" />\r\n      <option name=\"listenPortForConnections\" value=\"false\" />\r\n      <option name=\"pid\" />\r\n      <option name=\"selectedOptions\">\r\n        <list />\r\n      </option>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"718e4172-b9e9-4768-9cbd-faf4fb7a4120\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1620885507868</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1620885507868</updated>\r\n      <workItem from=\"1620885514550\" duration=\"45000\" />\r\n      <workItem from=\"1620885585372\" duration=\"1445000\" />\r\n      <workItem from=\"1620888011463\" duration=\"6000\" />\r\n      <workItem from=\"1620888098163\" duration=\"7008000\" />\r\n      <workItem from=\"1620913894652\" duration=\"27525000\" />\r\n      <workItem from=\"1620982019800\" duration=\"2130000\" />\r\n      <workItem from=\"1621002236393\" duration=\"654000\" />\r\n      <workItem from=\"1621004776189\" duration=\"26213000\" />\r\n      <workItem from=\"1621079599750\" duration=\"7629000\" />\r\n      <workItem from=\"1621164887074\" duration=\"2672000\" />\r\n      <workItem from=\"1621217825904\" duration=\"8560000\" />\r\n      <workItem from=\"1621308241384\" duration=\"4849000\" />\r\n      <workItem from=\"1621313225070\" duration=\"241000\" />\r\n      <workItem from=\"1621405632851\" duration=\"12394000\" />\r\n      <workItem from=\"1621492841762\" duration=\"12095000\" />\r\n      <workItem from=\"1621572914233\" duration=\"11707000\" />\r\n      <workItem from=\"1621651046282\" duration=\"7460000\" />\r\n      <workItem from=\"1621769939599\" duration=\"2454000\" />\r\n      <workItem from=\"1621825473888\" duration=\"6601000\" />\r\n      <workItem from=\"1621865060605\" duration=\"141000\" />\r\n      <workItem from=\"1621908560644\" duration=\"2776000\" />\r\n      <workItem from=\"1621914244359\" duration=\"6176000\" />\r\n      <workItem from=\"1621947735710\" duration=\"1571000\" />\r\n      <workItem from=\"1622009932746\" duration=\"15111000\" />\r\n      <workItem from=\"1622092675989\" duration=\"16152000\" />\r\n      <workItem from=\"1622180961641\" duration=\"13767000\" />\r\n      <workItem from=\"1622202307892\" duration=\"47000\" />\r\n      <workItem from=\"1622204573111\" duration=\"7164000\" />\r\n      <workItem from=\"1622214301504\" duration=\"4891000\" />\r\n      <workItem from=\"1622248876091\" duration=\"16234000\" />\r\n      <workItem from=\"1622299084004\" duration=\"5913000\" />\r\n      <workItem from=\"1622343911216\" duration=\"2751000\" />\r\n      <workItem from=\"1622354971971\" duration=\"1804000\" />\r\n      <workItem from=\"1622357725587\" duration=\"19043000\" />\r\n      <workItem from=\"1622427668275\" duration=\"10747000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00035\" summary=\"Init ChaseState\">\r\n      <created>1621658592621</created>\r\n      <option name=\"number\" value=\"00035\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00035\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621658592621</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00036\" summary=\"Init Sight\">\r\n      <created>1621825511026</created>\r\n      <option name=\"number\" value=\"00036\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00036\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621825511027</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00037\" summary=\"Update UI\">\r\n      <created>1621864324122</created>\r\n      <option name=\"number\" value=\"00037\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00037\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621864324122</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00038\" summary=\"Update UI\">\r\n      <created>1621864853309</created>\r\n      <option name=\"number\" value=\"00038\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00038\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621864853309</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00039\" summary=\"Update UI\">\r\n      <created>1621865082455</created>\r\n      <option name=\"number\" value=\"00039\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00039\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621865082456</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00040\" summary=\"Init Item\">\r\n      <created>1621915791908</created>\r\n      <option name=\"number\" value=\"00040\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00040\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621915791908</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00041\" summary=\"Init Item\">\r\n      <created>1621917947628</created>\r\n      <option name=\"number\" value=\"00041\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00041\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621917947628</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00042\" summary=\"Init Attack\">\r\n      <created>1622013845719</created>\r\n      <option name=\"number\" value=\"00042\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00042\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622013845719</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00043\" summary=\"Init Attack second\">\r\n      <created>1622015825462</created>\r\n      <option name=\"number\" value=\"00043\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00043\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622015825462</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00044\" summary=\"Init Pause Panel\">\r\n      <created>1622019362803</created>\r\n      <option name=\"number\" value=\"00044\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00044\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622019362803</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00045\" summary=\"Upgrade Camerator\">\r\n      <created>1622020010819</created>\r\n      <option name=\"number\" value=\"00045\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00045\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622020010819</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00046\" summary=\"Init Minimap\">\r\n      <created>1622023527826</created>\r\n      <option name=\"number\" value=\"00046\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00046\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622023527826</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00047\" summary=\"Init Minimap\">\r\n      <created>1622023767251</created>\r\n      <option name=\"number\" value=\"00047\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00047\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622023767251</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00048\" summary=\"Reload Upgrade\">\r\n      <created>1622032835893</created>\r\n      <option name=\"number\" value=\"00048\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00048\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622032835893</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00049\" summary=\"Debug FlyingEnemy\">\r\n      <created>1622114039855</created>\r\n      <option name=\"number\" value=\"00049\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00049\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622114039855</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00050\" summary=\"Upgrade player\">\r\n      <created>1622114739593</created>\r\n      <option name=\"number\" value=\"00050\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00050\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622114739593</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00051\" summary=\"GTimeManager Init\">\r\n      <created>1622116175958</created>\r\n      <option name=\"number\" value=\"00051\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00051\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622116175958</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00052\" summary=\"GTimeManager Init\">\r\n      <created>1622116755885</created>\r\n      <option name=\"number\" value=\"00052\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00052\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622116755885</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00053\" summary=\"Debug Flying Enemy\">\r\n      <created>1622119391321</created>\r\n      <option name=\"number\" value=\"00053\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00053\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622119391321</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00054\" summary=\"Merge\">\r\n      <created>1622180987964</created>\r\n      <option name=\"number\" value=\"00054\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00054\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622180987964</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00055\" summary=\"Merge\">\r\n      <created>1622181004476</created>\r\n      <option name=\"number\" value=\"00055\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00055\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622181004476</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00056\" summary=\"Upgrade Sprite\">\r\n      <created>1622184643597</created>\r\n      <option name=\"number\" value=\"00056\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00056\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622184643597</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00057\" summary=\"Init DeadPanel\">\r\n      <created>1622202331485</created>\r\n      <option name=\"number\" value=\"00057\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00057\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622202331485</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00058\" summary=\"Merge\">\r\n      <created>1622211556733</created>\r\n      <option name=\"number\" value=\"00058\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00058\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622211556734</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00059\" summary=\"Init Wizard\">\r\n      <created>1622215862372</created>\r\n      <option name=\"number\" value=\"00059\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00059\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622215862373</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00060\" summary=\"Init Wizard\">\r\n      <created>1622218322398</created>\r\n      <option name=\"number\" value=\"00060\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00060\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622218322398</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00061\" summary=\"Build Init\">\r\n      <created>1622249242785</created>\r\n      <option name=\"number\" value=\"00061\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00061\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622249242786</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00062\" summary=\"Build Init\">\r\n      <created>1622285059008</created>\r\n      <option name=\"number\" value=\"00062\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00062\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622285059008</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00063\" summary=\"Merge\">\r\n      <created>1622286952347</created>\r\n      <option name=\"number\" value=\"00063\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00063\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622286952347</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00064\" summary=\"Init Map\">\r\n      <created>1622288717159</created>\r\n      <option name=\"number\" value=\"00064\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00064\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622288717159</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00065\" summary=\"Init Map\">\r\n      <created>1622289117958</created>\r\n      <option name=\"number\" value=\"00065\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00065\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622289117958</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00066\" summary=\"Init Map\">\r\n      <created>1622291200904</created>\r\n      <option name=\"number\" value=\"00066\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00066\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622291200904</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00067\" summary=\"Init Resources\">\r\n      <created>1622292844542</created>\r\n      <option name=\"number\" value=\"00067\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00067\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622292844542</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00068\" summary=\"Init Door_Controller\">\r\n      <created>1622299472119</created>\r\n      <option name=\"number\" value=\"00068\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00068\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622299472119</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00069\" summary=\"Init Decorates\">\r\n      <created>1622304228456</created>\r\n      <option name=\"number\" value=\"00069\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00069\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622304228456</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00070\" summary=\"Init Decorates\">\r\n      <created>1622304235308</created>\r\n      <option name=\"number\" value=\"00070\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00070\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622304235308</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00071\" summary=\"Init DefendWar\">\r\n      <created>1622306321917</created>\r\n      <option name=\"number\" value=\"00071\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00071\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622306321917</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00072\" summary=\"Init DefendWar\">\r\n      <created>1622306494761</created>\r\n      <option name=\"number\" value=\"00072\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00072\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622306494761</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00073\" summary=\"Debug Map\">\r\n      <created>1622360341573</created>\r\n      <option name=\"number\" value=\"00073\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00073\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622360341573</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00074\" summary=\"Init Clock\">\r\n      <created>1622363977081</created>\r\n      <option name=\"number\" value=\"00074\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00074\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622363977081</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00075\" summary=\"Init particles\">\r\n      <created>1622365764836</created>\r\n      <option name=\"number\" value=\"00075\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00075\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622365764836</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00076\" summary=\"Init particles\">\r\n      <created>1622372842312</created>\r\n      <option name=\"number\" value=\"00076\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00076\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622372842312</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00077\" summary=\"Init particles\">\r\n      <created>1622376945294</created>\r\n      <option name=\"number\" value=\"00077\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00077\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622376945294</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00078\" summary=\"Init TFSM\">\r\n      <created>1622383063408</created>\r\n      <option name=\"number\" value=\"00078\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00078\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622383063408</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00079\" summary=\"Merge\">\r\n      <created>1622435546197</created>\r\n      <option name=\"number\" value=\"00079\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00079\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622435546198</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00080\" summary=\"Merge\">\r\n      <created>1622440504377</created>\r\n      <option name=\"number\" value=\"00080\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00080\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622440504377</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00081\" summary=\"Debug\">\r\n      <created>1622443488559</created>\r\n      <option name=\"number\" value=\"00081\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00081\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622443488559</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00082\" summary=\"ass\">\r\n      <created>1622445017567</created>\r\n      <option name=\"number\" value=\"00082\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00082\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622445017567</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00083\" summary=\"ass\">\r\n      <created>1622445719471</created>\r\n      <option name=\"number\" value=\"00083\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00083\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622445719471</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"84\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"UnityProjectConfiguration\" hasMinimizedUI=\"true\" />\r\n  <component name=\"UnityUnitTestConfiguration\" currentTestLauncher=\"EditMode\" />\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"develop\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <option name=\"CLEAR_INITIAL_COMMIT_MESSAGE\" value=\"true\" />\r\n    <MESSAGE value=\"Init Attack second\" />\r\n    <MESSAGE value=\"Init Pause Panel\" />\r\n    <MESSAGE value=\"Upgrade Camerator\" />\r\n    <MESSAGE value=\"Init Minimap\" />\r\n    <MESSAGE value=\"Reload Upgrade\" />\r\n    <MESSAGE value=\"Debug FlyingEnemy\" />\r\n    <MESSAGE value=\"Upgrade player\" />\r\n    <MESSAGE value=\"GTimeManager Init\" />\r\n    <MESSAGE value=\"Debug Flying Enemy\" />\r\n    <MESSAGE value=\"Upgrade Sprite\" />\r\n    <MESSAGE value=\"Init DeadPanel\" />\r\n    <MESSAGE value=\"Init Wizard\" />\r\n    <MESSAGE value=\"Build Init\" />\r\n    <MESSAGE value=\"Init Map\" />\r\n    <MESSAGE value=\"Init Resources\" />\r\n    <MESSAGE value=\"Init Door_Controller\" />\r\n    <MESSAGE value=\"Init Decorates\" />\r\n    <MESSAGE value=\"Init DefendWar\" />\r\n    <MESSAGE value=\"Debug Map\" />\r\n    <MESSAGE value=\"Init Clock\" />\r\n    <MESSAGE value=\"Init particles\" />\r\n    <MESSAGE value=\"Init TFSM\" />\r\n    <MESSAGE value=\"Merge\" />\r\n    <MESSAGE value=\"Debug\" />\r\n    <MESSAGE value=\"ass\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"ass\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml b/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml
+--- a/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml	(revision 862b699f22871247d9faa7f9af21dd841ea5b6c7)
++++ b/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml	(date 1622446909296)
+@@ -5,7 +5,11 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge">
++      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BossBattle/InitBossBattle.cs" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BossBattle/InitBossBattle.cs.meta" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BossBattle/ReleasePeople.cs" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -27,6 +31,7 @@
+     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/Town.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/WizardTips.cs" root0="FORCE_HIGHLIGHTING" />
++    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/Game.unity" root0="SKIP_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Game/Rotate.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/hole.cs" root0="FORCE_HIGHLIGHTING" />
+@@ -38,6 +43,7 @@
+     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EffectsManager/EffectsManager.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/sprite/Enemy/5e4afd7528de72bb9e64a1eceb3700b.png.meta" root0="SKIP_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BossBattle/ReleasePeople.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/Prefab/Enemy/catcher.prefab" root0="SKIP_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Game/sprite/Effects/destroySelf.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/Prefab/Bag/Chest/Chest.prefab" root0="SKIP_HIGHLIGHTING" />
+@@ -47,6 +53,7 @@
+     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/invade.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectSpawn.cs" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BossBattle/InitBossBattle.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CDA0DA9E-454B-4A0D-9B19-813AB03014ED/83/b396fabd/Debug.cs" root0="SKIP_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/IState.cs" root0="FORCE_HIGHLIGHTING" />
+@@ -198,21 +205,7 @@
+       <workItem from="1622343911216" duration="2751000" />
+       <workItem from="1622354971971" duration="1804000" />
+       <workItem from="1622357725587" duration="19043000" />
+-      <workItem from="1622427668275" duration="10747000" />
+-    </task>
+-    <task id="LOCAL-00035" summary="Init ChaseState">
+-      <created>1621658592621</created>
+-      <option name="number" value="00035" />
+-      <option name="presentableId" value="LOCAL-00035" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1621658592621</updated>
+-    </task>
+-    <task id="LOCAL-00036" summary="Init Sight">
+-      <created>1621825511026</created>
+-      <option name="number" value="00036" />
+-      <option name="presentableId" value="LOCAL-00036" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1621825511027</updated>
++      <workItem from="1622427668275" duration="11516000" />
+     </task>
+     <task id="LOCAL-00037" summary="Update UI">
+       <created>1621864324122</created>
+@@ -543,7 +536,21 @@
+       <option name="project" value="LOCAL" />
+       <updated>1622445719471</updated>
+     </task>
+-    <option name="localTasksCounter" value="84" />
++    <task id="LOCAL-00084" summary="Init Boss">
++      <created>1622446286003</created>
++      <option name="number" value="00084" />
++      <option name="presentableId" value="LOCAL-00084" />
++      <option name="project" value="LOCAL" />
++      <updated>1622446286003</updated>
++    </task>
++    <task id="LOCAL-00085" summary="Init Boss">
++      <created>1622446359106</created>
++      <option name="number" value="00085" />
++      <option name="presentableId" value="LOCAL-00085" />
++      <option name="project" value="LOCAL" />
++      <updated>1622446359106</updated>
++    </task>
++    <option name="localTasksCounter" value="86" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -578,7 +585,6 @@
+   <component name="VcsManagerConfiguration">
+     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+-    <MESSAGE value="Init Attack second" />
+     <MESSAGE value="Init Pause Panel" />
+     <MESSAGE value="Upgrade Camerator" />
+     <MESSAGE value="Init Minimap" />
+@@ -603,6 +609,7 @@
+     <MESSAGE value="Merge" />
+     <MESSAGE value="Debug" />
+     <MESSAGE value="ass" />
+-    <option name="LAST_COMMIT_MESSAGE" value="ass" />
++    <MESSAGE value="Init Boss" />
++    <option name="LAST_COMMIT_MESSAGE" value="Init Boss" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: Assets/Scenes/Game/Game.unity
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scenes/Game/Game.unity b/Assets/Scenes/Game/Game.unity
+--- a/Assets/Scenes/Game/Game.unity	(revision 862b699f22871247d9faa7f9af21dd841ea5b6c7)
++++ b/Assets/Scenes/Game/Game.unity	(date 1622447073681)
+@@ -490,63 +490,6 @@
+   m_PrefabAsset: {fileID: 0}
+   m_GameObject: {fileID: 31042819}
+   m_CullTransparentMesh: 1
+---- !u!1001 &37374950
+-PrefabInstance:
+-  m_ObjectHideFlags: 0
+-  serializedVersion: 2
+-  m_Modification:
+-    m_TransformParent: {fileID: 593868210}
+-    m_Modifications:
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_RootOrder
+-      value: 13
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalPosition.x
+-      value: -105.81148
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalPosition.y
+-      value: -50.40046
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalPosition.z
+-      value: 17.469799
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.w
+-      value: 1
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.x
+-      value: -0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.y
+-      value: -0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.z
+-      value: -0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalEulerAnglesHint.x
+-      value: 0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalEulerAnglesHint.y
+-      value: 0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalEulerAnglesHint.z
+-      value: 0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893432, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_Name
+-      value: catcher (26)
+-      objectReference: {fileID: 0}
+-    m_RemovedComponents: []
+-  m_SourcePrefab: {fileID: 100100000, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+ --- !u!1 &43076158
+ GameObject:
+   m_ObjectHideFlags: 0
+@@ -24086,63 +24029,6 @@
+       objectReference: {fileID: 0}
+     m_RemovedComponents: []
+   m_SourcePrefab: {fileID: 100100000, guid: d0178d82c69a95340acb75e87c6c2dc2, type: 3}
+---- !u!1001 &110088446
+-PrefabInstance:
+-  m_ObjectHideFlags: 0
+-  serializedVersion: 2
+-  m_Modification:
+-    m_TransformParent: {fileID: 593868210}
+-    m_Modifications:
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_RootOrder
+-      value: 19
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalPosition.x
+-      value: -2.315291
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalPosition.y
+-      value: -80.63835
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalPosition.z
+-      value: 17.469799
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.w
+-      value: 1
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.x
+-      value: -0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.y
+-      value: -0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.z
+-      value: -0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalEulerAnglesHint.x
+-      value: 0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalEulerAnglesHint.y
+-      value: 0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalEulerAnglesHint.z
+-      value: 0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893432, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_Name
+-      value: catcher (20)
+-      objectReference: {fileID: 0}
+-    m_RemovedComponents: []
+-  m_SourcePrefab: {fileID: 100100000, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+ --- !u!1 &112810349
+ GameObject:
+   m_ObjectHideFlags: 0
+@@ -24626,7 +24512,7 @@
+     m_Modifications:
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_RootOrder
+-      value: 32
++      value: 24
+       objectReference: {fileID: 0}
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_LocalPosition.x
+@@ -26503,7 +26389,7 @@
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+       propertyPath: m_RootOrder
+-      value: 49
++      value: 41
+       objectReference: {fileID: 0}
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+@@ -26884,7 +26770,7 @@
+     m_Modifications:
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_RootOrder
+-      value: 39
++      value: 31
+       objectReference: {fileID: 0}
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_LocalPosition.x
+@@ -27666,7 +27552,7 @@
+     m_Modifications:
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_RootOrder
+-      value: 31
++      value: 23
+       objectReference: {fileID: 0}
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_LocalPosition.x
+@@ -27928,7 +27814,7 @@
+     m_Modifications:
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_RootOrder
+-      value: 25
++      value: 17
+       objectReference: {fileID: 0}
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_LocalPosition.x
+@@ -28033,7 +27919,7 @@
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+       propertyPath: m_RootOrder
+-      value: 54
++      value: 46
+       objectReference: {fileID: 0}
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+@@ -28372,7 +28258,7 @@
+     m_Modifications:
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_RootOrder
+-      value: 30
++      value: 22
+       objectReference: {fileID: 0}
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_LocalPosition.x
+@@ -28509,7 +28395,7 @@
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+       propertyPath: m_RootOrder
+-      value: 42
++      value: 34
+       objectReference: {fileID: 0}
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+@@ -28944,7 +28830,7 @@
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+       propertyPath: m_RootOrder
+-      value: 43
++      value: 35
+       objectReference: {fileID: 0}
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+@@ -29121,7 +29007,7 @@
+     m_Modifications:
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_RootOrder
+-      value: 21
++      value: 13
+       objectReference: {fileID: 0}
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_LocalPosition.x
+@@ -29904,7 +29790,7 @@
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+       propertyPath: m_RootOrder
+-      value: 51
++      value: 43
+       objectReference: {fileID: 0}
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+@@ -30469,7 +30355,7 @@
+     m_Modifications:
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_RootOrder
+-      value: 22
++      value: 14
+       objectReference: {fileID: 0}
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_LocalPosition.x
+@@ -31148,14 +31034,6 @@
+   - {fileID: 630889684}
+   - {fileID: 12585688}
+   - {fileID: 1607596709}
+-  - {fileID: 1018062517}
+-  - {fileID: 1258033907}
+-  - {fileID: 1388951513}
+-  - {fileID: 620600352}
+-  - {fileID: 927306367}
+-  - {fileID: 1118038229}
+-  - {fileID: 1649679879}
+-  - {fileID: 775453516}
+   - {fileID: 2050700877}
+   - {fileID: 517363062}
+   - {fileID: 950611946}
+@@ -31199,67 +31077,9 @@
+   - {fileID: 167170623}
+   - {fileID: 199090439}
+   - {fileID: 1467022726}
+-  - {fileID: 619560835}
+   m_Father: {fileID: 0}
+   m_RootOrder: 3
+   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+---- !u!1001 &593960960
+-PrefabInstance:
+-  m_ObjectHideFlags: 0
+-  serializedVersion: 2
+-  m_Modification:
+-    m_TransformParent: {fileID: 593868210}
+-    m_Modifications:
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_RootOrder
+-      value: 15
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalPosition.x
+-      value: 9.548164
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalPosition.y
+-      value: -72.53804
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalPosition.z
+-      value: 17.469799
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.w
+-      value: 1
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.x
+-      value: -0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.y
+-      value: -0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.z
+-      value: -0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalEulerAnglesHint.x
+-      value: 0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalEulerAnglesHint.y
+-      value: 0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalEulerAnglesHint.z
+-      value: 0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893432, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_Name
+-      value: catcher (24)
+-      objectReference: {fileID: 0}
+-    m_RemovedComponents: []
+-  m_SourcePrefab: {fileID: 100100000, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+ --- !u!1001 &601526802
+ PrefabInstance:
+   m_ObjectHideFlags: 0
+@@ -31269,7 +31089,7 @@
+     m_Modifications:
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_RootOrder
+-      value: 35
++      value: 27
+       objectReference: {fileID: 0}
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_LocalPosition.x
+@@ -31434,7 +31254,7 @@
+   m_Icon: {fileID: 0}
+   m_NavMeshLayer: 0
+   m_StaticEditorFlags: 0
+-  m_IsActive: 1
++  m_IsActive: 0
+ --- !u!58 &619560830
+ CircleCollider2D:
+   m_ObjectHideFlags: 0
+@@ -31583,11 +31403,11 @@
+   m_PrefabAsset: {fileID: 0}
+   m_GameObject: {fileID: 619560829}
+   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+-  m_LocalPosition: {x: 4.7261705, y: -71.52865, z: 17.469799}
+-  m_LocalScale: {x: 1, y: 1, z: 1}
++  m_LocalPosition: {x: 2.2996366, y: 8.891678, z: 29.26858}
++  m_LocalScale: {x: 2, y: 2, z: 1}
+   m_Children: []
+-  m_Father: {fileID: 593868210}
+-  m_RootOrder: 64
++  m_Father: {fileID: 2129485197}
++  m_RootOrder: 0
+   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+ --- !u!1001 &619683226
+ PrefabInstance:
+@@ -31714,12 +31534,6 @@
+     type: 3}
+   m_PrefabInstance: {fileID: 619683226}
+   m_PrefabAsset: {fileID: 0}
+---- !u!4 &620600352 stripped
+-Transform:
+-  m_CorrespondingSourceObject: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8,
+-    type: 3}
+-  m_PrefabInstance: {fileID: 1518286886}
+-  m_PrefabAsset: {fileID: 0}
+ --- !u!4 &630889684 stripped
+ Transform:
+   m_CorrespondingSourceObject: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8,
+@@ -31771,7 +31585,7 @@
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+       propertyPath: m_RootOrder
+-      value: 58
++      value: 50
+       objectReference: {fileID: 0}
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+@@ -32141,7 +31955,7 @@
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+       propertyPath: m_RootOrder
+-      value: 47
++      value: 39
+       objectReference: {fileID: 0}
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+@@ -32659,7 +32473,7 @@
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+       propertyPath: m_RootOrder
+-      value: 53
++      value: 45
+       objectReference: {fileID: 0}
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+@@ -33086,7 +32900,7 @@
+     - target: {fileID: 8353612904349314507, guid: 07605e2ab8e3805488aef272ec97f057,
+         type: 3}
+       propertyPath: m_RootOrder
+-      value: 63
++      value: 55
+       objectReference: {fileID: 0}
+     - target: {fileID: 8353612904349314507, guid: 07605e2ab8e3805488aef272ec97f057,
+         type: 3}
+@@ -33393,12 +33207,6 @@
+   m_PrefabAsset: {fileID: 0}
+   m_GameObject: {fileID: 760865885}
+   m_CullTransparentMesh: 1
+---- !u!4 &775453516 stripped
+-Transform:
+-  m_CorrespondingSourceObject: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8,
+-    type: 3}
+-  m_PrefabInstance: {fileID: 1858085269}
+-  m_PrefabAsset: {fileID: 0}
+ --- !u!1001 &776078821
+ PrefabInstance:
+   m_ObjectHideFlags: 0
+@@ -33444,7 +33252,7 @@
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+       propertyPath: m_RootOrder
+-      value: 52
++      value: 44
+       objectReference: {fileID: 0}
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+@@ -33764,120 +33572,6 @@
+   m_PrefabAsset: {fileID: 0}
+   m_GameObject: {fileID: 788199518}
+   m_CullTransparentMesh: 1
+---- !u!1001 &792802075
+-PrefabInstance:
+-  m_ObjectHideFlags: 0
+-  serializedVersion: 2
+-  m_Modification:
+-    m_TransformParent: {fileID: 593868210}
+-    m_Modifications:
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_RootOrder
+-      value: 17
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalPosition.x
+-      value: 0.42733586
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalPosition.y
+-      value: -73.30342
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalPosition.z
+-      value: 17.469799
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.w
+-      value: 1
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.x
+-      value: -0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.y
+-      value: -0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.z
+-      value: -0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalEulerAnglesHint.x
+-      value: 0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalEulerAnglesHint.y
+-      value: 0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalEulerAnglesHint.z
+-      value: 0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893432, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_Name
+-      value: catcher (22)
+-      objectReference: {fileID: 0}
+-    m_RemovedComponents: []
+-  m_SourcePrefab: {fileID: 100100000, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+---- !u!1001 &794705041
+-PrefabInstance:
+-  m_ObjectHideFlags: 0
+-  serializedVersion: 2
+-  m_Modification:
+-    m_TransformParent: {fileID: 593868210}
+-    m_Modifications:
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_RootOrder
+-      value: 18
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalPosition.x
+-      value: 4.8920774
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalPosition.y
+-      value: -75.28066
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalPosition.z
+-      value: 17.469799
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.w
+-      value: 1
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.x
+-      value: -0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.y
+-      value: -0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.z
+-      value: -0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalEulerAnglesHint.x
+-      value: 0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalEulerAnglesHint.y
+-      value: 0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalEulerAnglesHint.z
+-      value: 0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893432, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_Name
+-      value: catcher (21)
+-      objectReference: {fileID: 0}
+-    m_RemovedComponents: []
+-  m_SourcePrefab: {fileID: 100100000, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+ --- !u!224 &802096048 stripped
+ RectTransform:
+   m_CorrespondingSourceObject: {fileID: 8339811473842337000, guid: ae3a345ef8d0a0245bc62728662ffdd1,
+@@ -34159,7 +33853,7 @@
+     m_Modifications:
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_RootOrder
+-      value: 28
++      value: 20
+       objectReference: {fileID: 0}
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_LocalPosition.x
+@@ -34386,7 +34080,7 @@
+     m_Modifications:
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_RootOrder
+-      value: 34
++      value: 26
+       objectReference: {fileID: 0}
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_LocalPosition.x
+@@ -76928,46 +76622,6 @@
+       dummyAlignment: 0
+       m_AllTileFlags: 1073741826
+   - first: {x: -1, y: -110, z: 0}
+-    second:
+-      serializedVersion: 2
+-      m_TileIndex: 6
+-      m_TileSpriteIndex: 7
+-      m_TileMatrixIndex: 0
+-      m_TileColorIndex: 0
+-      m_TileObjectToInstantiateIndex: 65535
+-      dummyAlignment: 0
+-      m_AllTileFlags: 1073741826
+-  - first: {x: 0, y: -110, z: 0}
+-    second:
+-      serializedVersion: 2
+-      m_TileIndex: 6
+-      m_TileSpriteIndex: 7
+-      m_TileMatrixIndex: 0
+-      m_TileColorIndex: 0
+-      m_TileObjectToInstantiateIndex: 65535
+-      dummyAlignment: 0
+-      m_AllTileFlags: 1073741826
+-  - first: {x: 1, y: -110, z: 0}
+-    second:
+-      serializedVersion: 2
+-      m_TileIndex: 6
+-      m_TileSpriteIndex: 7
+-      m_TileMatrixIndex: 0
+-      m_TileColorIndex: 0
+-      m_TileObjectToInstantiateIndex: 65535
+-      dummyAlignment: 0
+-      m_AllTileFlags: 1073741826
+-  - first: {x: 2, y: -110, z: 0}
+-    second:
+-      serializedVersion: 2
+-      m_TileIndex: 6
+-      m_TileSpriteIndex: 7
+-      m_TileMatrixIndex: 0
+-      m_TileColorIndex: 0
+-      m_TileObjectToInstantiateIndex: 65535
+-      dummyAlignment: 0
+-      m_AllTileFlags: 1073741826
+-  - first: {x: 3, y: -110, z: 0}
+     second:
+       serializedVersion: 2
+       m_TileIndex: 6
+@@ -378961,7 +378615,7 @@
+     m_Data: {fileID: 11400000, guid: 2a90d419a37a17b4aa3e3892cfea25f5, type: 2}
+   - m_RefCount: 20
+     m_Data: {fileID: 11400000, guid: a6bd46df37353ad4fbc27da0ce9b56e8, type: 2}
+-  - m_RefCount: 26621
++  - m_RefCount: 26617
+     m_Data: {fileID: 11400000, guid: 4d78a21feb1819f419862666b36f95db, type: 2}
+   - m_RefCount: 5755
+     m_Data: {fileID: 11400000, guid: f58f1f806b95a1842914bd2ad14ce0a2, type: 2}
+@@ -378980,7 +378634,7 @@
+     m_Data: {fileID: 21300548, guid: 95d22684aba5646d79a26b3287a692b6, type: 3}
+   - m_RefCount: 20
+     m_Data: {fileID: 21300634, guid: 95d22684aba5646d79a26b3287a692b6, type: 3}
+-  - m_RefCount: 23961
++  - m_RefCount: 23957
+     m_Data: {fileID: 21300636, guid: 95d22684aba5646d79a26b3287a692b6, type: 3}
+   - m_RefCount: 5755
+     m_Data: {fileID: 21300000, guid: f9802ad96ea3bce4da00af3e42567ede, type: 3}
+@@ -379003,7 +378657,7 @@
+   - m_RefCount: 21
+     m_Data: {fileID: 21300664, guid: 95d22684aba5646d79a26b3287a692b6, type: 3}
+   m_TileMatrixArray:
+-  - m_RefCount: 34427
++  - m_RefCount: 34423
+     m_Data:
+       e00: 1
+       e01: 0
+@@ -379058,7 +378712,7 @@
+       e32: 4.5905e-41
+       e33: 7.2e-43
+   m_TileColorArray:
+-  - m_RefCount: 34427
++  - m_RefCount: 34423
+     m_Data: {r: 1, g: 1, b: 1, a: 1}
+   - m_RefCount: 0
+     m_Data: {r: -2.0017433, g: -2.0017433, b: -2.0017433, a: -2.0017433}
+@@ -379141,7 +378795,7 @@
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+       propertyPath: m_RootOrder
+-      value: 48
++      value: 40
+       objectReference: {fileID: 0}
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+@@ -379825,7 +379479,7 @@
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+       propertyPath: m_RootOrder
+-      value: 46
++      value: 38
+       objectReference: {fileID: 0}
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+@@ -379993,12 +379647,6 @@
+       objectReference: {fileID: 0}
+     m_RemovedComponents: []
+   m_SourcePrefab: {fileID: 100100000, guid: d0178d82c69a95340acb75e87c6c2dc2, type: 3}
+---- !u!4 &927306367 stripped
+-Transform:
+-  m_CorrespondingSourceObject: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8,
+-    type: 3}
+-  m_PrefabInstance: {fileID: 792802075}
+-  m_PrefabAsset: {fileID: 0}
+ --- !u!1 &928377261
+ GameObject:
+   m_ObjectHideFlags: 0
+@@ -386825,8 +386473,8 @@
+   - first: {x: -2, y: -110, z: 0}
+     second:
+       serializedVersion: 2
+-      m_TileIndex: 4
+-      m_TileSpriteIndex: 6
++      m_TileIndex: 7
++      m_TileSpriteIndex: 8
+       m_TileMatrixIndex: 0
+       m_TileColorIndex: 1
+       m_TileObjectToInstantiateIndex: 65535
+@@ -386835,8 +386483,8 @@
+   - first: {x: -1, y: -110, z: 0}
+     second:
+       serializedVersion: 2
+-      m_TileIndex: 4
+-      m_TileSpriteIndex: 6
++      m_TileIndex: 7
++      m_TileSpriteIndex: 8
+       m_TileMatrixIndex: 0
+       m_TileColorIndex: 1
+       m_TileObjectToInstantiateIndex: 65535
+@@ -386845,8 +386493,8 @@
+   - first: {x: 0, y: -110, z: 0}
+     second:
+       serializedVersion: 2
+-      m_TileIndex: 4
+-      m_TileSpriteIndex: 6
++      m_TileIndex: 7
++      m_TileSpriteIndex: 8
+       m_TileMatrixIndex: 0
+       m_TileColorIndex: 1
+       m_TileObjectToInstantiateIndex: 65535
+@@ -386855,8 +386503,8 @@
+   - first: {x: 1, y: -110, z: 0}
+     second:
+       serializedVersion: 2
+-      m_TileIndex: 4
+-      m_TileSpriteIndex: 6
++      m_TileIndex: 7
++      m_TileSpriteIndex: 8
+       m_TileMatrixIndex: 0
+       m_TileColorIndex: 1
+       m_TileObjectToInstantiateIndex: 65535
+@@ -386865,8 +386513,8 @@
+   - first: {x: 2, y: -110, z: 0}
+     second:
+       serializedVersion: 2
+-      m_TileIndex: 4
+-      m_TileSpriteIndex: 6
++      m_TileIndex: 7
++      m_TileSpriteIndex: 8
+       m_TileMatrixIndex: 0
+       m_TileColorIndex: 1
+       m_TileObjectToInstantiateIndex: 65535
+@@ -386875,8 +386523,8 @@
+   - first: {x: 3, y: -110, z: 0}
+     second:
+       serializedVersion: 2
+-      m_TileIndex: 4
+-      m_TileSpriteIndex: 6
++      m_TileIndex: 7
++      m_TileSpriteIndex: 8
+       m_TileMatrixIndex: 0
+       m_TileColorIndex: 1
+       m_TileObjectToInstantiateIndex: 65535
+@@ -386885,8 +386533,8 @@
+   - first: {x: 4, y: -110, z: 0}
+     second:
+       serializedVersion: 2
+-      m_TileIndex: 4
+-      m_TileSpriteIndex: 6
++      m_TileIndex: 7
++      m_TileSpriteIndex: 8
+       m_TileMatrixIndex: 0
+       m_TileColorIndex: 1
+       m_TileObjectToInstantiateIndex: 65535
+@@ -386895,8 +386543,8 @@
+   - first: {x: 5, y: -110, z: 0}
+     second:
+       serializedVersion: 2
+-      m_TileIndex: 4
+-      m_TileSpriteIndex: 6
++      m_TileIndex: 7
++      m_TileSpriteIndex: 8
+       m_TileMatrixIndex: 0
+       m_TileColorIndex: 1
+       m_TileObjectToInstantiateIndex: 65535
+@@ -468242,13 +467890,13 @@
+     m_Data: {fileID: 11400000, guid: 85104bd57e05c4f48ab0ec7066b99fd5, type: 2}
+   - m_RefCount: 0
+     m_Data: {fileID: 0}
+-  - m_RefCount: 404
++  - m_RefCount: 396
+     m_Data: {fileID: 11400000, guid: c82ce7b2c636b944ea5d9a6a5d6840fb, type: 2}
+   - m_RefCount: 1734
+     m_Data: {fileID: 11400000, guid: 566fae780d4a5e048ab972b886c3ce0a, type: 2}
+   - m_RefCount: 373
+     m_Data: {fileID: 11400000, guid: ea871da4fe34df84d8c13d3e5e91b610, type: 2}
+-  - m_RefCount: 3984
++  - m_RefCount: 3992
+     m_Data: {fileID: 11400000, guid: f58f1f806b95a1842914bd2ad14ce0a2, type: 2}
+   - m_RefCount: 346
+     m_Data: {fileID: 11400000, guid: 8205ae0875ce76d4081fb8b58b138842, type: 2}
+@@ -468265,11 +467913,11 @@
+     m_Data: {fileID: 21300000, guid: 1ca03e63cfbd9224c877c3415f5bb0ab, type: 3}
+   - m_RefCount: 0
+     m_Data: {fileID: 0}
+-  - m_RefCount: 404
++  - m_RefCount: 396
+     m_Data: {fileID: 21300000, guid: 402d8bc735e35e54799373ea5691bb90, type: 3}
+   - m_RefCount: 1734
+     m_Data: {fileID: 21300000, guid: a5868c41a490cc645aa0690df7b3cf9a, type: 3}
+-  - m_RefCount: 3984
++  - m_RefCount: 3992
+     m_Data: {fileID: 21300000, guid: f9802ad96ea3bce4da00af3e42567ede, type: 3}
+   - m_RefCount: 373
+     m_Data: {fileID: 21300000, guid: 4cab9514d735f174a8ca69a508969476, type: 3}
+@@ -468576,7 +468224,7 @@
+     m_Modifications:
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_RootOrder
+-      value: 38
++      value: 30
+       objectReference: {fileID: 0}
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_LocalPosition.x
+@@ -469187,12 +468835,6 @@
+       objectReference: {fileID: 0}
+     m_RemovedComponents: []
+   m_SourcePrefab: {fileID: 100100000, guid: d0178d82c69a95340acb75e87c6c2dc2, type: 3}
+---- !u!4 &1018062517 stripped
+-Transform:
+-  m_CorrespondingSourceObject: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8,
+-    type: 3}
+-  m_PrefabInstance: {fileID: 37374950}
+-  m_PrefabAsset: {fileID: 0}
+ --- !u!1001 &1020112148
+ PrefabInstance:
+   m_ObjectHideFlags: 0
+@@ -469202,7 +468844,7 @@
+     m_Modifications:
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_RootOrder
+-      value: 24
++      value: 16
+       objectReference: {fileID: 0}
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_LocalPosition.x
+@@ -472122,86 +471764,6 @@
+       m_TileObjectToInstantiateIndex: 65535
+       dummyAlignment: 0
+       m_AllTileFlags: 1073741825
+-  - first: {x: -2, y: -111, z: 0}
+-    second:
+-      serializedVersion: 2
+-      m_TileIndex: 5
+-      m_TileSpriteIndex: 9
+-      m_TileMatrixIndex: 0
+-      m_TileColorIndex: 0
+-      m_TileObjectToInstantiateIndex: 65535
+-      dummyAlignment: 0
+-      m_AllTileFlags: 1073741825
+-  - first: {x: -1, y: -111, z: 0}
+-    second:
+-      serializedVersion: 2
+-      m_TileIndex: 5
+-      m_TileSpriteIndex: 9
+-      m_TileMatrixIndex: 0
+-      m_TileColorIndex: 0
+-      m_TileObjectToInstantiateIndex: 65535
+-      dummyAlignment: 0
+-      m_AllTileFlags: 1073741825
+-  - first: {x: 0, y: -111, z: 0}
+-    second:
+-      serializedVersion: 2
+-      m_TileIndex: 5
+-      m_TileSpriteIndex: 9
+-      m_TileMatrixIndex: 0
+-      m_TileColorIndex: 0
+-      m_TileObjectToInstantiateIndex: 65535
+-      dummyAlignment: 0
+-      m_AllTileFlags: 1073741825
+-  - first: {x: 1, y: -111, z: 0}
+-    second:
+-      serializedVersion: 2
+-      m_TileIndex: 5
+-      m_TileSpriteIndex: 9
+-      m_TileMatrixIndex: 0
+-      m_TileColorIndex: 0
+-      m_TileObjectToInstantiateIndex: 65535
+-      dummyAlignment: 0
+-      m_AllTileFlags: 1073741825
+-  - first: {x: 2, y: -111, z: 0}
+-    second:
+-      serializedVersion: 2
+-      m_TileIndex: 5
+-      m_TileSpriteIndex: 9
+-      m_TileMatrixIndex: 0
+-      m_TileColorIndex: 0
+-      m_TileObjectToInstantiateIndex: 65535
+-      dummyAlignment: 0
+-      m_AllTileFlags: 1073741825
+-  - first: {x: 3, y: -111, z: 0}
+-    second:
+-      serializedVersion: 2
+-      m_TileIndex: 5
+-      m_TileSpriteIndex: 9
+-      m_TileMatrixIndex: 0
+-      m_TileColorIndex: 0
+-      m_TileObjectToInstantiateIndex: 65535
+-      dummyAlignment: 0
+-      m_AllTileFlags: 1073741825
+-  - first: {x: 4, y: -111, z: 0}
+-    second:
+-      serializedVersion: 2
+-      m_TileIndex: 5
+-      m_TileSpriteIndex: 9
+-      m_TileMatrixIndex: 0
+-      m_TileColorIndex: 0
+-      m_TileObjectToInstantiateIndex: 65535
+-      dummyAlignment: 0
+-      m_AllTileFlags: 1073741825
+-  - first: {x: 5, y: -111, z: 0}
+-    second:
+-      serializedVersion: 2
+-      m_TileIndex: 5
+-      m_TileSpriteIndex: 9
+-      m_TileMatrixIndex: 0
+-      m_TileColorIndex: 0
+-      m_TileObjectToInstantiateIndex: 65535
+-      dummyAlignment: 0
+-      m_AllTileFlags: 1073741825
+   - first: {x: 6, y: -111, z: 0}
+     second:
+       serializedVersion: 2
+@@ -488224,7 +487786,7 @@
+     m_Data: {fileID: 0}
+   - m_RefCount: 0
+     m_Data: {fileID: 0}
+-  - m_RefCount: 1536
++  - m_RefCount: 1528
+     m_Data: {fileID: 11400000, guid: 280aa93c342179541b5e74a441352092, type: 2}
+   m_TileSpriteArray:
+   - m_RefCount: 0
+@@ -488245,12 +487807,12 @@
+     m_Data: {fileID: 0}
+   - m_RefCount: 0
+     m_Data: {fileID: 0}
+-  - m_RefCount: 1536
++  - m_RefCount: 1528
+     m_Data: {fileID: 21300000, guid: 458c79302eac4cb45acbd266702467de, type: 3}
+   - m_RefCount: 0
+     m_Data: {fileID: 0}
+   m_TileMatrixArray:
+-  - m_RefCount: 1868
++  - m_RefCount: 1860
+     m_Data:
+       e00: 1
+       e01: 0
+@@ -488305,7 +487867,7 @@
+       e32: 8.5e-44
+       e33: 1
+   m_TileColorArray:
+-  - m_RefCount: 1868
++  - m_RefCount: 1860
+     m_Data: {r: 1, g: 1, b: 1, a: 1}
+   - m_RefCount: 0
+     m_Data: {r: -2.0017433, g: -2.0017433, b: -2.0017433, a: -2.0017433}
+@@ -488764,7 +488326,7 @@
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+       propertyPath: m_RootOrder
+-      value: 44
++      value: 36
+       objectReference: {fileID: 0}
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+@@ -489070,6 +488632,76 @@
+   - {fileID: 366769561}
+   m_Father: {fileID: 387881018}
+   m_RootOrder: 0
++  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
++--- !u!1 &1079108077
++GameObject:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  serializedVersion: 6
++  m_Component:
++  - component: {fileID: 1079108080}
++  - component: {fileID: 1079108079}
++  - component: {fileID: 1079108078}
++  m_Layer: 0
++  m_Name: SafetyRoom
++  m_TagString: Untagged
++  m_Icon: {fileID: 0}
++  m_NavMeshLayer: 0
++  m_StaticEditorFlags: 0
++  m_IsActive: 1
++--- !u!114 &1079108078
++MonoBehaviour:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1079108077}
++  m_Enabled: 1
++  m_EditorHideFlags: 0
++  m_Script: {fileID: 11500000, guid: 732087a7d9be0f04cb86021e8fb4198e, type: 3}
++  m_Name: 
++  m_EditorClassIdentifier: 
++--- !u!61 &1079108079
++BoxCollider2D:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1079108077}
++  m_Enabled: 1
++  m_Density: 1
++  m_Material: {fileID: 0}
++  m_IsTrigger: 0
++  m_UsedByEffector: 0
++  m_UsedByComposite: 0
++  m_Offset: {x: 7.4706078, y: -9.043377}
++  m_SpriteTilingProperty:
++    border: {x: 0, y: 0, z: 0, w: 0}
++    pivot: {x: 0, y: 0}
++    oldSize: {x: 0, y: 0}
++    newSize: {x: 0, y: 0}
++    adaptiveTilingThreshold: 0
++    drawMode: 0
++    adaptiveTiling: 0
++  m_AutoTiling: 0
++  serializedVersion: 2
++  m_Size: {x: 15.9412155, y: 18.917244}
++  m_EdgeRadius: 0
++--- !u!4 &1079108080
++Transform:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1079108077}
++  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
++  m_LocalPosition: {x: -82.51, y: -91.43, z: -76.72329}
++  m_LocalScale: {x: 1, y: 1, z: 1}
++  m_Children: []
++  m_Father: {fileID: 0}
++  m_RootOrder: 30
+   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+ --- !u!1 &1079596151
+ GameObject:
+@@ -489208,7 +488840,7 @@
+   m_PrefabAsset: {fileID: 0}
+   m_GameObject: {fileID: 1087707684}
+   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+-  m_LocalPosition: {x: -70.9, y: -74.3, z: 0}
++  m_LocalPosition: {x: -11.5, y: -98.5, z: 0}
+   m_LocalScale: {x: 1.9077, y: 1.9077, z: 1.9077}
+   m_Children:
+   - {fileID: 1563607042}
+@@ -489525,7 +489157,7 @@
+     m_Modifications:
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_RootOrder
+-      value: 27
++      value: 19
+       objectReference: {fileID: 0}
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_LocalPosition.x
+@@ -489830,12 +489462,6 @@
+   m_CorrespondingSourceObject: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8,
+     type: 3}
+   m_PrefabInstance: {fileID: 364300487}
+-  m_PrefabAsset: {fileID: 0}
+---- !u!4 &1118038229 stripped
+-Transform:
+-  m_CorrespondingSourceObject: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8,
+-    type: 3}
+-  m_PrefabInstance: {fileID: 794705041}
+   m_PrefabAsset: {fileID: 0}
+ --- !u!4 &1121096460 stripped
+ Transform:
+@@ -491100,7 +490726,7 @@
+     m_Modifications:
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_RootOrder
+-      value: 26
++      value: 18
+       objectReference: {fileID: 0}
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_LocalPosition.x
+@@ -491359,7 +490985,7 @@
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+       propertyPath: m_RootOrder
+-      value: 60
++      value: 52
+       objectReference: {fileID: 0}
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+@@ -491709,12 +491335,6 @@
+       objectReference: {fileID: 0}
+     m_RemovedComponents: []
+   m_SourcePrefab: {fileID: 100100000, guid: 416579b0a1b56374f801a1431a747354, type: 3}
+---- !u!4 &1258033907 stripped
+-Transform:
+-  m_CorrespondingSourceObject: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8,
+-    type: 3}
+-  m_PrefabInstance: {fileID: 1560843430}
+-  m_PrefabAsset: {fileID: 0}
+ --- !u!1001 &1269621447
+ PrefabInstance:
+   m_ObjectHideFlags: 0
+@@ -492116,7 +491736,7 @@
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+       propertyPath: m_RootOrder
+-      value: 56
++      value: 48
+       objectReference: {fileID: 0}
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+@@ -493061,7 +492681,7 @@
+     - target: {fileID: 8353612904349314507, guid: 07605e2ab8e3805488aef272ec97f057,
+         type: 3}
+       propertyPath: m_RootOrder
+-      value: 62
++      value: 54
+       objectReference: {fileID: 0}
+     - target: {fileID: 8353612904349314507, guid: 07605e2ab8e3805488aef272ec97f057,
+         type: 3}
+@@ -493150,7 +492770,7 @@
+     m_Modifications:
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_RootOrder
+-      value: 23
++      value: 15
+       objectReference: {fileID: 0}
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_LocalPosition.x
+@@ -493198,12 +492818,6 @@
+       objectReference: {fileID: 0}
+     m_RemovedComponents: []
+   m_SourcePrefab: {fileID: 100100000, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+---- !u!4 &1388951513 stripped
+-Transform:
+-  m_CorrespondingSourceObject: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8,
+-    type: 3}
+-  m_PrefabInstance: {fileID: 593960960}
+-  m_PrefabAsset: {fileID: 0}
+ --- !u!4 &1396666570 stripped
+ Transform:
+   m_CorrespondingSourceObject: {fileID: 6004932349271264189, guid: d0178d82c69a95340acb75e87c6c2dc2,
+@@ -493559,7 +493173,7 @@
+     m_Modifications:
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_RootOrder
+-      value: 37
++      value: 29
+       objectReference: {fileID: 0}
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_LocalPosition.x
+@@ -494393,7 +494007,7 @@
+     m_Modifications:
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_RootOrder
+-      value: 29
++      value: 21
+       objectReference: {fileID: 0}
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_LocalPosition.x
+@@ -494471,63 +494085,6 @@
+   m_Father: {fileID: 0}
+   m_RootOrder: 12
+   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+---- !u!1001 &1518286886
+-PrefabInstance:
+-  m_ObjectHideFlags: 0
+-  serializedVersion: 2
+-  m_Modification:
+-    m_TransformParent: {fileID: 593868210}
+-    m_Modifications:
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_RootOrder
+-      value: 16
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalPosition.x
+-      value: 14.268033
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalPosition.y
+-      value: -79.681625
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalPosition.z
+-      value: 17.469799
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.w
+-      value: 1
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.x
+-      value: -0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.y
+-      value: -0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.z
+-      value: -0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalEulerAnglesHint.x
+-      value: 0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalEulerAnglesHint.y
+-      value: 0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalEulerAnglesHint.z
+-      value: 0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893432, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_Name
+-      value: catcher (23)
+-      objectReference: {fileID: 0}
+-    m_RemovedComponents: []
+-  m_SourcePrefab: {fileID: 100100000, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+ --- !u!224 &1521191888 stripped
+ RectTransform:
+   m_CorrespondingSourceObject: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+@@ -494597,7 +494154,7 @@
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+       propertyPath: m_RootOrder
+-      value: 55
++      value: 47
+       objectReference: {fileID: 0}
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+@@ -494724,63 +494281,6 @@
+   m_Father: {fileID: 387881018}
+   m_RootOrder: 1
+   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+---- !u!1001 &1560843430
+-PrefabInstance:
+-  m_ObjectHideFlags: 0
+-  serializedVersion: 2
+-  m_Modification:
+-    m_TransformParent: {fileID: 593868210}
+-    m_Modifications:
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_RootOrder
+-      value: 14
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalPosition.x
+-      value: -7.6091976
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalPosition.y
+-      value: -67.88195
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalPosition.z
+-      value: 17.469799
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.w
+-      value: 1
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.x
+-      value: -0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.y
+-      value: -0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.z
+-      value: -0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalEulerAnglesHint.x
+-      value: 0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalEulerAnglesHint.y
+-      value: 0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalEulerAnglesHint.z
+-      value: 0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893432, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_Name
+-      value: catcher (25)
+-      objectReference: {fileID: 0}
+-    m_RemovedComponents: []
+-  m_SourcePrefab: {fileID: 100100000, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+ --- !u!1 &1563607041
+ GameObject:
+   m_ObjectHideFlags: 0
+@@ -500046,12 +499546,6 @@
+   m_HasTransformHierarchy: 1
+   m_AllowConstantClipSamplingOptimization: 1
+   m_KeepAnimatorControllerStateOnDisable: 0
+---- !u!4 &1649679879 stripped
+-Transform:
+-  m_CorrespondingSourceObject: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8,
+-    type: 3}
+-  m_PrefabInstance: {fileID: 110088446}
+-  m_PrefabAsset: {fileID: 0}
+ --- !u!224 &1650297700 stripped
+ RectTransform:
+   m_CorrespondingSourceObject: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+@@ -501948,7 +501442,7 @@
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+       propertyPath: m_RootOrder
+-      value: 50
++      value: 42
+       objectReference: {fileID: 0}
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+@@ -502540,7 +502034,7 @@
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+       propertyPath: m_RootOrder
+-      value: 45
++      value: 37
+       objectReference: {fileID: 0}
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+@@ -502694,7 +502188,7 @@
+   m_PrefabAsset: {fileID: 0}
+   m_GameObject: {fileID: 1843973544}
+   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+-  m_LocalPosition: {x: -70.9, y: -74.3, z: -10}
++  m_LocalPosition: {x: -11.5, y: -98.5, z: -10}
+   m_LocalScale: {x: 1, y: 1, z: 1}
+   m_Children:
+   - {fileID: 2104025433}
+@@ -502893,63 +502387,6 @@
+       objectReference: {fileID: 0}
+     m_RemovedComponents: []
+   m_SourcePrefab: {fileID: 100100000, guid: 416579b0a1b56374f801a1431a747354, type: 3}
+---- !u!1001 &1858085269
+-PrefabInstance:
+-  m_ObjectHideFlags: 0
+-  serializedVersion: 2
+-  m_Modification:
+-    m_TransformParent: {fileID: 593868210}
+-    m_Modifications:
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_RootOrder
+-      value: 20
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalPosition.x
+-      value: -9.139967
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalPosition.y
+-      value: -75.854706
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalPosition.z
+-      value: 17.469799
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.w
+-      value: 1
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.x
+-      value: -0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.y
+-      value: -0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalRotation.z
+-      value: -0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalEulerAnglesHint.x
+-      value: 0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalEulerAnglesHint.y
+-      value: 0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_LocalEulerAnglesHint.z
+-      value: 0
+-      objectReference: {fileID: 0}
+-    - target: {fileID: 3488071487893432, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+-      propertyPath: m_Name
+-      value: catcher (19)
+-      objectReference: {fileID: 0}
+-    m_RemovedComponents: []
+-  m_SourcePrefab: {fileID: 100100000, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+ --- !u!1001 &1865225334
+ PrefabInstance:
+   m_ObjectHideFlags: 0
+@@ -502959,7 +502396,7 @@
+     m_Modifications:
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_RootOrder
+-      value: 33
++      value: 25
+       objectReference: {fileID: 0}
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_LocalPosition.x
+@@ -503052,7 +502489,7 @@
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+       propertyPath: m_RootOrder
+-      value: 57
++      value: 49
+       objectReference: {fileID: 0}
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+@@ -505256,7 +504693,7 @@
+     - target: {fileID: 8353612904349314507, guid: 07605e2ab8e3805488aef272ec97f057,
+         type: 3}
+       propertyPath: m_RootOrder
+-      value: 61
++      value: 53
+       objectReference: {fileID: 0}
+     - target: {fileID: 8353612904349314507, guid: 07605e2ab8e3805488aef272ec97f057,
+         type: 3}
+@@ -507018,15 +506455,9 @@
+         Y: -620000000
+       - X: -1230000000
+         Y: -620000000
+-    - - X: 380000000
+-        Y: -580000000
+-      - X: -340000000
+-        Y: -580000000
+-      - X: -340000000
+-        Y: -1100000000
+-      - X: 380000000
+-        Y: -1100000000
+-    - - X: -330000000
++    - - X: -20000100
++        Y: -1090000000
++      - X: -330000000
+         Y: -1090000000
+       - X: -330000000
+         Y: -590000000
+@@ -507034,6 +506465,20 @@
+         Y: -590000000
+       - X: 370000000
+         Y: -1090000000
++      - X: 60000100
++        Y: -1090000000
++      - X: 60000100
++        Y: -1100000000
++      - X: 380000000
++        Y: -1100000000
++      - X: 380000000
++        Y: -580000000
++      - X: -340000000
++        Y: -580000000
++      - X: -340000000
++        Y: -1100000000
++      - X: -20000100
++        Y: -1100000000
+     - - X: -940000000
+         Y: -620000000
+       - X: -950000000
+@@ -507248,7 +506693,13 @@
+       - {x: -66, y: -110.99998}
+       - {x: -65.99997, y: -106}
+       - {x: -63, y: -106.00003}
+-    - - {x: -59, y: 16.000029}
++    - - {x: -43, y: 16.000029}
++      - {x: -53, y: 16.000029}
++      - {x: -52.999973, y: 18}
++      - {x: -45, y: 18.000029}
++      - {x: -45.00003, y: 32}
++      - {x: -59, y: 31.999971}
++      - {x: -59.000034, y: 16}
+       - {x: -62, y: 16.000029}
+       - {x: -61.99997, y: 39}
+       - {x: -15, y: 38.999973}
+@@ -507262,12 +506713,6 @@
+       - {x: -35, y: 29.999971}
+       - {x: -35.00003, y: 28}
+       - {x: -43, y: 27.999971}
+-      - {x: -43.00003, y: 16}
+-      - {x: -53, y: 16.000029}
+-      - {x: -52.999973, y: 18}
+-      - {x: -45, y: 18.000029}
+-      - {x: -45.00003, y: 32}
+-      - {x: -59, y: 31.999971}
+     - - {x: -83.00002, y: 13.99999}
+       - {x: -83.00002, y: 32.00001}
+       - {x: -97.000015, y: 31.999975}
+@@ -507466,14 +506911,18 @@
+       - {x: -94.00003, y: -57}
+       - {x: -124, y: -57.000034}
+       - {x: -123.99998, y: -62}
+-    - - {x: 37.999973, y: -110}
++    - - {x: -2.0000393, y: -110}
++      - {x: -2.0000393, y: -109}
++      - {x: -33, y: -108.99998}
++      - {x: -32.999973, y: -59}
++      - {x: 37, y: -59.000034}
++      - {x: 36.999973, y: -109}
++      - {x: 6.00001, y: -109.00003}
++      - {x: 6.000039, y: -110}
++      - {x: 38, y: -109.99998}
+       - {x: 37.999973, y: -58}
+       - {x: -34, y: -58.000034}
+       - {x: -33.999973, y: -110}
+-    - - {x: 37, y: -108.99998}
+-      - {x: -33, y: -108.99998}
+-      - {x: -32.999973, y: -59}
+-      - {x: 37, y: -59.000034}
+     - - {x: -94.00003, y: -67}
+       - {x: -94.00003, y: -62}
+       - {x: -95, y: -62.000034}
+@@ -512679,86 +512128,6 @@
+       dummyAlignment: 0
+       m_AllTileFlags: 1073741825
+   - first: {x: -3, y: -110, z: 0}
+-    second:
+-      serializedVersion: 2
+-      m_TileIndex: 4
+-      m_TileSpriteIndex: 8
+-      m_TileMatrixIndex: 0
+-      m_TileColorIndex: 0
+-      m_TileObjectToInstantiateIndex: 65535
+-      dummyAlignment: 0
+-      m_AllTileFlags: 1073741825
+-  - first: {x: -2, y: -110, z: 0}
+-    second:
+-      serializedVersion: 2
+-      m_TileIndex: 4
+-      m_TileSpriteIndex: 8
+-      m_TileMatrixIndex: 0
+-      m_TileColorIndex: 0
+-      m_TileObjectToInstantiateIndex: 65535
+-      dummyAlignment: 0
+-      m_AllTileFlags: 1073741825
+-  - first: {x: -1, y: -110, z: 0}
+-    second:
+-      serializedVersion: 2
+-      m_TileIndex: 4
+-      m_TileSpriteIndex: 8
+-      m_TileMatrixIndex: 0
+-      m_TileColorIndex: 0
+-      m_TileObjectToInstantiateIndex: 65535
+-      dummyAlignment: 0
+-      m_AllTileFlags: 1073741825
+-  - first: {x: 0, y: -110, z: 0}
+-    second:
+-      serializedVersion: 2
+-      m_TileIndex: 4
+-      m_TileSpriteIndex: 8
+-      m_TileMatrixIndex: 0
+-      m_TileColorIndex: 0
+-      m_TileObjectToInstantiateIndex: 65535
+-      dummyAlignment: 0
+-      m_AllTileFlags: 1073741825
+-  - first: {x: 1, y: -110, z: 0}
+-    second:
+-      serializedVersion: 2
+-      m_TileIndex: 4
+-      m_TileSpriteIndex: 8
+-      m_TileMatrixIndex: 0
+-      m_TileColorIndex: 0
+-      m_TileObjectToInstantiateIndex: 65535
+-      dummyAlignment: 0
+-      m_AllTileFlags: 1073741825
+-  - first: {x: 2, y: -110, z: 0}
+-    second:
+-      serializedVersion: 2
+-      m_TileIndex: 4
+-      m_TileSpriteIndex: 8
+-      m_TileMatrixIndex: 0
+-      m_TileColorIndex: 0
+-      m_TileObjectToInstantiateIndex: 65535
+-      dummyAlignment: 0
+-      m_AllTileFlags: 1073741825
+-  - first: {x: 3, y: -110, z: 0}
+-    second:
+-      serializedVersion: 2
+-      m_TileIndex: 4
+-      m_TileSpriteIndex: 8
+-      m_TileMatrixIndex: 0
+-      m_TileColorIndex: 0
+-      m_TileObjectToInstantiateIndex: 65535
+-      dummyAlignment: 0
+-      m_AllTileFlags: 1073741825
+-  - first: {x: 4, y: -110, z: 0}
+-    second:
+-      serializedVersion: 2
+-      m_TileIndex: 4
+-      m_TileSpriteIndex: 8
+-      m_TileMatrixIndex: 0
+-      m_TileColorIndex: 0
+-      m_TileObjectToInstantiateIndex: 65535
+-      dummyAlignment: 0
+-      m_AllTileFlags: 1073741825
+-  - first: {x: 5, y: -110, z: 0}
+     second:
+       serializedVersion: 2
+       m_TileIndex: 4
+@@ -543948,7 +543317,7 @@
+     m_Data: {fileID: 11400000, guid: f2c62ff9227a94e4f893e5fadfbdfb41, type: 2}
+   - m_RefCount: 0
+     m_Data: {fileID: 0}
+-  - m_RefCount: 3431
++  - m_RefCount: 3423
+     m_Data: {fileID: 11400000, guid: c82ce7b2c636b944ea5d9a6a5d6840fb, type: 2}
+   - m_RefCount: 118
+     m_Data: {fileID: 11400000, guid: 280aa93c342179541b5e74a441352092, type: 2}
+@@ -543969,12 +543338,12 @@
+     m_Data: {fileID: 21300000, guid: 20fa8174bfe09a948be1fb88595a26a8, type: 3}
+   - m_RefCount: 118
+     m_Data: {fileID: 21300000, guid: 458c79302eac4cb45acbd266702467de, type: 3}
+-  - m_RefCount: 3431
++  - m_RefCount: 3423
+     m_Data: {fileID: 21300000, guid: 402d8bc735e35e54799373ea5691bb90, type: 3}
+   - m_RefCount: 0
+     m_Data: {fileID: 0}
+   m_TileMatrixArray:
+-  - m_RefCount: 3635
++  - m_RefCount: 3627
+     m_Data:
+       e00: 1
+       e01: 0
+@@ -543993,7 +543362,7 @@
+       e32: 0
+       e33: 1
+   m_TileColorArray:
+-  - m_RefCount: 3635
++  - m_RefCount: 3627
+     m_Data: {r: 1, g: 1, b: 1, a: 1}
+   m_TileObjectToInstantiateArray: []
+   m_AnimationFrameRate: 1
+@@ -544107,7 +543476,7 @@
+     m_Modifications:
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_RootOrder
+-      value: 36
++      value: 28
+       objectReference: {fileID: 0}
+     - target: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
+       propertyPath: m_LocalPosition.x
+@@ -544200,7 +543569,7 @@
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+       propertyPath: m_RootOrder
+-      value: 59
++      value: 51
+       objectReference: {fileID: 0}
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+@@ -544694,6 +544063,50 @@
+     type: 3}
+   m_PrefabInstance: {fileID: 241340453}
+   m_PrefabAsset: {fileID: 0}
++--- !u!1 &2129485195
++GameObject:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  serializedVersion: 6
++  m_Component:
++  - component: {fileID: 2129485197}
++  - component: {fileID: 2129485196}
++  m_Layer: 0
++  m_Name: BossBatle
++  m_TagString: Untagged
++  m_Icon: {fileID: 0}
++  m_NavMeshLayer: 0
++  m_StaticEditorFlags: 0
++  m_IsActive: 1
++--- !u!114 &2129485196
++MonoBehaviour:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 2129485195}
++  m_Enabled: 1
++  m_EditorHideFlags: 0
++  m_Script: {fileID: 11500000, guid: f8ea6dcd97a267b45a9e745b237c72c7, type: 3}
++  m_Name: 
++  m_EditorClassIdentifier: 
++--- !u!4 &2129485197
++Transform:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 2129485195}
++  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
++  m_LocalPosition: {x: 0.41036338, y: -92.93168, z: -29.26858}
++  m_LocalScale: {x: 1, y: 1, z: 1}
++  m_Children:
++  - {fileID: 619560835}
++  m_Father: {fileID: 0}
++  m_RootOrder: 29
++  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+ --- !u!4 &2132260255 stripped
+ Transform:
+   m_CorrespondingSourceObject: {fileID: 3488071487893428, guid: 39755eabef01f2047a8960d707e14ef8,
+@@ -546652,7 +546065,7 @@
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+       propertyPath: m_RootOrder
+-      value: 40
++      value: 32
+       objectReference: {fileID: 0}
+     - target: {fileID: 6025545306078288015, guid: 9bab51b4a7f066f4d98ed63cf8fa8865,
+         type: 3}
+@@ -547082,7 +546495,7 @@
+     - target: {fileID: 8353612904349314507, guid: 07605e2ab8e3805488aef272ec97f057,
+         type: 3}
+       propertyPath: m_RootOrder
+-      value: 41
++      value: 33
+       objectReference: {fileID: 0}
+     - target: {fileID: 8353612904349314507, guid: 07605e2ab8e3805488aef272ec97f057,
+         type: 3}

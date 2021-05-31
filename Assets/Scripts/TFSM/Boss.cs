@@ -5,10 +5,12 @@ using UnityEngine;
 public class Boss : Enemy
 {
     private TFSM tfsm;
+    public Animator anim;
 
     private void Start()
     {
         moveAnchorPos = transform.position;
+        anim = GetComponent<Animator>();
         
         InitializeState();
         InitializeEnemy();
@@ -58,7 +60,7 @@ public class Boss : Enemy
     private void MoveStateEnter()
     {
         idx = (idx + 1) % 2;
-        
+        anim.SetBool("isMoving",true);
         moveTimeCounter = .0f;
         
         if (suspensionPoints.Count == 0)
@@ -69,6 +71,14 @@ public class Boss : Enemy
         int randomIdx = Random.Range(0, suspensionPointNum);
         start = transform.position;
         destination = suspensionPoints[randomIdx];
+        if (destination.x < transform.position.x)
+        {
+            _transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
+        else if (destination.x >= transform.position.x)
+        {
+            _transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
     }
 
     private void MoveStateExecute()
@@ -97,7 +107,7 @@ public class Boss : Enemy
 
     private void MoveStateExit()
     {
-        
+        anim.SetBool("isMoving",false);
     }
 
     private void InitializeSuspensionPoints()
@@ -186,6 +196,7 @@ public class Boss : Enemy
         EnemyBulletPool.Instance.ChangeSprite();
  
         GameObject bullet = EnemyBulletPool.Instance.GetFromPool();
+        bullet.transform.localScale = new Vector3(2, 2, 1);
         
         bullet.transform.position = origin;
         bullet.GetComponent<Enemy_Bullet>().bulletEnemyDamage = bulletDamage;
