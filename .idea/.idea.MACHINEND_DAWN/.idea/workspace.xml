@@ -2,27 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/catcher.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/catcher.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/Catcher_red_walk_0.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/Catcher_red_walk_0.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/catcher.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/catcher.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/catcher_idle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/catcher_idle.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/catcher_rage_walk.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/catcher_rage_walk.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/catcher_walk.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/catcher_walk.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/Watcher.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/Watcher.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/hole.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/hole.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/5e4afd7528de72bb9e64a1eceb3700b.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Enemy/5e4afd7528de72bb9e64a1eceb3700b.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/DestroyableController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/DestroyableController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/hole.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/hole.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TFSM/Catcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TFSM/Catcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Bag/Chest/Chest.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Bag/Chest/Chest.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bag/Chest/ChestManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bag/Chest/ChestManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/invade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/invade.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/InitializeItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/InitializeItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerProperty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerProperty.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +39,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/FSM.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EffectsManager/EffectsManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/sprite/Enemy/5e4afd7528de72bb9e64a1eceb3700b.png.meta" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Game/sprite/Effects/destroySelf.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/State.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectInTile.cs" root0="FORCE_HIGHLIGHTING" />
@@ -70,8 +56,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/Town.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scenes/Menu/Menu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scenes/Game/Rotate.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/RoomSpawn.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/Room.cs" />
@@ -104,13 +88,11 @@
       <option value="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/CameraFollow.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/InitDayBuff.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerProperty.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/WizardTips.cs" />
       <option value="$PROJECT_DIR$/Assets/Resources/Font/汉字.txt" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Clock.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Environment/invade.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/WeaponPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/FlashColor.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerController.cs" />
@@ -121,6 +103,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/TFSM/Catcher.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/hole.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/DestroyableController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Bag/Chest/ChestManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Item/InitializeItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerProperty.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Environment/invade.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sT92pLE3Aucix7W6jstCeY0cFP" />
@@ -210,14 +196,7 @@
       <workItem from="1622343911216" duration="2751000" />
       <workItem from="1622354971971" duration="1804000" />
       <workItem from="1622357725587" duration="19043000" />
-      <workItem from="1622427668275" duration="890000" />
-    </task>
-    <task id="LOCAL-00030" summary="Audio Init">
-      <created>1621493751420</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1621493751420</updated>
+      <workItem from="1622427668275" duration="5171000" />
     </task>
     <task id="LOCAL-00031" summary="&#10;Init DayLight">
       <created>1621506453908</created>
@@ -555,7 +534,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622383063408</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="Merge">
+      <created>1622435546197</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1622435546198</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -605,7 +591,6 @@
     <MESSAGE value="Init DeadPanel" />
     <MESSAGE value="Init Wizard" />
     <MESSAGE value="Build Init" />
-    <MESSAGE value="Merge" />
     <MESSAGE value="Init Map" />
     <MESSAGE value="Init Resources" />
     <MESSAGE value="Init Door_Controller" />
@@ -615,6 +600,7 @@
     <MESSAGE value="Init Clock" />
     <MESSAGE value="Init particles" />
     <MESSAGE value="Init TFSM" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init TFSM" />
+    <MESSAGE value="Merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge" />
   </component>
 </project>

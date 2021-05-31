@@ -40,9 +40,16 @@ public class invade : MonoBehaviour
     {
         if (other.CompareTag("Player") && other.isTrigger)
         {
-            enter = !enter;
+            enter = true;
         }
         
     }
-    
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player") && other.isTrigger)
+        {
+            enter = false;
+        }
+    }
 }

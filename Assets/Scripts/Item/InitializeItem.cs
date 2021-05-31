@@ -15,16 +15,16 @@ public class InitializeItem : MonoSingleton<InitializeItem>
     private void InitializeItems()
     {
         //药草
-        Herb herb = new Herb(90);
+        Herb herb = new Herb();
         
         //水滴
-        Water_Drop water_Drop = new Water_Drop(90);
+        Water_Drop water_Drop = new Water_Drop();
         
         //空瓶
-        EmptyBottle bottle = new EmptyBottle(90);
+        EmptyBottle bottle = new EmptyBottle();
         
         //增强剂
-        Enhancer enhancer = new Enhancer(90);
+        Enhancer enhancer = new Enhancer();
 
         //血瓶
         BloodBottle bloodBottle = new BloodBottle();
