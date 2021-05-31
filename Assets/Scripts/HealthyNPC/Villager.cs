@@ -5,6 +5,7 @@ using UnityEngine;
 public class Villager : MonoBehaviour
 {
     public Transform target;                        //要跟随的目标
+    public GameObject door;
 
     [SerializeField] private float recordGap;       //目标移动多远记录一次距离
     [SerializeField] private float walkSpeed;       //走速度
@@ -104,6 +105,12 @@ public class Villager : MonoBehaviour
                 target = PlayerController.Instance.villagerList[PlayerController.Instance.villagerList.Count-1];
             }
             PlayerController.Instance.villagerList.Add(transform);
+
+            if(PlayerController.Instance.villagerList.Count == 3)
+            {
+                GameManager.Instance.door.Add(door);
+                GameManager.Instance.OpenDoor(GameManager.Instance.door.Count - 1);
+            }
         }
     }
 
