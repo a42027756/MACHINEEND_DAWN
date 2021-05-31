@@ -7,7 +7,7 @@ public class Bullet : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         //触发事件
-        if(other.CompareTag("Enemy"))
+        if(!other.CompareTag("Player"))
         {
             BulletPool.Instance.ReturnPool(gameObject);
         }
