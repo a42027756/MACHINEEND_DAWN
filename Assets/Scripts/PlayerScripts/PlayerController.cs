@@ -24,6 +24,8 @@ public class PlayerController : ControllerBase<PlayerController>
     public bool canMove = true;
     public bool isUnderAttack = false;
 
+    public List<Transform> villagerList = new List<Transform>();
+
     public override void Update()
     {
         if (!isAlive)

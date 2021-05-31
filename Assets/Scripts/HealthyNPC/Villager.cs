@@ -14,21 +14,19 @@ public class Villager : MonoBehaviour
     [SerializeField] private int stopCount;         //记录还剩多少时停止移动
     [SerializeField] private int startRunCount;     //记录超过多少时开始跑
     [SerializeField] private int speedUpCount;      //记录超过多少时开始追
-    
-    private bool Running
-    {
-        get { return posList.Count > startRunCount; }
-        set { }
-    }
 
+    private Vector3 originPos;
     private Rigidbody2D _rigidbody2D;
+    private Animator _anim;
+    private SpriteRenderer _spriteRenderer;
     private List<Vector2> posList = new List<Vector2>();
-
-
 
     void Awake()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _anim = GetComponent<Animator>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+        originPos = transform.position;
     }
 
     void FixedUpdate()
@@ -53,6 +51,8 @@ public class Villager : MonoBehaviour
             {
                 posList.Add(target.position);
             }
+
+            Flip();
         }
     }
 
@@ -75,6 +75,42 @@ public class Villager : MonoBehaviour
         {
             speed = 0;
         }
+        _anim.SetFloat("speed", speed);
         return speed;
+    }
+
+    private void Flip()
+    {
+        if(transform.position.x < PlayerController.Instance._transform.position.x)
+        {
+            _spriteRenderer.flipX = false;
+        }
+        else
+        {
+            _spriteRenderer.flipX = true;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.CompareTag("Player") && !target)
+        {
+            Debug.Log(PlayerController.Instance.villagerList.Count);
+            if(PlayerController.Instance.villagerList.Count == 0)
+            {
+                target = PlayerController.Instance._transform;
+            }
+            else
+            {
+                target = PlayerController.Instance.villagerList[PlayerController.Instance.villagerList.Count-1];
+            }
+            PlayerController.Instance.villagerList.Add(transform);
+        }
+    }
+
+    public void ResetPos()
+    {
+        transform.position = originPos;
+        target = null;
     }
 }
