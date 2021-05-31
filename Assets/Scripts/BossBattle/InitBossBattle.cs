@@ -15,12 +15,12 @@ public class InitBossBattle : MonoBehaviour
 
     public BoxCollider2D player2;
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        panel.SetActive(false);
         tips.SetActive(false);
         boss.SetActive(false);
     }
+    
 
     // Update is called once per frame
     void Update()

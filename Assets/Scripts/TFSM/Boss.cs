@@ -6,7 +6,6 @@ public class Boss : Enemy
 {
     private TFSM tfsm;
     public Animator anim;
-
     private void Start()
     {
         moveAnchorPos = transform.position;

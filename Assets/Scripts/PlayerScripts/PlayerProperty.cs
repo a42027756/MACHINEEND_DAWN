@@ -75,11 +75,18 @@ public class PlayerProperty : ControllerBase<PlayerProperty>, IProperty
 
     private void Transition()
     {
-        Mathf.Clamp(properties["thirsty"], 0, 100);
-        Mathf.Clamp(properties["hunger"], 0, 100);
-        Mathf.Clamp(properties["intrusion"], 0, 100);
-        Mathf.Clamp(properties["health"], 0, 100);
-
+        properties["thirsty"] = properties["thirsty"] < 100f ? properties["thirsty"] : 100f;
+        properties["thirsty"] = properties["thirsty"] > 0f ? properties["thirsty"] : 0f;
+        
+        properties["hunger"] = properties["hunger"] < 100f ? properties["hunger"] : 100f;
+        properties["hunger"] = properties["hunger"] > 0f ? properties["hunger"] : 0f;
+        
+        properties["intrusion"] = properties["intrusion"] < 100f ? properties["intrusion"] : 100f;
+        properties["intrusion"] = properties["intrusion"] > 0f ? properties["intrusion"] : 0f;
+        
+        properties["health"] = properties["health"] < 100f ? properties["health"] : 100f;
+        properties["health"] = properties["health"] > 0f ? properties["health"] : 0f;
+        
         healthBar.fillAmount = properties["health"] / 100;
         waterBar.fillAmount = properties["thirsty"] / 100;
         hungerBar.fillAmount = properties["hunger"] / 100;
@@ -94,7 +101,7 @@ public class PlayerProperty : ControllerBase<PlayerProperty>, IProperty
             BleedDebuff(0f);
         }
 
-        if ((invadeBar.fillAmount > 0.33 && invadeBar.fillAmount < 0.66) || waterBar.fillAmount >= 0.99 || hungerBar.fillAmount >= 0.99f) 
+        if ((invadeBar.fillAmount > 0.33 && invadeBar.fillAmount < 0.66) || waterBar.fillAmount <= 0.01 || hungerBar.fillAmount <= 0.01) 
         {
             SpeedDeBuff(3f);
         }

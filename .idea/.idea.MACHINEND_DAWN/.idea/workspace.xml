@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BossBattle/InitBossBattle.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BossBattle/InitBossBattle.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BossBattle/ReleasePeople.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Font/SIMHEI.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Font/SIMHEI.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Font/汉字.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Font/汉字.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/WizardTips.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/WizardTips.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Anim/Door_vertical_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Anim/Door_vertical_0.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BossBattle/InitBossBattle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BossBattle/InitBossBattle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerProperty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerProperty.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TFSM/Boss.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TFSM/Boss.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,36 +36,30 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/TownScript/Town.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/WizardTips.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/Game.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Game/Rotate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/LoadScene/LoadManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/hole.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BossBattle/InitBossBattle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameControl/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BossBattle/ReleasePeople.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Watcher_AI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Defend_war/Spawn_monster.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Menu/Menu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/FSM.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EffectsManager/EffectsManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/sprite/Enemy/5e4afd7528de72bb9e64a1eceb3700b.png.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BossBattle/ReleasePeople.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/Prefab/Enemy/catcher.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Game/sprite/Effects/destroySelf.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/Prefab/Bag/Chest/Chest.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/State.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectInTile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/invade.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectSpawn.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BossBattle/InitBossBattle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CDA0DA9E-454B-4A0D-9B19-813AB03014ED/83/b396fabd/Debug.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/IState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@10.4.0/Runtime/Textures/TextureXR.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/sprite/Enemy/BOSS  悬浮静止.png.meta" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/PerlinTest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scripts/TFSM/Boss.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@10.4.0/Runtime/UniversalRenderPipeline.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -95,8 +94,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MapSpawn/CameraFollow.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/InitDayBuff.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/WizardTips.cs" />
-      <option value="$PROJECT_DIR$/Assets/Resources/Font/汉字.txt" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Clock.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/WeaponPool.cs" />
@@ -116,6 +113,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Reborn.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/TFSM/Boss.cs" />
+      <option value="$PROJECT_DIR$/Assets/Resources/Font/汉字.txt" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sT92pLE3Aucix7W6jstCeY0cFP" />
@@ -206,6 +205,7 @@
       <workItem from="1622354971971" duration="1804000" />
       <workItem from="1622357725587" duration="19043000" />
       <workItem from="1622427668275" duration="11516000" />
+      <workItem from="1622461677299" duration="654000" />
     </task>
     <task id="LOCAL-00037" summary="Update UI">
       <created>1621864324122</created>

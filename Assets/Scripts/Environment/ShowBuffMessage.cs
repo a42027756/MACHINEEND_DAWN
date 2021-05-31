@@ -28,7 +28,6 @@ public class ShowBuffMessage : MonoBehaviour
     {
         if (GTime.Instance.pass_day <= 4)
         {
-            ChangeMessage();
             if (GTime.Instance.GetGtime() == 6 && !isShowing)
             {
                 messagePanel.SetActive(true);
@@ -36,6 +35,7 @@ public class ShowBuffMessage : MonoBehaviour
                 GTime.Instance.SetGTime(7);
                 StartCoroutine(AutoClosePanel());
             }
+            ChangeMessage();
         }
         
     }
@@ -43,7 +43,7 @@ public class ShowBuffMessage : MonoBehaviour
     private void ChangeMessage()
     {
         messagePanel.GetComponentsInChildren<Text>()[0].text = "Day " + (GTime.Instance.pass_day);
-        messagePanel.GetComponentsInChildren<Text>()[1].text = messages[GTime.Instance.pass_day];
+        messagePanel.GetComponentsInChildren<Text>()[1].text = messages[GTime.Instance.pass_day - 1];
     }
 
     public void ClosePanel()

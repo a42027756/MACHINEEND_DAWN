@@ -4,9 +4,10 @@ using UnityEngine.UI;
 
 public class Binder : MonoBehaviour
 {
-    [HideInInspector] public Rigidbody2D myRigidbody2D;
-    [HideInInspector] public Transform myTransform;
-    [HideInInspector] public Animator myAnim;
+
+    public Rigidbody2D myRigidbody2D;
+    public Transform myTransform;
+    public Animator myAnim;
     public GameObject pauspanel;
     public float speed;
     public GameObject bleeding;
@@ -17,7 +18,6 @@ public class Binder : MonoBehaviour
     {
         PlayerController.Instance.Update();
         FlashColor();
-        
     }
 
     private void FixedUpdate()
