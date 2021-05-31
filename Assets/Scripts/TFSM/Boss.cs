@@ -11,6 +11,7 @@ public class Boss : Enemy
         moveAnchorPos = transform.position;
         
         InitializeState();
+        InitializeEnemy();
 
         tfsm = new TFSM(machineGunState);
     }
