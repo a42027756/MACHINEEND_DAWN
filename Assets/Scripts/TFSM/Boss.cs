@@ -52,9 +52,12 @@ public class Boss : Enemy
     private float moveTimeCounter;
     private Vector2 destination;
     private Vector2 start;
+    private int idx = 1;
     
     private void MoveStateEnter()
     {
+        idx = (idx + 1) % 2;
+        
         moveTimeCounter = .0f;
         
         if (suspensionPoints.Count == 0)
@@ -79,7 +82,15 @@ public class Boss : Enemy
 
         if (moveTimeCounter > moveTime)
         {
-            tfsm.ChangeState(machineGunState);
+            
+            if (idx == 0)
+            {
+                tfsm.ChangeState(machineGunState);   
+            }
+            else
+            {
+                tfsm.ChangeState(summonState);
+            }
         }
     }
 
@@ -189,7 +200,7 @@ public class Boss : Enemy
 
     private TState summonState;
 
-    private GameObject summoned;
+    [SerializeField] private GameObject summoned;
 
     [SerializeField] private float summonRadius;
 
@@ -197,7 +208,7 @@ public class Boss : Enemy
 
     private float summonTimeCounter;
 
-    private int summonNum;
+    [SerializeField]private int summonNum;
     
     private void SummonStateEnter()
     {
@@ -216,6 +227,8 @@ public class Boss : Enemy
 
     private void SummonStateExecute()
     {
+        summonTimeCounter += Time.deltaTime;
+        
         if (summonTimeCounter > summonTimeDuration)
         {
             tfsm.ChangeState(moveState);
