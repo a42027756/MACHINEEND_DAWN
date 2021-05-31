@@ -104,6 +104,11 @@ public class Villager : MonoBehaviour
                 target = PlayerController.Instance.villagerList[PlayerController.Instance.villagerList.Count-1];
             }
             PlayerController.Instance.villagerList.Add(transform);
+
+            if(PlayerController.Instance.villagerList.Count == 3)
+            {
+                
+            }
         }
     }
 
