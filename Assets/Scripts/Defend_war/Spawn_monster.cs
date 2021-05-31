@@ -60,7 +60,7 @@ public class Spawn_monster : MonoBehaviour
             SpawnMonster(spawnPlace_04,monsterList[0]);
 
         }
-        else if (isWin)
+        else if (isWin && !GameManager.Instance.door[4].GetComponent<Animator>().GetBool("open"))
         {
             GameManager.Instance.OpenDoor(4);
         }

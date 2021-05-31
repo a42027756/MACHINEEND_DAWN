@@ -125,8 +125,9 @@ MonoBehaviour:
       name: 
   spawnInterval: 10
   creatures:
-  - {fileID: 6025545306078288009, guid: 9bab51b4a7f066f4d98ed63cf8fa8865, type: 3}
+  - {fileID: 3488071487893432, guid: 39755eabef01f2047a8960d707e14ef8, type: 3}
   - {fileID: 8353612904349314504, guid: 07605e2ab8e3805488aef272ec97f057, type: 3}
+  - {fileID: 6025545306078288009, guid: 9bab51b4a7f066f4d98ed63cf8fa8865, type: 3}
 --- !u!58 &-5929981694100184719
 CircleCollider2D:
   m_ObjectHideFlags: 0
