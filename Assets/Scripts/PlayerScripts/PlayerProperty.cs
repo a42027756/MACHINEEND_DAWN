@@ -49,8 +49,6 @@ public class PlayerProperty : ControllerBase<PlayerProperty>, IProperty
         //判断条件
         properties[propertyName] += increment;
 
-        properties[propertyName] = properties[propertyName] > 100 ? 100 :　properties[propertyName];
-
         Transition();
     }
 
@@ -70,11 +68,17 @@ public class PlayerProperty : ControllerBase<PlayerProperty>, IProperty
         properties["hunger"] -= hungerDecreasement * GTime.Instance.hungerTimes;
         properties["intrusion"] += invationIncreasement * GTime.Instance.invationTimes;
         properties["health"] -= healthDcreasement;
+        
         Transition();
     }
 
     private void Transition()
     {
+        Mathf.Clamp(properties["thirsty"], 0, 100);
+        Mathf.Clamp(properties["hunger"], 0, 100);
+        Mathf.Clamp(properties["intrusion"], 0, 100);
+        Mathf.Clamp(properties["health"], 0, 100);
+
         healthBar.fillAmount = properties["health"] / 100;
         waterBar.fillAmount = properties["thirsty"] / 100;
         hungerBar.fillAmount = properties["hunger"] / 100;

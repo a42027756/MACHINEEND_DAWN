@@ -95,7 +95,6 @@ public class Villager : MonoBehaviour
     {
         if(other.CompareTag("Player") && !target)
         {
-            Debug.Log(PlayerController.Instance.villagerList.Count);
             if(PlayerController.Instance.villagerList.Count == 0)
             {
                 target = PlayerController.Instance._transform;
