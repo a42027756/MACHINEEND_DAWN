@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Villager : MonoBehaviour
 {
-    public Transform target; //要跟随的目标
-    public float recordGap = 0.2f; //目标移动多远记录一次距离
-    public float stopCount = 2f; //记录还剩多少时停止移动
-    public float walkSpeed = 10f; //走速度
-    public float runSpeed = 20f; //跑速度
-    public float speedLerpRant = 0.1f; //速度变化的缓动率
-    public float startRunCount = 5f; //距离目标多远后开始跑（单位是List的Item数）
+    public Transform target;                        //要跟随的目标
+
+    [SerializeField] private float recordGap;       //目标移动多远记录一次距离
+    [SerializeField] private float walkSpeed;       //走速度
+    [SerializeField] private float runSpeed;        //跑速度
+    [SerializeField] private float chaseSpeed;      //追速度
+    [SerializeField] private float speedLerpRant;   //速度变化的缓动率
+    [SerializeField] private int stopCount;         //记录还剩多少时停止移动
+    [SerializeField] private int startRunCount;     //记录超过多少时开始跑
+    [SerializeField] private int speedUpCount;      //记录超过多少时开始追
     
-    public bool Running
+    private bool Running
     {
         get { return posList.Count > startRunCount; }
         set { }
@@ -42,21 +45,36 @@ public class Villager : MonoBehaviour
                 {
                     posList.Add(target.position);
                 }
-                if(posList.Count > stopCount)
-                {
-                    _rigidbody2D.velocity = Vector2.Lerp(_rigidbody2D.velocity, new Vector2(
+                 _rigidbody2D.velocity = Vector2.Lerp(_rigidbody2D.velocity, new Vector2(
                     posList[0].x - transform.position.x, 
-                    posList[0].y - transform.position.y).normalized * (Running ? runSpeed : walkSpeed), speedLerpRant); 
-                }
-                else
-                {
-                    _rigidbody2D.velocity = Vector2.Lerp(_rigidbody2D.velocity, Vector2.zero, speedLerpRant);
-                }
+                    posList[0].y - transform.position.y).normalized * SetMoveSpeed(), speedLerpRant);
             }
             else
             {
                 posList.Add(target.position);
             }
         }
+    }
+
+    private float SetMoveSpeed()
+    {
+        float speed;
+        if(posList.Count > speedUpCount)
+        {
+            speed = chaseSpeed;
+        }
+        else if(posList.Count > startRunCount)
+        {
+            speed = runSpeed;
+        }
+        else if(posList.Count > stopCount)
+        {
+            speed = walkSpeed;
+        }
+        else
+        {
+            speed = 0;
+        }
+        return speed;
     }
 }
