@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Bag/Chest/Chest.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Bag/Chest/Chest.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/catcher.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/catcher.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameControl/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameControl/GameManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +40,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EffectsManager/EffectsManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/sprite/Enemy/5e4afd7528de72bb9e64a1eceb3700b.png.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/Prefab/Enemy/catcher.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Game/sprite/Effects/destroySelf.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/Prefab/Bag/Chest/Chest.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/State.cs" root0="FORCE_HIGHLIGHTING" />
@@ -97,11 +96,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/GTime.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSystem/WeaponPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/FlashColor.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy_Bullet.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Defend_war/Spawn_monster.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameControl/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/hole.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/DestroyableController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Bag/Chest/ChestManager.cs" />
@@ -110,6 +107,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/invade.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/TFSM/Catcher.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameControl/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sT92pLE3Aucix7W6jstCeY0cFP" />
@@ -199,14 +198,7 @@
       <workItem from="1622343911216" duration="2751000" />
       <workItem from="1622354971971" duration="1804000" />
       <workItem from="1622357725587" duration="19043000" />
-      <workItem from="1622427668275" duration="8112000" />
-    </task>
-    <task id="LOCAL-00032" summary="&#10;Init Collider">
-      <created>1621509444496</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1621509444496</updated>
+      <workItem from="1622427668275" duration="9427000" />
     </task>
     <task id="LOCAL-00033" summary="FSM Init">
       <created>1621575625308</created>
@@ -544,7 +536,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622440504377</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="Debug">
+      <created>1622443488559</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1622443488559</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -579,7 +578,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Init Item" />
     <MESSAGE value="Init Attack" />
     <MESSAGE value="Init Attack second" />
     <MESSAGE value="Init Pause Panel" />
@@ -604,6 +602,7 @@
     <MESSAGE value="Init particles" />
     <MESSAGE value="Init TFSM" />
     <MESSAGE value="Merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge" />
+    <MESSAGE value="Debug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Debug" />
   </component>
 </project>

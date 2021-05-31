@@ -27,7 +27,7 @@ public class Reborn : MonoBehaviour
     private void ReSpawnPlayer()
     {
         PlayerController.Instance._anim.SetBool("isDead",false);
-        PlayerController.Instance._transform.position = new Vector3(0, 0, 0);
+        PlayerController.Instance._transform.position = GameManager.Instance.respawnPlace[GTime.Instance.pass_day - 1].position;
         PlayerController.Instance.isAlive = true;
         Time.timeScale = 1;
         PlayerProperty.Instance.ResetValue();

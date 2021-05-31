@@ -219,6 +219,9 @@
           <e p="GameControl" t="Include">
             <e p="GameManager.cs" t="Include" />
           </e>
+          <e p="HealthyNPC" t="Include">
+            <e p="Villager.cs" t="Include" />
+          </e>
           <e p="Item" t="Include">
             <e p="InitializeItem.cs" t="Include" />
             <e p="ItemBase.cs" t="Include" />
