@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MACHINEND_DAWN/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Bag/Chest/Chest.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Bag/Chest/Chest.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bag/Chest/ChestManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bag/Chest/ChestManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/invade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/invade.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/InitializeItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/InitializeItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerProperty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerProperty.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/catcher.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/Enemy/catcher.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +43,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EffectsManager/EffectsManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/sprite/Enemy/5e4afd7528de72bb9e64a1eceb3700b.png.meta" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Game/sprite/Effects/destroySelf.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityPorject/MACHINEND_DAWN/Assets/Scenes/Game/Prefab/Bag/Chest/Chest.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/State.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSpawn/MapScript/ObjectInTile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" root0="FORCE_HIGHLIGHTING" />
@@ -75,7 +78,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/InitDatBuff.cs" />
       <option value="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Effects/destroySelf.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/EffectsManager/EffectsManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Watcher_AI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/FlyingEnemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Prelogue/ShowText.cs" />
@@ -100,13 +102,14 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Defend_war/Spawn_monster.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameControl/GameManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TFSM/Catcher.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/hole.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/DestroyableController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Bag/Chest/ChestManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Item/InitializeItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerProperty.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Environment/invade.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/TFSM/Catcher.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy_AI/Enemy.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sT92pLE3Aucix7W6jstCeY0cFP" />
@@ -196,14 +199,7 @@
       <workItem from="1622343911216" duration="2751000" />
       <workItem from="1622354971971" duration="1804000" />
       <workItem from="1622357725587" duration="19043000" />
-      <workItem from="1622427668275" duration="5171000" />
-    </task>
-    <task id="LOCAL-00031" summary="&#10;Init DayLight">
-      <created>1621506453908</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1621506453908</updated>
+      <workItem from="1622427668275" duration="8112000" />
     </task>
     <task id="LOCAL-00032" summary="&#10;Init Collider">
       <created>1621509444496</created>
@@ -541,7 +537,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622435546198</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Merge">
+      <created>1622440504377</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1622440504377</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

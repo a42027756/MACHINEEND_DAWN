@@ -58,6 +58,7 @@ public class Enemy : MonoBehaviour
     private void FlashColor()
     {
         this.GetComponent<SpriteRenderer>().color = Color.red;
+        Debug.Log(this.GetComponent<SpriteRenderer>().color);
         StartCoroutine(Flash());
     }
 
