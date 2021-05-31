@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge">
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Font/SIMHEI.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Font/SIMHEI.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Font/汉字.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Font/汉字.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/WizardTips.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Prefab/WizardTips.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Anim/Door_vertical_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/sprite/Item/Anim/Door_vertical_0.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BossBattle/InitBossBattle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BossBattle/InitBossBattle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/ShowBuffMessage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Binder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerProperty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerProperty.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TFSM/Boss.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TFSM/Boss.cs" afterDir="false" />
-    </list>
+    <list default="true" id="718e4172-b9e9-4768-9cbd-faf4fb7a4120" name="Default Changelist" comment="Merge" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -205,14 +194,7 @@
       <workItem from="1622354971971" duration="1804000" />
       <workItem from="1622357725587" duration="19043000" />
       <workItem from="1622427668275" duration="11516000" />
-      <workItem from="1622461677299" duration="654000" />
-    </task>
-    <task id="LOCAL-00037" summary="Update UI">
-      <created>1621864324122</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1621864324122</updated>
+      <workItem from="1622461677299" duration="1265000" />
     </task>
     <task id="LOCAL-00038" summary="Update UI">
       <created>1621864853309</created>
@@ -550,7 +532,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622446359106</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="Finish">
+      <created>1622463058467</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1622463058468</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -585,7 +574,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Init Pause Panel" />
     <MESSAGE value="Upgrade Camerator" />
     <MESSAGE value="Init Minimap" />
     <MESSAGE value="Reload Upgrade" />
@@ -610,6 +598,7 @@
     <MESSAGE value="Debug" />
     <MESSAGE value="ass" />
     <MESSAGE value="Init Boss" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init Boss" />
+    <MESSAGE value="Finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish" />
   </component>
 </project>
