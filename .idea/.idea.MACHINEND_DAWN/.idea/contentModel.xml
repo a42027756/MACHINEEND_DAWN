@@ -260,6 +260,7 @@
             <e p="Singleton.cs" t="Include" />
           </e>
           <e p="TFSM" t="Include">
+            <e p="Boss.cs" t="Include" />
             <e p="Catcher.cs" t="Include" />
             <e p="CatcherBoid.cs" t="Include" />
             <e p="TFSM.cs" t="Include" />
