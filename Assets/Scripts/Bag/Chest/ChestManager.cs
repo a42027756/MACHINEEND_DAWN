@@ -47,21 +47,14 @@ public class ChestManager : MonoBehaviour
             isOpen = true;
 
             PlayerController.Instance.canMove = false;
+            PlayerController.Instance._rigidbody2D.velocity = Vector2.zero;
             WeaponSlot.Instance.ceaseFire = true;
 
             ShowChest();
         }
         else if(isOpen && Input.GetKeyDown(KeyCode.E))
         {
-            press_E.SetActive(false);
-            ItemPanel.SetActive(false);
-            isOpen = false;
-
-            PlayerController.Instance.canMove = true;
-            WeaponSlot.Instance.ceaseFire = false;
-            
-            ResetLastSlot();
-            selectIndex = -1;
+            CloseChest();
         }
     }
 
@@ -119,5 +112,19 @@ public class ChestManager : MonoBehaviour
             chestSlots[selectIndex].currentItem.itemNum--;
             chestSlots[selectIndex].RefreshSlot();
         }
+    }
+
+    public void CloseChest()
+    {
+        press_E.SetActive(false);
+        ItemPanel.SetActive(false);
+        isOpen = false;
+
+        PlayerController.Instance.canMove = true;
+        PlayerController.Instance._rigidbody2D.velocity = Vector2.zero;
+        WeaponSlot.Instance.ceaseFire = false;
+            
+        ResetLastSlot();
+        selectIndex = -1;
     }
 }
